@@ -1567,6 +1567,10 @@ $$
 - **Assumes:** events independent, at a constant mean rate; $\lambda > 0$, k a whole number
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/poisson-at-least-stems.svg)
+
+*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0.908422; marked: the most probable count k = 4, P = 0.195367.*
+
 ```python
 statistics_ai999x.solve('poisson_at_least', lam=4, k=2)
 # -> probability = 0.908422   (SOLVED)
@@ -2352,6 +2356,10 @@ $$
 - **Assumes:** random sample from a roughly normal population (or large n); sigma unknown
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-intervals.svg)
+
+*t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13.5673, 15.0993]; 80 % [12.7776, 15.8891]; 90 % [12.2093, 16.4574]; 95 % [11.6237, 17.043]; 99 % [10.0831, 18.5836] (sample mean 14.3333, 5 degrees of freedom); higher confidence, wider interval.*
+
 ```python
 statistics_ai999x.solve('ci_mean_t', x='12, 15, 11, 18, 14, 16', confidence=0.95)
 # -> lower = 11.6237, upper = 17.043, margin_of_error = 2.70963, critical_value = 2.57058, df = 5, mean = 14.3333   (SOLVED)
@@ -2673,6 +2681,10 @@ $$
 - **Method:** t statistic with $n - 1$ degrees of freedom; tail probability from the incomplete beta function
 - **Assumes:** random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The one-sample t test of x = 5](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
+
+*The one-sample t test of x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against μ₀ = 5: the t density with 5 degrees of freedom (from the package's quantiles at 121 cumulative probabilities, differenced), the two-tailed rejection region beyond ±2.57058 for α = 0.05 shaded; marked: t = 1.88982, p-value = 0.117387.*
 
 ```python
 statistics_ai999x.solve('t_test_one_sample', x='5.1, 4.9, 5.3, 5.5, 5.0, 5.2', mu0=5)
@@ -3448,6 +3460,10 @@ $$
 - **Assumes:** at least 3 pairs, x not all equal; inference assumes independent normal errors with constant variance
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The least-squares line through x = 1, 2, 3, 4, 5, y = 2](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/simple-linear-regression-fit.svg)
+
+*The least-squares line through x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2: intercept 0.16 (standard error 0.143295), slope 1.98 (standard error 0.0432049), r = 0.999287, R² = 0.998574, p-value of the slope 2.2873e-05, as returned by the package.*
+
 ```python
 statistics_ai999x.solve('simple_linear_regression', x='1, 2, 3, 4, 5', y='2.2, 4.1, 6.1, 7.9, 10.2')
 # -> slope = 1.98, intercept = 0.16, r = 0.999287, r_squared = 0.998574, p_value = 2.28734e-05, slope_se = 0.0432049, intercept_se = 0.143295, residual_se = 0.136626   (SOLVED)
@@ -3629,6 +3645,10 @@ $$
 - **Method:** partition the total sum of squares into between- and within-group parts; F with (k - 1, N - k) df
 - **Assumes:** independent groups; roughly normal populations with equal variances
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
+
+*Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22.5, quartiles 21.75–23.5; g2 median 29.5, quartiles 28.75–30.25; g3 median 25.5, quartiles 24.75–26.25). One-way ANOVA: F = 22.12 with 2 and 9 degrees of freedom, p-value 0.000335753, η² = 0.830954.*
 
 ```python
 statistics_ai999x.solve('one_way_anova', g1='23, 25, 21, 22', g2='30, 28, 31, 29', g3='26, 27, 24, 25')
@@ -5090,6 +5110,10 @@ $$
 - **Method:** product over event times of (1 - deaths / number at risk)
 - **Assumes:** non-informative censoring; a censoring at an event time counts as still at risk
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/kaplan-meier-survival.svg)
+
+*The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0.533333.*
 
 ```python
 statistics_ai999x.solve('kaplan_meier', times='6, 6, 6, 7, 10, 13, 16, 22, 23', events='1, 1, 1, 0, 1, 1, 1, 1, 1', t=12)

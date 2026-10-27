@@ -4,7 +4,9 @@
 
 **[Install](https://pypi.org/project/statistics-ai999x/)** · **[Capability guide](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
-License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.0
+License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.1
+
+Field: **Mathematics & Statistics** · Tasks: Question Answering, Token Classification, Text Classification, Tabular Regression, Sentence Similarity, Feature Extraction
 
 statistics-ai999x is an offline, deterministic Python solver that answers statistics questions with verified results from 110 certified capabilities, gives 609 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified.
 
@@ -25,7 +27,7 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 
 | Property | Value |
 |---|---|
-| Package | `statistics-ai999x` 1.0.0 (import `statistics_ai999x`) |
+| Package | `statistics-ai999x` 1.0.1 (import `statistics_ai999x`) |
 | Type | Deterministic neuro-symbolic statistics engine (rule-based reading + certified symbolic capabilities) |
 | Capabilities | 110 certified procedures |
 | Knowledge pack | version 1.0.1 |
@@ -59,7 +61,7 @@ statistics.ask("Who created you?").message
 # -> statistics-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilities`. The outputs above were produced by running this exact code on statistics-ai999x 1.0.0.
+Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilities`. The outputs above were produced by running this exact code on statistics-ai999x 1.0.1.
 
 ## Find the right capability, and draw it
 
@@ -69,7 +71,7 @@ Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilitie
 import statistics_ai999x as statistics
 
 statistics.search("Solve x^2 - 5x + 6 = 0", k=2)
-# -> Roots of a quadratic equation (algebra-ai999x, 0.67); Solution of two linear equations in two unknowns (algebra-ai999x, 0.57)
+# -> Roots of a quadratic equation (math-foundations-ai999x, 0.63); Roots of a cubic equation (math-foundations-ai999x, 0.59)
 ```
 
 ## How every answer is verified
@@ -80,6 +82,122 @@ statistics.search("Solve x^2 - 5x + 6 = 0", k=2)
 4. **Checking** — dimensions, substitution back into the defining equation, and agreement between independent readings; any disagreement becomes a refusal, never a number.
 
 Capabilities are certified before they ship: each must reproduce hand-worked reference cases, reject a deliberately wrong variant (a control), and leave every benchmark answer unchanged.
+
+## Worked examples
+
+Each question was put to `statistics-ai999x`; the answer is the one it returned, with the steps it took.
+
+**One-sample t-test** · _Hypothesis tests_
+
+> Perform a one-sample t-test of [5.1, 4.9, 5.3, 5.5, 5.0, 5.2] against mu0 = 5, two-sided.
+
+→ **t = 1.889822365, df = 5, p_value = 0.1173867951, mean = 5.166666667, standard_deviation = 0.2160246899**
+
+<details><summary>Steps</summary>
+
+- One-sample t-test: x = [5.1, 4.9, 5.3, 5.5, 5, 5.2], mu0 = 5, alternative = two-sided → t = 1.889822365, df = 5, p_value = 0.1173867951, mean = 5.166666667, standard_deviation = 0.2160246899
+
+</details>
+
+**Normal probability below a value** · _Probability distributions_
+
+> For a normal distribution with mean = 100 and standard deviation = 15, find P(X < 120).
+
+→ **probability = 0.9087887803, z = 1.333333333**
+
+<details><summary>Steps</summary>
+
+- Normal probability below a value: mu = 100, sigma = 15, x = 120 → probability = 0.9087887803, z = 1.333333333
+
+</details>
+
+**Confidence interval for a mean from data (t-interval)** · _Confidence intervals_
+
+> Find the 95% confidence interval for the mean of [12, 15, 11, 18, 14, 16].
+
+→ **lower = 11.62370216, upper = 17.0429645, margin_of_error = 2.709631171, critical_value = 2.570581836, df = 5, mean = 14.33333333**
+
+<details><summary>Steps</summary>
+
+- Confidence interval for a mean from data (t-interval): x = [12, 15, 11, 18, 14, 16], confidence = 0.95 → lower = 11.62370216, upper = 17.0429645, margin_of_error = 2.709631171, critical_value = 2.570581836, df = 5, mean = 14.33333333
+
+</details>
+
+**Chi-square test of independence** · _Hypothesis tests_
+
+> Chi-square test of independence for the table [[20, 30], [25, 25]].
+
+→ **chi_square = 1.01010101, df = 1, p_value = 0.3148786413, expected = [[22.5, 27.5], [22.5, 27.5]]**
+
+<details><summary>Steps</summary>
+
+- Chi-square test of independence: table = [20 30; 25 25] → chi_square = 1.01010101, df = 1, p_value = 0.3148786413, expected = [[22.5, 27.5], [22.5, 27.5]]
+
+</details>
+
+**Weibull reliability, hazard rate and MTTF** · _Reliability and survival_
+
+`m.solve("weibull_reliability", beta=2, eta=1000, t=500)`
+
+→ **reliability = 0.7788007831, unreliability = 0.2211992169, hazard_rate = 0.001, mttf = 886.2269255**
+
+<details><summary>Steps</summary>
+
+- Weibull reliability, hazard rate and MTTF: beta = 2, eta = 1000, t = 500 → reliability = 0.7788007831, unreliability = 0.2211992169, hazard_rate = 0.001, mttf = 886.2269255
+
+</details>
+
+**One-way ANOVA** · _Analysis of variance_
+
+> Perform a one-way ANOVA on groups [23, 25, 21, 22], [30, 28, 31, 29] and [26, 27, 24, 25].
+
+→ **f = 22.12, p_value = 0.0003357531392, df_between = 2, df_within = 9, ss_between = 92.16666667, ss_within = 18.75, ms_between = 46.08333333, ms_within = 2.083333333, eta_squared = 0.8309541698**
+
+<details><summary>Steps</summary>
+
+- One-way ANOVA: g1 = [23, 25, 21, 22], g2 = [30, 28, 31, 29], g3 = [26, 27, 24, 25] → f = 22.12, p_value = 0.0003357531392, df_between = 2, df_within = 9, ss_between = 92.16666667, ss_within = 18.75, ms_between = 46.08333333, ms_within = 2.083333333, eta_squared = 0.8309541698
+
+</details>
+
+## Figures
+
+Every point was computed by `statistics-ai999x`.
+
+**One-sample t test: statistic against the rejection region**
+
+![One-sample t test: statistic against the rejection region — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
+
+_The one-sample t test of x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against μ₀ = 5: the t density with 5 degrees of freedom (from the package's quantiles at 121 cumulative probabilities, differenced), the two-tailed rejection region beyond ±2.57058 for α = 0.05 shaded; marked: t = 1.88982, p-value = 0.117387._
+
+**Poisson distribution and an at-least probability**
+
+![Poisson distribution and an at-least probability — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/poisson-at-least-stems.svg)
+
+_The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0.908422; marked: the most probable count k = 4, P = 0.195367._
+
+**Three groups as box plots, with their ANOVA**
+
+![Three groups as box plots, with their ANOVA — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
+
+_Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22.5, quartiles 21.75–23.5; g2 median 29.5, quartiles 28.75–30.25; g3 median 25.5, quartiles 24.75–26.25). One-way ANOVA: F = 22.12 with 2 and 9 degrees of freedom, p-value 0.000335753, η² = 0.830954._
+
+**Simple linear regression: data and fitted line**
+
+![Simple linear regression: data and fitted line — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/simple-linear-regression-fit.svg)
+
+_The least-squares line through x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2: intercept 0.16 (standard error 0.143295), slope 1.98 (standard error 0.0432049), r = 0.999287, R² = 0.998574, p-value of the slope 2.2873e-05, as returned by the package._
+
+**Kaplan–Meier survival curve**
+
+![Kaplan–Meier survival curve — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/kaplan-meier-survival.svg)
+
+_The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0.533333._
+
+**Confidence intervals for a mean at five levels**
+
+![Confidence intervals for a mean at five levels — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-intervals.svg)
+
+_t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13.5673, 15.0993]; 80 % [12.7776, 15.8891]; 90 % [12.2093, 16.4574]; 95 % [11.6237, 17.043]; 99 % [10.0831, 18.5836] (sample mean 14.3333, 5 degrees of freedom); higher confidence, wider interval._
 
 ## Capabilities
 
@@ -104,10 +222,10 @@ Capabilities are certified before they ship: each must reproduce hand-worked ref
 ## Citation
 
 ```bibtex
-@software{statistics_ai999x_1_0_0,
+@software{statistics_ai999x_1_0_1,
   title  = {statistics-ai999x: an offline, verified statistics solver},
   author = {Farabi, Ibnul Jaif}, organization = {AI999X},
-  year   = {2026}, version = {1.0.0},
+  year   = {2026}, version = {1.0.1},
   url    = {https://huggingface.co/AI999X/statistics-ai999x}
 }
 ```
