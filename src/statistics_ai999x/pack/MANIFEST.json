@@ -1,5 +1,5 @@
 {
- "package": "1.0.2",
+ "package": "1.0.3",
  "pack": "1.0.1",
  "knowledge_db": null,
  "files": {
@@ -9,7 +9,7 @@
   "knowledge/reference_cases.json": "7414a14e2c4202a7fae8cdd14e1a2ef7267f35a9665b0633001349c698d4e4e7",
   "capabilities/procedures.py": "bb64c6dfadf2bea62f29f779de2e1cefecb54109bfff8ea6ed88d8c938e8d193",
   "capabilities/procedures_certified.json": "cd8b5dea8e974c6b1aab4d2fd7bdc452b922381c0aff440fed943b2b32f8dd23",
-  "statistics_knowledge_public.sqlite": "ba67b9b259f2de8f4ab4487dfa37b81d4fe042e48908180cc2dbea373e0553f6",
+  "statistics_knowledge_public.sqlite": "c1da17dfe1ccf265df16cbd0ee6a7be47a07d8740317ecd86c81f56b51e5ae12",
   "search/encoder.int8.onnx": "521452d928a72da4d241b1835ab0f46b0e81ff58ffff0367b9a7029bd129fbd9",
   "search/tokenizer.json": "b2f2deb461e6ad672b8e42aac29773e7a9be77d582cdf58808113ea43fda565e",
   "search/index.json": "d8f81d9706c9a0efa7d9643bcec3d39a6c3500766ce0f44937d85ad90f772507",
@@ -19,6 +19,7 @@
  },
  "engine": [
   "__init__.py",
+  "_lazy.py",
   "answer.py",
   "compiler.py",
   "decision_reader.py",
