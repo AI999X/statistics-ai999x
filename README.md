@@ -4,7 +4,7 @@
 
 **[Install](https://pypi.org/project/statistics-ai999x/)** · **[Capability guide](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
-License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.1
+License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.2
 
 Field: **Mathematics & Statistics** · Tasks: Question Answering, Token Classification, Text Classification, Tabular Regression, Sentence Similarity, Feature Extraction
 
@@ -27,7 +27,7 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 
 | Property | Value |
 |---|---|
-| Package | `statistics-ai999x` 1.0.1 (import `statistics_ai999x`) |
+| Package | `statistics-ai999x` 1.0.2 (import `statistics_ai999x`) |
 | Type | Deterministic neuro-symbolic statistics engine (rule-based reading + certified symbolic capabilities) |
 | Capabilities | 110 certified procedures |
 | Knowledge pack | version 1.0.1 |
@@ -61,7 +61,7 @@ statistics.ask("Who created you?").message
 # -> statistics-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilities`. The outputs above were produced by running this exact code on statistics-ai999x 1.0.1.
+Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilities`. The outputs above were produced by running this exact code on statistics-ai999x 1.0.2.
 
 ## Find the right capability, and draw it
 
@@ -222,10 +222,10 @@ _t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confiden
 ## Citation
 
 ```bibtex
-@software{statistics_ai999x_1_0_1,
+@software{statistics_ai999x_1_0_2,
   title  = {statistics-ai999x: an offline, verified statistics solver},
   author = {Farabi, Ibnul Jaif}, organization = {AI999X},
-  year   = {2026}, version = {1.0.1},
+  year   = {2026}, version = {1.0.2},
   url    = {https://huggingface.co/AI999X/statistics-ai999x}
 }
 ```

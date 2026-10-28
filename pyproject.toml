@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "statistics-ai999x"
-version = "1.0.1"
+version = "1.0.2"
 description = "Offline statistics solver: descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability, with steps, LaTeX and honest refusals"
 readme = "README.md"
 requires-python = ">=3.10"
