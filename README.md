@@ -4,7 +4,7 @@
 
 **[Desktop app & command line](https://www.ai999x.com/desktop-cli/)** · **[Compute in your browser](https://www.ai999x.com/models/statistics-ai999x/#try)** · **[Install (Python)](https://pypi.org/project/statistics-ai999x/)** · **[Guides](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
-License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.3
+License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.1.0
 
 Field: **Mathematics & Statistics** · Tasks: Question Answering, Token Classification, Text Classification, Tabular Regression, Sentence Similarity, Feature Extraction
 
@@ -20,26 +20,13 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 
 | Way to run it | For | Get it |
 |---|---|---|
-| **AI999X Statistics desktop app** 1.2.0 | Windows, Linux — this model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) |
-| **AI999X desktop app** 1.2.0 | Windows, Linux — every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-linux-x86_64.tar.gz) |
-| **Command line** (`statistics`) | Windows, Linux — one program per model, offline, no Python | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) |
+| **AI999X Statistics desktop app** 1.4.0 | Windows, Linux — this model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz) |
+| **AI999X desktop app** 1.4.0 | Windows, Linux — every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz) |
+| **Command line** (`statistics`) | Windows, Linux — one program per model, offline, no Python | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz) |
 | **In your browser** | any device — nothing to install | [Compute on the model page](https://www.ai999x.com/models/statistics-ai999x/#try) |
 | **Python** | Python 3.10+ | `pip install statistics-ai999x` |
 
-Checksums: [SHA256SUMS](https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS) · every version: [https://www.ai999x.com/downloads/desktop/latest/](https://www.ai999x.com/downloads/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
-
-## Rust versions
-
-Statistics also comes as native programs compiled from Rust, version 1.2.0 of the AI999X desktop app and command line: they run offline on your computer and need no Python. Each file is in this repository's `rust/` folder, on the [GitHub release v1.0.3](https://github.com/AI999X/statistics-ai999x/releases/tag/v1.0.3) and on the website.
-
-| Program | System | File | Size | Download | Use |
-|---|---|---|---|---|---|
-| Desktop app (Statistics) | Windows x86-64 | `ai999x-statistics-1.2.0-windows-x86_64.zip` | 7.3 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-1.2.0-windows-x86_64.zip) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-windows-x86_64.zip) | unzip, then double-click `ai999x-statistics.exe` (no installer) |
-| Desktop app (Statistics) | Linux x86-64 | `ai999x-statistics-1.2.0-linux-x86_64.tar.gz` | 8.3 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) | extract, then run `./ai999x-statistics` (X11 or Wayland desktop) |
-| Command line (`statistics`) | Windows x86-64 | `ai999x-statistics-cli-1.2.0-windows-x86_64.zip` | 3.1 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-cli-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-cli-1.2.0-windows-x86_64.zip) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) | unzip, then `statistics.exe ask "<question>"` or `statistics.exe solve <capability> name=value` |
-| Command line (`statistics`) | Linux x86-64 | `ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz` | 3.0 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) | extract, then `./statistics ask "<question>"` or `./statistics solve <capability> name=value` |
-
-The command-line archive holds `statistics` with a README of its commands and examples, the licence and the notice. Checksums: [`rust/SHA256SUMS`](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/SHA256SUMS) (`sha256sum -c SHA256SUMS`).
+Checksums: [SHA256SUMS](https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS) · every version: [https://downloads.ai999x.com/desktop/latest/](https://downloads.ai999x.com/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
 
 ## Quick start
 
@@ -50,11 +37,11 @@ Download **AI999X Statistics** for your system (above), unpack it and start it; 
 Linux, from a terminal:
 
 ```bash
-curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz
-curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-statistics-1.2.0-linux-x86_64.tar.gz
-./ai999x-statistics-1.2.0-linux-x86_64/ai999x-statistics
+tar xzf ai999x-statistics-1.4.0-linux-x86_64.tar.gz
+./ai999x-statistics-1.4.0-linux-x86_64/ai999x-statistics
 ```
 
 ### Command line
@@ -62,23 +49,23 @@ tar xzf ai999x-statistics-1.2.0-linux-x86_64.tar.gz
 Linux:
 
 ```bash
-curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz
-curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share && tar xzf ai999x-cli-1.2.0-linux-x86_64.tar.gz -C ~/.local/share
-echo 'export PATH="$HOME/.local/share/ai999x-cli-1.2.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.4.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.4.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
 statistics --version
 ```
 
 Windows (PowerShell):
 
 ```powershell
-$F = "ai999x-cli-1.2.0-windows-x86_64.zip"
-Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/$F" -OutFile $F
-Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS" -OutFile SHA256SUMS
+$F = "ai999x-cli-1.4.0-windows-x86_64.zip"
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/$F" -OutFile $F
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS" -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
 Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
-$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.2.0-windows-x86_64"; $env:Path += ";$D"
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.4.0-windows-x86_64"; $env:Path += ";$D"
 [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
 statistics --version
 ```
@@ -130,32 +117,6 @@ standard_deviation = 0.2160246899
   mu0 = 5
   alternative = two-sided
   assumes: random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
-```
-
-**Draw the figures** — The live figures for your own inputs, written as SVG files into the folder given with --out (here the current folder); open them in any browser. Without --out the SVG text comes back as JSON.
-
-```console
-$ statistics figures t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided --out .
-[
-  {
-    "slug": "t-test-one-sample-live-1",
-    "title": "P-value as hypothesised mean varies",
-    "caption": "P-value as mu0 runs from 1.25 to 8.75, every other input as you entered it (41 solutions). Marked: your mu0 = 5 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": "./t-test-one-sample-live-1.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-2",
-    "title": "P-value for each choice of alternative hypothesis: two-sided (default), gr...",
-    "caption": "P-value for every choice of alternative, every other input as you entered it (highlighted: your choice). two-sided: 0.1174; greater: 0.05869; less: 0.9413. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": "./t-test-one-sample-live-2.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-3",
-    "title": "P-value as the data values (at least two), entry 1 varies",
-    "caption": "P-value as x[1] runs from 1.275 to 8.925, every other input as you entered it (29 solutions). Marked: your x[1] = 5.1 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": "./t-test-one-sample-live-3.svg"
-  }
-]
 ```
 
 **Many questions at once** — One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | statistics batch
@@ -333,7 +294,7 @@ _What this means:_ This calculation determines a range of plausible values for t
 
 | Property | Value |
 |---|---|
-| Package | `statistics-ai999x` 1.0.3 (import `statistics_ai999x`) |
+| Package | `statistics-ai999x` 1.1.0 (import `statistics_ai999x`) |
 | Type | Deterministic neuro-symbolic statistics engine (rule-based reading + certified symbolic capabilities) |
 | Capabilities | 110 certified procedures |
 | Knowledge pack | version 1.0.1 |
@@ -367,7 +328,7 @@ statistics.ask("Who created you?").message
 # -> statistics-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-The Python package also installs a Python command, `statistics-ai999x "<question>"`; for the native program use `statistics` (above). The outputs above were produced by running this exact code on statistics-ai999x 1.0.3.
+The Python package also installs a Python command, `statistics-ai999x "<question>"`; for the native program use `statistics` (above). The outputs above were produced by running this exact code on statistics-ai999x 1.1.0.
 
 ## Find the right capability, and draw it
 
@@ -528,10 +489,10 @@ _t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confiden
 ## Citation
 
 ```bibtex
-@software{statistics_ai999x_1_0_3,
+@software{statistics_ai999x_1_1_0,
   title  = {statistics-ai999x: an offline, verified statistics solver},
   author = {Farabi, Ibnul Jaif}, organization = {AI999X},
-  year   = {2026}, version = {1.0.3},
+  year   = {2026}, version = {1.1.0},
   url    = {https://huggingface.co/AI999X/statistics-ai999x}
 }
 ```
