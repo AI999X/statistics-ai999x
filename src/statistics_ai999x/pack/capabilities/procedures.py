@@ -1361,6 +1361,9 @@ _BIN_ALIAS = {"n": r"n|trials|number of trials", "k": r"k|x|successes|number of 
 
 def _bin_args(n, k, p):
     n, k = _whole(n, "n", 1), _whole(k, "k", 0)
+    # the exact sum has n terms, each with an exact binomial coefficient: n = 10 million took hours (2026-10-29)
+    if n > 100000:
+        raise ValueError("n must be at most 100000 trials")
     if k > n:
         raise ValueError("k cannot exceed the number of trials n")
     return n, k, _prob(p, "p")

@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/AI999X/statistics-ai999x/actions/workflows/ci.yml/badge.svg)](https://github.com/AI999X/statistics-ai999x/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/statistics-ai999x)](https://pypi.org/project/statistics-ai999x/) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/AI999X/statistics-ai999x)
 
-**[Install](https://pypi.org/project/statistics-ai999x/)** · **[Capability guide](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
+**[Desktop app & command line](https://www.ai999x.com/desktop-cli/)** · **[Compute in your browser](https://www.ai999x.com/models/statistics-ai999x/#try)** · **[Install (Python)](https://pypi.org/project/statistics-ai999x/)** · **[Guides](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
 License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.3
 
@@ -12,7 +12,312 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 
 **statistics-ai999x** is a compact, deterministic statistics engine for Python. It reads a question in plain English (or a typed call), picks a certified statistics capability, computes the answer exactly, checks it, and returns the result with its steps, units, LaTeX and assumptions — or an honest refusal that says what is missing. It runs fully offline on any CPU, needs no GPU, no API key and no internet, and is built to give **zero wrong answers**: when it is not sure, it refuses instead of guessing.
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20development-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ibnuljaiffarabi) ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue) ![Offline](https://img.shields.io/badge/runs-offline%20on%20CPU-green)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20development-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ibnuljaiffarabi) ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue) ![Offline](https://img.shields.io/badge/runs-offline%20on%20CPU-green) ![Rust](https://img.shields.io/badge/Rust-Windows%20%7C%20Linux%20%7C%20WebAssembly-orange)
+
+**Run it your way.** statistics-ai999x comes as the AI999X desktop app and as the command-line program `statistics` for Windows and Linux, runs in your browser as WebAssembly, and installs as a Python package. The desktop app, the command line and the browser run the same compiled Rust program on your own device: offline, no Python needed.
+
+## Get it
+
+| Way to run it | For | Get it |
+|---|---|---|
+| **AI999X Statistics desktop app** 1.2.0 | Windows, Linux — this model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) |
+| **AI999X desktop app** 1.2.0 | Windows, Linux — every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-linux-x86_64.tar.gz) |
+| **Command line** (`statistics`) | Windows, Linux — one program per model, offline, no Python | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) |
+| **In your browser** | any device — nothing to install | [Compute on the model page](https://www.ai999x.com/models/statistics-ai999x/#try) |
+| **Python** | Python 3.10+ | `pip install statistics-ai999x` |
+
+Checksums: [SHA256SUMS](https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS) · every version: [https://www.ai999x.com/downloads/desktop/latest/](https://www.ai999x.com/downloads/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
+
+## Rust versions
+
+Statistics also comes as native programs compiled from Rust, version 1.2.0 of the AI999X desktop app and command line: they run offline on your computer and need no Python. Each file is in this repository's `rust/` folder, on the [GitHub release v1.0.3](https://github.com/AI999X/statistics-ai999x/releases/tag/v1.0.3) and on the website.
+
+| Program | System | File | Size | Download | Use |
+|---|---|---|---|---|---|
+| Desktop app (Statistics) | Windows x86-64 | `ai999x-statistics-1.2.0-windows-x86_64.zip` | 7.3 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-1.2.0-windows-x86_64.zip) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-windows-x86_64.zip) | unzip, then double-click `ai999x-statistics.exe` (no installer) |
+| Desktop app (Statistics) | Linux x86-64 | `ai999x-statistics-1.2.0-linux-x86_64.tar.gz` | 8.3 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz) | extract, then run `./ai999x-statistics` (X11 or Wayland desktop) |
+| Command line (`statistics`) | Windows x86-64 | `ai999x-statistics-cli-1.2.0-windows-x86_64.zip` | 3.1 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-cli-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-cli-1.2.0-windows-x86_64.zip) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) | unzip, then `statistics.exe ask "<question>"` or `statistics.exe solve <capability> name=value` |
+| Command line (`statistics`) | Linux x86-64 | `ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz` | 3.0 MB | [Hub](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/statistics-ai999x/releases/download/v1.0.3/ai999x-statistics-cli-1.2.0-linux-x86_64.tar.gz) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) | extract, then `./statistics ask "<question>"` or `./statistics solve <capability> name=value` |
+
+The command-line archive holds `statistics` with a README of its commands and examples, the licence and the notice. Checksums: [`rust/SHA256SUMS`](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/rust/SHA256SUMS) (`sha256sum -c SHA256SUMS`).
+
+## Quick start
+
+### Desktop app
+
+Download **AI999X Statistics** for your system (above), unpack it and start it; type a question in words or pick a capability, fill in the form and press Compute. Figures and an explanation of the answer appear beside it. The AI999X desktop app has the same, with Statistics among all AI999X models.
+
+Linux, from a terminal:
+
+```bash
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-statistics-1.2.0-linux-x86_64.tar.gz
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+sha256sum -c --ignore-missing SHA256SUMS
+tar xzf ai999x-statistics-1.2.0-linux-x86_64.tar.gz
+./ai999x-statistics-1.2.0-linux-x86_64/ai999x-statistics
+```
+
+### Command line
+
+Linux:
+
+```bash
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+sha256sum -c --ignore-missing SHA256SUMS
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.2.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.2.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+statistics --version
+```
+
+Windows (PowerShell):
+
+```powershell
+$F = "ai999x-cli-1.2.0-windows-x86_64.zip"
+Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/$F" -OutFile $F
+Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS" -OutFile SHA256SUMS
+(Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
+Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.2.0-windows-x86_64"; $env:Path += ";$D"
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
+statistics --version
+```
+
+Every command below was run as shown; the text under it is what the program printed.
+
+**Ask in words** — Write the question as you would say it: the program reads the quantities and their units, picks the capability and answers.
+
+```console
+$ statistics ask "Perform a one-sample t-test of [5.1, 4.9, 5.3, 5.5, 5.0, 5.2] against mu0 = 5, two-sided."
+Read as: One-sample t-test
+t = 1.889822365
+df = 5
+p_value = 0.1173867951
+mean = 5.166666667
+standard_deviation = 0.2160246899
+  by: One-sample t-test  (t statistic with n - 1 degrees of freedom; tail probability from the incomplete beta function)
+  mu0 = 5
+  alternative = two-sided
+  assumes: random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
+```
+
+**What a capability needs** — The equation or method, every input and output with its SI unit. Read this before solve: it tells you the input names.
+
+```console
+$ statistics info t_test_one_sample
+One-sample t-test
+  t statistic with n - 1 degrees of freedom; tail probability from the incomplete beta function
+  in   x        the data values (at least two) (vector) [1]
+  in   mu0      hypothesised mean [1]
+  in   alternative alternative hypothesis: two-sided (default), greater or less (choice) [1]
+  out  t        (mean - mu0)/(s/sqrt(n)) [1]
+  out  df       n - 1 [1]
+  out  p_value  p-value [1]
+  out  mean     sample mean [1]
+  out  standard_deviation sample standard deviation [1]
+```
+
+**Solve** — Inputs as name=value, each with any unit of the right kind. The answer lists every output, the method used, each input converted to SI, and the conditions the answer assumes.
+
+```console
+$ statistics solve t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided
+t = 1.889822365
+df = 5
+p_value = 0.1173867951
+mean = 5.166666667
+standard_deviation = 0.2160246899
+  by: One-sample t-test  (t statistic with n - 1 degrees of freedom; tail probability from the incomplete beta function)
+  mu0 = 5
+  alternative = two-sided
+  assumes: random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
+```
+
+**Draw the figures** — The live figures for your own inputs, written as SVG files into the folder given with --out (here the current folder); open them in any browser. Without --out the SVG text comes back as JSON.
+
+```console
+$ statistics figures t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided --out .
+[
+  {
+    "slug": "t-test-one-sample-live-1",
+    "title": "P-value as hypothesised mean varies",
+    "caption": "P-value as mu0 runs from 1.25 to 8.75, every other input as you entered it (41 solutions). Marked: your mu0 = 5 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
+    "file": "./t-test-one-sample-live-1.svg"
+  },
+  {
+    "slug": "t-test-one-sample-live-2",
+    "title": "P-value for each choice of alternative hypothesis: two-sided (default), gr...",
+    "caption": "P-value for every choice of alternative, every other input as you entered it (highlighted: your choice). two-sided: 0.1174; greater: 0.05869; less: 0.9413. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
+    "file": "./t-test-one-sample-live-2.svg"
+  },
+  {
+    "slug": "t-test-one-sample-live-3",
+    "title": "P-value as the data values (at least two), entry 1 varies",
+    "caption": "P-value as x[1] runs from 1.275 to 8.925, every other input as you entered it (29 solutions). Marked: your x[1] = 5.1 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
+    "file": "./t-test-one-sample-live-3.svg"
+  }
+]
+```
+
+**Many questions at once** — One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | statistics batch
+
+`cases.jsonl`:
+
+```json
+{"key": "t_test_one_sample", "inputs": {"x": "[5.1, 4.9, 5.3, 5.5, 5, 5.2]", "mu0": 5.0, "alternative": "two-sided"}}
+{"key": "normal_probability_below", "inputs": {"mu": 100.0, "sigma": 15.0, "x": 120.0}}
+```
+
+```console
+$ statistics batch < cases.jsonl
+{"outcome":"SOLVED","message":"","value":0.11738679514629244,"unit":"","solved_for":"p_value","si":[["mu0",5.0]],"values":[["t",1.88982236504614,""],["df",5,""],["p_value",0.11738679514629244,""],["mean",5.166666666666667,""],["standard_deviation",0.2160246899469286,""]],"target":"p_value","phrase":"(mean - mu0)/(s/sqrt(n))","assumptions":["random sample from a roughly normal population (or large n)","the alternative must be stated for a one-sided claim"],"name":"One-sample t-test","equation":"t statistic with n - 1 degrees of freedom; tail probability from the incomplete beta function"}
+{"outcome":"SOLVED","message":"","value":0.9087887802741321,"unit":"","solved_for":"probability","si":[["mu",100.0],["sigma",15.0],["x",120.0]],"values":[["probability",0.9087887802741321,""],["z",1.3333333333333333,""]],"target":"probability","phrase":"P(X < x)","assumptions":["X normally distributed","sigma > 0"],"name":"Normal probability below a value","equation":"z = (x - mu)/sigma; Phi(z) from the complementary error function"}
+```
+
+### In your browser
+
+Open [Statistics on ai999x.com](https://www.ai999x.com/models/statistics-ai999x/#try), choose a capability and press **Compute**: the model runs on your own device as WebAssembly; nothing is sent anywhere. Change any input (any unit of the right kind) and the answer, its explanation and the figures follow.
+
+In your own page: `statistics_ai999x.wasm` and the loader `ax-wasm.js` (https://www.ai999x.com/compute/rust/ax-wasm.js).
+
+### Python
+
+```bash
+pip install statistics-ai999x
+```
+
+## Worked examples in every form
+
+The same worked example from the command line, from Python and in the browser. Each command-line output is what the program printed.
+
+### One-way ANOVA
+
+One-way analysis of variance for 2 to 5 independent groups: F statistic, p-value, sums of squares and eta squared.
+
+Command line:
+
+```console
+$ statistics solve one_way_anova "g1=[23, 25, 21, 22]" "g2=[30, 28, 31, 29]" "g3=[26, 27, 24, 25]"
+f = 22.12
+p_value = 0.0003357531392
+df_between = 2
+df_within = 9
+ss_between = 92.16666667
+ss_within = 18.75
+ms_between = 46.08333333
+ms_within = 2.083333333
+eta_squared = 0.8309541698
+  by: One-way ANOVA  (partition the total sum of squares into between- and within-group parts; F with (k - 1, N - k) df)
+  assumes: independent groups; roughly normal populations with equal variances
+```
+
+Python:
+
+```python
+import statistics_ai999x as m
+
+a = m.solve("one_way_anova", g1=[23, 25, 21, 22], g2=[30, 28, 31, 29], g3=[26, 27, 24, 25])
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/statistics-ai999x/#cap-one_way_anova) and press **Compute in your browser**.
+
+_What this means:_ One-way analysis of variance partitions the total variability into between-group and within-group components. The computed F ratio is 22.12, derived from the mean square between groups of 46.0833 divided by the mean square within groups of 2.08333. This corresponds to degrees of freedom 2 for the numerator and 9 for the denominator. The resulting upper-tail probability is 0.000335753, indicating whether the observed differences among group means are statistically significant relative to the background noise.
+
+### Fisher's exact test (2 x 2)
+
+Fisher's exact test of association in a 2 x 2 table, with the sample odds ratio.
+
+Command line:
+
+```console
+$ statistics solve fisher_exact_test "table=[[8, 2], [1, 5]]" alternative=two-sided
+p_value = 0.03496503497
+odds_ratio = 20
+  by: Fisher's exact test (2 x 2)  (hypergeometric probabilities of all tables with the observed margins, in exact integer arithmetic)
+  alternative = two-sided
+  assumes: fixed margins (conditional test); whole-number counts
+```
+
+Python:
+
+```python
+import statistics_ai999x as m
+
+a = m.solve("fisher_exact_test", table=[[8, 2], [1, 5]], alternative="two-sided")
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/statistics-ai999x/#cap-fisher_exact_test) and press **Compute in your browser**.
+
+_What this means:_ This calculation determines the probability of observing a table as extreme or more extreme than the one provided, assuming no association between the variables. The result yields an exact p-value of 0.034965 and a sample odds ratio of 20. A low p-value suggests that the observed distribution of counts across the categories is unlikely to have occurred by chance alone under the assumption of independence.
+
+### McNemar's test for paired proportions
+
+McNemar's test for a 2 x 2 table of paired outcomes: continuity-corrected chi-square and the exact binomial p-value.
+
+Command line:
+
+```console
+$ statistics solve mcnemar_test "table=[[30, 12], [5, 53]]"
+chi_square = 2.117647059
+p_value = 0.1456100954
+exact_p_value = 0.1434631348
+discordant = 17
+  by: McNemar's test for paired proportions  (only the discordant cells b and c carry information)
+  assumes: paired (matched) binary outcomes; b + c > 0
+```
+
+Python:
+
+```python
+import statistics_ai999x as m
+
+a = m.solve("mcnemar_test", table=[[30, 12], [5, 53]])
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/statistics-ai999x/#cap-mcnemar_test) and press **Compute in your browser**.
+
+_What this means:_ McNemar's test evaluates whether the proportion of binary outcomes differs between two related groups, such as before and after treatment. The calculation relies solely on the discordant pairs, where the outcome changed from yes to no or no to yes. Based on these counts, the continuity-corrected chi-square value is computed as 2.11765. The resulting p-value is 0.14561, which measures the probability of observing such an imbalance by chance if there were no true difference. An exact binomial p-value of 0.143463 is also provided for greater accuracy when sample sizes are small.
+
+### Confidence interval for a mean (sigma known, z-interval)
+
+The z confidence interval for a population mean when the population standard deviation sigma is known.
+
+Command line:
+
+```console
+$ statistics solve ci_mean_known_sigma xbar=52 sigma=8 n=36 confidence=0.95
+lower = 49.38671469
+upper = 54.61328531
+margin_of_error = 2.613285313
+critical_value = 1.959963985
+  by: Confidence interval for a mean (sigma known, z-interval)  (xbar +/- z_(alpha/2) sigma / sqrt(n))
+  xbar = 52
+  sigma = 8
+  confidence = 0.95
+  assumes: sigma known; normal population or large n; random sample
+```
+
+Python:
+
+```python
+import statistics_ai999x as m
+
+a = m.solve("ci_mean_known_sigma", xbar="52", sigma="8", n="36", confidence="0.95")
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/statistics-ai999x/#cap-ci_mean_known_sigma) and press **Compute in your browser**.
+
+_What this means:_ This calculation determines a range of plausible values for the population mean using the sample mean and known standard deviation. The interval spans from 49.3867 to 54.6133, centered on the observed sample mean of 52. The width of this interval is defined by the margin of error, which equals 2.61329. This value represents the maximum expected difference between the true population mean and the sample estimate at the specified confidence level.
+
+## Documentation
+
+- **Rust user guide** — the command line, every capability with a command and what it printed: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.md)
+- **Python guide** — every capability with a Python example: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.md)
+- **Desktop app & command line** — downloads, install, ask and search, figures, offline use, checksums: https://www.ai999x.com/desktop-cli/
+- **Model page** — compute in your browser, every capability explained: https://www.ai999x.com/models/statistics-ai999x/
 
 ## Highlights
 
@@ -20,6 +325,7 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 - **Zero wrong answers by design.** Seven explicit outcomes — SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR — never a silent guess. Every one of its 609 documented answers is reproduced exactly on every tested platform.
 - **Plain-English questions and a guaranteed typed interface.** `ask()` reads documented question forms; `solve(capability_id, **inputs)` always solves a supported task with valid inputs.
 - **Explains itself.** Steps, formulas in LaTeX, units, assumptions and the model used, ready for notebooks, tutoring apps and homework checkers.
+- **Native and in the browser.** Every capability also computes natively in Rust: the desktop app and the `statistics` command line for Windows and Linux, and WebAssembly on the model page — no Python, no network.
 - **Small and portable.** Pure Python (sympy, mpmath); identical answers on Windows and Linux (Python 3.10, 3.11, 3.12, 3.13, 3.14).
 - **Coverage:** descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability.
 
@@ -38,7 +344,7 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 | Creator / engineer | Ibnul Jaif Farabi |
 | Organization | AI999X |
 
-## Quickstart
+## Python quick start
 
 ```bash
 pip install statistics-ai999x
@@ -61,7 +367,7 @@ statistics.ask("Who created you?").message
 # -> statistics-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-Command line: `statistics-ai999x "<question>"`, `statistics-ai999x --capabilities`. The outputs above were produced by running this exact code on statistics-ai999x 1.0.3.
+The Python package also installs a Python command, `statistics-ai999x "<question>"`; for the native program use `statistics` (above). The outputs above were produced by running this exact code on statistics-ai999x 1.0.3.
 
 ## Find the right capability, and draw it
 
@@ -83,7 +389,7 @@ statistics.search("Solve x^2 - 5x + 6 = 0", k=2)
 
 Capabilities are certified before they ship: each must reproduce hand-worked reference cases, reject a deliberately wrong variant (a control), and leave every benchmark answer unchanged.
 
-## Worked examples
+## Python worked examples, with their steps
 
 Each question was put to `statistics-ai999x`; the answer is the one it returned, with the steps it took.
 
