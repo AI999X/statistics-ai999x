@@ -1,16 +1,16 @@
-# statistics-ai999x — offline, verified statistics solver with step-by-step answers
+# statistics-ai999x: offline, verified statistics solver with step-by-step answers
 
 [![tests](https://github.com/AI999X/statistics-ai999x/actions/workflows/ci.yml/badge.svg)](https://github.com/AI999X/statistics-ai999x/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/statistics-ai999x)](https://pypi.org/project/statistics-ai999x/) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/AI999X/statistics-ai999x)
 
 **[Desktop app & command line](https://www.ai999x.com/desktop-cli/)** · **[Compute in your browser](https://www.ai999x.com/models/statistics-ai999x/#try)** · **[Install (Python)](https://pypi.org/project/statistics-ai999x/)** · **[Guides](https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
-License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.1.0
+License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.5.0
 
-Field: **Mathematics & Statistics** · Tasks: Question Answering, Token Classification, Text Classification, Tabular Regression, Sentence Similarity, Feature Extraction
+Field: **Mathematics & Statistics** · Tasks: Question Answering, Tabular Regression
 
-statistics-ai999x is an offline, deterministic Python solver that answers statistics questions with verified results from 110 certified capabilities, gives 609 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified.
+statistics-ai999x is an offline, deterministic statistics solver written in Rust: a desktop app, a command-line program, a browser module and a Python package. It answers statistics questions with verified results from 110 certified capabilities, gives 609 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified.
 
-**statistics-ai999x** is a compact, deterministic statistics engine for Python. It reads a question in plain English (or a typed call), picks a certified statistics capability, computes the answer exactly, checks it, and returns the result with its steps, units, LaTeX and assumptions — or an honest refusal that says what is missing. It runs fully offline on any CPU, needs no GPU, no API key and no internet, and is built to give **zero wrong answers**: when it is not sure, it refuses instead of guessing.
+**statistics-ai999x** reads a question in plain English (or a typed call), picks a certified statistics capability, computes the answer exactly, checks it, and returns the result with its steps, units, LaTeX and assumptions, or a refusal that says what is missing. It runs fully offline on any CPU, needs no GPU, no API key and no internet, and is built to give **zero wrong answers**: when it is not sure, it refuses instead of guessing.
 
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20development-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ibnuljaiffarabi) ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue) ![Offline](https://img.shields.io/badge/runs-offline%20on%20CPU-green) ![Rust](https://img.shields.io/badge/Rust-Windows%20%7C%20Linux%20%7C%20WebAssembly-orange)
 
@@ -20,13 +20,13 @@ statistics-ai999x is an offline, deterministic Python solver that answers statis
 
 | Way to run it | For | Get it |
 |---|---|---|
-| **AI999X Statistics desktop app** 1.4.0 | Windows, Linux — this model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz) |
-| **AI999X desktop app** 1.4.0 | Windows, Linux — every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz) |
-| **Command line** (`statistics`) | Windows, Linux — one program per model, offline, no Python | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz) |
-| **In your browser** | any device — nothing to install | [Compute on the model page](https://www.ai999x.com/models/statistics-ai999x/#try) |
+| **AI999X Statistics desktop app** 1.5.0 | Windows, Linux. This model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz) |
+| **AI999X desktop app** 1.5.0 | Windows, Linux. Every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz) |
+| **Command line** (`statistics`) | Windows, Linux. One program per model, offline, no Python | [Windows (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-windows-x86_64.zip) · [Linux (x86-64)](https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz) |
+| **In your browser** | any device. Nothing to install | [Compute on the model page](https://www.ai999x.com/models/statistics-ai999x/#try) |
 | **Python** | Python 3.10+ | `pip install statistics-ai999x` |
 
-Checksums: [SHA256SUMS](https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS) · every version: [https://downloads.ai999x.com/desktop/latest/](https://downloads.ai999x.com/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
+Checksums: [SHA256SUMS](https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS) · every version: [https://downloads.ai999x.com/desktop/latest/](https://downloads.ai999x.com/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
 
 ## Quick start
 
@@ -37,11 +37,11 @@ Download **AI999X Statistics** for your system (above), unpack it and start it; 
 Linux, from a terminal:
 
 ```bash
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-statistics-1.4.0-linux-x86_64.tar.gz
-./ai999x-statistics-1.4.0-linux-x86_64/ai999x-statistics
+tar xzf ai999x-statistics-1.5.0-linux-x86_64.tar.gz
+./ai999x-statistics-1.5.0-linux-x86_64/ai999x-statistics
 ```
 
 ### Command line
@@ -49,30 +49,30 @@ tar xzf ai999x-statistics-1.4.0-linux-x86_64.tar.gz
 Linux:
 
 ```bash
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share && tar xzf ai999x-cli-1.4.0-linux-x86_64.tar.gz -C ~/.local/share
-echo 'export PATH="$HOME/.local/share/ai999x-cli-1.4.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.5.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.5.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
 statistics --version
 ```
 
 Windows (PowerShell):
 
 ```powershell
-$F = "ai999x-cli-1.4.0-windows-x86_64.zip"
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/$F" -OutFile $F
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS" -OutFile SHA256SUMS
+$F = "ai999x-cli-1.5.0-windows-x86_64.zip"
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/$F" -OutFile $F
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS" -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
 Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
-$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.4.0-windows-x86_64"; $env:Path += ";$D"
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.5.0-windows-x86_64"; $env:Path += ";$D"
 [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
 statistics --version
 ```
 
 Every command below was run as shown; the text under it is what the program printed.
 
-**Ask in words** — Write the question as you would say it: the program reads the quantities and their units, picks the capability and answers.
+**Ask in words**: Write the question as you would say it: the program reads the quantities and their units, picks the capability and answers.
 
 ```console
 $ statistics ask "Perform a one-sample t-test of [5.1, 4.9, 5.3, 5.5, 5.0, 5.2] against mu0 = 5, two-sided."
@@ -88,7 +88,7 @@ standard_deviation = 0.2160246899
   assumes: random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
 ```
 
-**What a capability needs** — The equation or method, every input and output with its SI unit. Read this before solve: it tells you the input names.
+**What a capability needs**: The equation or method, every input and output with its SI unit. Read this before solve: it tells you the input names.
 
 ```console
 $ statistics info t_test_one_sample
@@ -104,7 +104,7 @@ One-sample t-test
   out  standard_deviation sample standard deviation [1]
 ```
 
-**Solve** — Inputs as name=value, each with any unit of the right kind. The answer lists every output, the method used, each input converted to SI, and the conditions the answer assumes.
+**Solve**: Inputs as name=value, each with any unit of the right kind. The answer lists every output, the method used, each input converted to SI, and the conditions the answer assumes.
 
 ```console
 $ statistics solve t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided
@@ -119,7 +119,7 @@ standard_deviation = 0.2160246899
   assumes: random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
 ```
 
-**Many questions at once** — One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | statistics batch
+**Many questions at once**: One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | statistics batch
 
 `cases.jsonl`:
 
@@ -275,18 +275,18 @@ _What this means:_ This calculation determines a range of plausible values for t
 
 ## Documentation
 
-- **Rust user guide** — the command line, every capability with a command and what it printed: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.md)
-- **Python guide** — every capability with a Python example: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.md)
-- **Desktop app & command line** — downloads, install, ask and search, figures, offline use, checksums: https://www.ai999x.com/desktop-cli/
-- **Model page** — compute in your browser, every capability explained: https://www.ai999x.com/models/statistics-ai999x/
+- **Rust user guide**: the command line, every capability with a command and what it printed: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_rust_guide.md)
+- **Python guide**: every capability with a Python example: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.pdf) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_capabilities.md)
+- **Desktop app & command line**: downloads, install, ask and search, figures, offline use, checksums: https://www.ai999x.com/desktop-cli/
+- **Model page**: compute in your browser, every capability explained: https://www.ai999x.com/models/statistics-ai999x/
 
 ## Highlights
 
 - **Verified, not generated.** Every answer is computed by a certified statistics capability and checked (substituted back, dimension-checked or compared with an independent computation) before it is returned.
-- **Zero wrong answers by design.** Seven explicit outcomes — SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR — never a silent guess. Every one of its 609 documented answers is reproduced exactly on every tested platform.
+- **Zero wrong answers by design.** Seven explicit outcomes (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR), never a silent guess. Every one of its 609 documented answers is reproduced exactly on every tested platform.
 - **Plain-English questions and a guaranteed typed interface.** `ask()` reads documented question forms; `solve(capability_id, **inputs)` always solves a supported task with valid inputs.
 - **Explains itself.** Steps, formulas in LaTeX, units, assumptions and the model used, ready for notebooks, tutoring apps and homework checkers.
-- **Native and in the browser.** Every capability also computes natively in Rust: the desktop app and the `statistics` command line for Windows and Linux, and WebAssembly on the model page — no Python, no network.
+- **Native and in the browser.** Every capability also computes natively in Rust: the desktop app and the `statistics` command line for Windows and Linux, and WebAssembly on the model page, no Python, no network.
 - **Small and portable.** Pure Python (sympy, mpmath); identical answers on Windows and Linux (Python 3.10, 3.11, 3.12, 3.13, 3.14).
 - **Coverage:** descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability.
 
@@ -294,7 +294,7 @@ _What this means:_ This calculation determines a range of plausible values for t
 
 | Property | Value |
 |---|---|
-| Package | `statistics-ai999x` 1.1.0 (import `statistics_ai999x`) |
+| Package | `statistics-ai999x` 1.5.0 (import `statistics_ai999x`) |
 | Type | Deterministic neuro-symbolic statistics engine (rule-based reading + certified symbolic capabilities) |
 | Capabilities | 110 certified procedures |
 | Knowledge pack | version 1.0.1 |
@@ -328,25 +328,14 @@ statistics.ask("Who created you?").message
 # -> statistics-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-The Python package also installs a Python command, `statistics-ai999x "<question>"`; for the native program use `statistics` (above). The outputs above were produced by running this exact code on statistics-ai999x 1.1.0.
-
-## Find the right capability, and draw it
-
-`statistics.search()` finds which certified capability a question is about — across **every** AI999X model, so a question for another model points you to it. It runs **[ai999x-encoder](https://huggingface.co/AI999X/ai999x-encoder)**, AI999X's own capability encoder (4.7M parameters, a 4.9 MB ONNX model, offline; the root `model.safetensors` of this repository): `pip install "statistics-ai999x[search]"`. `ask(question, suggest=True)` adds the same pointers to a question it does not answer; an answer itself never changes.
-
-```python
-import statistics_ai999x as statistics
-
-statistics.search("Solve x^2 - 5x + 6 = 0", k=2)
-# -> Roots of a quadratic equation (math-foundations-ai999x, 0.63); Roots of a cubic equation (math-foundations-ai999x, 0.59)
-```
+The Python package also installs a Python command, `statistics-ai999x "<question>"`; for the native program use `statistics` (above). The outputs above were produced by running this exact code on statistics-ai999x 1.5.0.
 
 ## How every answer is verified
 
-1. **Reading** — the question is turned into typed quantities (value, unit, kind, role) and one asked quantity; every stated number must be used or the question is refused.
-2. **Planning** — only certified capabilities may answer; a capability applies only under the conditions the wording states (for example a pendulum, a liquid at rest, boiling).
-3. **Computing** — exact symbolic or high-precision numeric evaluation.
-4. **Checking** — dimensions, substitution back into the defining equation, and agreement between independent readings; any disagreement becomes a refusal, never a number.
+1. **Reading**: the question is turned into typed quantities (value, unit, kind, role) and one asked quantity; every stated number must be used or the question is refused.
+2. **Planning**: only certified capabilities may answer; a capability applies only under the conditions the wording states (for example a pendulum, a liquid at rest, boiling).
+3. **Computing**: exact symbolic or high-precision numeric evaluation.
+4. **Checking**: dimensions, substitution back into the defining equation, and agreement between independent readings; any disagreement becomes a refusal, never a number.
 
 Capabilities are certified before they ship: each must reproduce hand-worked reference cases, reject a deliberately wrong variant (a control), and leave every benchmark answer unchanged.
 
@@ -432,37 +421,37 @@ Every point was computed by `statistics-ai999x`.
 
 **One-sample t test: statistic against the rejection region**
 
-![One-sample t test: statistic against the rejection region — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
+![One-sample t test: statistic against the rejection region, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
 
 _The one-sample t test of x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against μ₀ = 5: the t density with 5 degrees of freedom (from the package's quantiles at 121 cumulative probabilities, differenced), the two-tailed rejection region beyond ±2.57058 for α = 0.05 shaded; marked: t = 1.88982, p-value = 0.117387._
 
 **Poisson distribution and an at-least probability**
 
-![Poisson distribution and an at-least probability — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/poisson-at-least-stems.svg)
+![Poisson distribution and an at-least probability, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/poisson-at-least-stems.svg)
 
 _The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0.908422; marked: the most probable count k = 4, P = 0.195367._
 
 **Three groups as box plots, with their ANOVA**
 
-![Three groups as box plots, with their ANOVA — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
+![Three groups as box plots, with their ANOVA, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
 
 _Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22.5, quartiles 21.75–23.5; g2 median 29.5, quartiles 28.75–30.25; g3 median 25.5, quartiles 24.75–26.25). One-way ANOVA: F = 22.12 with 2 and 9 degrees of freedom, p-value 0.000335753, η² = 0.830954._
 
 **Simple linear regression: data and fitted line**
 
-![Simple linear regression: data and fitted line — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/simple-linear-regression-fit.svg)
+![Simple linear regression: data and fitted line, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/simple-linear-regression-fit.svg)
 
 _The least-squares line through x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2: intercept 0.16 (standard error 0.143295), slope 1.98 (standard error 0.0432049), r = 0.999287, R² = 0.998574, p-value of the slope 2.2873e-05, as returned by the package._
 
 **Kaplan–Meier survival curve**
 
-![Kaplan–Meier survival curve — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/kaplan-meier-survival.svg)
+![Kaplan–Meier survival curve, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/kaplan-meier-survival.svg)
 
 _The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0.533333._
 
 **Confidence intervals for a mean at five levels**
 
-![Confidence intervals for a mean at five levels — computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-intervals.svg)
+![Confidence intervals for a mean at five levels, computed by statistics-ai999x](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-intervals.svg)
 
 _t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13.5673, 15.0993]; 80 % [12.7776, 15.8891]; 90 % [12.2093, 16.4574]; 95 % [11.6237, 17.043]; 99 % [10.0831, 18.5836] (sample mean 14.3333, 5 degrees of freedom); higher confidence, wider interval._
 
@@ -477,22 +466,22 @@ _t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confiden
 ## Out of scope
 
 - Open-ended explanation, essay writing or tutoring dialogue: it is a solver, not a chatbot.
-- Questions outside its certified statistics capabilities, and any question whose stated numbers it cannot all use — it refuses with the reason instead.
+- Questions outside its certified statistics capabilities, and any question whose stated numbers it cannot all use: it refuses with the reason instead.
 - High-stakes engineering, medical or legal decisions without independent review.
 
 ## Limitations
 
 - It answers what its certified capabilities cover (descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability); anything else is refused with a reason.
-- `ask()` reads documented question forms and common phrasings; unusual wording may be refused — use `solve()` for guaranteed results.
+- `ask()` reads documented question forms and common phrasings; unusual wording may be refused; use `solve()` for guaranteed results.
 - Results are as correct as the certified relations and their stated conditions; a certified relation is a checked model, not a claim about every physical situation.
 
 ## Citation
 
 ```bibtex
-@software{statistics_ai999x_1_1_0,
+@software{statistics_ai999x_1_5_0,
   title  = {statistics-ai999x: an offline, verified statistics solver},
   author = {Farabi, Ibnul Jaif}, organization = {AI999X},
-  year   = {2026}, version = {1.1.0},
+  year   = {2026}, version = {1.5.0},
   url    = {https://huggingface.co/AI999X/statistics-ai999x}
 }
 ```
@@ -509,4 +498,15 @@ Created and engineered by **Ibnul Jaif Farabi** · **[AI999X](https://huggingfac
 
 ## Source and releases
 
-This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/statistics-ai999x/) (`pip install .` builds it). Releases are tagged `v<version>`; the wheel is attached to each [GitHub release](https://github.com/AI999X/statistics-ai999x/releases). The optional ONNX models (formula graphs and, where measured, a decision model) are on [Hugging Face](https://huggingface.co/AI999X/statistics-ai999x/tree/main/onnx).
+This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/statistics-ai999x/) (`pip install .` builds it). Releases are tagged `v1.5.0`; the [GitHub release](https://github.com/AI999X/statistics-ai999x/releases/tag/v1.5.0) carries the wheel, the desktop app and the command-line program for Windows and Linux, and their checksums.
+
+## Build the program from source
+
+`rust/` holds the Rust source of the `statistics` command-line program and browser module: the AI999X engine (`rust/ax-engine`), this model (`rust/statistics`) and its data (`rust/models/statistics/pack.json`). With Rust 1.80 or later:
+
+```bash
+cd rust
+cargo build --release -p statistics-ai999x
+./target/release/statistics --help
+cargo test -p statistics-ai999x
+```

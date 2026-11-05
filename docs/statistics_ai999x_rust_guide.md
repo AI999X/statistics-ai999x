@@ -1,4 +1,4 @@
-# statistics: the Statistics program — user guide
+# statistics: the Statistics program, user guide
 
 **statistics-ai999x 1.1.0**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
 
@@ -17,63 +17,63 @@ Statistics covers descriptive statistics, probability distributions, confidence 
 
 ## 1. Get it
 
-Version 1.4.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
+Version 1.5.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
 
 | what | system | download |
 |---|---|---|
-| Desktop app: Statistics | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-windows-x86_64.zip |
-| Desktop app: Statistics | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz |
-| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-windows-x86_64.zip |
-| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz |
-| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-windows-x86_64.zip |
-| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz |
+| Desktop app: Statistics | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-windows-x86_64.zip |
+| Desktop app: Statistics | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz |
+| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-windows-x86_64.zip |
+| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz |
+| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-windows-x86_64.zip |
+| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz |
 
 ### Desktop app
 
-Statistics in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-statistics-1.4.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-statistics.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+Statistics in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-statistics-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-statistics.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-statistics-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-statistics-1.4.0-linux-x86_64.tar.gz
-./ai999x-statistics-1.4.0-linux-x86_64/ai999x-statistics
+tar xzf ai999x-statistics-1.5.0-linux-x86_64.tar.gz
+./ai999x-statistics-1.5.0-linux-x86_64/ai999x-statistics
 ```
 
-It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.4.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-1.4.0-linux-x86_64.tar.gz
-./ai999x-1.4.0-linux-x86_64/ai999x
+tar xzf ai999x-1.5.0-linux-x86_64.tar.gz
+./ai999x-1.5.0-linux-x86_64/ai999x
 ```
 
-### Command line — Linux
+### Command line: Linux
 
 The bundle holds one program per model; `statistics` is this one. The checksum line should print OK.
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share && tar xzf ai999x-cli-1.4.0-linux-x86_64.tar.gz -C ~/.local/share
-echo 'export PATH="$HOME/.local/share/ai999x-cli-1.4.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.5.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.5.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
 statistics --version
 ```
 
-### Command line — Windows (PowerShell)
+### Command line: Windows (PowerShell)
 
 The fourth line should print True.
 
 ```powershell
-$F = "ai999x-cli-1.4.0-windows-x86_64.zip"
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/$F" -OutFile $F
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS" -OutFile SHA256SUMS
+$F = "ai999x-cli-1.5.0-windows-x86_64.zip"
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/$F" -OutFile $F
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS" -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
 Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
-$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.4.0-windows-x86_64"; $env:Path += ";$D"
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.5.0-windows-x86_64"; $env:Path += ";$D"
 [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
 statistics --version
 ```
@@ -96,7 +96,7 @@ Prints the model, its version and that this is the Rust build.
 
 ```shell
 $ statistics --version
-statistics-ai999x 1.0.3 (Rust build, ax-engine 0.1.0)
+statistics-ai999x 1.5.0 (Rust build, ax-engine 1.5.0)
 ```
 
 ### 2.2 Ask in words
@@ -195,47 +195,7 @@ $ statistics solve t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 al
 {"outcome":"SOLVED","message":"","value":0.11738679514629244,"unit":"","solved_for":"p_value","si":[["mu0",5.0]],"values":[["t",1.88982236504614,""],["df",5,""],["p_value",0.11738679514629244,""],["mean",5.166666666666667,""],["standard_deviation",0.2160246899469286,""]],"target":"p_value","phrase":"(mean - mu0)/(s/sqrt(n))","assumptions":["random sample from a roughly normal population (or large n)","the alternative must be stated for a one-sided claim"],"name":"One-sample t-test","equation":"t statistic with n - 1 degrees of freedom; tail probability from the incomplete beta function"}
 ```
 
-### 2.8 Draw the figures
-
-The live figures for your own inputs, written as SVG files into the folder given with --out (here the current folder); open them in any browser. Without --out the SVG text comes back as JSON.
-
-```shell
-$ statistics figures t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided --out .
-[
-  {
-    "slug": "t-test-one-sample-density",
-    "title": "t on t density with 5 degrees of freedom",
-    "caption": "Drawn: the t density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.571 and above 2.571 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.89, p-value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-density.svg"
-  },
-  {
-    "slug": "t-test-one-sample-dots",
-    "title": "A sample against its hypothesised mean",
-    "caption": "The sample x = 5.1, 4.9, 5.3, 5.5, 5, 5.2 against the hypothesised mean μ₀ = 5: returned mean 5.167, standard deviation 0.216, t = 1.89 with 5 degrees of freedom, p-value 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-dots.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-1",
-    "title": "P-value as hypothesised mean varies",
-    "caption": "P-value as mu0 runs from 1.25 to 8.75, every other input as you entered it (41 solutions). Marked: your mu0 = 5 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-1.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-2",
-    "title": "P-value for each choice of alternative hypothesis: two-sided (default), gr...",
-    "caption": "P-value for every choice of alternative, every other input as you entered it (highlighted: your choice). two-sided: 0.1174; greater: 0.05869; less: 0.9413. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-2.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-3",
-    "title": "P-value as the data values (at least two), entry 1 varies",
-    "caption": "P-value as x[1] runs from 1.275 to 8.925, every other input as you entered it (29 solutions). Marked: your x[1] = 5.1 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-3.svg"
-  }
-]
-```
-
-### 2.9 Many questions at once
+### 2.8 Many questions at once
 
 One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | statistics batch
 
@@ -308,42 +268,6 @@ answers = [json.loads(line) for line in out.splitlines()]
 
 `statistics figures <capability> name=value ... --out DIR` draws the live figures for those inputs and writes each as an SVG file into DIR (an existing folder); without `--out` the SVG text comes back as JSON. The desktop app and the model page draw the same figures as soon as you press Compute.
 
-```shell
-$ statistics figures t_test_one_sample "x=[5.1, 4.9, 5.3, 5.5, 5, 5.2]" mu0=5.0 alternative=two-sided --out .
-[
-  {
-    "slug": "t-test-one-sample-density",
-    "title": "t on t density with 5 degrees of freedom",
-    "caption": "Drawn: the t density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.571 and above 2.571 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.89, p-value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-density.svg"
-  },
-  {
-    "slug": "t-test-one-sample-dots",
-    "title": "A sample against its hypothesised mean",
-    "caption": "The sample x = 5.1, 4.9, 5.3, 5.5, 5, 5.2 against the hypothesised mean μ₀ = 5: returned mean 5.167, standard deviation 0.216, t = 1.89 with 5 degrees of freedom, p-value 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-dots.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-1",
-    "title": "P-value as hypothesised mean varies",
-    "caption": "P-value as mu0 runs from 1.25 to 8.75, every other input as you entered it (41 solutions). Marked: your mu0 = 5 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-1.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-2",
-    "title": "P-value for each choice of alternative hypothesis: two-sided (default), gr...",
-    "caption": "P-value for every choice of alternative, every other input as you entered it (highlighted: your choice). two-sided: 0.1174; greater: 0.05869; less: 0.9413. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-2.svg"
-  },
-  {
-    "slug": "t-test-one-sample-live-3",
-    "title": "P-value as the data values (at least two), entry 1 varies",
-    "caption": "P-value as x[1] runs from 1.275 to 8.925, every other input as you entered it (29 solutions). Marked: your x[1] = 5.1 gives p_value = 0.1174. Your inputs: x = (list), mu0 = 5.0, alternative = two-sided.",
-    "file": ".\\t-test-one-sample-live-3.svg"
-  }
-]
-```
-
 ## 7. In a web page or Node.js: WebAssembly
 
 The same model is a WebAssembly module, `statistics_ai999x.wasm` (https://www.ai999x.com/compute/rust/statistics_ai999x.wasm), with a small loader, `ax-wasm.js` (https://www.ai999x.com/compute/rust/ax-wasm.js). It runs in a browser, a Web Worker or Node.js, with no server.
@@ -367,7 +291,7 @@ By topic. For each: what it does, what it needs and gives, when it applies, and 
 
 <a id="one_way_anova"></a>
 
-#### One-way ANOVA — `one_way_anova`
+#### One-way ANOVA: `one_way_anova`
 
 One-way analysis of variance for 2 to 5 independent groups: F statistic, p-value, sums of squares and eta squared.
 
@@ -377,20 +301,20 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `g1` | in | group 1 | — |
-| `g2` | in | group 2 | — |
-| `g3` | in | group 3 (optional) | — |
-| `g4` | in | group 4 (optional) | — |
-| `g5` | in | group 5 (optional) | — |
-| `f` | out | MS between / MS within | — |
-| `p_value` | out | upper-tail p-value | — |
-| `df_between` | out | k - 1 | — |
-| `df_within` | out | N - k | — |
-| `ss_between` | out | between-group sum of squares | — |
-| `ss_within` | out | within-group sum of squares | — |
-| `ms_between` | out | mean square between | — |
-| `ms_within` | out | mean square within | — |
-| `eta_squared` | out | SSB / SST | — |
+| `g1` | in | group 1 | - |
+| `g2` | in | group 2 | - |
+| `g3` | in | group 3 (optional) | - |
+| `g4` | in | group 4 (optional) | - |
+| `g5` | in | group 5 (optional) | - |
+| `f` | out | MS between / MS within | - |
+| `p_value` | out | upper-tail p-value | - |
+| `df_between` | out | k - 1 | - |
+| `df_within` | out | N - k | - |
+| `ss_between` | out | between-group sum of squares | - |
+| `ss_within` | out | within-group sum of squares | - |
+| `ms_between` | out | mean square between | - |
+| `ms_within` | out | mean square within | - |
+| `eta_squared` | out | SSB / SST | - |
 
 **Applies when:** independent groups; roughly normal populations with equal variances.
 
@@ -415,7 +339,7 @@ eta_squared = 0.8309541698
 
 <a id="fisher_exact_test"></a>
 
-#### Fisher's exact test (2 x 2) — `fisher_exact_test`
+#### Fisher's exact test (2 x 2): `fisher_exact_test`
 
 Fisher's exact test of association in a 2 x 2 table, with the sample odds ratio.
 
@@ -425,10 +349,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `table` | in | 2 x 2 table of counts [[a, b], [c, d]] | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `p_value` | out | exact p-value (two-sided: tables no more likely than the observed one) | — |
-| `odds_ratio` | out | ad/(bc); empty when b c = 0 | — |
+| `table` | in | 2 x 2 table of counts [[a, b], [c, d]] | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `p_value` | out | exact p-value (two-sided: tables no more likely than the observed one) | - |
+| `odds_ratio` | out | ad/(bc); empty when b c = 0 | - |
 
 **Applies when:** fixed margins (conditional test); whole-number counts.
 
@@ -445,7 +369,7 @@ odds_ratio = 20
 
 <a id="mcnemar_test"></a>
 
-#### McNemar's test for paired proportions — `mcnemar_test`
+#### McNemar's test for paired proportions: `mcnemar_test`
 
 McNemar's test for a 2 x 2 table of paired outcomes: continuity-corrected chi-square and the exact binomial p-value.
 
@@ -455,11 +379,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `table` | in | 2 x 2 table of paired counts [[both yes, yes/no], [no/yes, both no]] | — |
-| `chi_square` | out | (\|b - c\| - 1)^2 / (b + c) | — |
-| `p_value` | out | chi-square p-value (1 df) | — |
-| `exact_p_value` | out | exact binomial p-value | — |
-| `discordant` | out | b + c | — |
+| `table` | in | 2 x 2 table of paired counts [[both yes, yes/no], [no/yes, both no]] | - |
+| `chi_square` | out | (\|b - c\| - 1)^2 / (b + c) | - |
+| `p_value` | out | chi-square p-value (1 df) | - |
+| `exact_p_value` | out | exact binomial p-value | - |
+| `discordant` | out | b + c | - |
 
 **Applies when:** paired (matched) binary outcomes; b + c > 0.
 
@@ -479,7 +403,7 @@ discordant = 17
 
 <a id="ci_mean_known_sigma"></a>
 
-#### Confidence interval for a mean (sigma known, z-interval) — `ci_mean_known_sigma`
+#### Confidence interval for a mean (sigma known, z-interval), `ci_mean_known_sigma`
 
 The z confidence interval for a population mean when the population standard deviation sigma is known.
 
@@ -489,14 +413,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `xbar` | in | sample mean | — |
-| `sigma` | in | population standard deviation (known) | — |
-| `n` | in | sample size | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
-| `margin_of_error` | out | z sigma / sqrt(n) | — |
-| `critical_value` | out | z critical value | — |
+| `xbar` | in | sample mean | - |
+| `sigma` | in | population standard deviation (known) | - |
+| `n` | in | sample size | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
+| `margin_of_error` | out | z sigma / sqrt(n) | - |
+| `critical_value` | out | z critical value | - |
 
 **Applies when:** sigma known; normal population or large n; random sample.
 
@@ -517,7 +441,7 @@ critical_value = 1.959963985
 
 <a id="ci_mean_t"></a>
 
-#### Confidence interval for a mean from data (t-interval) — `ci_mean_t`
+#### Confidence interval for a mean from data (t-interval), `ci_mean_t`
 
 The t confidence interval for a population mean from sample data (sigma unknown).
 
@@ -527,14 +451,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
-| `mean` | out | sample mean | — |
-| `margin_of_error` | out | t s / sqrt(n) | — |
-| `critical_value` | out | t critical value | — |
-| `df` | out | n - 1 | — |
+| `x` | in | the data values (at least two) | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
+| `mean` | out | sample mean | - |
+| `margin_of_error` | out | t s / sqrt(n) | - |
+| `critical_value` | out | t critical value | - |
+| `df` | out | n - 1 | - |
 
 **Applies when:** random sample from a roughly normal population (or large n); sigma unknown.
 
@@ -555,7 +479,7 @@ mean = 14.33333333
 
 <a id="ci_mean_t_summary"></a>
 
-#### Confidence interval for a mean from summary statistics (t-interval) — `ci_mean_t_summary`
+#### Confidence interval for a mean from summary statistics (t-interval), `ci_mean_t_summary`
 
 The t confidence interval for a mean from the sample mean, sample standard deviation and n.
 
@@ -565,15 +489,15 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `xbar` | in | sample mean | — |
-| `s` | in | sample standard deviation | — |
-| `n` | in | sample size (>= 2) | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
-| `margin_of_error` | out | t s / sqrt(n) | — |
-| `critical_value` | out | t critical value | — |
-| `df` | out | n - 1 | — |
+| `xbar` | in | sample mean | - |
+| `s` | in | sample standard deviation | - |
+| `n` | in | sample size (>= 2) | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
+| `margin_of_error` | out | t s / sqrt(n) | - |
+| `critical_value` | out | t critical value | - |
+| `df` | out | n - 1 | - |
 
 **Applies when:** random sample from a roughly normal population (or large n); sigma unknown.
 
@@ -595,7 +519,7 @@ df = 15
 
 <a id="ci_proportion"></a>
 
-#### Confidence interval for a proportion (Wald) — `ci_proportion`
+#### Confidence interval for a proportion (Wald), `ci_proportion`
 
 The large-sample (Wald) confidence interval for a population proportion from x successes in n trials.
 
@@ -605,13 +529,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | number of successes | — |
-| `n` | in | sample size | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `proportion` | out | sample proportion x/n | — |
-| `lower` | out | lower limit (clipped at 0) | — |
-| `upper` | out | upper limit (clipped at 1) | — |
-| `margin_of_error` | out | z sqrt(p(1-p)/n) | — |
+| `x` | in | number of successes | - |
+| `n` | in | sample size | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `proportion` | out | sample proportion x/n | - |
+| `lower` | out | lower limit (clipped at 0) | - |
+| `upper` | out | upper limit (clipped at 1) | - |
+| `margin_of_error` | out | z sqrt(p(1-p)/n) | - |
 
 **Applies when:** 0 < x < n; large sample: n p and n(1 - p) at least about 10; limits clipped to [0, 1].
 
@@ -630,7 +554,7 @@ margin_of_error = 0.08765225406
 
 <a id="ci_variance"></a>
 
-#### Confidence interval for a variance and standard deviation — `ci_variance`
+#### Confidence interval for a variance and standard deviation, `ci_variance`
 
 The chi-square confidence interval for a population variance (and standard deviation) from sample data.
 
@@ -640,13 +564,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `variance` | out | sample variance | — |
-| `lower` | out | lower limit for the variance | — |
-| `upper` | out | upper limit for the variance | — |
-| `sd_lower` | out | lower limit for the standard deviation | — |
-| `sd_upper` | out | upper limit for the standard deviation | — |
+| `x` | in | the data values (at least two) | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `variance` | out | sample variance | - |
+| `lower` | out | lower limit for the variance | - |
+| `upper` | out | upper limit for the variance | - |
+| `sd_lower` | out | lower limit for the standard deviation | - |
+| `sd_upper` | out | upper limit for the standard deviation | - |
 
 **Applies when:** normal population (the interval is sensitive to non-normality).
 
@@ -666,7 +590,7 @@ sd_upper = 6.332622088
 
 <a id="ci_two_means"></a>
 
-#### Confidence interval for the difference of two means — `ci_two_means`
+#### Confidence interval for the difference of two means, `ci_two_means`
 
 The t confidence interval for mu1 - mu2 from two independent samples (Welch or pooled variances).
 
@@ -676,15 +600,15 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `variance` | in | welch (unequal variances) or pooled (equal variances) | — |
-| `difference` | out | mean(x) - mean(y) | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
-| `df` | out | degrees of freedom (Welch-Satterthwaite or n1 + n2 - 2) | — |
-| `standard_error` | out | standard error of the difference | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `variance` | in | welch (unequal variances) or pooled (equal variances) | - |
+| `difference` | out | mean(x) - mean(y) | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
+| `df` | out | degrees of freedom (Welch-Satterthwaite or n1 + n2 - 2) | - |
+| `standard_error` | out | standard error of the difference | - |
 
 **Applies when:** independent random samples; roughly normal populations or large samples.
 
@@ -705,7 +629,7 @@ standard_error = 1.496662955
 
 <a id="wilson_interval"></a>
 
-#### Wilson score interval for a proportion — `wilson_interval`
+#### Wilson score interval for a proportion: `wilson_interval`
 
 The Wilson score confidence interval for a proportion (good coverage for small n and for p near 0 or 1).
 
@@ -715,13 +639,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | number of successes | — |
-| `n` | in | sample size | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `proportion` | out | x/n | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
-| `center` | out | interval centre | — |
+| `x` | in | number of successes | - |
+| `n` | in | sample size | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `proportion` | out | x/n | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
+| `center` | out | interval centre | - |
 
 **Applies when:** 0 <= x <= n; independent trials.
 
@@ -742,7 +666,7 @@ center = 0.2063938053
 
 <a id="chi_square_critical_value"></a>
 
-#### Critical value of chi-square — `chi_square_critical_value`
+#### Critical value of chi-square: `chi_square_critical_value`
 
 The right-tail chi-square critical value (P(X > c) = alpha) for given degrees of freedom, and the left-tail value (P(X < c) = alpha).
 
@@ -752,10 +676,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `df` | in | degrees of freedom (> 0) | — |
-| `alpha` | in | tail area | — |
-| `critical_value` | out | right-tail critical value | — |
-| `left_critical_value` | out | left-tail critical value | — |
+| `df` | in | degrees of freedom (> 0) | - |
+| `alpha` | in | tail area | - |
+| `critical_value` | out | right-tail critical value | - |
+| `left_critical_value` | out | left-tail critical value | - |
 
 **Applies when:** df > 0; 0 < alpha < 1.
 
@@ -773,7 +697,7 @@ left_critical_value = 0.7107230214
 
 <a id="f_critical_value"></a>
 
-#### Critical value of F — `f_critical_value`
+#### Critical value of F: `f_critical_value`
 
 The right-tail F critical value (P(F > c) = alpha) for numerator and denominator degrees of freedom.
 
@@ -783,10 +707,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `df1` | in | numerator degrees of freedom | — |
-| `df2` | in | denominator degrees of freedom | — |
-| `alpha` | in | tail area | — |
-| `critical_value` | out | right-tail F critical value | — |
+| `df1` | in | numerator degrees of freedom | - |
+| `df2` | in | denominator degrees of freedom | - |
+| `alpha` | in | tail area | - |
+| `critical_value` | out | right-tail F critical value | - |
 
 **Applies when:** df1, df2 > 0; 0 < alpha < 1.
 
@@ -804,7 +728,7 @@ critical_value = 3.098391212
 
 <a id="t_critical_value"></a>
 
-#### Critical value of Student's t — `t_critical_value`
+#### Critical value of Student's t: `t_critical_value`
 
 The Student t critical value for given degrees of freedom and significance (or confidence) level.
 
@@ -814,10 +738,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `df` | in | degrees of freedom (> 0) | — |
-| `alpha` | in | significance level (1 - confidence) | — |
-| `tails` | in | two-tailed, right-tailed or left-tailed | — |
-| `critical_value` | out | t critical value (negative for a left-tailed test) | — |
+| `df` | in | degrees of freedom (> 0) | - |
+| `alpha` | in | significance level (1 - confidence) | - |
+| `tails` | in | two-tailed, right-tailed or left-tailed | - |
+| `critical_value` | out | t critical value (negative for a left-tailed test) | - |
 
 **Applies when:** df > 0; 0 < alpha < 1; a confidence level is read as two-tailed.
 
@@ -835,7 +759,7 @@ critical_value = 2.228138852
 
 <a id="z_critical_value"></a>
 
-#### Critical value of z — `z_critical_value`
+#### Critical value of z: `z_critical_value`
 
 The standard normal critical value for a significance level (or confidence level), two-tailed or one-tailed.
 
@@ -845,9 +769,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `alpha` | in | significance level (1 - confidence) | — |
-| `tails` | in | two-tailed, right-tailed or left-tailed | — |
-| `critical_value` | out | z critical value (negative for a left-tailed test) | — |
+| `alpha` | in | significance level (1 - confidence) | - |
+| `tails` | in | two-tailed, right-tailed or left-tailed | - |
+| `critical_value` | out | z critical value (negative for a left-tailed test) | - |
 
 **Applies when:** 0 < alpha < 1; a confidence level is read as two-tailed.
 
@@ -866,7 +790,7 @@ critical_value = 1.959963985
 
 <a id="mean"></a>
 
-#### Arithmetic mean — `mean`
+#### Arithmetic mean: `mean`
 
 The arithmetic mean (average) of a list of numbers.
 
@@ -876,10 +800,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `mean` | out | arithmetic mean | — |
-| `n` | out | number of values | — |
-| `sum` | out | sum of the values | — |
+| `x` | in | the data values | - |
+| `mean` | out | arithmetic mean | - |
+| `n` | out | number of values | - |
+| `sum` | out | sum of the values | - |
 
 ```shell
 $ statistics solve mean "x=[2, 4, 9]"
@@ -893,7 +817,7 @@ sum = 15
 
 <a id="coefficient_of_variation"></a>
 
-#### Coefficient of variation — `coefficient_of_variation`
+#### Coefficient of variation: `coefficient_of_variation`
 
 The coefficient of variation (sample standard deviation divided by the mean), as a ratio and a percentage.
 
@@ -903,11 +827,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `cv` | out | s / mean | — |
-| `cv_percent` | out | 100 s / mean | — |
-| `mean` | out | mean | — |
-| `standard_deviation` | out | sample standard deviation | — |
+| `x` | in | the data values (at least two) | - |
+| `cv` | out | s / mean | - |
+| `cv_percent` | out | 100 s / mean | - |
+| `mean` | out | mean | - |
+| `standard_deviation` | out | sample standard deviation | - |
 
 **Applies when:** positive mean; sample standard deviation (n - 1).
 
@@ -925,7 +849,7 @@ standard_deviation = 3.16227766
 
 <a id="five_number_summary"></a>
 
-#### Five-number summary and interquartile range — `five_number_summary`
+#### Five-number summary and interquartile range, `five_number_summary`
 
 Minimum, first quartile, median, third quartile, maximum and the interquartile range of a data set.
 
@@ -935,14 +859,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `method` | in | quantile method: linear (type 7, spreadsheet/numpy default) or weibull (type 6, p(n+1)) (optional) | — |
-| `minimum` | out | smallest value | — |
-| `q1` | out | first quartile | — |
-| `median` | out | median | — |
-| `q3` | out | third quartile | — |
-| `maximum` | out | largest value | — |
-| `iqr` | out | interquartile range Q3 - Q1 | — |
+| `x` | in | the data values (at least two) | - |
+| `method` | in | quantile method: linear (type 7, spreadsheet/numpy default) or weibull (type 6, p(n+1)) (optional) | - |
+| `minimum` | out | smallest value | - |
+| `q1` | out | first quartile | - |
+| `median` | out | median | - |
+| `q3` | out | third quartile | - |
+| `maximum` | out | largest value | - |
+| `iqr` | out | interquartile range Q3 - Q1 | - |
 
 **Applies when:** quartiles by linear interpolation between order statistics (Hyndman-Fan type 7, as in spreadsheets and numpy) unless method = weibull (type 6, as in Minitab and SPSS); textbooks that take medians of the halves can differ.
 
@@ -962,7 +886,7 @@ iqr = 7
 
 <a id="geometric_mean"></a>
 
-#### Geometric mean — `geometric_mean`
+#### Geometric mean: `geometric_mean`
 
 The geometric mean of positive numbers (average growth factors, ratios).
 
@@ -972,8 +896,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | positive values | — |
-| `geometric_mean` | out | n-th root of the product | — |
+| `x` | in | positive values | - |
+| `geometric_mean` | out | n-th root of the product | - |
 
 **Applies when:** all values positive.
 
@@ -988,7 +912,7 @@ geometric_mean = 4
 
 <a id="harmonic_mean"></a>
 
-#### Harmonic mean — `harmonic_mean`
+#### Harmonic mean: `harmonic_mean`
 
 The harmonic mean of positive numbers (average speeds over equal distances, average rates).
 
@@ -998,8 +922,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | positive values | — |
-| `harmonic_mean` | out | n divided by the sum of reciprocals | — |
+| `x` | in | positive values | - |
+| `harmonic_mean` | out | n divided by the sum of reciprocals | - |
 
 **Applies when:** all values positive.
 
@@ -1014,7 +938,7 @@ harmonic_mean = 48
 
 <a id="mean_absolute_deviation"></a>
 
-#### Mean absolute deviation — `mean_absolute_deviation`
+#### Mean absolute deviation: `mean_absolute_deviation`
 
 The mean absolute deviation about the mean of a list of numbers.
 
@@ -1024,9 +948,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `mean_absolute_deviation` | out | average distance from the mean | — |
-| `mean` | out | mean | — |
+| `x` | in | the data values | - |
+| `mean_absolute_deviation` | out | average distance from the mean | - |
+| `mean` | out | mean | - |
 
 ```shell
 $ statistics solve mean_absolute_deviation "x=[2, 4, 6, 8]"
@@ -1039,7 +963,7 @@ mean = 5
 
 <a id="frequency_table_statistics"></a>
 
-#### Mean and standard deviation of a frequency table — `frequency_table_statistics`
+#### Mean and standard deviation of a frequency table, `frequency_table_statistics`
 
 The mean and the sample and population standard deviations of data given as values with frequencies.
 
@@ -1049,12 +973,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the distinct values | — |
-| `f` | in | their frequencies (whole numbers) | — |
-| `mean` | out | sum(f x) / n | — |
-| `sample_standard_deviation` | out | divisor n - 1 | — |
-| `population_standard_deviation` | out | divisor n | — |
-| `n` | out | total frequency | — |
+| `x` | in | the distinct values | - |
+| `f` | in | their frequencies (whole numbers) | - |
+| `mean` | out | sum(f x) / n | - |
+| `sample_standard_deviation` | out | divisor n - 1 | - |
+| `population_standard_deviation` | out | divisor n | - |
+| `n` | out | total frequency | - |
 
 **Applies when:** frequencies are whole numbers; total frequency >= 2.
 
@@ -1072,7 +996,7 @@ n = 20
 
 <a id="median"></a>
 
-#### Median — `median`
+#### Median: `median`
 
 The median (middle value) of a list of numbers; the mean of the two middle values when n is even.
 
@@ -1082,9 +1006,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `median` | out | median | — |
-| `n` | out | number of values | — |
+| `x` | in | the data values | - |
+| `median` | out | median | - |
+| `n` | out | number of values | - |
 
 ```shell
 $ statistics solve median "x=[7, 1, 5, 3, 9]"
@@ -1097,7 +1021,7 @@ n = 5
 
 <a id="median_absolute_deviation"></a>
 
-#### Median absolute deviation — `median_absolute_deviation`
+#### Median absolute deviation: `median_absolute_deviation`
 
 The median absolute deviation (MAD) about the median, a robust measure of spread (unscaled).
 
@@ -1107,9 +1031,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `median_absolute_deviation` | out | median of \|x - median\| | — |
-| `median` | out | median | — |
+| `x` | in | the data values | - |
+| `median_absolute_deviation` | out | median of \|x - median\| | - |
+| `median` | out | median | - |
 
 **Applies when:** unscaled (multiply by 1.4826 to estimate a normal sigma).
 
@@ -1125,7 +1049,7 @@ median = 2
 
 <a id="mode"></a>
 
-#### Mode — `mode`
+#### Mode: `mode`
 
 The mode(s) of a list of numbers: every value that occurs most often (no mode when all values occur equally often).
 
@@ -1135,10 +1059,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `modes` | out | the most frequent value(s), ascending; empty if there is no mode | — |
-| `frequency` | out | how often the mode occurs | — |
-| `has_mode` | out | yes or no | — |
+| `x` | in | the data values | - |
+| `modes` | out | the most frequent value(s), ascending; empty if there is no mode | - |
+| `frequency` | out | how often the mode occurs | - |
+| `has_mode` | out | yes or no | - |
 
 **Applies when:** no mode is reported when every distinct value occurs equally often.
 
@@ -1155,7 +1079,7 @@ has_mode = yes
 
 <a id="iqr_outliers"></a>
 
-#### Outliers by the 1.5 IQR rule — `iqr_outliers`
+#### Outliers by the 1.5 IQR rule: `iqr_outliers`
 
 The lower and upper fences Q1 - 1.5 IQR and Q3 + 1.5 IQR and the values outside them.
 
@@ -1165,13 +1089,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least four) | — |
-| `lower_fence` | out | Q1 - 1.5 IQR | — |
-| `upper_fence` | out | Q3 + 1.5 IQR | — |
-| `outliers` | out | values outside the fences | — |
-| `q1` | out | first quartile | — |
-| `q3` | out | third quartile | — |
-| `iqr` | out | interquartile range | — |
+| `x` | in | the data values (at least four) | - |
+| `lower_fence` | out | Q1 - 1.5 IQR | - |
+| `upper_fence` | out | Q3 + 1.5 IQR | - |
+| `outliers` | out | values outside the fences | - |
+| `q1` | out | first quartile | - |
+| `q3` | out | third quartile | - |
+| `iqr` | out | interquartile range | - |
 
 **Applies when:** quartiles by linear interpolation (type 7).
 
@@ -1191,7 +1115,7 @@ iqr = 1.75
 
 <a id="percentile"></a>
 
-#### Percentile of a data set — `percentile`
+#### Percentile of a data set: `percentile`
 
 The p-th percentile of a data set (linear interpolation, or the weibull/p(n+1) method).
 
@@ -1201,10 +1125,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `p` | in | the percentile, 0 to 100 | — |
-| `method` | in | quantile method: linear (type 7, spreadsheet/numpy default) or weibull (type 6, p(n+1)) (optional) | — |
-| `percentile` | out | the p-th percentile | — |
+| `x` | in | the data values (at least two) | - |
+| `p` | in | the percentile, 0 to 100 | - |
+| `method` | in | quantile method: linear (type 7, spreadsheet/numpy default) or weibull (type 6, p(n+1)) (optional) | - |
+| `percentile` | out | the p-th percentile | - |
 
 **Applies when:** 0 <= p <= 100; linear interpolation (type 7) unless method = weibull (type 6).
 
@@ -1220,7 +1144,7 @@ percentile = 46
 
 <a id="population_standard_deviation"></a>
 
-#### Population standard deviation — `population_standard_deviation`
+#### Population standard deviation: `population_standard_deviation`
 
 The population standard deviation of a list of numbers (divisor n).
 
@@ -1230,11 +1154,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `standard_deviation` | out | population standard deviation | — |
-| `mean` | out | arithmetic mean | — |
-| `n` | out | number of values | — |
-| `variance` | out | the companion measure | — |
+| `x` | in | the data values | - |
+| `standard_deviation` | out | population standard deviation | - |
+| `mean` | out | arithmetic mean | - |
+| `n` | out | number of values | - |
+| `variance` | out | the companion measure | - |
 
 **Applies when:** the data are the whole population (divisor n).
 
@@ -1252,7 +1176,7 @@ variance = 4
 
 <a id="population_variance"></a>
 
-#### Population variance — `population_variance`
+#### Population variance: `population_variance`
 
 The population variance of a list of numbers (divisor n).
 
@@ -1262,11 +1186,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `variance` | out | population variance | — |
-| `mean` | out | arithmetic mean | — |
-| `n` | out | number of values | — |
-| `standard_deviation` | out | the companion measure | — |
+| `x` | in | the data values | - |
+| `variance` | out | population variance | - |
+| `mean` | out | arithmetic mean | - |
+| `n` | out | number of values | - |
+| `standard_deviation` | out | the companion measure | - |
 
 **Applies when:** the data are the whole population (divisor n).
 
@@ -1284,7 +1208,7 @@ standard_deviation = 2
 
 <a id="range"></a>
 
-#### Range — `range`
+#### Range: `range`
 
 The range (largest minus smallest value) of a list of numbers.
 
@@ -1294,10 +1218,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `range` | out | maximum minus minimum | — |
-| `minimum` | out | smallest value | — |
-| `maximum` | out | largest value | — |
+| `x` | in | the data values | - |
+| `range` | out | maximum minus minimum | - |
+| `minimum` | out | smallest value | - |
+| `maximum` | out | largest value | - |
 
 ```shell
 $ statistics solve range "x=[12, 4, 19, 7]"
@@ -1311,7 +1235,7 @@ maximum = 19
 
 <a id="sample_standard_deviation"></a>
 
-#### Sample standard deviation — `sample_standard_deviation`
+#### Sample standard deviation: `sample_standard_deviation`
 
 The sample standard deviation of a list of numbers (divisor n - 1).
 
@@ -1321,11 +1245,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `standard_deviation` | out | sample standard deviation | — |
-| `mean` | out | arithmetic mean | — |
-| `n` | out | number of values | — |
-| `variance` | out | the companion measure | — |
+| `x` | in | the data values (at least two) | - |
+| `standard_deviation` | out | sample standard deviation | - |
+| `mean` | out | arithmetic mean | - |
+| `n` | out | number of values | - |
+| `variance` | out | the companion measure | - |
 
 **Applies when:** the data are a sample (divisor n - 1, Bessel's correction); at least two values.
 
@@ -1343,7 +1267,7 @@ variance = 4.571428571
 
 <a id="sample_variance"></a>
 
-#### Sample variance — `sample_variance`
+#### Sample variance: `sample_variance`
 
 The sample variance of a list of numbers (divisor n - 1).
 
@@ -1353,11 +1277,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `variance` | out | sample variance | — |
-| `mean` | out | arithmetic mean | — |
-| `n` | out | number of values | — |
-| `standard_deviation` | out | the companion measure | — |
+| `x` | in | the data values (at least two) | - |
+| `variance` | out | sample variance | - |
+| `mean` | out | arithmetic mean | - |
+| `n` | out | number of values | - |
+| `standard_deviation` | out | the companion measure | - |
 
 **Applies when:** the data are a sample (divisor n - 1, Bessel's correction); at least two values.
 
@@ -1375,7 +1299,7 @@ standard_deviation = 2.138089935
 
 <a id="skewness_kurtosis"></a>
 
-#### Skewness and kurtosis — `skewness_kurtosis`
+#### Skewness and kurtosis: `skewness_kurtosis`
 
 Sample skewness and excess kurtosis: the adjusted Fisher-Pearson estimates (G1, G2, as in spreadsheets and most software) and the moment estimates (g1, g2).
 
@@ -1385,11 +1309,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least four) | — |
-| `skewness` | out | adjusted skewness G1 | — |
-| `excess_kurtosis` | out | adjusted excess kurtosis G2 | — |
-| `skewness_biased` | out | moment skewness g1 | — |
-| `excess_kurtosis_biased` | out | moment excess kurtosis g2 | — |
+| `x` | in | the data values (at least four) | - |
+| `skewness` | out | adjusted skewness G1 | - |
+| `excess_kurtosis` | out | adjusted excess kurtosis G2 | - |
+| `skewness_biased` | out | moment skewness g1 | - |
+| `excess_kurtosis_biased` | out | moment excess kurtosis g2 | - |
 
 **Applies when:** at least four values, not all equal.
 
@@ -1407,7 +1331,7 @@ excess_kurtosis_biased = -0.1783067746
 
 <a id="standard_error_of_mean"></a>
 
-#### Standard error of the mean — `standard_error_of_mean`
+#### Standard error of the mean: `standard_error_of_mean`
 
 The standard error of the mean of a sample: s / sqrt(n).
 
@@ -1417,10 +1341,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `standard_error` | out | s / sqrt(n) | — |
-| `standard_deviation` | out | sample standard deviation | — |
-| `n` | out | sample size | — |
+| `x` | in | the data values (at least two) | - |
+| `standard_error` | out | s / sqrt(n) | - |
+| `standard_deviation` | out | sample standard deviation | - |
+| `n` | out | sample size | - |
 
 ```shell
 $ statistics solve standard_error_of_mean "x=[12, 15, 11, 18, 14]"
@@ -1434,7 +1358,7 @@ n = 5
 
 <a id="trimmed_mean"></a>
 
-#### Trimmed mean — `trimmed_mean`
+#### Trimmed mean: `trimmed_mean`
 
 The trimmed mean: the mean after removing the given proportion of values from EACH end.
 
@@ -1444,10 +1368,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values | — |
-| `proportion` | in | proportion cut from each end (0.1 for a 10% trimmed mean) | — |
-| `trimmed_mean` | out | mean of the remaining values | — |
-| `removed_each_end` | out | values removed at each end | — |
+| `x` | in | the data values | - |
+| `proportion` | in | proportion cut from each end (0.1 for a 10% trimmed mean) | - |
+| `trimmed_mean` | out | mean of the remaining values | - |
+| `removed_each_end` | out | values removed at each end | - |
 
 **Applies when:** 0 <= proportion < 0.5; floor(proportion * n) values removed from each end.
 
@@ -1464,7 +1388,7 @@ removed_each_end = 1
 
 <a id="weighted_mean"></a>
 
-#### Weighted mean — `weighted_mean`
+#### Weighted mean: `weighted_mean`
 
 The weighted mean of values x with weights w (grade-point averages, portfolio averages).
 
@@ -1474,10 +1398,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the values | — |
-| `w` | in | the weights (non-negative, same length) | — |
-| `weighted_mean` | out | sum(w x) / sum(w) | — |
-| `total_weight` | out | sum of the weights | — |
+| `x` | in | the values | - |
+| `w` | in | the weights (non-negative, same length) | - |
+| `weighted_mean` | out | sum(w x) / sum(w) | - |
+| `total_weight` | out | sum of the weights | - |
 
 **Applies when:** same number of values and weights; weights >= 0 with a positive sum.
 
@@ -1493,7 +1417,7 @@ total_weight = 6
 
 <a id="z_score"></a>
 
-#### z-score of a value — `z_score`
+#### z-score of a value, `z_score`
 
 The z-score (standard score) of a value x in a distribution with mean mu and standard deviation sigma.
 
@@ -1503,10 +1427,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value | — |
-| `mu` | in | the mean | — |
-| `sigma` | in | the standard deviation (> 0) | — |
-| `z` | out | number of standard deviations x lies above (+) or below (-) the mean | — |
+| `x` | in | the value | - |
+| `mu` | in | the mean | - |
+| `sigma` | in | the standard deviation (> 0) | - |
+| `z` | out | number of standard deviations x lies above (+) or below (-) the mean | - |
 
 **Applies when:** sigma > 0.
 
@@ -1526,7 +1450,7 @@ z = 1.5
 
 <a id="cohens_d"></a>
 
-#### Cohen's d and Hedges' g — `cohens_d`
+#### Cohen's d and Hedges' g: `cohens_d`
 
 The standardized mean difference of two independent samples: Cohen's d (pooled SD) and Hedges' g (bias-corrected).
 
@@ -1536,11 +1460,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `d` | out | (mean x - mean y) / pooled SD | — |
-| `hedges_g` | out | d (1 - 3/(4(n1 + n2) - 9)) | — |
-| `pooled_sd` | out | pooled standard deviation | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `d` | out | (mean x - mean y) / pooled SD | - |
+| `hedges_g` | out | d (1 - 3/(4(n1 + n2) - 9)) | - |
+| `pooled_sd` | out | pooled standard deviation | - |
 
 **Applies when:** independent samples.
 
@@ -1559,7 +1483,7 @@ pooled_sd = 2.366431913
 
 <a id="factorial_2x2_effects"></a>
 
-#### 2^2 factorial design: main effects and interaction — `factorial_2x2_effects`
+#### 2^2 factorial design: main effects and interaction, `factorial_2x2_effects`
 
 Effects of a two-level 4-run factorial experiment from one response per run in standard (Yates) order ((1), a, b, ab).
 
@@ -1569,11 +1493,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `y` | in | 4 responses in standard order | — |
-| `grand_mean` | out | average response | — |
-| `A` | out | effect A | — |
-| `B` | out | effect B | — |
-| `AB` | out | effect AB | — |
+| `y` | in | 4 responses in standard order | - |
+| `grand_mean` | out | average response | - |
+| `A` | out | effect A | - |
+| `B` | out | effect B | - |
+| `AB` | out | effect AB | - |
 
 **Applies when:** responses in standard order; one response (or cell mean) per run.
 
@@ -1591,7 +1515,7 @@ AB = 2.5
 
 <a id="factorial_2x2x2_effects"></a>
 
-#### 2^3 factorial design: main effects and interactions — `factorial_2x2x2_effects`
+#### 2^3 factorial design: main effects and interactions, `factorial_2x2x2_effects`
 
 Effects of a two-level 8-run factorial experiment from one response per run in standard (Yates) order ((1), a, b, ab, c, ac, bc, abc).
 
@@ -1601,15 +1525,15 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `y` | in | 8 responses in standard order | — |
-| `grand_mean` | out | average response | — |
-| `A` | out | effect A | — |
-| `B` | out | effect B | — |
-| `C` | out | effect C | — |
-| `AB` | out | effect AB | — |
-| `AC` | out | effect AC | — |
-| `BC` | out | effect BC | — |
-| `ABC` | out | effect ABC | — |
+| `y` | in | 8 responses in standard order | - |
+| `grand_mean` | out | average response | - |
+| `A` | out | effect A | - |
+| `B` | out | effect B | - |
+| `C` | out | effect C | - |
+| `AB` | out | effect AB | - |
+| `AC` | out | effect AC | - |
+| `BC` | out | effect BC | - |
+| `ABC` | out | effect ABC | - |
 
 **Applies when:** responses in standard order; one response (or cell mean) per run.
 
@@ -1631,7 +1555,7 @@ ABC = -6.75
 
 <a id="cronbach_alpha"></a>
 
-#### Cronbach's alpha (internal consistency) — `cronbach_alpha`
+#### Cronbach's alpha (internal consistency): `cronbach_alpha`
 
 Cronbach's alpha for a questionnaire or test: rows are respondents, columns are items.
 
@@ -1641,10 +1565,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | scores: one row per respondent, one column per item | — |
-| `alpha` | out | k/(k-1) (1 - sum of item variances / variance of totals) | — |
-| `items` | out | k | — |
-| `respondents` | out | n | — |
+| `data` | in | scores: one row per respondent, one column per item | - |
+| `alpha` | out | k/(k-1) (1 - sum of item variances / variance of totals) | - |
+| `items` | out | k | - |
+| `respondents` | out | n | - |
 
 **Applies when:** at least 2 items and 2 respondents.
 
@@ -1661,7 +1585,7 @@ respondents = 5
 
 <a id="randomized_block_anova"></a>
 
-#### Randomized complete block design (two-way ANOVA without replication) — `randomized_block_anova`
+#### Randomized complete block design (two-way ANOVA without replication), `randomized_block_anova`
 
 Two-way ANOVA for a randomized complete block design: rows are blocks, columns are treatments, one observation per cell; F-tests for treatments and blocks.
 
@@ -1671,17 +1595,17 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | table with one row per block and one column per treatment | — |
-| `f_treatment` | out | F for treatments | — |
-| `p_treatment` | out | p-value for treatments | — |
-| `f_block` | out | F for blocks | — |
-| `p_block` | out | p-value for blocks | — |
-| `ss_treatment` | out | treatment sum of squares | — |
-| `ss_block` | out | block sum of squares | — |
-| `ss_error` | out | error sum of squares | — |
-| `df_treatment` | out | t - 1 | — |
-| `df_block` | out | b - 1 | — |
-| `df_error` | out | (t - 1)(b - 1) | — |
+| `data` | in | table with one row per block and one column per treatment | - |
+| `f_treatment` | out | F for treatments | - |
+| `p_treatment` | out | p-value for treatments | - |
+| `f_block` | out | F for blocks | - |
+| `p_block` | out | p-value for blocks | - |
+| `ss_treatment` | out | treatment sum of squares | - |
+| `ss_block` | out | block sum of squares | - |
+| `ss_error` | out | error sum of squares | - |
+| `df_treatment` | out | t - 1 | - |
+| `df_block` | out | b - 1 | - |
+| `df_error` | out | (t - 1)(b - 1) | - |
 
 **Applies when:** one observation per block and treatment; additive model (no block x treatment interaction); normal errors with constant variance.
 
@@ -1707,7 +1631,7 @@ df_error = 6
 
 <a id="bartlett_test"></a>
 
-#### Bartlett's test for equal variances — `bartlett_test`
+#### Bartlett's test for equal variances: `bartlett_test`
 
 Bartlett's test of equal variances across 2 to 5 groups (normal populations).
 
@@ -1717,14 +1641,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `g1` | in | group 1 | — |
-| `g2` | in | group 2 | — |
-| `g3` | in | group 3 (optional) | — |
-| `g4` | in | group 4 (optional) | — |
-| `g5` | in | group 5 (optional) | — |
-| `statistic` | out | Bartlett's chi-square statistic | — |
-| `df` | out | k - 1 | — |
-| `p_value` | out | p-value | — |
+| `g1` | in | group 1 | - |
+| `g2` | in | group 2 | - |
+| `g3` | in | group 3 (optional) | - |
+| `g4` | in | group 4 (optional) | - |
+| `g5` | in | group 5 (optional) | - |
+| `statistic` | out | Bartlett's chi-square statistic | - |
+| `df` | out | k - 1 | - |
+| `p_value` | out | p-value | - |
 
 **Applies when:** normal populations (Bartlett's test is sensitive to non-normality); at least 2 values per group.
 
@@ -1741,7 +1665,7 @@ p_value = 0.01344554065
 
 <a id="chi_square_goodness_of_fit"></a>
 
-#### Chi-square goodness-of-fit test — `chi_square_goodness_of_fit`
+#### Chi-square goodness-of-fit test: `chi_square_goodness_of_fit`
 
 The chi-square goodness-of-fit test of observed counts against expected proportions (equal if omitted).
 
@@ -1751,12 +1675,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `observed` | in | observed counts per category | — |
-| `proportions` | in | expected proportions or relative weights per category (equal if omitted) (optional) | — |
-| `chi_square` | out | sum (O - E)^2 / E | — |
-| `df` | out | categories - 1 | — |
-| `p_value` | out | upper-tail p-value | — |
-| `expected` | out | expected counts | — |
+| `observed` | in | observed counts per category | - |
+| `proportions` | in | expected proportions or relative weights per category (equal if omitted) (optional) | - |
+| `chi_square` | out | sum (O - E)^2 / E | - |
+| `df` | out | categories - 1 | - |
+| `p_value` | out | upper-tail p-value | - |
+| `expected` | out | expected counts | - |
 
 **Applies when:** independent observations; expected counts at least about 5; proportions are rescaled to sum to 1.
 
@@ -1774,7 +1698,7 @@ expected = [20.0,20.0,20.0,20.0,20.0]
 
 <a id="chi_square_variance_test"></a>
 
-#### Chi-square test for a variance — `chi_square_variance_test`
+#### Chi-square test for a variance: `chi_square_variance_test`
 
 The chi-square test of H0: sigma = sigma0 for a normal population from sample data.
 
@@ -1784,13 +1708,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `sigma0` | in | hypothesised standard deviation | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `chi_square` | out | (n - 1) s^2 / sigma0^2 | — |
-| `df` | out | n - 1 | — |
-| `p_value` | out | p-value | — |
-| `sample_variance` | out | s^2 | — |
+| `x` | in | the data values (at least two) | - |
+| `sigma0` | in | hypothesised standard deviation | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `chi_square` | out | (n - 1) s^2 / sigma0^2 | - |
+| `df` | out | n - 1 | - |
+| `p_value` | out | p-value | - |
+| `sample_variance` | out | s^2 | - |
 
 **Applies when:** normal population (the test is sensitive to non-normality).
 
@@ -1810,7 +1734,7 @@ sample_variance = 0.12
 
 <a id="chi_square_independence"></a>
 
-#### Chi-square test of independence — `chi_square_independence`
+#### Chi-square test of independence: `chi_square_independence`
 
 The chi-square test of independence (or homogeneity) for an r x c contingency table of counts.
 
@@ -1820,11 +1744,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `table` | in | contingency table of counts (rows x columns) | — |
-| `chi_square` | out | Pearson chi-square statistic | — |
-| `df` | out | (r - 1)(c - 1) | — |
-| `p_value` | out | upper-tail p-value | — |
-| `expected` | out | expected counts under independence | — |
+| `table` | in | contingency table of counts (rows x columns) | - |
+| `chi_square` | out | Pearson chi-square statistic | - |
+| `df` | out | (r - 1)(c - 1) | - |
+| `p_value` | out | upper-tail p-value | - |
+| `expected` | out | expected counts under independence | - |
 
 **Applies when:** independent observations; expected counts at least about 5; no continuity correction.
 
@@ -1842,7 +1766,7 @@ expected = [[22.5,27.5],[22.5,27.5]]
 
 <a id="f_test_variances"></a>
 
-#### F-test for equality of two variances — `f_test_variances`
+#### F-test for equality of two variances: `f_test_variances`
 
 The F-test of H0: sigma1^2 = sigma2^2 from two independent normal samples.
 
@@ -1852,13 +1776,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `f` | out | s1^2 / s2^2 | — |
-| `df1` | out | n1 - 1 | — |
-| `df2` | out | n2 - 1 | — |
-| `p_value` | out | p-value | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `f` | out | s1^2 / s2^2 | - |
+| `df1` | out | n1 - 1 | - |
+| `df2` | out | n2 - 1 | - |
+| `p_value` | out | p-value | - |
 
 **Applies when:** independent samples from normal populations (sensitive to non-normality).
 
@@ -1877,7 +1801,7 @@ p_value = 0.04685703619
 
 <a id="levene_test"></a>
 
-#### Levene's test for equal variances — `levene_test`
+#### Levene's test for equal variances: `levene_test`
 
 Levene's test of equal variances across 2 to 5 groups, centred at the median (Brown-Forsythe) or the mean.
 
@@ -1887,16 +1811,16 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `g1` | in | group 1 | — |
-| `g2` | in | group 2 | — |
-| `g3` | in | group 3 (optional) | — |
-| `g4` | in | group 4 (optional) | — |
-| `g5` | in | group 5 (optional) | — |
-| `center` | in | median (Brown-Forsythe) or mean (Levene's original) | — |
-| `w` | out | Levene statistic | — |
-| `p_value` | out | p-value | — |
-| `df1` | out | k - 1 | — |
-| `df2` | out | N - k | — |
+| `g1` | in | group 1 | - |
+| `g2` | in | group 2 | - |
+| `g3` | in | group 3 (optional) | - |
+| `g4` | in | group 4 (optional) | - |
+| `g5` | in | group 5 (optional) | - |
+| `center` | in | median (Brown-Forsythe) or mean (Levene's original) | - |
+| `w` | out | Levene statistic | - |
+| `p_value` | out | p-value | - |
+| `df1` | out | k - 1 | - |
+| `df2` | out | N - k | - |
 
 **Applies when:** independent groups, at least 2 values each.
 
@@ -1915,7 +1839,7 @@ df2 = 12
 
 <a id="proportion_z_test"></a>
 
-#### One-proportion z-test — `proportion_z_test`
+#### One-proportion z-test: `proportion_z_test`
 
 The z-test of H0: p = p0 for a population proportion from x successes in n trials.
 
@@ -1925,13 +1849,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | number of successes | — |
-| `n` | in | sample size | — |
-| `p0` | in | hypothesised proportion | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `z` | out | (x/n - p0)/sqrt(p0(1 - p0)/n) | — |
-| `p_value` | out | p-value | — |
-| `proportion` | out | x/n | — |
+| `x` | in | number of successes | - |
+| `n` | in | sample size | - |
+| `p0` | in | hypothesised proportion | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `z` | out | (x/n - p0)/sqrt(p0(1 - p0)/n) | - |
+| `p_value` | out | p-value | - |
+| `proportion` | out | x/n | - |
 
 **Applies when:** n p0 and n(1 - p0) at least about 10; independent trials.
 
@@ -1950,7 +1874,7 @@ proportion = 0.58
 
 <a id="t_test_one_sample"></a>
 
-#### One-sample t-test — `t_test_one_sample`
+#### One-sample t-test: `t_test_one_sample`
 
 The one-sample t-test of H0: mu = mu0 from sample data: t statistic, degrees of freedom and p-value.
 
@@ -1960,14 +1884,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the data values (at least two) | — |
-| `mu0` | in | hypothesised mean | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | (mean - mu0)/(s/sqrt(n)) | — |
-| `df` | out | n - 1 | — |
-| `p_value` | out | p-value | — |
-| `mean` | out | sample mean | — |
-| `standard_deviation` | out | sample standard deviation | — |
+| `x` | in | the data values (at least two) | - |
+| `mu0` | in | hypothesised mean | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | (mean - mu0)/(s/sqrt(n)) | - |
+| `df` | out | n - 1 | - |
+| `p_value` | out | p-value | - |
+| `mean` | out | sample mean | - |
+| `standard_deviation` | out | sample standard deviation | - |
 
 **Applies when:** random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim.
 
@@ -1988,7 +1912,7 @@ standard_deviation = 0.2160246899
 
 <a id="z_test_mean"></a>
 
-#### One-sample z-test for a mean (sigma known) — `z_test_mean`
+#### One-sample z-test for a mean (sigma known), `z_test_mean`
 
 The z statistic and p-value for H0: mu = mu0 when the population standard deviation is known.
 
@@ -1998,13 +1922,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `xbar` | in | sample mean | — |
-| `mu0` | in | hypothesised mean | — |
-| `sigma` | in | population standard deviation (known) | — |
-| `n` | in | sample size | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `z` | out | (xbar - mu0) / (sigma / sqrt(n)) | — |
-| `p_value` | out | p-value for the chosen alternative | — |
+| `xbar` | in | sample mean | - |
+| `mu0` | in | hypothesised mean | - |
+| `sigma` | in | population standard deviation (known) | - |
+| `n` | in | sample size | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `z` | out | (xbar - mu0) / (sigma / sqrt(n)) | - |
+| `p_value` | out | p-value for the chosen alternative | - |
 
 **Applies when:** sigma known; normal population or large n; the alternative must be stated for a one-sided claim.
 
@@ -2024,7 +1948,7 @@ p_value = 0.01639507185
 
 <a id="paired_t_test"></a>
 
-#### Paired t-test — `paired_t_test`
+#### Paired t-test: `paired_t_test`
 
 The paired (dependent samples) t-test on the differences x - y: t statistic, df and p-value.
 
@@ -2034,13 +1958,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first measurement of each pair | — |
-| `y` | in | second measurement of each pair | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | mean difference / (s_d / sqrt(n)) | — |
-| `df` | out | n - 1 | — |
-| `p_value` | out | p-value | — |
-| `mean_difference` | out | mean of x - y | — |
+| `x` | in | first measurement of each pair | - |
+| `y` | in | second measurement of each pair | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | mean difference / (s_d / sqrt(n)) | - |
+| `df` | out | n - 1 | - |
+| `p_value` | out | p-value | - |
+| `mean_difference` | out | mean of x - y | - |
 
 **Applies when:** pairs measured on the same units; differences roughly normal (or many pairs).
 
@@ -2059,7 +1983,7 @@ mean_difference = 6.2
 
 <a id="two_proportion_z_test"></a>
 
-#### Two-proportion z-test — `two_proportion_z_test`
+#### Two-proportion z-test: `two_proportion_z_test`
 
 The pooled z-test of H0: p1 = p2 from x1 of n1 and x2 of n2 successes.
 
@@ -2069,15 +1993,15 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x1` | in | successes in sample 1 | — |
-| `n1` | in | size of sample 1 | — |
-| `x2` | in | successes in sample 2 | — |
-| `n2` | in | size of sample 2 | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `z` | out | z statistic (pooled standard error) | — |
-| `p_value` | out | p-value | — |
-| `pooled_proportion` | out | (x1 + x2)/(n1 + n2) | — |
-| `difference` | out | x1/n1 - x2/n2 | — |
+| `x1` | in | successes in sample 1 | - |
+| `n1` | in | size of sample 1 | - |
+| `x2` | in | successes in sample 2 | - |
+| `n2` | in | size of sample 2 | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `z` | out | z statistic (pooled standard error) | - |
+| `p_value` | out | p-value | - |
+| `pooled_proportion` | out | (x1 + x2)/(n1 + n2) | - |
+| `difference` | out | x1/n1 - x2/n2 | - |
 
 **Applies when:** independent samples; at least about 10 successes and failures in each sample.
 
@@ -2096,7 +2020,7 @@ difference = 0.15
 
 <a id="t_test_two_sample_pooled"></a>
 
-#### Two-sample t-test (pooled variances) — `t_test_two_sample_pooled`
+#### Two-sample t-test (pooled variances): `t_test_two_sample_pooled`
 
 Two-sample t-test (pooled variances) comparing the means of two independent samples: t statistic, degrees of freedom, p-value.
 
@@ -2106,13 +2030,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | t statistic | — |
-| `df` | out | degrees of freedom | — |
-| `p_value` | out | p-value | — |
-| `difference` | out | mean(x) - mean(y) | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | t statistic | - |
+| `df` | out | degrees of freedom | - |
+| `p_value` | out | p-value | - |
+| `difference` | out | mean(x) - mean(y) | - |
 
 **Applies when:** independent random samples; roughly normal populations or large samples; equal population variances assumed.
 
@@ -2131,7 +2055,7 @@ difference = 3.8
 
 <a id="t_test_summary_statistics"></a>
 
-#### Two-sample t-test from summary statistics — `t_test_summary_statistics`
+#### Two-sample t-test from summary statistics: `t_test_summary_statistics`
 
 The two-sample t-test from the means, sample standard deviations and sizes of two groups (Welch or pooled).
 
@@ -2141,18 +2065,18 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `m1` | in | mean of group 1 | — |
-| `s1` | in | sample standard deviation of group 1 | — |
-| `n1` | in | size of group 1 | — |
-| `m2` | in | mean of group 2 | — |
-| `s2` | in | sample standard deviation of group 2 | — |
-| `n2` | in | size of group 2 | — |
-| `variance` | in | welch (unequal variances) or pooled (equal variances) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | t statistic | — |
-| `df` | out | degrees of freedom | — |
-| `p_value` | out | p-value | — |
-| `difference` | out | m1 - m2 | — |
+| `m1` | in | mean of group 1 | - |
+| `s1` | in | sample standard deviation of group 1 | - |
+| `n1` | in | size of group 1 | - |
+| `m2` | in | mean of group 2 | - |
+| `s2` | in | sample standard deviation of group 2 | - |
+| `n2` | in | size of group 2 | - |
+| `variance` | in | welch (unequal variances) or pooled (equal variances) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | t statistic | - |
+| `df` | out | degrees of freedom | - |
+| `p_value` | out | p-value | - |
+| `difference` | out | m1 - m2 | - |
 
 **Applies when:** independent random samples; roughly normal populations or large samples.
 
@@ -2167,8 +2091,8 @@ difference = 3
   s1 = 4
   m2 = 17
   s2 = 5
-  alternative = two-sided
   variance = pooled
+  alternative = two-sided
   assumes: independent random samples; roughly normal populations or large samples
 ```
 
@@ -2176,7 +2100,7 @@ difference = 3
 
 <a id="welch_t_test"></a>
 
-#### Welch's two-sample t-test (unequal variances) — `welch_t_test`
+#### Welch's two-sample t-test (unequal variances), `welch_t_test`
 
 Welch's two-sample t-test (unequal variances) comparing the means of two independent samples: t statistic, degrees of freedom, p-value.
 
@@ -2186,13 +2110,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | t statistic | — |
-| `df` | out | degrees of freedom | — |
-| `p_value` | out | p-value | — |
-| `difference` | out | mean(x) - mean(y) | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | t statistic | - |
+| `df` | out | degrees of freedom | - |
+| `p_value` | out | p-value | - |
+| `difference` | out | mean(x) - mean(y) | - |
 
 **Applies when:** independent random samples; roughly normal populations or large samples; Welch-Satterthwaite degrees of freedom.
 
@@ -2213,7 +2137,7 @@ difference = 3.8
 
 <a id="friedman_test"></a>
 
-#### Friedman test — `friedman_test`
+#### Friedman test: `friedman_test`
 
 The Friedman rank test for k >= 3 related treatments measured on the same blocks (subjects): rows are blocks, columns are treatments.
 
@@ -2223,10 +2147,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | table with one row per block (subject) and one column per treatment | — |
-| `chi_square` | out | Friedman statistic (tie-corrected) | — |
-| `df` | out | k - 1 | — |
-| `p_value` | out | chi-square p-value | — |
+| `data` | in | table with one row per block (subject) and one column per treatment | - |
+| `chi_square` | out | Friedman statistic (tie-corrected) | - |
+| `df` | out | k - 1 | - |
+| `p_value` | out | chi-square p-value | - |
 
 **Applies when:** at least 3 treatments and 2 blocks; chi-square approximation.
 
@@ -2243,7 +2167,7 @@ p_value = 0.8187307531
 
 <a id="kruskal_wallis"></a>
 
-#### Kruskal-Wallis H test — `kruskal_wallis`
+#### Kruskal-Wallis H test: `kruskal_wallis`
 
 The Kruskal-Wallis rank test comparing 2 to 5 independent groups (nonparametric one-way ANOVA).
 
@@ -2253,14 +2177,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `g1` | in | group 1 | — |
-| `g2` | in | group 2 | — |
-| `g3` | in | group 3 (optional) | — |
-| `g4` | in | group 4 (optional) | — |
-| `g5` | in | group 5 (optional) | — |
-| `h` | out | H statistic (tie-corrected) | — |
-| `df` | out | k - 1 | — |
-| `p_value` | out | chi-square p-value | — |
+| `g1` | in | group 1 | - |
+| `g2` | in | group 2 | - |
+| `g3` | in | group 3 (optional) | - |
+| `g4` | in | group 4 (optional) | - |
+| `g5` | in | group 5 (optional) | - |
+| `h` | out | H statistic (tie-corrected) | - |
+| `df` | out | k - 1 | - |
+| `p_value` | out | chi-square p-value | - |
 
 **Applies when:** independent groups, ordinal or continuous data; chi-square approximation (about 5 or more per group).
 
@@ -2277,7 +2201,7 @@ p_value = 0.2400517906
 
 <a id="mann_whitney_exact"></a>
 
-#### Mann-Whitney U test (exact) — `mann_whitney_exact`
+#### Mann-Whitney U test (exact): `mann_whitney_exact`
 
 The Mann-Whitney U test (exact): compares two independent samples by ranks (statistic U of the first sample and the p-value).
 
@@ -2287,11 +2211,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `u` | out | U statistic of the first sample (R1 - n1(n1+1)/2) | — |
-| `p_value` | out | p-value | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `u` | out | U statistic of the first sample (R1 - n1(n1+1)/2) | - |
+| `p_value` | out | p-value | - |
 
 **Applies when:** independent samples, ordinal or continuous data; no ties; samples of at most 30.
 
@@ -2308,7 +2232,7 @@ p_value = 0.03174603175
 
 <a id="mann_whitney_u"></a>
 
-#### Mann-Whitney U test (large-sample) — `mann_whitney_u`
+#### Mann-Whitney U test (large-sample): `mann_whitney_u`
 
 The Mann-Whitney U test (large-sample): compares two independent samples by ranks (statistic U of the first sample and the p-value).
 
@@ -2318,11 +2242,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | first sample | — |
-| `y` | in | second sample | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `u` | out | U statistic of the first sample (R1 - n1(n1+1)/2) | — |
-| `p_value` | out | p-value | — |
+| `x` | in | first sample | - |
+| `y` | in | second sample | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `u` | out | U statistic of the first sample (R1 - n1(n1+1)/2) | - |
+| `p_value` | out | p-value | - |
 
 **Applies when:** independent samples, ordinal or continuous data; normal approximation with tie correction and continuity correction.
 
@@ -2339,7 +2263,7 @@ In the worked example, x = [3, 5, 4, 6, 7], y = [1.5, 2.6, 2.2, 3.9], alternativ
 
 <a id="sign_test"></a>
 
-#### Sign test — `sign_test`
+#### Sign test: `sign_test`
 
 The sign test for the median difference of paired data (or of differences given directly): exact binomial p-value.
 
@@ -2349,12 +2273,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | differences, or the first measurement of each pair | — |
-| `y` | in | second measurement of each pair (optional) (optional) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `positives` | out | number of positive differences | — |
-| `n` | out | non-zero differences | — |
-| `p_value` | out | exact binomial p-value | — |
+| `x` | in | differences, or the first measurement of each pair | - |
+| `y` | in | second measurement of each pair (optional) (optional) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `positives` | out | number of positive differences | - |
+| `n` | out | non-zero differences | - |
+| `p_value` | out | exact binomial p-value | - |
 
 **Applies when:** paired data; zero differences dropped.
 
@@ -2372,7 +2296,7 @@ p_value = 0.7265625
 
 <a id="wilcoxon_signed_rank_exact"></a>
 
-#### Wilcoxon signed-rank test (exact) — `wilcoxon_signed_rank_exact`
+#### Wilcoxon signed-rank test (exact): `wilcoxon_signed_rank_exact`
 
 The Wilcoxon signed-rank test (exact) for paired data (x - y) or for differences given directly (x alone); zero differences are dropped.
 
@@ -2382,13 +2306,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | differences, or the first measurement of each pair | — |
-| `y` | in | second measurement of each pair (optional) (optional) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `statistic` | out | min(R+, R-) for a two-sided test, R+ otherwise | — |
-| `p_value` | out | p-value | — |
-| `r_plus` | out | sum of ranks of positive differences | — |
-| `n` | out | non-zero differences | — |
+| `x` | in | differences, or the first measurement of each pair | - |
+| `y` | in | second measurement of each pair (optional) (optional) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `statistic` | out | min(R+, R-) for a two-sided test, R+ otherwise | - |
+| `p_value` | out | p-value | - |
+| `r_plus` | out | sum of ranks of positive differences | - |
+| `n` | out | non-zero differences | - |
 
 **Applies when:** paired data, symmetric distribution of differences; zero differences dropped; no zero and no tied absolute differences; at most 60 differences.
 
@@ -2407,7 +2331,7 @@ n = 8
 
 <a id="wilcoxon_signed_rank"></a>
 
-#### Wilcoxon signed-rank test (large-sample) — `wilcoxon_signed_rank`
+#### Wilcoxon signed-rank test (large-sample): `wilcoxon_signed_rank`
 
 The Wilcoxon signed-rank test (large-sample) for paired data (x - y) or for differences given directly (x alone); zero differences are dropped.
 
@@ -2417,13 +2341,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | differences, or the first measurement of each pair | — |
-| `y` | in | second measurement of each pair (optional) (optional) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `statistic` | out | min(R+, R-) for a two-sided test, R+ otherwise | — |
-| `p_value` | out | p-value | — |
-| `r_plus` | out | sum of ranks of positive differences | — |
-| `n` | out | non-zero differences | — |
+| `x` | in | differences, or the first measurement of each pair | - |
+| `y` | in | second measurement of each pair (optional) (optional) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `statistic` | out | min(R+, R-) for a two-sided test, R+ otherwise | - |
+| `p_value` | out | p-value | - |
+| `r_plus` | out | sum of ranks of positive differences | - |
+| `n` | out | non-zero differences | - |
 
 **Applies when:** paired data, symmetric distribution of differences; zero differences dropped; normal approximation with tie correction, no continuity correction.
 
@@ -2444,7 +2368,7 @@ n = 8
 
 <a id="power_one_sample_z"></a>
 
-#### Power of a one-sample z-test — `power_one_sample_z`
+#### Power of a one-sample z-test: `power_one_sample_z`
 
 The power of a one-sample z-test for a standardized effect size d (Cohen's d), sample size n and significance level alpha.
 
@@ -2454,11 +2378,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `d` | in | standardized effect size (difference / sigma) | — |
-| `n` | in | sample size | — |
-| `alpha` | in | significance level | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `power` | out | probability of rejecting H0 when the effect is d | — |
+| `d` | in | standardized effect size (difference / sigma) | - |
+| `n` | in | sample size | - |
+| `alpha` | in | significance level | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `power` | out | probability of rejecting H0 when the effect is d | - |
 
 **Applies when:** normal approximation (sigma known); two-sided power includes both rejection tails.
 
@@ -2477,7 +2401,7 @@ power = 0.7819079987
 
 <a id="power_two_sample_z"></a>
 
-#### Power of a two-sample z-test — `power_two_sample_z`
+#### Power of a two-sample z-test: `power_two_sample_z`
 
 The power of a two-sample z-test for a standardized effect size d (Cohen's d), sample size n per group and significance level alpha.
 
@@ -2487,11 +2411,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `d` | in | standardized effect size (difference / sigma) | — |
-| `n` | in | sample size per group | — |
-| `alpha` | in | significance level | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `power` | out | probability of rejecting H0 when the effect is d | — |
+| `d` | in | standardized effect size (difference / sigma) | - |
+| `n` | in | sample size per group | - |
+| `alpha` | in | significance level | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `power` | out | probability of rejecting H0 when the effect is d | - |
 
 **Applies when:** normal approximation (sigma known); two-sided power includes both rejection tails.
 
@@ -2510,7 +2434,7 @@ power = 0.4906855677
 
 <a id="sample_size_two_means"></a>
 
-#### Sample size per group to compare two means (z-test power) — `sample_size_two_means`
+#### Sample size per group to compare two means (z-test power), `sample_size_two_means`
 
 The sample size per group for a two-sample z-test to reach a target power for a standardized effect size d.
 
@@ -2520,12 +2444,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `d` | in | standardized effect size (difference / sigma) | — |
-| `alpha` | in | significance level | — |
-| `power` | in | target power (e.g. 0.8) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `n_per_group` | out | required size per group (rounded up) | — |
-| `n_exact` | out | solution before rounding | — |
+| `d` | in | standardized effect size (difference / sigma) | - |
+| `alpha` | in | significance level | - |
+| `power` | in | target power (e.g. 0.8) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `n_per_group` | out | required size per group (rounded up) | - |
+| `n_exact` | out | solution before rounding | - |
 
 **Applies when:** equal group sizes; normal approximation; two-sided power includes both tails.
 
@@ -2545,7 +2469,7 @@ n_exact = 62.79088407
 
 <a id="sample_size_mean"></a>
 
-#### Sample size to estimate a mean — `sample_size_mean`
+#### Sample size to estimate a mean: `sample_size_mean`
 
 The smallest n giving a z confidence interval for a mean with the required margin of error, sigma known.
 
@@ -2555,11 +2479,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `sigma` | in | population standard deviation (planning value) | — |
-| `margin` | in | margin of error | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `n` | out | required sample size (rounded up) | — |
-| `n_exact` | out | (z sigma / E)^2 | — |
+| `sigma` | in | population standard deviation (planning value) | - |
+| `margin` | in | margin of error | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `n` | out | required sample size (rounded up) | - |
+| `n_exact` | out | (z sigma / E)^2 | - |
 
 **Applies when:** sigma known or a planning estimate.
 
@@ -2578,7 +2502,7 @@ n_exact = 216.0820587
 
 <a id="sample_size_proportion"></a>
 
-#### Sample size to estimate a proportion — `sample_size_proportion`
+#### Sample size to estimate a proportion: `sample_size_proportion`
 
 The smallest n giving a confidence interval for a proportion with the required margin of error (p = 0.5 if no estimate).
 
@@ -2588,11 +2512,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `margin` | in | margin of error (as a proportion, 0.03 for 3 points) | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `p` | in | planning estimate of the proportion (default 0.5) (optional) | — |
-| `n` | out | required sample size (rounded up) | — |
-| `n_exact` | out | z^2 p(1-p)/E^2 before rounding | — |
+| `margin` | in | margin of error (as a proportion, 0.03 for 3 points) | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `p` | in | planning estimate of the proportion (default 0.5) (optional) | - |
+| `n` | out | required sample size (rounded up) | - |
+| `n_exact` | out | z^2 p(1-p)/E^2 before rounding | - |
 
 **Applies when:** large-sample (Wald) interval; simple random sample.
 
@@ -2612,7 +2536,7 @@ n_exact = 1067.071895
 
 <a id="probability_at_least_one"></a>
 
-#### Probability of at least one occurrence — `probability_at_least_one`
+#### Probability of at least one occurrence: `probability_at_least_one`
 
 The probability that an event of probability p occurs at least once in n independent trials.
 
@@ -2622,10 +2546,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `p` | in | probability of the event on one trial | — |
-| `n` | in | number of independent trials | — |
-| `probability` | out | 1 - (1 - p)^n | — |
-| `none` | out | probability that it never occurs, (1 - p)^n | — |
+| `p` | in | probability of the event on one trial | - |
+| `n` | in | number of independent trials | - |
+| `probability` | out | 1 - (1 - p)^n | - |
+| `none` | out | probability that it never occurs, (1 - p)^n | - |
 
 **Applies when:** independent trials with the same probability p.
 
@@ -2644,7 +2568,7 @@ none = 0.32768
 
 <a id="binomial_at_least"></a>
 
-#### Binomial probability: at least k successes — `binomial_at_least`
+#### Binomial probability: at least k successes, `binomial_at_least`
 
 The probability of at least k successes in n independent trials with success probability p.
 
@@ -2654,10 +2578,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of trials | — |
-| `k` | in | number of successes | — |
-| `p` | in | probability of success on each trial | — |
-| `probability` | out | P(X >= k) | — |
+| `n` | in | number of trials | - |
+| `k` | in | number of successes | - |
+| `p` | in | probability of success on each trial | - |
+| `probability` | out | P(X >= k) | - |
 
 **Applies when:** n independent trials, constant success probability 0 < p < 1; 0 <= k <= n.
 
@@ -2673,7 +2597,7 @@ probability = 0.8327102464
 
 <a id="binomial_at_most"></a>
 
-#### Binomial probability: at most k successes — `binomial_at_most`
+#### Binomial probability: at most k successes, `binomial_at_most`
 
 The probability of at most k successes in n independent trials with success probability p.
 
@@ -2683,10 +2607,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of trials | — |
-| `k` | in | number of successes | — |
-| `p` | in | probability of success on each trial | — |
-| `probability` | out | P(X <= k) | — |
+| `n` | in | number of trials | - |
+| `k` | in | number of successes | - |
+| `p` | in | probability of success on each trial | - |
+| `probability` | out | P(X <= k) | - |
 
 **Applies when:** n independent trials, constant success probability 0 < p < 1; 0 <= k <= n.
 
@@ -2702,7 +2626,7 @@ probability = 0.3822806016
 
 <a id="binomial_exactly"></a>
 
-#### Binomial probability: exactly k successes — `binomial_exactly`
+#### Binomial probability: exactly k successes, `binomial_exactly`
 
 The probability of exactly k successes in n independent trials with success probability p.
 
@@ -2712,10 +2636,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of trials | — |
-| `k` | in | number of successes | — |
-| `p` | in | probability of success on each trial | — |
-| `probability` | out | P(X = k) | — |
+| `n` | in | number of trials | - |
+| `k` | in | number of successes | - |
+| `p` | in | probability of success on each trial | - |
+| `probability` | out | P(X = k) | - |
 
 **Applies when:** n independent trials, constant success probability 0 < p < 1; 0 <= k <= n.
 
@@ -2731,7 +2655,7 @@ probability = 0.214990848
 
 <a id="discrete_random_variable"></a>
 
-#### Expected value and variance of a discrete random variable — `discrete_random_variable`
+#### Expected value and variance of a discrete random variable, `discrete_random_variable`
 
 The expected value, variance and standard deviation of a discrete random variable given its values and probabilities.
 
@@ -2741,11 +2665,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the values of the random variable | — |
-| `p` | in | their probabilities (summing to 1) | — |
-| `expected_value` | out | E[X] = sum x p | — |
-| `variance` | out | Var[X] = sum (x - E[X])^2 p | — |
-| `standard_deviation` | out | sqrt(Var[X]) | — |
+| `x` | in | the values of the random variable | - |
+| `p` | in | their probabilities (summing to 1) | - |
+| `expected_value` | out | E[X] = sum x p | - |
+| `variance` | out | Var[X] = sum (x - E[X])^2 p | - |
+| `standard_deviation` | out | sqrt(Var[X]) | - |
 
 **Applies when:** probabilities non-negative, summing to 1 (within 1e-9).
 
@@ -2762,7 +2686,7 @@ standard_deviation = 0.9
 
 <a id="exponential_probability_above"></a>
 
-#### Exponential probability above a value — `exponential_probability_above`
+#### Exponential probability above a value: `exponential_probability_above`
 
 P(X > x) for an exponential distribution given its rate lambda or its mean.
 
@@ -2772,10 +2696,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value (>= 0) | — |
-| `rate` | in | rate lambda (events per unit) (optional) | — |
-| `mean` | in | mean 1/lambda (instead of the rate) (optional) | — |
-| `probability` | out | P(X > x) | — |
+| `x` | in | the value (>= 0) | - |
+| `rate` | in | rate lambda (events per unit) (optional) | - |
+| `mean` | in | mean 1/lambda (instead of the rate) (optional) | - |
+| `probability` | out | P(X > x) | - |
 
 **Applies when:** exponential (memoryless) waiting time; x >= 0; exactly one of rate or mean.
 
@@ -2792,7 +2716,7 @@ probability = 0.2231301601
 
 <a id="exponential_probability_below"></a>
 
-#### Exponential probability below a value — `exponential_probability_below`
+#### Exponential probability below a value: `exponential_probability_below`
 
 P(X < x) for an exponential distribution given its rate lambda or its mean.
 
@@ -2802,10 +2726,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value (>= 0) | — |
-| `rate` | in | rate lambda (events per unit) (optional) | — |
-| `mean` | in | mean 1/lambda (instead of the rate) (optional) | — |
-| `probability` | out | P(X < x) | — |
+| `x` | in | the value (>= 0) | - |
+| `rate` | in | rate lambda (events per unit) (optional) | - |
+| `mean` | in | mean 1/lambda (instead of the rate) (optional) | - |
+| `probability` | out | P(X < x) | - |
 
 **Applies when:** exponential (memoryless) waiting time; x >= 0; exactly one of rate or mean.
 
@@ -2822,7 +2746,7 @@ probability = 0.7768698399
 
 <a id="geometric_probability"></a>
 
-#### Geometric distribution: first success on trial k — `geometric_probability`
+#### Geometric distribution: first success on trial k, `geometric_probability`
 
 The probability that the first success occurs on trial k, and that it occurs on or before trial k.
 
@@ -2832,10 +2756,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `p` | in | probability of success on each trial | — |
-| `k` | in | the trial number (1, 2, ...) | — |
-| `probability` | out | P(X = k) = (1 - p)^(k-1) p | — |
-| `cumulative` | out | P(X <= k) = 1 - (1 - p)^k | — |
+| `p` | in | probability of success on each trial | - |
+| `k` | in | the trial number (1, 2, ...) | - |
+| `probability` | out | P(X = k) = (1 - p)^(k-1) p | - |
+| `cumulative` | out | P(X <= k) = 1 - (1 - p)^k | - |
 
 **Applies when:** independent trials, constant p; X counts trials up to and including the first success.
 
@@ -2852,7 +2776,7 @@ cumulative = 0.5904
 
 <a id="hypergeometric_probability"></a>
 
-#### Hypergeometric probability (sampling without replacement) — `hypergeometric_probability`
+#### Hypergeometric probability (sampling without replacement), `hypergeometric_probability`
 
 The probability of exactly k successes, and of at most k, in n draws without replacement from a population of N items of which K are successes.
 
@@ -2862,12 +2786,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `N` | in | population size | — |
-| `K` | in | number of successes in the population | — |
-| `n` | in | number of draws | — |
-| `k` | in | number of successes drawn | — |
-| `probability` | out | P(X = k) | — |
-| `cumulative` | out | P(X <= k) | — |
+| `N` | in | population size | - |
+| `K` | in | number of successes in the population | - |
+| `n` | in | number of draws | - |
+| `k` | in | number of successes drawn | - |
+| `probability` | out | P(X = k) | - |
+| `cumulative` | out | P(X <= k) | - |
 
 **Applies when:** draws without replacement; K <= N, n <= N, k <= n.
 
@@ -2883,7 +2807,7 @@ cumulative = 0.9517396968
 
 <a id="inverse_normal"></a>
 
-#### Inverse normal (normal percentile) — `inverse_normal`
+#### Inverse normal (normal percentile): `inverse_normal`
 
 The value x with P(X < x) = p for a normal distribution (percentiles, cut-offs, top and bottom percentages).
 
@@ -2893,11 +2817,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `p` | in | cumulative probability to the left of x (0 < p < 1) | — |
-| `mu` | in | the mean | — |
-| `sigma` | in | the standard deviation (> 0) | — |
-| `x` | out | the value with P(X < x) = p | — |
-| `z` | out | the standard normal quantile | — |
+| `p` | in | cumulative probability to the left of x (0 < p < 1) | - |
+| `mu` | in | the mean | - |
+| `sigma` | in | the standard deviation (> 0) | - |
+| `x` | out | the value with P(X < x) = p | - |
+| `z` | out | the standard normal quantile | - |
 
 **Applies when:** 0 < p < 1; sigma > 0.
 
@@ -2916,7 +2840,7 @@ z = 1.281551566
 
 <a id="binomial_mean_sd"></a>
 
-#### Mean and standard deviation of a binomial distribution — `binomial_mean_sd`
+#### Mean and standard deviation of a binomial distribution, `binomial_mean_sd`
 
 The mean np, variance np(1-p) and standard deviation of a binomial random variable.
 
@@ -2926,11 +2850,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of trials | — |
-| `p` | in | probability of success | — |
-| `mean` | out | n p | — |
-| `variance` | out | n p (1 - p) | — |
-| `standard_deviation` | out | sqrt(n p (1 - p)) | — |
+| `n` | in | number of trials | - |
+| `p` | in | probability of success | - |
+| `mean` | out | n p | - |
+| `variance` | out | n p (1 - p) | - |
+| `standard_deviation` | out | sqrt(n p (1 - p)) | - |
 
 **Applies when:** 0 < p < 1.
 
@@ -2948,7 +2872,7 @@ standard_deviation = 3.240370349
 
 <a id="negative_binomial_probability"></a>
 
-#### Negative binomial: r-th success on trial n — `negative_binomial_probability`
+#### Negative binomial: r-th success on trial n, `negative_binomial_probability`
 
 The probability that the r-th success occurs on trial n (independent trials with success probability p).
 
@@ -2958,10 +2882,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `r` | in | number of successes required | — |
-| `p` | in | probability of success | — |
-| `n` | in | the trial number | — |
-| `probability` | out | C(n-1, r-1) p^r (1-p)^(n-r) | — |
+| `r` | in | number of successes required | - |
+| `p` | in | probability of success | - |
+| `n` | in | the trial number | - |
+| `probability` | out | C(n-1, r-1) p^r (1-p)^(n-r) | - |
 
 **Applies when:** independent trials, constant p; n >= r.
 
@@ -2977,7 +2901,7 @@ probability = 0.124416
 
 <a id="normal_probability_above"></a>
 
-#### Normal probability above a value — `normal_probability_above`
+#### Normal probability above a value: `normal_probability_above`
 
 P(X > x) for a normal distribution with mean mu and standard deviation sigma (the area to the right).
 
@@ -2987,11 +2911,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value | — |
-| `mu` | in | the mean | — |
-| `sigma` | in | the standard deviation (> 0) | — |
-| `probability` | out | P(X > x) | — |
-| `z` | out | the z-score of x | — |
+| `x` | in | the value | - |
+| `mu` | in | the mean | - |
+| `sigma` | in | the standard deviation (> 0) | - |
+| `probability` | out | P(X > x) | - |
+| `z` | out | the z-score of x | - |
 
 **Applies when:** X normally distributed; sigma > 0.
 
@@ -3010,7 +2934,7 @@ z = 2
 
 <a id="normal_probability_below"></a>
 
-#### Normal probability below a value — `normal_probability_below`
+#### Normal probability below a value: `normal_probability_below`
 
 P(X < x) for a normal distribution with mean mu and standard deviation sigma (the area to the left).
 
@@ -3020,11 +2944,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value | — |
-| `mu` | in | the mean | — |
-| `sigma` | in | the standard deviation (> 0) | — |
-| `probability` | out | P(X < x) | — |
-| `z` | out | the z-score of x | — |
+| `x` | in | the value | - |
+| `mu` | in | the mean | - |
+| `sigma` | in | the standard deviation (> 0) | - |
+| `probability` | out | P(X < x) | - |
+| `z` | out | the z-score of x | - |
 
 **Applies when:** X normally distributed; sigma > 0.
 
@@ -3043,7 +2967,7 @@ z = 1.333333333
 
 <a id="normal_probability_between"></a>
 
-#### Normal probability between two values — `normal_probability_between`
+#### Normal probability between two values: `normal_probability_between`
 
 P(a < X < b) for a normal distribution with mean mu and standard deviation sigma.
 
@@ -3053,13 +2977,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `a` | in | lower bound | — |
-| `b` | in | upper bound | — |
-| `mu` | in | the mean | — |
-| `sigma` | in | the standard deviation (> 0) | — |
-| `probability` | out | P(a < X < b) | — |
-| `z_a` | out | z-score of a | — |
-| `z_b` | out | z-score of b | — |
+| `a` | in | lower bound | - |
+| `b` | in | upper bound | - |
+| `mu` | in | the mean | - |
+| `sigma` | in | the standard deviation (> 0) | - |
+| `probability` | out | P(a < X < b) | - |
+| `z_a` | out | z-score of a | - |
+| `z_b` | out | z-score of b | - |
 
 **Applies when:** X normally distributed; sigma > 0; a < b.
 
@@ -3080,7 +3004,7 @@ z_b = 1
 
 <a id="poisson_at_least"></a>
 
-#### Poisson probability: at least k events — `poisson_at_least`
+#### Poisson probability: at least k events, `poisson_at_least`
 
 The probability of at least k events when events occur independently at mean rate lambda per interval.
 
@@ -3090,9 +3014,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `lam` | in | the mean number of events (lambda > 0) | — |
-| `k` | in | number of events | — |
-| `probability` | out | the Poisson probability | — |
+| `lam` | in | the mean number of events (lambda > 0) | - |
+| `k` | in | number of events | - |
+| `probability` | out | the Poisson probability | - |
 
 **Applies when:** events independent, at a constant mean rate; lambda > 0, k a whole number.
 
@@ -3108,7 +3032,7 @@ probability = 0.9084218056
 
 <a id="poisson_at_most"></a>
 
-#### Poisson probability: at most k events — `poisson_at_most`
+#### Poisson probability: at most k events, `poisson_at_most`
 
 The probability of at most k events when events occur independently at mean rate lambda per interval.
 
@@ -3118,9 +3042,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `lam` | in | the mean number of events (lambda > 0) | — |
-| `k` | in | number of events | — |
-| `probability` | out | the Poisson probability | — |
+| `lam` | in | the mean number of events (lambda > 0) | - |
+| `k` | in | number of events | - |
+| `probability` | out | the Poisson probability | - |
 
 **Applies when:** events independent, at a constant mean rate; lambda > 0, k a whole number.
 
@@ -3136,7 +3060,7 @@ probability = 0.2381033056
 
 <a id="poisson_exactly"></a>
 
-#### Poisson probability: exactly k events — `poisson_exactly`
+#### Poisson probability: exactly k events, `poisson_exactly`
 
 The probability of exactly k events when events occur independently at mean rate lambda per interval.
 
@@ -3146,9 +3070,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `lam` | in | the mean number of events (lambda > 0) | — |
-| `k` | in | number of events | — |
-| `probability` | out | the Poisson probability | — |
+| `lam` | in | the mean number of events (lambda > 0) | - |
+| `k` | in | number of events | - |
+| `probability` | out | the Poisson probability | - |
 
 **Applies when:** events independent, at a constant mean rate; lambda > 0, k a whole number.
 
@@ -3166,7 +3090,7 @@ probability = 0.1465251111
 
 <a id="c_chart"></a>
 
-#### c chart limits (defects per unit) — `c_chart`
+#### c chart limits (defects per unit), `c_chart`
 
 Centre line and 3-sigma limits of a c chart from counts of defects per inspection unit.
 
@@ -3176,10 +3100,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `counts` | in | defects counted in each unit | — |
-| `center` | out | c-bar | — |
-| `ucl` | out | c-bar + 3 sqrt(c-bar) | — |
-| `lcl` | out | max(0, c-bar - 3 sqrt(c-bar)) | — |
+| `counts` | in | defects counted in each unit | - |
+| `center` | out | c-bar | - |
+| `ucl` | out | c-bar + 3 sqrt(c-bar) | - |
+| `lcl` | out | max(0, c-bar - 3 sqrt(c-bar)) | - |
 
 **Applies when:** constant inspection unit; Poisson-distributed counts.
 
@@ -3196,7 +3120,7 @@ lcl = 0
 
 <a id="individuals_moving_range_chart"></a>
 
-#### Individuals and moving range (I-MR) chart limits — `individuals_moving_range_chart`
+#### Individuals and moving range (I-MR) chart limits, `individuals_moving_range_chart`
 
 Control limits of the individuals (X) and moving range charts from individual measurements in time order.
 
@@ -3206,13 +3130,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | individual measurements in time order | — |
-| `center` | out | mean | — |
-| `mean_moving_range` | out | average moving range of span 2 | — |
-| `x_ucl` | out | mean + 2.66 MR-bar | — |
-| `x_lcl` | out | mean - 2.66 MR-bar | — |
-| `mr_ucl` | out | 3.267 MR-bar | — |
-| `mr_lcl` | out | 0 | — |
+| `x` | in | individual measurements in time order | - |
+| `center` | out | mean | - |
+| `mean_moving_range` | out | average moving range of span 2 | - |
+| `x_ucl` | out | mean + 2.66 MR-bar | - |
+| `x_lcl` | out | mean - 2.66 MR-bar | - |
+| `mr_ucl` | out | 3.267 MR-bar | - |
+| `mr_lcl` | out | 0 | - |
 
 **Applies when:** measurements in time order; constants E2 = 2.66 (3/d2) and D4 = 3.267 for span 2.
 
@@ -3232,7 +3156,7 @@ mr_lcl = 0
 
 <a id="p_chart"></a>
 
-#### p chart limits (fraction defective) — `p_chart`
+#### p chart limits (fraction defective), `p_chart`
 
 Centre line and 3-sigma limits of a p chart from counts of defective items in samples of constant size n.
 
@@ -3242,12 +3166,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `defectives` | in | number of defective items in each sample | — |
-| `n` | in | sample size (constant) | — |
-| `center` | out | p-bar | — |
-| `ucl` | out | upper control limit (at most 1) | — |
-| `lcl` | out | lower control limit (at least 0) | — |
-| `sigma` | out | sqrt(p-bar (1 - p-bar)/n) | — |
+| `defectives` | in | number of defective items in each sample | - |
+| `n` | in | sample size (constant) | - |
+| `center` | out | p-bar | - |
+| `ucl` | out | upper control limit (at most 1) | - |
+| `lcl` | out | lower control limit (at least 0) | - |
+| `sigma` | out | sqrt(p-bar (1 - p-bar)/n) | - |
 
 **Applies when:** constant sample size; LCL truncated at 0.
 
@@ -3265,7 +3189,7 @@ sigma = 0.02088647644
 
 <a id="process_capability"></a>
 
-#### Process capability (Cp, Cpk) and expected nonconforming — `process_capability`
+#### Process capability (Cp, Cpk) and expected nonconforming, `process_capability`
 
 Process capability indices Cp, Cpk (with Cpu, Cpl) and the expected parts per million outside the specification for a normal process with mean mu and standard deviation sigma.
 
@@ -3275,15 +3199,15 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `mu` | in | process mean | — |
-| `sigma` | in | process standard deviation | — |
-| `lsl` | in | lower specification limit | — |
-| `usl` | in | upper specification limit | — |
-| `cp` | out | (USL - LSL)/(6 sigma) | — |
-| `cpk` | out | min(Cpu, Cpl) | — |
-| `cpu` | out | (USL - mu)/(3 sigma) | — |
-| `cpl` | out | (mu - LSL)/(3 sigma) | — |
-| `ppm_out` | out | expected nonconforming parts per million | — |
+| `mu` | in | process mean | - |
+| `sigma` | in | process standard deviation | - |
+| `lsl` | in | lower specification limit | - |
+| `usl` | in | upper specification limit | - |
+| `cp` | out | (USL - LSL)/(6 sigma) | - |
+| `cpk` | out | min(Cpu, Cpl) | - |
+| `cpu` | out | (USL - mu)/(3 sigma) | - |
+| `cpl` | out | (mu - LSL)/(3 sigma) | - |
+| `ppm_out` | out | expected nonconforming parts per million | - |
 
 **Applies when:** normal, stable (in-control) process; USL > LSL.
 
@@ -3306,7 +3230,7 @@ ppm_out = 1381.569273
 
 <a id="xbar_r_chart"></a>
 
-#### X-bar and R control chart limits — `xbar_r_chart`
+#### X-bar and R control chart limits: `xbar_r_chart`
 
 Centre lines and 3-sigma control limits of X-bar and R charts from subgroups (rows) of size 2 to 10.
 
@@ -3316,16 +3240,16 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | one row per subgroup, one column per observation (subgroup size 2-10) | — |
-| `center_xbar` | out | grand mean | — |
-| `mean_range` | out | average range | — |
-| `xbar_ucl` | out | X-bar UCL | — |
-| `xbar_lcl` | out | X-bar LCL | — |
-| `r_ucl` | out | R chart UCL | — |
-| `r_lcl` | out | R chart LCL | — |
-| `A2` | out | A2 | — |
-| `D3` | out | D3 | — |
-| `D4` | out | D4 | — |
+| `data` | in | one row per subgroup, one column per observation (subgroup size 2-10) | - |
+| `center_xbar` | out | grand mean | - |
+| `mean_range` | out | average range | - |
+| `xbar_ucl` | out | X-bar UCL | - |
+| `xbar_lcl` | out | X-bar LCL | - |
+| `r_ucl` | out | R chart UCL | - |
+| `r_lcl` | out | R chart LCL | - |
+| `A2` | out | A2 | - |
+| `D3` | out | D3 | - |
+| `D4` | out | D4 | - |
 
 **Applies when:** equal subgroup sizes 2 to 10; standard 3-decimal control chart constants (A2, D3, D4).
 
@@ -3348,7 +3272,7 @@ D4 = 2.282
 
 <a id="xbar_s_chart"></a>
 
-#### X-bar and S control chart limits — `xbar_s_chart`
+#### X-bar and S control chart limits: `xbar_s_chart`
 
 Centre lines and 3-sigma control limits of X-bar and S charts from subgroups (rows) of size 2 to 10.
 
@@ -3358,16 +3282,16 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | one row per subgroup, one column per observation (subgroup size 2-10) | — |
-| `center_xbar` | out | grand mean | — |
-| `mean_sd` | out | average subgroup standard deviation | — |
-| `xbar_ucl` | out | X-bar UCL | — |
-| `xbar_lcl` | out | X-bar LCL | — |
-| `s_ucl` | out | S chart UCL | — |
-| `s_lcl` | out | S chart LCL | — |
-| `A3` | out | A3 | — |
-| `B3` | out | B3 | — |
-| `B4` | out | B4 | — |
+| `data` | in | one row per subgroup, one column per observation (subgroup size 2-10) | - |
+| `center_xbar` | out | grand mean | - |
+| `mean_sd` | out | average subgroup standard deviation | - |
+| `xbar_ucl` | out | X-bar UCL | - |
+| `xbar_lcl` | out | X-bar LCL | - |
+| `s_ucl` | out | S chart UCL | - |
+| `s_lcl` | out | S chart LCL | - |
+| `A3` | out | A3 | - |
+| `B3` | out | B3 | - |
+| `B4` | out | B4 | - |
 
 **Applies when:** equal subgroup sizes 2 to 10; standard 3-decimal constants (A3, B3, B4).
 
@@ -3392,7 +3316,7 @@ B4 = 2.266
 
 <a id="correlation_confidence_interval"></a>
 
-#### Confidence interval for a correlation (Fisher z) — `correlation_confidence_interval`
+#### Confidence interval for a correlation (Fisher z), `correlation_confidence_interval`
 
 The Fisher z-transformation confidence interval for the population correlation from paired data.
 
@@ -3402,12 +3326,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `confidence` | in | confidence level as a fraction (0.95 for 95%) | — |
-| `r` | out | sample correlation | — |
-| `lower` | out | lower limit | — |
-| `upper` | out | upper limit | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `confidence` | in | confidence level as a fraction (0.95 for 95%) | - |
+| `r` | out | sample correlation | - |
+| `lower` | out | lower limit | - |
+| `upper` | out | upper limit | - |
 
 **Applies when:** bivariate normal data; at least 4 pairs; |r| < 1.
 
@@ -3425,7 +3349,7 @@ upper = 0.9938998356
 
 <a id="covariance"></a>
 
-#### Covariance — `covariance`
+#### Covariance: `covariance`
 
 The sample (n - 1) and population (n) covariance of paired data.
 
@@ -3435,10 +3359,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `sample_covariance` | out | divisor n - 1 | — |
-| `population_covariance` | out | divisor n | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `sample_covariance` | out | divisor n - 1 | - |
+| `population_covariance` | out | divisor n | - |
 
 ```shell
 $ statistics solve covariance "x=[2, 4, 6, 8]" "y=[1, 3, 2, 5]"
@@ -3451,7 +3375,7 @@ population_covariance = 2.75
 
 <a id="durbin_watson"></a>
 
-#### Durbin-Watson statistic — `durbin_watson`
+#### Durbin-Watson statistic: `durbin_watson`
 
 The Durbin-Watson statistic of regression residuals (about 2: no first-order autocorrelation; towards 0: positive; towards 4: negative).
 
@@ -3461,8 +3385,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `residuals` | in | regression residuals in time order | — |
-| `durbin_watson` | out | sum of squared successive differences / sum of squares | — |
+| `residuals` | in | regression residuals in time order | - |
+| `durbin_watson` | out | sum of squared successive differences / sum of squares | - |
 
 **Applies when:** residuals in time order.
 
@@ -3477,7 +3401,7 @@ durbin_watson = 2.534482759
 
 <a id="kendall_tau"></a>
 
-#### Kendall's tau-b rank correlation — `kendall_tau`
+#### Kendall's tau-b rank correlation: `kendall_tau`
 
 Kendall's tau-b (tie-adjusted) between paired data with its two-sided large-sample p-value.
 
@@ -3487,12 +3411,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `tau` | out | Kendall's tau-b | — |
-| `p_value` | out | two-sided p-value (normal approximation with tie correction) | — |
-| `concordant` | out | concordant pairs | — |
-| `discordant` | out | discordant pairs | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `tau` | out | Kendall's tau-b | - |
+| `p_value` | out | two-sided p-value (normal approximation with tie correction) | - |
+| `concordant` | out | concordant pairs | - |
+| `discordant` | out | discordant pairs | - |
 
 **Applies when:** paired ordinal or continuous data; large-sample normal approximation for the p-value.
 
@@ -3510,7 +3434,7 @@ discordant = 3
 
 <a id="multiple_linear_regression"></a>
 
-#### Multiple linear regression — `multiple_linear_regression`
+#### Multiple linear regression: `multiple_linear_regression`
 
 Ordinary least squares with several predictors: coefficients (intercept first), R squared, adjusted R squared and the overall F-test.
 
@@ -3520,14 +3444,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `X` | in | predictor matrix: one row per observation, one column per predictor | — |
-| `y` | in | response values | — |
-| `coefficients` | out | [intercept, b1, ..., bk] | — |
-| `r_squared` | out | R squared | — |
-| `adj_r_squared` | out | adjusted R squared | — |
-| `f` | out | overall F statistic | — |
-| `f_p_value` | out | p-value of the F test | — |
-| `residual_se` | out | residual standard error | — |
+| `X` | in | predictor matrix: one row per observation, one column per predictor | - |
+| `y` | in | response values | - |
+| `coefficients` | out | [intercept, b1, ..., bk] | - |
+| `r_squared` | out | R squared | - |
+| `adj_r_squared` | out | adjusted R squared | - |
+| `f` | out | overall F statistic | - |
+| `f_p_value` | out | p-value of the F test | - |
+| `residual_se` | out | residual standard error | - |
 
 **Applies when:** n > k + 1; predictors not collinear; inference assumes independent normal errors.
 
@@ -3547,7 +3471,7 @@ residual_se = 0.6009252126
 
 <a id="pearson_correlation"></a>
 
-#### Pearson correlation coefficient — `pearson_correlation`
+#### Pearson correlation coefficient: `pearson_correlation`
 
 Pearson's correlation coefficient r between paired data, r squared, and the two-sided p-value for H0: rho = 0.
 
@@ -3557,12 +3481,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `r` | out | correlation coefficient | — |
-| `r_squared` | out | coefficient of determination | — |
-| `p_value` | out | two-sided p-value (t with n - 2 df) | — |
-| `n` | out | number of pairs | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `r` | out | correlation coefficient | - |
+| `r_squared` | out | coefficient of determination | - |
+| `p_value` | out | two-sided p-value (t with n - 2 df) | - |
+| `n` | out | number of pairs | - |
 
 **Applies when:** paired observations; linear relationship; the p-value assumes bivariate normality.
 
@@ -3580,7 +3504,7 @@ n = 5
 
 <a id="regression_prediction"></a>
 
-#### Prediction from a least squares line — `regression_prediction`
+#### Prediction from a least squares line: `regression_prediction`
 
 The predicted y at a given x0 from the least-squares line fitted to paired data.
 
@@ -3590,12 +3514,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `x0` | in | the x value to predict at | — |
-| `y_hat` | out | b0 + b1 x0 | — |
-| `slope` | out | slope | — |
-| `intercept` | out | intercept | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `x0` | in | the x value to predict at | - |
+| `y_hat` | out | b0 + b1 x0 | - |
+| `slope` | out | slope | - |
+| `intercept` | out | intercept | - |
 
 **Applies when:** x0 within the range of the data (extrapolation is unreliable).
 
@@ -3613,7 +3537,7 @@ intercept = 0.16
 
 <a id="correlation_t_test"></a>
 
-#### Significance test for a correlation coefficient — `correlation_t_test`
+#### Significance test for a correlation coefficient, `correlation_t_test`
 
 The t-test of H0: rho = 0 from a sample correlation r and the number of pairs n.
 
@@ -3623,12 +3547,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `r` | in | sample correlation coefficient | — |
-| `n` | in | number of pairs (>= 3) | — |
-| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | — |
-| `t` | out | r sqrt((n - 2)/(1 - r^2)) | — |
-| `df` | out | n - 2 | — |
-| `p_value` | out | p-value | — |
+| `r` | in | sample correlation coefficient | - |
+| `n` | in | number of pairs (>= 3) | - |
+| `alternative` | in | alternative hypothesis: two-sided (default), greater or less (optional) | - |
+| `t` | out | r sqrt((n - 2)/(1 - r^2)) | - |
+| `df` | out | n - 2 | - |
+| `p_value` | out | p-value | - |
 
 **Applies when:** -1 < r < 1; bivariate normal data.
 
@@ -3647,7 +3571,7 @@ p_value = 0.01259107128
 
 <a id="simple_linear_regression"></a>
 
-#### Simple linear regression (least squares line) — `simple_linear_regression`
+#### Simple linear regression (least squares line), `simple_linear_regression`
 
 The least-squares line y = intercept + slope x: coefficients, r, r squared, standard errors and the slope's p-value.
 
@@ -3657,16 +3581,16 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `slope` | out | b1 = Sxy/Sxx | — |
-| `intercept` | out | b0 = ybar - b1 xbar | — |
-| `r` | out | correlation | — |
-| `r_squared` | out | coefficient of determination | — |
-| `p_value` | out | two-sided p-value for H0: slope = 0 | — |
-| `slope_se` | out | standard error of the slope | — |
-| `intercept_se` | out | standard error of the intercept | — |
-| `residual_se` | out | residual standard error | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `slope` | out | b1 = Sxy/Sxx | - |
+| `intercept` | out | b0 = ybar - b1 xbar | - |
+| `r` | out | correlation | - |
+| `r_squared` | out | coefficient of determination | - |
+| `p_value` | out | two-sided p-value for H0: slope = 0 | - |
+| `slope_se` | out | standard error of the slope | - |
+| `intercept_se` | out | standard error of the intercept | - |
+| `residual_se` | out | residual standard error | - |
 
 **Applies when:** at least 3 pairs, x not all equal; inference assumes independent normal errors with constant variance.
 
@@ -3688,7 +3612,7 @@ residual_se = 0.1366260102
 
 <a id="spearman_correlation"></a>
 
-#### Spearman rank correlation — `spearman_correlation`
+#### Spearman rank correlation: `spearman_correlation`
 
 Spearman's rank correlation coefficient (ties given average ranks) with its two-sided p-value.
 
@@ -3698,11 +3622,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | values of the first variable (x) | — |
-| `y` | in | paired values of the second variable (y) | — |
-| `rho` | out | Spearman's rho | — |
-| `p_value` | out | two-sided p-value (t approximation, n - 2 df) | — |
-| `n` | out | pairs | — |
+| `x` | in | values of the first variable (x) | - |
+| `y` | in | paired values of the second variable (y) | - |
+| `rho` | out | Spearman's rho | - |
+| `p_value` | out | two-sided p-value (t approximation, n - 2 df) | - |
+| `n` | out | pairs | - |
 
 **Applies when:** paired ordinal or continuous data; p-value by the t approximation.
 
@@ -3721,7 +3645,7 @@ n = 5
 
 <a id="exponential_reliability"></a>
 
-#### Exponential reliability (constant failure rate) — `exponential_reliability`
+#### Exponential reliability (constant failure rate), `exponential_reliability`
 
 Reliability R(t) = exp(-lambda t), unreliability and MTTF for a constant failure rate (given the rate or the MTBF).
 
@@ -3731,13 +3655,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `t` | in | mission time | — |
-| `rate` | in | failure rate lambda (optional) | — |
-| `mtbf` | in | mean time between failures (instead of the rate) (optional) | — |
-| `reliability` | out | exp(-lambda t) | — |
-| `unreliability` | out | 1 - R(t) | — |
-| `mttf` | out | 1/lambda | — |
-| `failure_rate` | out | lambda | — |
+| `t` | in | mission time | - |
+| `rate` | in | failure rate lambda (optional) | - |
+| `mtbf` | in | mean time between failures (instead of the rate) (optional) | - |
+| `reliability` | out | exp(-lambda t) | - |
+| `unreliability` | out | 1 - R(t) | - |
+| `mttf` | out | 1/lambda | - |
+| `failure_rate` | out | lambda | - |
 
 **Applies when:** constant failure rate (useful-life period); exactly one of rate or MTBF.
 
@@ -3757,7 +3681,7 @@ failure_rate = 0.0002
 
 <a id="k_out_of_n_reliability"></a>
 
-#### k-out-of-n system reliability — `k_out_of_n_reliability`
+#### k-out-of-n system reliability, `k_out_of_n_reliability`
 
 The reliability of a system that works when at least k of n identical independent components work.
 
@@ -3767,10 +3691,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of components | — |
-| `k` | in | number that must work | — |
-| `r` | in | reliability of one component | — |
-| `reliability` | out | P(at least k of n work) | — |
+| `n` | in | number of components | - |
+| `k` | in | number that must work | - |
+| `r` | in | reliability of one component | - |
+| `reliability` | out | P(at least k of n work) | - |
 
 **Applies when:** identical, independent components.
 
@@ -3786,7 +3710,7 @@ reliability = 0.972
 
 <a id="kaplan_meier"></a>
 
-#### Kaplan-Meier survival estimate — `kaplan_meier`
+#### Kaplan-Meier survival estimate: `kaplan_meier`
 
 The Kaplan-Meier (product-limit) estimate of the survival function from times with event/censoring indicators, evaluated at time t, and the whole step curve.
 
@@ -3796,12 +3720,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `times` | in | follow-up times | — |
-| `events` | in | 1 = event observed, 0 = censored | — |
-| `t` | in | time at which to report S(t) | — |
-| `survival` | out | S(t) | — |
-| `event_times` | out | distinct event times | — |
-| `survival_curve` | out | S just after each event time | — |
+| `times` | in | follow-up times | - |
+| `events` | in | 1 = event observed, 0 = censored | - |
+| `t` | in | time at which to report S(t) | - |
+| `survival` | out | S(t) | - |
+| `event_times` | out | distinct event times | - |
+| `survival_curve` | out | S just after each event time | - |
 
 **Applies when:** non-informative censoring; a censoring at an event time counts as still at risk.
 
@@ -3819,7 +3743,7 @@ survival_curve = [0.6666666666666667,0.5333333333333334,0.4000000000000001,0.266
 
 <a id="log_rank_test"></a>
 
-#### Log-rank test comparing two survival curves — `log_rank_test`
+#### Log-rank test comparing two survival curves, `log_rank_test`
 
 The log-rank (Mantel-Cox) test of equal survival in two groups from times and event indicators.
 
@@ -3829,14 +3753,14 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `times1` | in | times, group 1 | — |
-| `events1` | in | events (1/0), group 1 | — |
-| `times2` | in | times, group 2 | — |
-| `events2` | in | events (1/0), group 2 | — |
-| `chi_square` | out | (O1 - E1)^2 / V | — |
-| `p_value` | out | chi-square p-value (1 df) | — |
-| `observed_1` | out | events in group 1 | — |
-| `expected_1` | out | expected events in group 1 | — |
+| `times1` | in | times, group 1 | - |
+| `events1` | in | events (1/0), group 1 | - |
+| `times2` | in | times, group 2 | - |
+| `events2` | in | events (1/0), group 2 | - |
+| `chi_square` | out | (O1 - E1)^2 / V | - |
+| `p_value` | out | chi-square p-value (1 df) | - |
+| `observed_1` | out | events in group 1 | - |
+| `expected_1` | out | expected events in group 1 | - |
 
 **Applies when:** non-informative censoring; proportional hazards gives the test its best power.
 
@@ -3854,7 +3778,7 @@ expected_1 = 10.42222222
 
 <a id="parallel_system_reliability"></a>
 
-#### Reliability of a parallel system — `parallel_system_reliability`
+#### Reliability of a parallel system: `parallel_system_reliability`
 
 The reliability of independent components in parallel (at least one must work).
 
@@ -3864,8 +3788,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `r` | in | component reliabilities (0 to 1) | — |
-| `reliability` | out | system reliability | — |
+| `r` | in | component reliabilities (0 to 1) | - |
+| `reliability` | out | system reliability | - |
 
 **Applies when:** independent components.
 
@@ -3880,7 +3804,7 @@ reliability = 0.9999
 
 <a id="series_system_reliability"></a>
 
-#### Reliability of a series system — `series_system_reliability`
+#### Reliability of a series system: `series_system_reliability`
 
 The reliability of independent components in series (all must work).
 
@@ -3890,8 +3814,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `r` | in | component reliabilities (0 to 1) | — |
-| `reliability` | out | system reliability | — |
+| `r` | in | component reliabilities (0 to 1) | - |
+| `reliability` | out | system reliability | - |
 
 **Applies when:** independent components.
 
@@ -3906,7 +3830,7 @@ reliability = 0.8379
 
 <a id="weibull_reliability"></a>
 
-#### Weibull reliability, hazard rate and MTTF — `weibull_reliability`
+#### Weibull reliability, hazard rate and MTTF: `weibull_reliability`
 
 Reliability R(t), unreliability, hazard rate and mean time to failure of a two-parameter Weibull distribution.
 
@@ -3916,13 +3840,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `beta` | in | shape parameter beta | — |
-| `eta` | in | scale parameter eta (characteristic life) | — |
-| `t` | in | time | — |
-| `reliability` | out | exp(-(t/eta)^beta) | — |
-| `unreliability` | out | 1 - R(t) | — |
-| `hazard_rate` | out | (beta/eta)(t/eta)^(beta-1) | — |
-| `mttf` | out | eta Gamma(1 + 1/beta) | — |
+| `beta` | in | shape parameter beta | - |
+| `eta` | in | scale parameter eta (characteristic life) | - |
+| `t` | in | time | - |
+| `reliability` | out | exp(-(t/eta)^beta) | - |
+| `unreliability` | out | 1 - R(t) | - |
+| `hazard_rate` | out | (beta/eta)(t/eta)^(beta-1) | - |
+| `mttf` | out | eta Gamma(1 + 1/beta) | - |
 
 **Applies when:** two-parameter Weibull (no location shift); t >= 0.
 
@@ -3945,7 +3869,7 @@ mttf = 886.2269255
 
 <a id="sample_mean_probability_above"></a>
 
-#### Probability that a sample mean is above a value — `sample_mean_probability_above`
+#### Probability that a sample mean is above a value, `sample_mean_probability_above`
 
 P(sample mean > x) for samples of size n from a population with mean mu and standard deviation sigma (central limit theorem).
 
@@ -3955,13 +3879,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value for the sample mean | — |
-| `mu` | in | population mean | — |
-| `sigma` | in | population standard deviation | — |
-| `n` | in | sample size | — |
-| `probability` | out | the probability | — |
-| `z` | out | z = (x - mu)/(sigma/sqrt(n)) | — |
-| `standard_error` | out | sigma/sqrt(n) | — |
+| `x` | in | the value for the sample mean | - |
+| `mu` | in | population mean | - |
+| `sigma` | in | population standard deviation | - |
+| `n` | in | sample size | - |
+| `probability` | out | the probability | - |
+| `z` | out | z = (x - mu)/(sigma/sqrt(n)) | - |
+| `standard_error` | out | sigma/sqrt(n) | - |
 
 **Applies when:** population normal, or n large enough for the central limit theorem; independent observations.
 
@@ -3981,7 +3905,7 @@ standard_error = 2
 
 <a id="sample_mean_probability_below"></a>
 
-#### Probability that a sample mean is below a value — `sample_mean_probability_below`
+#### Probability that a sample mean is below a value, `sample_mean_probability_below`
 
 P(sample mean < x) for samples of size n from a population with mean mu and standard deviation sigma (central limit theorem).
 
@@ -3991,13 +3915,13 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | the value for the sample mean | — |
-| `mu` | in | population mean | — |
-| `sigma` | in | population standard deviation | — |
-| `n` | in | sample size | — |
-| `probability` | out | the probability | — |
-| `z` | out | z = (x - mu)/(sigma/sqrt(n)) | — |
-| `standard_error` | out | sigma/sqrt(n) | — |
+| `x` | in | the value for the sample mean | - |
+| `mu` | in | population mean | - |
+| `sigma` | in | population standard deviation | - |
+| `n` | in | sample size | - |
+| `probability` | out | the probability | - |
+| `z` | out | z = (x - mu)/(sigma/sqrt(n)) | - |
+| `standard_error` | out | sigma/sqrt(n) | - |
 
 **Applies when:** population normal, or n large enough for the central limit theorem; independent observations.
 
@@ -4015,4 +3939,4 @@ standard_error = 2
 
 **What the worked example means:** This calculation determines the likelihood that the average of a random sample of size 25 falls below the value 52. It uses the population mean 50 and standard deviation 10 to find the standard error, which is 2. The resulting z-score of 1 maps to a cumulative normal probability of 0.841345, indicating how extreme or common such a sample mean would be under these conditions.
 
-Questions and reports: support@ai999x.com. AI999X — The Future Is Self-Improving.
+Questions and reports: support@ai999x.com. AI999X, The Future Is Self-Improving.

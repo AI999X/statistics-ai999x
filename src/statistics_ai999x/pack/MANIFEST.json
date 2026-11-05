@@ -1,5 +1,5 @@
 {
- "package": "1.1.0",
+ "package": "1.5.0",
  "pack": "1.0.1",
  "knowledge_db": null,
  "files": {
@@ -9,13 +9,7 @@
   "knowledge/reference_cases.json": "7414a14e2c4202a7fae8cdd14e1a2ef7267f35a9665b0633001349c698d4e4e7",
   "capabilities/procedures.py": "8c754d4c9ac20684566d3533dca0b01d9505f9ebd8cfa3813c89706d977073b9",
   "capabilities/procedures_certified.json": "cd8b5dea8e974c6b1aab4d2fd7bdc452b922381c0aff440fed943b2b32f8dd23",
-  "statistics_knowledge_public.sqlite": "b50d87b82e65c8032aa0fcf75849a05c509418bda2427b4b03ecb24e935b9e53",
-  "search/encoder.int8.onnx": "521452d928a72da4d241b1835ab0f46b0e81ff58ffff0367b9a7029bd129fbd9",
-  "search/tokenizer.json": "b2f2deb461e6ad672b8e42aac29773e7a9be77d582cdf58808113ea43fda565e",
-  "search/index.json": "cbd28f9d940abc33d3bfd4a61beed818eda670deffcfe40b46845d84423f9ef9",
-  "reader/reader.int8.onnx": "ecee16f238097a01129c8c071809cc24d3edb25c7d73ca29bd5c383981ca0c33",
-  "reader/tokenizer.json": "a54ec88bce54ad97ea91cd47911b41025e80d47e13af62d47cf5758a65ba8387",
-  "reader/labels.json": "328c9073146573ae8e9890ac487d5a4cfe6914fef45fb0047633ac580f8fff80"
+  "statistics_knowledge_public.sqlite": "7a0649329dc99512e138bfe5ca54c877861607201fe3fffae2512b883b5ed1b5"
  },
  "engine": [
   "__init__.py",

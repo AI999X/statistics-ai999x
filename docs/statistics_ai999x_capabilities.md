@@ -186,7 +186,7 @@ Call `solve("<id>", **inputs)` with plain numbers; the result's `values` holds e
 
 <a id="mean"></a>
 
-### Arithmetic mean — `mean`
+### Arithmetic mean: `mean`
 
 The arithmetic mean (average) of a list of numbers.
 
@@ -239,7 +239,7 @@ statistics_ai999x.solve('mean', x='-3.5, 0, 7.25, 10')
 
 <a id="median"></a>
 
-### Median — `median`
+### Median: `median`
 
 The median (middle value) of a list of numbers; the mean of the two middle values when n is even.
 
@@ -289,7 +289,7 @@ statistics_ai999x.solve('median', x='3.2')
 
 <a id="mode"></a>
 
-### Mode — `mode`
+### Mode: `mode`
 
 The mode(s) of a list of numbers: every value that occurs most often (no mode when all values occur equally often).
 
@@ -340,7 +340,7 @@ statistics_ai999x.solve('mode', x='1, 2, 3')
 
 <a id="range"></a>
 
-### Range — `range`
+### Range: `range`
 
 The range (largest minus smallest value) of a list of numbers.
 
@@ -385,7 +385,7 @@ statistics_ai999x.solve('range', x=[3.5, 9.25, 1, 6])
 
 <a id="population_variance"></a>
 
-### Population variance — `population_variance`
+### Population variance: `population_variance`
 
 The population variance of a list of numbers (divisor n).
 
@@ -438,7 +438,7 @@ statistics_ai999x.solve('population_variance', x='1.5, 2.5')
 
 <a id="sample_variance"></a>
 
-### Sample variance — `sample_variance`
+### Sample variance: `sample_variance`
 
 The sample variance of a list of numbers (divisor n - 1).
 
@@ -491,7 +491,7 @@ statistics_ai999x.solve('sample_variance', x='1.5, 2.5')
 
 <a id="population_standard_deviation"></a>
 
-### Population standard deviation — `population_standard_deviation`
+### Population standard deviation: `population_standard_deviation`
 
 The population standard deviation of a list of numbers (divisor n).
 
@@ -544,7 +544,7 @@ statistics_ai999x.solve('population_standard_deviation', x='1.5, 2.5')
 
 <a id="sample_standard_deviation"></a>
 
-### Sample standard deviation — `sample_standard_deviation`
+### Sample standard deviation: `sample_standard_deviation`
 
 The sample standard deviation of a list of numbers (divisor n - 1).
 
@@ -597,7 +597,7 @@ statistics_ai999x.solve('sample_standard_deviation', x='1.5, 2.5')
 
 <a id="z_score"></a>
 
-### z-score of a value — `z_score`
+### z-score of a value, `z_score`
 
 The z-score (standard score) of a value x in a distribution with mean mu and standard deviation sigma.
 
@@ -644,7 +644,7 @@ statistics_ai999x.solve('z_score', x=42, mu=50, sigma=4)
 
 <a id="weighted_mean"></a>
 
-### Weighted mean — `weighted_mean`
+### Weighted mean: `weighted_mean`
 
 The weighted mean of values x with weights w (grade-point averages, portfolio averages).
 
@@ -691,7 +691,7 @@ statistics_ai999x.solve('weighted_mean', x=[3.7, 3.0, 4.0], w=[4, 3, 2])
 
 <a id="five_number_summary"></a>
 
-### Five-number summary and interquartile range — `five_number_summary`
+### Five-number summary and interquartile range, `five_number_summary`
 
 Minimum, first quartile, median, third quartile, maximum and the interquartile range of a data set.
 
@@ -746,7 +746,7 @@ statistics_ai999x.solve('five_number_summary', x=[6, 47, 49, 15, 42, 41, 7, 39, 
 
 <a id="percentile"></a>
 
-### Percentile of a data set — `percentile`
+### Percentile of a data set: `percentile`
 
 The p-th percentile of a data set (linear interpolation, or the weibull/p(n+1) method).
 
@@ -797,7 +797,7 @@ statistics_ai999x.solve('percentile', x=[3, 6, 7, 8, 8, 10, 13, 15, 16, 20], p=2
 
 <a id="coefficient_of_variation"></a>
 
-### Coefficient of variation — `coefficient_of_variation`
+### Coefficient of variation: `coefficient_of_variation`
 
 The coefficient of variation (sample standard deviation divided by the mean), as a ratio and a percentage.
 
@@ -844,7 +844,7 @@ statistics_ai999x.solve('coefficient_of_variation', x=[52, 48, 50, 55, 45])
 
 <a id="probability_at_least_one"></a>
 
-### Probability of at least one occurrence — `probability_at_least_one`
+### Probability of at least one occurrence: `probability_at_least_one`
 
 The probability that an event of probability p occurs at least once in n independent trials.
 
@@ -896,7 +896,7 @@ statistics_ai999x.solve('probability_at_least_one', p=0.16666666666666666, n=4)
 
 <a id="geometric_mean"></a>
 
-### Geometric mean — `geometric_mean`
+### Geometric mean: `geometric_mean`
 
 The geometric mean of positive numbers (average growth factors, ratios).
 
@@ -945,7 +945,7 @@ statistics_ai999x.solve('geometric_mean', x='4, 1, 0.03125')
 
 <a id="harmonic_mean"></a>
 
-### Harmonic mean — `harmonic_mean`
+### Harmonic mean: `harmonic_mean`
 
 The harmonic mean of positive numbers (average speeds over equal distances, average rates).
 
@@ -989,7 +989,7 @@ statistics_ai999x.solve('harmonic_mean', x=[1, 2, 4])
 
 <a id="mean_absolute_deviation"></a>
 
-### Mean absolute deviation — `mean_absolute_deviation`
+### Mean absolute deviation: `mean_absolute_deviation`
 
 The mean absolute deviation about the mean of a list of numbers.
 
@@ -1033,7 +1033,7 @@ statistics_ai999x.solve('mean_absolute_deviation', x=[10, 15, 20, 30, 50])
 
 <a id="median_absolute_deviation"></a>
 
-### Median absolute deviation — `median_absolute_deviation`
+### Median absolute deviation: `median_absolute_deviation`
 
 The median absolute deviation (MAD) about the median, a robust measure of spread (unscaled).
 
@@ -1077,7 +1077,7 @@ statistics_ai999x.solve('median_absolute_deviation', x=[10, 12, 13, 15, 40])
 
 <a id="standard_error_of_mean"></a>
 
-### Standard error of the mean — `standard_error_of_mean`
+### Standard error of the mean: `standard_error_of_mean`
 
 The standard error of the mean of a sample: s / sqrt(n).
 
@@ -1123,7 +1123,7 @@ statistics_ai999x.solve('standard_error_of_mean', x=[2.1, 2.5, 2.2, 2.8, 2.4, 2.
 
 <a id="frequency_table_statistics"></a>
 
-### Mean and standard deviation of a frequency table — `frequency_table_statistics`
+### Mean and standard deviation of a frequency table, `frequency_table_statistics`
 
 The mean and the sample and population standard deviations of data given as values with frequencies.
 
@@ -1171,7 +1171,7 @@ statistics_ai999x.solve('frequency_table_statistics', x=[10, 20, 30], f=[2, 5, 3
 
 <a id="trimmed_mean"></a>
 
-### Trimmed mean — `trimmed_mean`
+### Trimmed mean: `trimmed_mean`
 
 The trimmed mean: the mean after removing the given proportion of values from EACH end.
 
@@ -1218,7 +1218,7 @@ statistics_ai999x.solve('trimmed_mean', x=[3, 8, 1, 9, 4, 6, 100, 5], proportion
 
 <a id="iqr_outliers"></a>
 
-### Outliers by the 1.5 IQR rule — `iqr_outliers`
+### Outliers by the 1.5 IQR rule: `iqr_outliers`
 
 The lower and upper fences $Q_{1} - 1.5$ IQR and $Q_{3} + 1.5$ IQR and the values outside them.
 
@@ -1267,7 +1267,7 @@ statistics_ai999x.solve('iqr_outliers', x=[1, 3, 4, 5, 5, 6, 7, 30])
 
 <a id="discrete_random_variable"></a>
 
-### Expected value and variance of a discrete random variable — `discrete_random_variable`
+### Expected value and variance of a discrete random variable, `discrete_random_variable`
 
 The expected value, variance and standard deviation of a discrete random variable given its values and probabilities.
 
@@ -1314,7 +1314,7 @@ statistics_ai999x.solve('discrete_random_variable', x=[10, 20], p=[0.25, 0.75])
 
 <a id="skewness_kurtosis"></a>
 
-### Skewness and kurtosis — `skewness_kurtosis`
+### Skewness and kurtosis: `skewness_kurtosis`
 
 Sample skewness and excess kurtosis: the adjusted Fisher-Pearson estimates (G1, G2, as in spreadsheets and most software) and the moment estimates (g1, g2).
 
@@ -1361,7 +1361,7 @@ statistics_ai999x.solve('skewness_kurtosis', x=[1, 2, 2, 3, 3, 3, 4, 10])
 
 <a id="binomial_exactly"></a>
 
-### Binomial probability: exactly k successes — `binomial_exactly`
+### Binomial probability: exactly k successes, `binomial_exactly`
 
 The probability of exactly k successes in n independent trials with success probability p.
 
@@ -1417,7 +1417,7 @@ statistics_ai999x.solve('binomial_exactly', n=6, k=6, p=0.5)
 
 <a id="binomial_at_most"></a>
 
-### Binomial probability: at most k successes — `binomial_at_most`
+### Binomial probability: at most k successes, `binomial_at_most`
 
 The probability of at most k successes in n independent trials with success probability p.
 
@@ -1469,7 +1469,7 @@ statistics_ai999x.solve('binomial_at_most', n=6, k=6, p=0.5)
 
 <a id="binomial_at_least"></a>
 
-### Binomial probability: at least k successes — `binomial_at_least`
+### Binomial probability: at least k successes, `binomial_at_least`
 
 The probability of at least k successes in n independent trials with success probability p.
 
@@ -1525,7 +1525,7 @@ statistics_ai999x.solve('binomial_at_least', n=6, k=6, p=0.5)
 
 <a id="binomial_mean_sd"></a>
 
-### Mean and standard deviation of a binomial distribution — `binomial_mean_sd`
+### Mean and standard deviation of a binomial distribution, `binomial_mean_sd`
 
 The mean np, variance np(1-p) and standard deviation of a binomial random variable.
 
@@ -1572,7 +1572,7 @@ statistics_ai999x.solve('binomial_mean_sd', n=12, p=0.5)
 
 <a id="poisson_exactly"></a>
 
-### Poisson probability: exactly k events — `poisson_exactly`
+### Poisson probability: exactly k events, `poisson_exactly`
 
 The probability of exactly k events when events occur independently at mean rate lambda per interval.
 
@@ -1627,7 +1627,7 @@ statistics_ai999x.solve('poisson_exactly', lam=0.5, k=0)
 
 <a id="poisson_at_most"></a>
 
-### Poisson probability: at most k events — `poisson_at_most`
+### Poisson probability: at most k events, `poisson_at_most`
 
 The probability of at most k events when events occur independently at mean rate lambda per interval.
 
@@ -1682,7 +1682,7 @@ statistics_ai999x.solve('poisson_at_most', lam=0.5, k=0)
 
 <a id="poisson_at_least"></a>
 
-### Poisson probability: at least k events — `poisson_at_least`
+### Poisson probability: at least k events, `poisson_at_least`
 
 The probability of at least k events when events occur independently at mean rate lambda per interval.
 
@@ -1737,7 +1737,7 @@ statistics_ai999x.solve('poisson_at_least', lam=0.5, k=0)
 
 <a id="geometric_probability"></a>
 
-### Geometric distribution: first success on trial k — `geometric_probability`
+### Geometric distribution: first success on trial k, `geometric_probability`
 
 The probability that the first success occurs on trial k, and that it occurs on or before trial k.
 
@@ -1787,7 +1787,7 @@ statistics_ai999x.solve('geometric_probability', p=0.5, k=3)
 
 <a id="hypergeometric_probability"></a>
 
-### Hypergeometric probability (sampling without replacement) — `hypergeometric_probability`
+### Hypergeometric probability (sampling without replacement), `hypergeometric_probability`
 
 The probability of exactly k successes, and of at most k, in n draws without replacement from a population of N items of which K are successes.
 
@@ -1845,7 +1845,7 @@ statistics_ai999x.solve('hypergeometric_probability', N=52, K=4, n=5, k=0)
 
 <a id="negative_binomial_probability"></a>
 
-### Negative binomial: r-th success on trial n — `negative_binomial_probability`
+### Negative binomial: r-th success on trial n, `negative_binomial_probability`
 
 The probability that the r-th success occurs on trial n (independent trials with success probability p).
 
@@ -1895,7 +1895,7 @@ statistics_ai999x.solve('negative_binomial_probability', r=2, p=0.5, n=5)
 
 <a id="normal_probability_below"></a>
 
-### Normal probability below a value — `normal_probability_below`
+### Normal probability below a value: `normal_probability_below`
 
 P(X < x) for a normal distribution with mean mu and standard deviation sigma (the area to the left).
 
@@ -1949,7 +1949,7 @@ statistics_ai999x.solve('normal_probability_below', x=1.96, mu=0, sigma=1)
 
 <a id="normal_probability_above"></a>
 
-### Normal probability above a value — `normal_probability_above`
+### Normal probability above a value: `normal_probability_above`
 
 P(X > x) for a normal distribution with mean mu and standard deviation sigma (the area to the right).
 
@@ -1997,7 +1997,7 @@ statistics_ai999x.solve('normal_probability_above', x=650, mu=500, sigma=100)
 
 <a id="normal_probability_between"></a>
 
-### Normal probability between two values — `normal_probability_between`
+### Normal probability between two values: `normal_probability_between`
 
 P(a < X < b) for a normal distribution with mean mu and standard deviation sigma.
 
@@ -2052,7 +2052,7 @@ statistics_ai999x.solve('normal_probability_between', a=-1.96, b=1.96, mu=0, sig
 
 <a id="inverse_normal"></a>
 
-### Inverse normal (normal percentile) — `inverse_normal`
+### Inverse normal (normal percentile): `inverse_normal`
 
 The value x with P(X < x) = p for a normal distribution (percentiles, cut-offs, top and bottom percentages).
 
@@ -2105,7 +2105,7 @@ statistics_ai999x.solve('inverse_normal', p=0.975, mu=0, sigma=1)
 
 <a id="z_critical_value"></a>
 
-### Critical value of z — `z_critical_value`
+### Critical value of z: `z_critical_value`
 
 The standard normal critical value for a significance level (or confidence level), two-tailed or one-tailed.
 
@@ -2160,7 +2160,7 @@ statistics_ai999x.solve('z_critical_value', alpha=0.01, tails='left-tailed')
 
 <a id="t_critical_value"></a>
 
-### Critical value of Student's t — `t_critical_value`
+### Critical value of Student's t: `t_critical_value`
 
 The Student t critical value for given degrees of freedom and significance (or confidence) level.
 
@@ -2216,7 +2216,7 @@ statistics_ai999x.solve('t_critical_value', df=1, alpha=0.01, tails='two-tailed'
 
 <a id="chi_square_critical_value"></a>
 
-### Critical value of chi-square — `chi_square_critical_value`
+### Critical value of chi-square: `chi_square_critical_value`
 
 The right-tail chi-square critical value (P(X > c) = alpha) for given degrees of freedom, and the left-tail value (P(X < c) = alpha).
 
@@ -2271,7 +2271,7 @@ statistics_ai999x.solve('chi_square_critical_value', df=1, alpha=0.05)
 
 <a id="f_critical_value"></a>
 
-### Critical value of F — `f_critical_value`
+### Critical value of F: `f_critical_value`
 
 The right-tail F critical value (P(F > c) = alpha) for numerator and denominator degrees of freedom.
 
@@ -2321,7 +2321,7 @@ statistics_ai999x.solve('f_critical_value', df1=5, df2=10, alpha=0.01)
 
 <a id="exponential_probability_below"></a>
 
-### Exponential probability below a value — `exponential_probability_below`
+### Exponential probability below a value: `exponential_probability_below`
 
 P(X < x) for an exponential distribution given its rate lambda or its mean.
 
@@ -2371,7 +2371,7 @@ statistics_ai999x.solve('exponential_probability_below', x=5, mean=10)
 
 <a id="exponential_probability_above"></a>
 
-### Exponential probability above a value — `exponential_probability_above`
+### Exponential probability above a value: `exponential_probability_above`
 
 P(X > x) for an exponential distribution given its rate lambda or its mean.
 
@@ -2421,7 +2421,7 @@ statistics_ai999x.solve('exponential_probability_above', x=5, mean=10)
 
 <a id="sample_mean_probability_below"></a>
 
-### Probability that a sample mean is below a value — `sample_mean_probability_below`
+### Probability that a sample mean is below a value, `sample_mean_probability_below`
 
 P(sample mean < x) for samples of size n from a population with mean mu and standard deviation sigma (central limit theorem).
 
@@ -2470,7 +2470,7 @@ statistics_ai999x.solve('sample_mean_probability_below', x=97, mu=100, sigma=15,
 
 <a id="sample_mean_probability_above"></a>
 
-### Probability that a sample mean is above a value — `sample_mean_probability_above`
+### Probability that a sample mean is above a value, `sample_mean_probability_above`
 
 P(sample mean > x) for samples of size n from a population with mean mu and standard deviation sigma (central limit theorem).
 
@@ -2519,7 +2519,7 @@ statistics_ai999x.solve('sample_mean_probability_above', x=97, mu=100, sigma=15,
 
 <a id="ci_mean_known_sigma"></a>
 
-### Confidence interval for a mean (sigma known, z-interval) — `ci_mean_known_sigma`
+### Confidence interval for a mean (sigma known, z-interval), `ci_mean_known_sigma`
 
 The z confidence interval for a population mean when the population standard deviation sigma is known.
 
@@ -2570,7 +2570,7 @@ statistics_ai999x.solve('ci_mean_known_sigma', xbar=120, sigma=15, n=50, confide
 
 <a id="ci_mean_t"></a>
 
-### Confidence interval for a mean from data (t-interval) — `ci_mean_t`
+### Confidence interval for a mean from data (t-interval), `ci_mean_t`
 
 The t confidence interval for a population mean from sample data (sigma unknown).
 
@@ -2625,7 +2625,7 @@ statistics_ai999x.solve('ci_mean_t', x=[4.8, 5.1, 5.3, 4.9, 5.0], confidence=0.9
 
 <a id="ci_mean_t_summary"></a>
 
-### Confidence interval for a mean from summary statistics (t-interval) — `ci_mean_t_summary`
+### Confidence interval for a mean from summary statistics (t-interval), `ci_mean_t_summary`
 
 The t confidence interval for a mean from the sample mean, sample standard deviation and n.
 
@@ -2676,7 +2676,7 @@ statistics_ai999x.solve('ci_mean_t_summary', xbar=3.2, s=0.5, n=10, confidence=0
 
 <a id="ci_proportion"></a>
 
-### Confidence interval for a proportion (Wald) — `ci_proportion`
+### Confidence interval for a proportion (Wald), `ci_proportion`
 
 The large-sample (Wald) confidence interval for a population proportion from x successes in n trials.
 
@@ -2725,7 +2725,7 @@ statistics_ai999x.solve('ci_proportion', x=312, n=500, confidence=0.99)
 
 <a id="wilson_interval"></a>
 
-### Wilson score interval for a proportion — `wilson_interval`
+### Wilson score interval for a proportion: `wilson_interval`
 
 The Wilson score confidence interval for a proportion (good coverage for small n and for p near 0 or 1).
 
@@ -2774,7 +2774,7 @@ statistics_ai999x.solve('wilson_interval', x=0, n=15, confidence=0.9)
 
 <a id="ci_two_means"></a>
 
-### Confidence interval for the difference of two means — `ci_two_means`
+### Confidence interval for the difference of two means, `ci_two_means`
 
 The t confidence interval for $mu1 - mu2$ from two independent samples (Welch or pooled variances).
 
@@ -2829,7 +2829,7 @@ statistics_ai999x.solve('ci_two_means', x=[5.1, 4.9, 5.6, 5.8], y=[4.2, 4.8, 4.4
 
 <a id="ci_variance"></a>
 
-### Confidence interval for a variance and standard deviation — `ci_variance`
+### Confidence interval for a variance and standard deviation, `ci_variance`
 
 The chi-square confidence interval for a population variance (and standard deviation) from sample data.
 
@@ -2878,7 +2878,7 @@ statistics_ai999x.solve('ci_variance', x=[4.8, 5.1, 5.3, 4.9, 5.0], confidence=0
 
 <a id="z_test_mean"></a>
 
-### One-sample z-test for a mean (sigma known) — `z_test_mean`
+### One-sample z-test for a mean (sigma known), `z_test_mean`
 
 The z statistic and p-value for H0: $mu = mu0$ when the population standard deviation is known.
 
@@ -2928,7 +2928,7 @@ statistics_ai999x.solve('z_test_mean', xbar=103, mu0=100, sigma=12, n=49, altern
 
 <a id="t_test_one_sample"></a>
 
-### One-sample t-test — `t_test_one_sample`
+### One-sample t-test: `t_test_one_sample`
 
 The one-sample t-test of H0: $mu = mu0$ from sample data: t statistic, degrees of freedom and p-value.
 
@@ -2983,7 +2983,7 @@ statistics_ai999x.solve('t_test_one_sample', x=[98, 102, 95, 97, 99, 96], mu0=10
 
 <a id="t_test_two_sample_pooled"></a>
 
-### Two-sample t-test (pooled variances) — `t_test_two_sample_pooled`
+### Two-sample t-test (pooled variances): `t_test_two_sample_pooled`
 
 Two-sample t-test (pooled variances) comparing the means of two independent samples: t statistic, degrees of freedom, p-value.
 
@@ -3037,7 +3037,7 @@ statistics_ai999x.solve('t_test_two_sample_pooled', x=[5.1, 4.9, 5.6, 5.8], y=[4
 
 <a id="welch_t_test"></a>
 
-### Welch's two-sample t-test (unequal variances) — `welch_t_test`
+### Welch's two-sample t-test (unequal variances), `welch_t_test`
 
 Welch's two-sample t-test (unequal variances) comparing the means of two independent samples: t statistic, degrees of freedom, p-value.
 
@@ -3091,7 +3091,7 @@ statistics_ai999x.solve('welch_t_test', x=[5.1, 4.9, 5.6, 5.8], y=[4.2, 4.8, 4.4
 
 <a id="paired_t_test"></a>
 
-### Paired t-test — `paired_t_test`
+### Paired t-test: `paired_t_test`
 
 The paired (dependent samples) t-test on the differences x - y: t statistic, df and p-value.
 
@@ -3144,7 +3144,7 @@ statistics_ai999x.solve('paired_t_test', x=[5.2, 6.1, 5.8, 6.4], y=[4.9, 5.7, 5.
 
 <a id="t_test_summary_statistics"></a>
 
-### Two-sample t-test from summary statistics — `t_test_summary_statistics`
+### Two-sample t-test from summary statistics: `t_test_summary_statistics`
 
 The two-sample t-test from the means, sample standard deviations and sizes of two groups (Welch or pooled).
 
@@ -3198,7 +3198,7 @@ statistics_ai999x.solve('t_test_summary_statistics', m1=3.4, s1=0.8, n1=30, m2=3
 
 <a id="proportion_z_test"></a>
 
-### One-proportion z-test — `proportion_z_test`
+### One-proportion z-test: `proportion_z_test`
 
 The z-test of H0: $p = p_{0}$ for a population proportion from x successes in n trials.
 
@@ -3247,7 +3247,7 @@ statistics_ai999x.solve('proportion_z_test', x=45, n=120, p0=0.3, alternative='g
 
 <a id="two_proportion_z_test"></a>
 
-### Two-proportion z-test — `two_proportion_z_test`
+### Two-proportion z-test: `two_proportion_z_test`
 
 The pooled z-test of H0: $p_{1} = p_{2}$ from x1 of n1 and x2 of n2 successes.
 
@@ -3299,7 +3299,7 @@ statistics_ai999x.solve('two_proportion_z_test', x1=120, n1=400, x2=90, n2=380, 
 
 <a id="chi_square_goodness_of_fit"></a>
 
-### Chi-square goodness-of-fit test — `chi_square_goodness_of_fit`
+### Chi-square goodness-of-fit test: `chi_square_goodness_of_fit`
 
 The chi-square goodness-of-fit test of observed counts against expected proportions (equal if omitted).
 
@@ -3356,7 +3356,7 @@ statistics_ai999x.solve('chi_square_goodness_of_fit', observed=[30, 50, 20], pro
 
 <a id="chi_square_independence"></a>
 
-### Chi-square test of independence — `chi_square_independence`
+### Chi-square test of independence: `chi_square_independence`
 
 The chi-square test of independence (or homogeneity) for an r x c contingency table of counts.
 
@@ -3408,7 +3408,7 @@ statistics_ai999x.solve('chi_square_independence', table=[[10, 20, 30], [20, 15,
 
 <a id="chi_square_variance_test"></a>
 
-### Chi-square test for a variance — `chi_square_variance_test`
+### Chi-square test for a variance: `chi_square_variance_test`
 
 The chi-square test of H0: $\sigma = sigma0$ for a normal population from sample data.
 
@@ -3457,7 +3457,7 @@ statistics_ai999x.solve('chi_square_variance_test', x=[52, 48, 55, 45, 50, 58, 4
 
 <a id="f_test_variances"></a>
 
-### F-test for equality of two variances — `f_test_variances`
+### F-test for equality of two variances: `f_test_variances`
 
 The F-test of H0: $sigma1^{2} = sigma2^{2}$ from two independent normal samples.
 
@@ -3510,7 +3510,7 @@ statistics_ai999x.solve('f_test_variances', x=[5.1, 6.3, 4.2, 7.0, 5.5], y=[5.0,
 
 <a id="pearson_correlation"></a>
 
-### Pearson correlation coefficient — `pearson_correlation`
+### Pearson correlation coefficient: `pearson_correlation`
 
 Pearson's correlation coefficient r between paired data, r squared, and the two-sided p-value for H0: $\rho = 0.$
 
@@ -3559,7 +3559,7 @@ statistics_ai999x.solve('pearson_correlation', x=[43, 21, 25, 42, 57, 59], y=[99
 
 <a id="correlation_t_test"></a>
 
-### Significance test for a correlation coefficient — `correlation_t_test`
+### Significance test for a correlation coefficient, `correlation_t_test`
 
 The t-test of H0: $\rho = 0$ from a sample correlation r and the number of pairs n.
 
@@ -3611,7 +3611,7 @@ statistics_ai999x.solve('correlation_t_test', r=-0.32, n=50, alternative='less')
 
 <a id="correlation_confidence_interval"></a>
 
-### Confidence interval for a correlation (Fisher z) — `correlation_confidence_interval`
+### Confidence interval for a correlation (Fisher z), `correlation_confidence_interval`
 
 The Fisher z-transformation confidence interval for the population correlation from paired data.
 
@@ -3663,7 +3663,7 @@ statistics_ai999x.solve('correlation_confidence_interval', x=[43, 21, 25, 42, 57
 
 <a id="spearman_correlation"></a>
 
-### Spearman rank correlation — `spearman_correlation`
+### Spearman rank correlation: `spearman_correlation`
 
 Spearman's rank correlation coefficient (ties given average ranks) with its two-sided p-value.
 
@@ -3714,7 +3714,7 @@ statistics_ai999x.solve('spearman_correlation', x=[3, 1, 4, 1, 5, 9], y=[2, 7, 1
 
 <a id="kendall_tau"></a>
 
-### Kendall's tau-b rank correlation — `kendall_tau`
+### Kendall's tau-b rank correlation: `kendall_tau`
 
 Kendall's tau-b (tie-adjusted) between paired data with its two-sided large-sample p-value.
 
@@ -3762,7 +3762,7 @@ statistics_ai999x.solve('kendall_tau', x=[12, 2, 1, 12, 2], y=[1, 4, 7, 1, 0])
 
 <a id="covariance"></a>
 
-### Covariance — `covariance`
+### Covariance: `covariance`
 
 The sample $(n - 1)$ and population (n) covariance of paired data.
 
@@ -3808,7 +3808,7 @@ statistics_ai999x.solve('covariance', x=[1.5, 2.5, 3.0], y=[10, 12, 15])
 
 <a id="simple_linear_regression"></a>
 
-### Simple linear regression (least squares line) — `simple_linear_regression`
+### Simple linear regression (least squares line), `simple_linear_regression`
 
 The least-squares line y = intercept + slope x: coefficients, r, r squared, standard errors and the slope's p-value.
 
@@ -3864,7 +3864,7 @@ statistics_ai999x.solve('simple_linear_regression', x=[2, 3, 4, 5, 6], y=[65, 70
 
 <a id="regression_prediction"></a>
 
-### Prediction from a least squares line — `regression_prediction`
+### Prediction from a least squares line: `regression_prediction`
 
 The predicted y at a given x0 from the least-squares line fitted to paired data.
 
@@ -3912,7 +3912,7 @@ statistics_ai999x.solve('regression_prediction', x=[2, 3, 4, 5, 6], y=[65, 70, 7
 
 <a id="multiple_linear_regression"></a>
 
-### Multiple linear regression — `multiple_linear_regression`
+### Multiple linear regression: `multiple_linear_regression`
 
 Ordinary least squares with several predictors: coefficients (intercept first), R squared, adjusted R squared and the overall F-test.
 
@@ -3962,7 +3962,7 @@ statistics_ai999x.solve('multiple_linear_regression', X=[[2, 50], [3, 60], [5, 5
 
 <a id="durbin_watson"></a>
 
-### Durbin-Watson statistic — `durbin_watson`
+### Durbin-Watson statistic: `durbin_watson`
 
 The Durbin-Watson statistic of regression residuals (about 2: no first-order autocorrelation; towards 0: positive; towards 4: negative).
 
@@ -4006,7 +4006,7 @@ statistics_ai999x.solve('durbin_watson', residuals=[1.2, 0.8, 0.5, -0.1, -0.6, -
 
 <a id="one_way_anova"></a>
 
-### One-way ANOVA — `one_way_anova`
+### One-way ANOVA: `one_way_anova`
 
 One-way analysis of variance for 2 to 5 independent groups: F statistic, p-value, sums of squares and eta squared.
 
@@ -4067,7 +4067,7 @@ statistics_ai999x.solve('one_way_anova', g1=[5.1, 4.8, 5.5], g2=[6.2, 6.0, 6.8, 
 
 <a id="randomized_block_anova"></a>
 
-### Randomized complete block design (two-way ANOVA without replication) — `randomized_block_anova`
+### Randomized complete block design (two-way ANOVA without replication), `randomized_block_anova`
 
 Two-way ANOVA for a randomized complete block design: rows are blocks, columns are treatments, one observation per cell; F-tests for treatments and blocks.
 
@@ -4124,7 +4124,7 @@ statistics_ai999x.solve('randomized_block_anova', data=[[5.1, 5.6, 6.0, 5.8], [4
 
 <a id="levene_test"></a>
 
-### Levene's test for equal variances — `levene_test`
+### Levene's test for equal variances: `levene_test`
 
 Levene's test of equal variances across 2 to 5 groups, centred at the median (Brown-Forsythe) or the mean.
 
@@ -4180,7 +4180,7 @@ statistics_ai999x.solve('levene_test', g1=[5.1, 6.3, 4.2, 7.0], g2=[5.0, 5.2, 4.
 
 <a id="bartlett_test"></a>
 
-### Bartlett's test for equal variances — `bartlett_test`
+### Bartlett's test for equal variances: `bartlett_test`
 
 Bartlett's test of equal variances across 2 to 5 groups (normal populations).
 
@@ -4234,7 +4234,7 @@ statistics_ai999x.solve('bartlett_test', g1=[5.1, 6.3, 4.2, 7.0], g2=[5.0, 5.2, 
 
 <a id="mann_whitney_u"></a>
 
-### Mann-Whitney U test (large-sample) — `mann_whitney_u`
+### Mann-Whitney U test (large-sample): `mann_whitney_u`
 
 The Mann-Whitney U test (large-sample): compares two independent samples by ranks (statistic U of the first sample and the p-value).
 
@@ -4281,7 +4281,7 @@ statistics_ai999x.solve('mann_whitney_u', x=[12.1, 15.3, 14.2, 18.4], y=[10.5, 9
 
 <a id="mann_whitney_exact"></a>
 
-### Mann-Whitney U test (exact) — `mann_whitney_exact`
+### Mann-Whitney U test (exact): `mann_whitney_exact`
 
 The Mann-Whitney U test (exact): compares two independent samples by ranks (statistic U of the first sample and the p-value).
 
@@ -4328,7 +4328,7 @@ statistics_ai999x.solve('mann_whitney_exact', x=[12.1, 15.3, 14.2, 18.4], y=[10.
 
 <a id="wilcoxon_signed_rank"></a>
 
-### Wilcoxon signed-rank test (large-sample) — `wilcoxon_signed_rank`
+### Wilcoxon signed-rank test (large-sample): `wilcoxon_signed_rank`
 
 The Wilcoxon signed-rank test (large-sample) for paired data (x - y) or for differences given directly (x alone); zero differences are dropped.
 
@@ -4377,7 +4377,7 @@ statistics_ai999x.solve('wilcoxon_signed_rank', x=[1.8, -0.7, 2.6, 3.1, -1.2, 4.
 
 <a id="wilcoxon_signed_rank_exact"></a>
 
-### Wilcoxon signed-rank test (exact) — `wilcoxon_signed_rank_exact`
+### Wilcoxon signed-rank test (exact): `wilcoxon_signed_rank_exact`
 
 The Wilcoxon signed-rank test (exact) for paired data (x - y) or for differences given directly (x alone); zero differences are dropped.
 
@@ -4426,7 +4426,7 @@ statistics_ai999x.solve('wilcoxon_signed_rank_exact', x=[1.8, -0.7, 2.6, 3.1, -1
 
 <a id="kruskal_wallis"></a>
 
-### Kruskal-Wallis H test — `kruskal_wallis`
+### Kruskal-Wallis H test: `kruskal_wallis`
 
 The Kruskal-Wallis rank test comparing 2 to 5 independent groups (nonparametric one-way ANOVA).
 
@@ -4480,7 +4480,7 @@ statistics_ai999x.solve('kruskal_wallis', g1=[5.1, 4.8, 5.5], g2=[6.2, 6.0, 6.8,
 
 <a id="friedman_test"></a>
 
-### Friedman test — `friedman_test`
+### Friedman test: `friedman_test`
 
 The Friedman rank test for $k  \geq  3$ related treatments measured on the same blocks (subjects): rows are blocks, columns are treatments.
 
@@ -4530,7 +4530,7 @@ statistics_ai999x.solve('friedman_test', data=[[1.2, 1.5, 1.9, 1.1], [2.1, 2.4, 
 
 <a id="sign_test"></a>
 
-### Sign test — `sign_test`
+### Sign test: `sign_test`
 
 The sign test for the median difference of paired data (or of differences given directly): exact binomial p-value.
 
@@ -4582,7 +4582,7 @@ statistics_ai999x.solve('sign_test', x=[1.8, -0.7, 2.6, 3.1, -1.2, 4.4, 0.9, 2.2
 
 <a id="fisher_exact_test"></a>
 
-### Fisher's exact test (2 x 2) — `fisher_exact_test`
+### Fisher's exact test (2 x 2): `fisher_exact_test`
 
 Fisher's exact test of association in a 2 x 2 table, with the sample odds ratio.
 
@@ -4632,7 +4632,7 @@ statistics_ai999x.solve('fisher_exact_test', table=[[3, 7], [9, 1]], alternative
 
 <a id="mcnemar_test"></a>
 
-### McNemar's test for paired proportions — `mcnemar_test`
+### McNemar's test for paired proportions: `mcnemar_test`
 
 McNemar's test for a 2 x 2 table of paired outcomes: continuity-corrected chi-square and the exact binomial p-value.
 
@@ -4683,7 +4683,7 @@ statistics_ai999x.solve('mcnemar_test', table=[[45, 10], [20, 25]])
 
 <a id="cohens_d"></a>
 
-### Cohen's d and Hedges' g — `cohens_d`
+### Cohen's d and Hedges' g: `cohens_d`
 
 The standardized mean difference of two independent samples: Cohen's d (pooled SD) and Hedges' g (bias-corrected).
 
@@ -4730,7 +4730,7 @@ statistics_ai999x.solve('cohens_d', x=[5.1, 4.9, 5.6, 5.8], y=[4.2, 4.8, 4.4, 4.
 
 <a id="cronbach_alpha"></a>
 
-### Cronbach's alpha (internal consistency) — `cronbach_alpha`
+### Cronbach's alpha (internal consistency): `cronbach_alpha`
 
 Cronbach's alpha for a questionnaire or test: rows are respondents, columns are items.
 
@@ -4776,7 +4776,7 @@ statistics_ai999x.solve('cronbach_alpha', data=[[1, 2, 2, 1], [3, 3, 4, 3], [4, 
 
 <a id="factorial_2x2_effects"></a>
 
-### 2^2 factorial design: main effects and interaction — `factorial_2x2_effects`
+### 2^2 factorial design: main effects and interaction, `factorial_2x2_effects`
 
 Effects of a two-level 4-run factorial experiment from one response per run in standard (Yates) order ((1), a, b, ab).
 
@@ -4823,7 +4823,7 @@ statistics_ai999x.solve('factorial_2x2_effects', y=[20, 30, 25, 45])
 
 <a id="factorial_2x2x2_effects"></a>
 
-### 2^3 factorial design: main effects and interactions — `factorial_2x2x2_effects`
+### 2^3 factorial design: main effects and interactions, `factorial_2x2x2_effects`
 
 Effects of a two-level 8-run factorial experiment from one response per run in standard (Yates) order ((1), a, b, ab, c, ac, bc, abc).
 
@@ -4874,7 +4874,7 @@ statistics_ai999x.solve('factorial_2x2x2_effects', y=[550, 669, 604, 650, 633, 6
 
 <a id="sample_size_proportion"></a>
 
-### Sample size to estimate a proportion — `sample_size_proportion`
+### Sample size to estimate a proportion: `sample_size_proportion`
 
 The smallest n giving a confidence interval for a proportion with the required margin of error (p = 0.5 if no estimate).
 
@@ -4921,7 +4921,7 @@ statistics_ai999x.solve('sample_size_proportion', margin=0.05, confidence=0.99, 
 
 <a id="sample_size_mean"></a>
 
-### Sample size to estimate a mean — `sample_size_mean`
+### Sample size to estimate a mean: `sample_size_mean`
 
 The smallest n giving a z confidence interval for a mean with the required margin of error, sigma known.
 
@@ -4968,7 +4968,7 @@ statistics_ai999x.solve('sample_size_mean', sigma=8, margin=1.5, confidence=0.99
 
 <a id="power_one_sample_z"></a>
 
-### Power of a one-sample z-test — `power_one_sample_z`
+### Power of a one-sample z-test: `power_one_sample_z`
 
 The power of a one-sample z-test for a standardized effect size d (Cohen's d), sample size n and significance level alpha.
 
@@ -5015,7 +5015,7 @@ statistics_ai999x.solve('power_one_sample_z', d=0.3, n=100, alpha=0.01, alternat
 
 <a id="power_two_sample_z"></a>
 
-### Power of a two-sample z-test — `power_two_sample_z`
+### Power of a two-sample z-test: `power_two_sample_z`
 
 The power of a two-sample z-test for a standardized effect size d (Cohen's d), sample size n per group and significance level alpha.
 
@@ -5062,7 +5062,7 @@ statistics_ai999x.solve('power_two_sample_z', d=0.3, n=100, alpha=0.01, alternat
 
 <a id="sample_size_two_means"></a>
 
-### Sample size per group to compare two means (z-test power) — `sample_size_two_means`
+### Sample size per group to compare two means (z-test power), `sample_size_two_means`
 
 The sample size per group for a two-sample z-test to reach a target power for a standardized effect size d.
 
@@ -5110,7 +5110,7 @@ statistics_ai999x.solve('sample_size_two_means', d=0.3, alpha=0.05, power=0.9, a
 
 <a id="xbar_r_chart"></a>
 
-### X-bar and R control chart limits — `xbar_r_chart`
+### X-bar and R control chart limits: `xbar_r_chart`
 
 Centre lines and $3-\sigma$ control limits of X-bar and R charts from subgroups (rows) of size 2 to 10.
 
@@ -5162,7 +5162,7 @@ statistics_ai999x.solve('xbar_r_chart', data=[[5, 6, 4], [6, 7, 5], [5, 5, 6], [
 
 <a id="xbar_s_chart"></a>
 
-### X-bar and S control chart limits — `xbar_s_chart`
+### X-bar and S control chart limits: `xbar_s_chart`
 
 Centre lines and $3-\sigma$ control limits of X-bar and S charts from subgroups (rows) of size 2 to 10.
 
@@ -5214,7 +5214,7 @@ statistics_ai999x.solve('xbar_s_chart', data=[[5, 6, 4], [6, 7, 5], [5, 5, 6], [
 
 <a id="individuals_moving_range_chart"></a>
 
-### Individuals and moving range (I-MR) chart limits — `individuals_moving_range_chart`
+### Individuals and moving range (I-MR) chart limits, `individuals_moving_range_chart`
 
 Control limits of the individuals (X) and moving range charts from individual measurements in time order.
 
@@ -5263,7 +5263,7 @@ statistics_ai999x.solve('individuals_moving_range_chart', x=[52, 49, 55, 51, 48,
 
 <a id="p_chart"></a>
 
-### p chart limits (fraction defective) — `p_chart`
+### p chart limits (fraction defective), `p_chart`
 
 Centre line and $3-\sigma$ limits of a p chart from counts of defective items in samples of constant size n.
 
@@ -5312,7 +5312,7 @@ statistics_ai999x.solve('p_chart', defectives=[2, 3, 1, 4, 2, 5], n=50)
 
 <a id="c_chart"></a>
 
-### c chart limits (defects per unit) — `c_chart`
+### c chart limits (defects per unit), `c_chart`
 
 Centre line and $3-\sigma$ limits of a c chart from counts of defects per inspection unit.
 
@@ -5358,7 +5358,7 @@ statistics_ai999x.solve('c_chart', counts=[12, 9, 15, 11, 8, 10])
 
 <a id="process_capability"></a>
 
-### Process capability (Cp, Cpk) and expected nonconforming — `process_capability`
+### Process capability (Cp, Cpk) and expected nonconforming, `process_capability`
 
 Process capability indices Cp, Cpk (with Cpu, Cpl) and the expected parts per million outside the specification for a normal process with mean mu and standard deviation sigma.
 
@@ -5410,7 +5410,7 @@ statistics_ai999x.solve('process_capability', mu=50, sigma=2, lsl=44, usl=58)
 
 <a id="weibull_reliability"></a>
 
-### Weibull reliability, hazard rate and MTTF — `weibull_reliability`
+### Weibull reliability, hazard rate and MTTF: `weibull_reliability`
 
 Reliability R(t), unreliability, hazard rate and mean time to failure of a two-parameter Weibull distribution.
 
@@ -5460,7 +5460,7 @@ statistics_ai999x.solve('weibull_reliability', beta=1.5, eta=2000, t=1200)
 
 <a id="exponential_reliability"></a>
 
-### Exponential reliability (constant failure rate) — `exponential_reliability`
+### Exponential reliability (constant failure rate), `exponential_reliability`
 
 Reliability R(t) = exp(-lambda t), unreliability and MTTF for a constant failure rate (given the rate or the MTBF).
 
@@ -5509,7 +5509,7 @@ statistics_ai999x.solve('exponential_reliability', t=800, mtbf=5000)
 
 <a id="series_system_reliability"></a>
 
-### Reliability of a series system — `series_system_reliability`
+### Reliability of a series system: `series_system_reliability`
 
 The reliability of independent components in series (all must work).
 
@@ -5553,7 +5553,7 @@ statistics_ai999x.solve('series_system_reliability', r=[0.8, 0.85])
 
 <a id="parallel_system_reliability"></a>
 
-### Reliability of a parallel system — `parallel_system_reliability`
+### Reliability of a parallel system: `parallel_system_reliability`
 
 The reliability of independent components in parallel (at least one must work).
 
@@ -5597,7 +5597,7 @@ statistics_ai999x.solve('parallel_system_reliability', r=[0.8, 0.85])
 
 <a id="k_out_of_n_reliability"></a>
 
-### k-out-of-n system reliability — `k_out_of_n_reliability`
+### k-out-of-n system reliability, `k_out_of_n_reliability`
 
 The reliability of a system that works when at least k of n identical independent components work.
 
@@ -5643,7 +5643,7 @@ statistics_ai999x.solve('k_out_of_n_reliability', n=5, k=3, r=0.85)
 
 <a id="kaplan_meier"></a>
 
-### Kaplan-Meier survival estimate — `kaplan_meier`
+### Kaplan-Meier survival estimate: `kaplan_meier`
 
 The Kaplan-Meier (product-limit) estimate of the survival function from times with event/censoring indicators, evaluated at time t, and the whole step curve.
 
@@ -5695,7 +5695,7 @@ statistics_ai999x.solve('kaplan_meier', times=[2, 3, 3, 5, 8, 9, 12], events=[1,
 
 <a id="log_rank_test"></a>
 
-### Log-rank test comparing two survival curves — `log_rank_test`
+### Log-rank test comparing two survival curves, `log_rank_test`
 
 The log-rank (Mantel-Cox) test of equal survival in two groups from times and event indicators.
 
