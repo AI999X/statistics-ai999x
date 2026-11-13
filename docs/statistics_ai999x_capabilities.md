@@ -28,7 +28,7 @@ result.show()
 | Hypothesis tests | [One-sample z-test for a mean (sigma known)](#z_test_mean), [One-sample t-test](#t_test_one_sample), [Two-sample t-test (pooled variances)](#t_test_two_sample_pooled), [Welch's two-sample t-test (unequal variances)](#welch_t_test), [Paired t-test](#paired_t_test), [Two-sample t-test from summary statistics](#t_test_summary_statistics), [One-proportion z-test](#proportion_z_test), [Two-proportion z-test](#two_proportion_z_test), [Chi-square goodness-of-fit test](#chi_square_goodness_of_fit), [Chi-square test of independence](#chi_square_independence), [Chi-square test for a variance](#chi_square_variance_test), [F-test for equality of two variances](#f_test_variances), [Levene's test for equal variances](#levene_test), [Bartlett's test for equal variances](#bartlett_test) |
 | Nonparametric tests | [Mann-Whitney U test (large-sample)](#mann_whitney_u), [Mann-Whitney U test (exact)](#mann_whitney_exact), [Wilcoxon signed-rank test (large-sample)](#wilcoxon_signed_rank), [Wilcoxon signed-rank test (exact)](#wilcoxon_signed_rank_exact), [Kruskal-Wallis H test](#kruskal_wallis), [Friedman test](#friedman_test), [Sign test](#sign_test) |
 | Power and sample size | [Sample size to estimate a proportion](#sample_size_proportion), [Sample size to estimate a mean](#sample_size_mean), [Power of a one-sample z-test](#power_one_sample_z), [Power of a two-sample z-test](#power_two_sample_z), [Sample size per group to compare two means (z-test power)](#sample_size_two_means) |
-| Probability | [Probability of at least one occurrence](#probability_at_least_one) |
+| Probability | [Probability of at least one occurrence](#probability_at_least_one), [Probability rules: complement, addition and multiplication](#probability_rules), [Joint, marginal and conditional probabilities from a two-way table](#two_way_table_probabilities) |
 | Probability distributions | [Expected value and variance of a discrete random variable](#discrete_random_variable), [Binomial probability: exactly k successes](#binomial_exactly), [Binomial probability: at most k successes](#binomial_at_most), [Binomial probability: at least k successes](#binomial_at_least), [Mean and standard deviation of a binomial distribution](#binomial_mean_sd), [Poisson probability: exactly k events](#poisson_exactly), [Poisson probability: at most k events](#poisson_at_most), [Poisson probability: at least k events](#poisson_at_least), [Geometric distribution: first success on trial k](#geometric_probability), [Hypergeometric probability (sampling without replacement)](#hypergeometric_probability), [Negative binomial: r-th success on trial n](#negative_binomial_probability), [Normal probability below a value](#normal_probability_below), [Normal probability above a value](#normal_probability_above), [Normal probability between two values](#normal_probability_between), [Inverse normal (normal percentile)](#inverse_normal), [Exponential probability below a value](#exponential_probability_below), [Exponential probability above a value](#exponential_probability_above) |
 | Quality control | [X-bar and R control chart limits](#xbar_r_chart), [X-bar and S control chart limits](#xbar_s_chart), [Individuals and moving range (I-MR) chart limits](#individuals_moving_range_chart), [P chart limits (fraction defective)](#p_chart), [C chart limits (defects per unit)](#c_chart), [Process capability (Cp, Cpk) and expected nonconforming](#process_capability) |
 | Regression and correlation | [Pearson correlation coefficient](#pearson_correlation), [Significance test for a correlation coefficient](#correlation_t_test), [Confidence interval for a correlation (Fisher z)](#correlation_confidence_interval), [Spearman rank correlation](#spearman_correlation), [Kendall's tau-b rank correlation](#kendall_tau), [Covariance](#covariance), [Simple linear regression (least squares line)](#simple_linear_regression), [Prediction from a least squares line](#regression_prediction), [Multiple linear regression](#multiple_linear_regression), [Durbin-Watson statistic](#durbin_watson) |
@@ -183,6 +183,8 @@ Call `solve("<id>", **inputs)` with plain numbers; the result's `values` holds e
 | k_out_of_n_reliability | k-out-of-n system reliability | n, k, r | reliability |
 | kaplan_meier | Kaplan-Meier survival estimate | times, events, t | survival, event_times, survival_curve |
 | log_rank_test | Log-rank test comparing two survival curves | times1, events1, times2, events2 | chi_square, p_value, observed_1, expected_1 |
+| probability_rules | Probability rules: complement, addition and multiplication | p_a, p_b, p_a_and_b, p_a_or_b, relation | p_not_a, p_not_b, p_a_and_b, p_a_or_b, p_neither, p_a_only, p_b_only, p_a_given_b, p_b_given_a |
+| two_way_table_probabilities | Joint, marginal and conditional probabilities from a two-way table | table, row, column | p_row_given_column, p_column_given_row, p_row_and_column, p_row, p_column, p_row_or_column, total, joint, row_marginals, column_marginals, row_given_column, column_given_row |
 
 <a id="mean"></a>
 
@@ -5746,3 +5748,134 @@ statistics_ai999x.solve('log_rank_test', times1=[5, 8, 12, 20], events1=[1, 1, 0
 | Log-rank test: group 1 times [6, 6, 6, 7, 10, 13, 16] events [1, 1, 1, 0, 1, 1, 1], group 2 times [1, 1, 2, 2, 3, 4, 4] events [1, 1, 1, 1, 1, 1, 1]. | SOLVED | chi_square = 13.8115, p_value = 0.000202097, observed_1 = 6, expected_1 = 10.4222 |
 | Compare survival with a log-rank test for times [5, 8, 12, 20] events [1, 1, 0, 1] versus times [3, 4, 9, 10] events [1, 1, 1, 0]. | SOLVED | chi_square = 0.581884, p_value = 0.445575, observed_1 = 3, expected_1 = 3.8381 |
 | Log-rank test: group 1 times [6, 7] events [1, 1]. | NEEDS_INPUT | log_rank_test needs times2, events2 (times, group 2; events (1/0), group 2). Example: solve('log_rank_test', times1='6,  |
+
+<a id="probability_rules"></a>
+
+### Probability rules: complement, addition and multiplication, `probability_rules`
+
+From P(A), P(B) and one statement about how A and B overlap (P(A and B), P(A or B), independent, or mutually exclusive): P(not A), P(not B), P(A and B), P(A or B), P(neither), P(A only), P(B only) and the conditional probabilities P(A | B) and P(B | A).
+
+$$
+P(A^c) = 1 - P(A),\quad P(A\cup B) = P(A) + P(B) - P(A\cap B),\quad P(A\cap B) \overset{\text{indep.}}{=} P(A)P(B)
+$$
+
+| input | meaning | condition |
+|---|---|---|
+| `p_a` | P(A) |  |
+| `p_b` | P(B) |  |
+| `p_a_and_b` | P(A and B) |  |
+| `p_a_or_b` | P(A or B) |  |
+| `relation` | independent or mutually exclusive (instead of P(A and B) or P(A or B)) |  |
+
+| output | meaning |
+|---|---|
+| `p_not_a` | P(not A) = 1 - P(A) |
+| `p_not_b` | P(not B) = 1 - P(B) |
+| `p_a_and_b` | P(A and B) |
+| `p_a_or_b` | P(A or B) = P(A) + P(B) - P(A and B) |
+| `p_neither` | P(neither) = 1 - P(A or B) |
+| `p_a_only` | P(A and not B) |
+| `p_b_only` | P(B and not A) |
+| `p_a_given_b` | P(A \| B) = P(A and B) / P(B) |
+| `p_b_given_a` | P(B \| A) = P(A and B) / P(A) |
+
+- **Method:** complement rule $1 - P$; multiplication rule P(A and B) = P(A) P(B) for independent events (0 for mutually exclusive ones); addition rule P(A or B) = P(A) + P(B) - P(A and B); conditional probability P(A | B) = P(A and B) / P(B)
+- **Assumes:** probabilities between 0 and 1; exactly one statement about the overlap; max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B))
+- **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![p_a_or_b (P(A or B) = P(A) + P(B) - P(A and B)) against p_b (P(B)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-rules-curve)
+
+*p_a_or_b (P(A or B) = P(A) + P(B) - P(A and B)) against p_b (P(B)) from 0.25 to 0.75. One curve for each value of p_a (P(A)): 0.4, 0.2, 0.8. Other inputs as in the worked example: p_a_and_b = 0.2. 31 points per curve computed by statistics-ai999x; marked: the worked example, p_b = 0.5, p_a_or_b = 0.7.*
+
+```python
+statistics_ai999x.solve('probability_rules', p_a=0.4, p_b=0.5, p_a_and_b=0.2)
+# -> p_not_a = 0.6, p_not_b = 0.5, p_a_and_b = 0.2, p_a_or_b = 0.7, p_neither = 0.3, p_a_only = 0.2, p_b_only = 0.3, p_a_given_b = 0.4, p_b_given_a = 0.5   (SOLVED)
+```
+
+```python
+statistics_ai999x.solve('probability_rules', p_a=0.3, p_b=0.6, relation='independent')
+# -> p_not_a = 0.7, p_not_b = 0.4, p_a_and_b = 0.18, p_a_or_b = 0.72, p_neither = 0.28, p_a_only = 0.12, p_b_only = 0.42, p_a_given_b = 0.3, p_b_given_a = 0.6   (SOLVED)
+```
+
+```python
+statistics_ai999x.solve('probability_rules', p_a=0.25, p_b=0.4, relation='mutually exclusive')
+# -> p_not_a = 0.75, p_not_b = 0.6, p_a_and_b = 0, p_a_or_b = 0.65, p_neither = 0.35, p_a_only = 0.25, p_b_only = 0.4, p_a_given_b = 0, p_b_given_a = 0   (SOLVED)
+```
+
+```python
+statistics_ai999x.solve('probability_rules', p_a=0.5, p_b=0.4, p_a_or_b=0.7)
+# -> p_not_a = 0.5, p_not_b = 0.6, p_a_and_b = 0.2, p_a_or_b = 0.7, p_neither = 0.3, p_a_only = 0.3, p_b_only = 0.2, p_a_given_b = 0.5, p_b_given_a = 0.4   (SOLVED)
+```
+
+**Questions in words (documented forms), as executed:**
+
+| question | outcome | result |
+|---|---|---|
+| P(A) = 0.4, P(B) = 0.5 and P(A and B) = 0.2. Find P(not A), P(A or B) and P(A \| B). | SOLVED | p_not_a = 0.6, p_not_b = 0.5, p_a_and_b = 0.2, p_a_or_b = 0.7, p_neither = 0.3, p_a_only = 0.2, p_b_only = 0.3, p_a_given_b = 0.4, p_b_given_a = 0.5 |
+| A and B are independent with P(A) = 0.3 and P(B) = 0.6. Find P(A and B) and P(A or B). | SOLVED | p_not_a = 0.7, p_not_b = 0.4, p_a_and_b = 0.18, p_a_or_b = 0.72, p_neither = 0.28, p_a_only = 0.12, p_b_only = 0.42, p_a_given_b = 0.3, p_b_given_a = 0.6 |
+| A and B are mutually exclusive with P(A) = 0.25 and P(B) = 0.4. Find P(A or B). | SOLVED | p_not_a = 0.75, p_not_b = 0.6, p_a_and_b = 0, p_a_or_b = 0.65, p_neither = 0.35, p_a_only = 0.25, p_b_only = 0.4, p_a_given_b = 0, p_b_given_a = 0 |
+| P(A) = 0.5, P(B) = 0.4 and P(A or B) = 0.7. Find P(A and B). | SOLVED | p_not_a = 0.5, p_not_b = 0.6, p_a_and_b = 0.2, p_a_or_b = 0.7, p_neither = 0.3, p_a_only = 0.3, p_b_only = 0.2, p_a_given_b = 0.5, p_b_given_a = 0.4 |
+| P(A) = 0.3, P(B) = 0.4 and P(A and B) = 0.5. Find P(A or B). | INVALID_INPUT | Probability rules: complement, addition and multiplication: these probabilities are inconsistent: P(A and B) must lie be |
+| P(A) = 0.3 and P(B) = 0.4. Find P(A or B). | INVALID_INPUT | Probability rules: complement, addition and multiplication: state exactly one of: P(A and B), P(A or B), independent, mu |
+
+<a id="two_way_table_probabilities"></a>
+
+### Joint, marginal and conditional probabilities from a two-way table, `two_way_table_probabilities`
+
+From a two-way table of counts: the joint, marginal and conditional probabilities of every cell, and for a chosen row and column P(row and column), P(row), P(column), P(row | column), P(column | row) and P(row or column).
+
+$$
+P(R_i \mid C_j) = \frac{n_{ij}}{n_{\cdot j}},\quad P(C_j \mid R_i) = \frac{n_{ij}}{n_{i\cdot}},\quad P(R_i \cap C_j) = \frac{n_{ij}}{n}
+$$
+
+| input | meaning | condition |
+|---|---|---|
+| `table` | the two-way table of counts (rows x columns) |  |
+| `row` | the row of interest (from 1) |  |
+| `column` | the column of interest (from 1) |  |
+
+| output | meaning |
+|---|---|
+| `p_row_given_column` | P(row \| column) = cell / column total |
+| `p_column_given_row` | P(column \| row) = cell / row total |
+| `p_row_and_column` | P(row and column) = cell / grand total |
+| `p_row` | P(row) = row total / grand total |
+| `p_column` | P(column) = column total / grand total |
+| `p_row_or_column` | P(row or column) |
+| `total` | grand total |
+| `joint` | joint probabilities of every cell |
+| `row_marginals` | marginal probabilities of the rows |
+| `column_marginals` | marginal probabilities of the columns |
+| `row_given_column` | P(row i \| column j) for every cell |
+| `column_given_row` | P(column j \| row i) for every cell |
+
+- **Method:** divide a cell by the grand total (joint), by its column total (P(row | column)) or by its row total (P(column | row)); margins are the row and column totals over the grand total
+- **Assumes:** counts >= 0; every row and column has a positive total; row and column numbered from 1
+- **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![marginal probabilities of the rows (row_marginals) at each marginal probabilities of the columns (column_marginals), both returned by statistics-ai999x for the worked example (table = [[30, 20], [10, 40]], row = 1, column = 2): 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-series)
+
+*marginal probabilities of the rows (row_marginals) at each marginal probabilities of the columns (column_marginals), both returned by statistics-ai999x for the worked example (table = [[30, 20], [10, 40]], row = 1, column = 2): 0.4 → 0.5; 0.6 → 0.5.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); joint (returned); row_given_column (returned); column_given_row (returned)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); joint (returned); row_given_column (returned); column_given_row (returned). Returned with them by statistics-ai999x: total = 100, p_row_and_column = 0.2, p_row = 0.5, p_column = 0.6, p_row_given_column = 0.333333, p_column_given_row = 0.4, p_row_or_column = 0.9. Other inputs: row = 1, column = 2.*
+
+```python
+statistics_ai999x.solve('two_way_table_probabilities', table='[[30, 20], [10, 40]]', row=1, column=2)
+# -> total = 100, joint = [[0.3, 0.2], [0.1, 0.4]], row_marginals = [0.5, 0.5], column_marginals = [0.4, 0.6], row_given_column = [[0.75, 0.3333333333333333], [0.25, 0.6666666666666666]], column_given_row = [[0.6, 0.4], [0.2, 0.8]], p_row_and_column = 0.2, p_row = 0.5, p_column = 0.6, p_row_given_column = 0.333333, p_column_given_row = 0.4, p_row_or_column = 0.9   (SOLVED)
+```
+
+```python
+statistics_ai999x.solve('two_way_table_probabilities', table=[[12, 8, 5], [18, 22, 35]], row=2, column=3)
+# -> total = 100, joint = [[0.12, 0.08, 0.05], [0.18, 0.22, 0.35]], row_marginals = [0.25, 0.75], column_marginals = [0.3, 0.3, 0.4], row_given_column = [[0.4, 0.26666666666666666, 0.125], [0.6, 0.7333333333333333, 0.875]], column_given_row = [[0.48, 0.32, 0.2], [0.24, 0.29333333333333333, 0.4666666666666667]], p_row_and_column = 0.35, p_row = 0.75, p_column = 0.4, p_row_given_column = 0.875, p_column_given_row = 0.466667, p_row_or_column = 0.8   (SOLVED)
+```
+
+**Questions in words (documented forms), as executed:**
+
+| question | outcome | result |
+|---|---|---|
+| From the two-way table [[30, 20], [10, 40]], find the probability of row 1 given column 2. | SOLVED | total = 100, joint = [[0.3, 0.2], [0.1, 0.4]], row_marginals = [0.5, 0.5], column_marginals = [0.4, 0.6], row_given_column = [[0.75, 0.3333333333333333], [0.25, 0.6666666666666666]], column_given_row = [[0.6, 0.4], [0.2, 0.8]], p_row_and_column = 0.2, p_row = 0.5, p_column = 0.6, p_row_given_column = 0.333333, p_column_given_row = 0.4, p_row_or_column = 0.9 |
+| Two-way table [[12, 8, 5], [18, 22, 35]]: find the joint, marginal and conditional probabilities for row 2 and column 3. | SOLVED | total = 100, joint = [[0.12, 0.08, 0.05], [0.18, 0.22, 0.35]], row_marginals = [0.25, 0.75], column_marginals = [0.3, 0.3, 0.4], row_given_column = [[0.4, 0.26666666666666666, 0.125], [0.6, 0.7333333333333333, 0.875]], column_given_row = [[0.48, 0.32, 0.2], [0.24, 0.29333333333333333, 0.4666666666666667]], p_row_and_column = 0.35, p_row = 0.75, p_column = 0.4, p_row_given_column = 0.875, p_column_given_row = 0.466667, p_row_or_column = 0.8 |
+| From the two-way table [[30, 20], [10, 40]], find the probability of row 3 given column 1. | INVALID_INPUT | Joint, marginal and conditional probabilities from a two-way table: the row and column must be inside the table (numbere |
+| From the two-way table [[30, 20], [10, 40]], find the conditional probability of row 1. | NEEDS_INPUT | two_way_table_probabilities needs column (the column of interest (from 1)). Example: solve('two_way_table_probabilities' |

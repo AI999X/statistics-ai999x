@@ -1,8 +1,8 @@
 # statistics: the Statistics program, user guide
 
-**statistics-ai999x 1.1.0**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
+**statistics-ai999x 1.6.0**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
 
-Statistics covers descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability. This guide is about `statistics`, the model as a self-contained program for Windows and Linux: 110 capabilities in 16 topics, answered on your own computer with no network, no Python and nothing else to install. The same compiled model runs in the AI999X desktop app and in the browser on the model's page (https://www.ai999x.com/models/statistics-ai999x/); the Python package (`pip install statistics-ai999x`) has its own guide. Every command output printed here is what the program printed.
+Statistics covers descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability. This guide is about `statistics`, the model as a self-contained program for Windows and Linux: 112 capabilities in 16 topics, answered on your own computer with no network, no Python and nothing else to install. The same compiled model runs in the AI999X desktop app and in the browser on the model's page (https://www.ai999x.com/models/statistics-ai999x/); the Python package (`pip install statistics-ai999x`) has its own guide. Every command output printed here is what the program printed.
 
 ## Contents
 
@@ -17,37 +17,37 @@ Statistics covers descriptive statistics, probability distributions, confidence 
 
 ## 1. Get it
 
-Version 1.5.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
+Version 1.6.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.6.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
 
 | what | system | download |
 |---|---|---|
-| Desktop app: Statistics | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-windows-x86_64.zip |
-| Desktop app: Statistics | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz |
-| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-windows-x86_64.zip |
-| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz |
-| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-windows-x86_64.zip |
-| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz |
+| Desktop app: Statistics | Windows x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-statistics-1.6.0-windows-x86_64.zip |
+| Desktop app: Statistics | Linux x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-statistics-1.6.0-linux-x86_64.tar.gz |
+| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-1.6.0-windows-x86_64.zip |
+| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-1.6.0-linux-x86_64.tar.gz |
+| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-cli-1.6.0-windows-x86_64.zip |
+| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.6.0/ai999x-cli-1.6.0-linux-x86_64.tar.gz |
 
 ### Desktop app
 
-Statistics in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-statistics-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-statistics.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+Statistics in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-statistics-1.6.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-statistics.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-statistics-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/ai999x-statistics-1.6.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-statistics-1.5.0-linux-x86_64.tar.gz
-./ai999x-statistics-1.5.0-linux-x86_64/ai999x-statistics
+tar xzf ai999x-statistics-1.6.0-linux-x86_64.tar.gz
+./ai999x-statistics-1.6.0-linux-x86_64/ai999x-statistics
 ```
 
-It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.6.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/ai999x-1.6.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-1.5.0-linux-x86_64.tar.gz
-./ai999x-1.5.0-linux-x86_64/ai999x
+tar xzf ai999x-1.6.0-linux-x86_64.tar.gz
+./ai999x-1.6.0-linux-x86_64/ai999x
 ```
 
 ### Command line: Linux
@@ -55,11 +55,11 @@ tar xzf ai999x-1.5.0-linux-x86_64.tar.gz
 The bundle holds one program per model; `statistics` is this one. The checksum line should print OK.
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/ai999x-cli-1.6.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.6.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share && tar xzf ai999x-cli-1.5.0-linux-x86_64.tar.gz -C ~/.local/share
-echo 'export PATH="$HOME/.local/share/ai999x-cli-1.5.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.6.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.6.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
 statistics --version
 ```
 
@@ -68,12 +68,12 @@ statistics --version
 The fourth line should print True.
 
 ```powershell
-$F = "ai999x-cli-1.5.0-windows-x86_64.zip"
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/$F" -OutFile $F
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS" -OutFile SHA256SUMS
+$F = "ai999x-cli-1.6.0-windows-x86_64.zip"
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.6.0/$F" -OutFile $F
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.6.0/SHA256SUMS" -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
 Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
-$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.5.0-windows-x86_64"; $env:Path += ";$D"
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.6.0-windows-x86_64"; $env:Path += ";$D"
 [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
 statistics --version
 ```
@@ -96,7 +96,7 @@ Prints the model, its version and that this is the Rust build.
 
 ```shell
 $ statistics --version
-statistics-ai999x 1.5.0 (Rust build, ax-engine 1.5.0)
+statistics-ai999x 1.6.0 (Rust build, ax-engine 1.6.0)
 ```
 
 ### 2.2 Ask in words
@@ -148,7 +148,7 @@ binomial_mean_sd                         Mean and standard deviation of a binomi
 c_chart                                  c chart limits (defects per unit)
 chi_square_critical_value                Critical value of chi-square
 chi_square_goodness_of_fit               Chi-square goodness-of-fit test
-… 102 more
+… 104 more
 ```
 
 ### 2.5 What a capability needs
@@ -2532,7 +2532,57 @@ n_exact = 1067.071895
 
 **What the worked example means:** The required sample size is 1068 to estimate the proportion with a margin of error of 0.03 at 0.95 confidence.
 
-### Probability (1)
+### Probability (3)
+
+<a id="two_way_table_probabilities"></a>
+
+#### Joint, marginal and conditional probabilities from a two-way table, `two_way_table_probabilities`
+
+From a two-way table of counts: the joint, marginal and conditional probabilities of every cell, and for a chosen row and column P(row and column), P(row), P(column), P(row | column), P(column | row) and P(row or column).
+
+$$
+P(R_i \mid C_j) = \frac{n_{ij}}{n_{\cdot j}},\quad P(C_j \mid R_i) = \frac{n_{ij}}{n_{i\cdot}},\quad P(R_i \cap C_j) = \frac{n_{ij}}{n}
+$$
+
+| symbol |  | meaning | SI unit |
+|---|---|---|---|
+| `table` | in | the two-way table of counts (rows x columns) | - |
+| `row` | in | the row of interest (from 1) | - |
+| `column` | in | the column of interest (from 1) | - |
+| `p_row_given_column` | out | P(row \| column) = cell / column total | - |
+| `p_column_given_row` | out | P(column \| row) = cell / row total | - |
+| `p_row_and_column` | out | P(row and column) = cell / grand total | - |
+| `p_row` | out | P(row) = row total / grand total | - |
+| `p_column` | out | P(column) = column total / grand total | - |
+| `p_row_or_column` | out | P(row or column) | - |
+| `total` | out | grand total | - |
+| `joint` | out | joint probabilities of every cell | - |
+| `row_marginals` | out | marginal probabilities of the rows | - |
+| `column_marginals` | out | marginal probabilities of the columns | - |
+| `row_given_column` | out | P(row i \| column j) for every cell | - |
+| `column_given_row` | out | P(column j \| row i) for every cell | - |
+
+**Applies when:** counts >= 0; every row and column has a positive total; row and column numbered from 1.
+
+```shell
+$ statistics solve two_way_table_probabilities "table=[[30, 20], [10, 40]]" row=1 column=2
+total = 100
+joint = [[0.3,0.2],[0.1,0.4]]
+row_marginals = [0.5,0.5]
+column_marginals = [0.4,0.6]
+row_given_column = [[0.75,0.3333333333333333],[0.25,0.6666666666666666]]
+column_given_row = [[0.6,0.4],[0.2,0.8]]
+p_row_and_column = 0.2
+p_row = 0.5
+p_column = 0.6
+p_row_given_column = 0.3333333333
+p_column_given_row = 0.4
+p_row_or_column = 0.9
+  by: Joint, marginal and conditional probabilities from a two-way table  (divide a cell by the grand total (joint), by its column total (P(row | column)) or by its row total (P(column | row)); margins are the row and column totals over the grand total)
+  assumes: counts >= 0; every row and column has a positive total; row and column numbered from 1
+```
+
+In the worked example, table = [30 20; 10 40], row = 1, column = 2 go through the equation above and give total = 100, joint = [[0.3, 0.2], [0.1, 0.4]], row_marginals = [0.5, 0.5], column_marginals = [0.4, 0.6]. It applies only when counts >= 0; every row and column has a positive total; row and column numbered from 1: outside that it says what is wrong instead of returning a number.
 
 <a id="probability_at_least_one"></a>
 
@@ -2563,6 +2613,55 @@ none = 0.32768
 ```
 
 **What the worked example means:** This calculation determines the likelihood that an event happens at least once across multiple independent attempts. Applying the complement rule subtracts the probability of the event never occurring from one. With a single trial success rate of 0.2 and a total of 5 trials, the chance of zero successes is 0.32768. Consequently, the final probability of seeing the event at least once is 0.67232.
+
+<a id="probability_rules"></a>
+
+#### Probability rules: complement, addition and multiplication, `probability_rules`
+
+From P(A), P(B) and one statement about how A and B overlap (P(A and B), P(A or B), independent, or mutually exclusive): P(not A), P(not B), P(A and B), P(A or B), P(neither), P(A only), P(B only) and the conditional probabilities P(A | B) and P(B | A).
+
+$$
+P(A^c) = 1 - P(A),\quad P(A\cup B) = P(A) + P(B) - P(A\cap B),\quad P(A\cap B) \overset{\text{indep.}}{=} P(A)P(B)
+$$
+
+| symbol |  | meaning | SI unit |
+|---|---|---|---|
+| `p_a` | in | P(A) | - |
+| `p_b` | in | P(B) | - |
+| `p_a_and_b` | in | P(A and B) (optional) | - |
+| `p_a_or_b` | in | P(A or B) (optional) | - |
+| `relation` | in | independent or mutually exclusive (instead of P(A and B) or P(A or B)) (optional) | - |
+| `p_not_a` | out | P(not A) = 1 - P(A) | - |
+| `p_not_b` | out | P(not B) = 1 - P(B) | - |
+| `p_a_and_b` | out | P(A and B) | - |
+| `p_a_or_b` | out | P(A or B) = P(A) + P(B) - P(A and B) | - |
+| `p_neither` | out | P(neither) = 1 - P(A or B) | - |
+| `p_a_only` | out | P(A and not B) | - |
+| `p_b_only` | out | P(B and not A) | - |
+| `p_a_given_b` | out | P(A \| B) = P(A and B) / P(B) | - |
+| `p_b_given_a` | out | P(B \| A) = P(A and B) / P(A) | - |
+
+**Applies when:** probabilities between 0 and 1; exactly one statement about the overlap; max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B)).
+
+```shell
+$ statistics solve probability_rules p_a=0.4 p_b=0.5 p_a_and_b=0.2
+p_not_a = 0.6
+p_not_b = 0.5
+p_a_and_b = 0.2
+p_a_or_b = 0.7
+p_neither = 0.3
+p_a_only = 0.2
+p_b_only = 0.3
+p_a_given_b = 0.4
+p_b_given_a = 0.5
+  by: Probability rules: complement, addition and multiplication  (complement rule 1 - P; multiplication rule P(A and B) = P(A) P(B) for independent events (0 for mutually exclusive ones); addition rule P(A or B) = P(A) + P(B) - P(A and B); conditional probability P(A | B) = P(A and B) / P(B))
+  p_a = 0.4
+  p_b = 0.5
+  p_a_and_b = 0.2
+  assumes: probabilities between 0 and 1; exactly one statement about the overlap; max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B))
+```
+
+In the worked example, p_a = 0.4, p_b = 0.5, p_a_and_b = 0.2 go through the equation above and give p_not_a = 0.6, p_not_b = 0.5, p_a_and_b = 0.2, p_a_or_b = 0.7. It applies only when probabilities between 0 and 1; exactly one statement about the overlap; max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B)): outside that it says what is wrong instead of returning a number.
 
 ### Probability distributions (17)
 

@@ -4612,6 +4612,243 @@ _cap("log_rank_test", level="expert", name="Log-rank test comparing two survival
                 Q("Compare survival with a log-rank test for times [5, 8, 12, 20] events [1, 1, 0, 1] versus times [3, 4, 9, 10] events [1, 1, 1, 0]."),
                 Q("Log-rank test: group 1 times [6, 7] events [1, 1].", outcome="NEEDS_INPUT")])
 
+
+# ============================================================================== probability rules (core gaps) ====
+# 2026-11-12: the elementary rules that open the probability chapter. run uses plain arithmetic only (it translates to
+# Rust). Conventions: the joint probability comes from exactly one statement (P(A and B), P(A or B), independent or
+# mutually exclusive); a conditional probability given an event of probability 0 is reported as none; a two-way table's
+# rows and columns are numbered from 1.
+_PR_RELATIONS = ["independent", "mutually exclusive"]
+
+
+def run_probability_rules(p_a, p_b, p_a_and_b=None, p_a_or_b=None, relation=None):
+    pa = _prob(p_a, "P(A)", open_=False)
+    pb = _prob(p_b, "P(B)", open_=False)
+    stated = 0
+    for v in (p_a_and_b, p_a_or_b, relation):
+        if v is not None:
+            stated += 1
+    if stated != 1:
+        raise ValueError("state exactly one of: P(A and B), P(A or B), independent, mutually exclusive")
+    if relation is not None:
+        if relation == "independent":
+            j = pa * pb
+        elif relation == "mutually exclusive":
+            j = 0.0
+        else:
+            raise ValueError("the relation is independent or mutually exclusive")
+        union = pa + pb - j
+    elif p_a_and_b is not None:
+        j = _prob(p_a_and_b, "P(A and B)", open_=False)
+        union = pa + pb - j
+    else:
+        union = _prob(p_a_or_b, "P(A or B)", open_=False)
+        j = pa + pb - union
+    lo, hi = max(0.0, pa + pb - 1.0), min(pa, pb)
+    if j < lo - 1e-12 or j > hi + 1e-12:
+        raise ValueError("these probabilities are inconsistent: P(A and B) must lie between max(0, P(A) + P(B) - 1) and min(P(A), P(B))")
+    if relation == "mutually exclusive" and pa + pb > 1.0 + 1e-12:
+        raise ValueError("mutually exclusive events need P(A) + P(B) <= 1")
+    return {"p_not_a": 1.0 - pa, "p_not_b": 1.0 - pb, "p_a_and_b": j + 0.0, "p_a_or_b": union, "p_neither": 1.0 - union,
+            "p_a_only": pa - j + 0.0, "p_b_only": pb - j + 0.0,
+            "p_a_given_b": j / pb + 0.0 if pb > 0 else None, "p_b_given_a": j / pa + 0.0 if pa > 0 else None}
+
+
+def ref_probability_rules(p_a, p_b, p_a_and_b=None, p_a_or_b=None, relation=None):
+    import numpy as np
+    from statsmodels.stats.contingency_tables import Table
+    if relation == "independent":
+        j = p_a * p_b
+    elif relation == "mutually exclusive":
+        j = 0.0
+    else:
+        j = p_a_and_b if p_a_and_b is not None else p_a + p_b - p_a_or_b
+    t = np.array([[j, p_a - j], [p_b - j, 1.0 - p_a - p_b + j]])        # rows: A, not A; columns: B, not B
+    rows, cols = (np.asarray(m, float).ravel() for m in Table(t, shift_zeros=False).marginal_probabilities)
+    return {"p_not_a": float(rows[1]), "p_not_b": float(cols[1]), "p_a_and_b": float(t[0, 0]),
+            "p_a_or_b": float(t[0, 0] + t[0, 1] + t[1, 0]), "p_neither": float(t[1, 1]), "p_a_only": float(t[0, 1]),
+            "p_b_only": float(t[1, 0]), "p_a_given_b": None if p_b == 0 else float(t[0, 0] / cols[0]),
+            "p_b_given_a": None if p_a == 0 else float(t[0, 0] / rows[0])}
+
+
+def _wrong_probability_rules(p_a, p_b, p_a_and_b=None, p_a_or_b=None, relation=None):
+    """The addition rule without the overlap: P(A or B) = P(A) + P(B)."""
+    out = run_probability_rules(p_a, p_b, p_a_and_b, p_a_or_b, relation)
+    return dict(out, p_a_or_b=p_a + p_b, p_neither=1.0 - p_a - p_b)
+
+
+def _rnd_probability_rules(rng):
+    pa, pb = round(rng.uniform(0.1, 0.8), 2), round(rng.uniform(0.1, 0.8), 2)
+    lo, hi = max(0.0, pa + pb - 1.0), min(pa, pb)
+    j = round(lo + rng.uniform(0.15, 0.85) * (hi - lo), 3)
+    kind = rng.choice(["and", "and", "or", "independent", "exclusive"])
+    if kind == "exclusive" and pa + pb > 1.0:
+        kind = "independent"
+    if kind == "and":
+        return {"p_a": pa, "p_b": pb, "p_a_and_b": j}
+    if kind == "or":
+        return {"p_a": pa, "p_b": pb, "p_a_or_b": round(pa + pb - j, 4)}
+    return {"p_a": pa, "p_b": pb, "relation": "independent" if kind == "independent" else "mutually exclusive"}
+
+
+def _x_probability_rules(q, d):
+    if re.search(r"\bnot independent\b|\bdependent\b|\bnot mutually exclusive\b", q):
+        return {"_out_of_scope": "say how the events are related: give P(A and B) or P(A or B)"}
+    if re.search(r"\bindependent\b", q):
+        d["relation"] = "independent"
+    if re.search(r"\bmutually exclusive\b|\bdisjoint\b", q):
+        d["relation"] = "mutually exclusive" if "relation" not in d else d["relation"] + "?"
+    return None
+
+
+_cap("probability_rules", level="beginner", name="Probability rules: complement, addition and multiplication", topic="probability",
+     purpose="From P(A), P(B) and one statement about how A and B overlap (P(A and B), P(A or B), independent, or mutually "
+             "exclusive): P(not A), P(not B), P(A and B), P(A or B), P(neither), P(A only), P(B only) and the conditional "
+             "probabilities P(A | B) and P(B | A).",
+     inputs=[N("p_a", "P(A)"), N("p_b", "P(B)"), N("p_a_and_b", "P(A and B)", required=False), N("p_a_or_b", "P(A or B)", required=False),
+             C("relation", "independent or mutually exclusive (instead of P(A and B) or P(A or B))", _PR_RELATIONS)],
+     outputs=[O("p_not_a", "P(not A) = 1 - P(A)"), O("p_not_b", "P(not B) = 1 - P(B)"), O("p_a_and_b", "P(A and B)"),
+              O("p_a_or_b", "P(A or B) = P(A) + P(B) - P(A and B)"), O("p_neither", "P(neither) = 1 - P(A or B)"),
+              O("p_a_only", "P(A and not B)"), O("p_b_only", "P(B and not A)"), O("p_a_given_b", "P(A | B) = P(A and B) / P(B)"),
+              O("p_b_given_a", "P(B | A) = P(A and B) / P(A)")],
+     primary="p_a_or_b",
+     conditions=["probabilities between 0 and 1", "exactly one statement about the overlap",
+                 "max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B))"],
+     method="complement rule 1 - P; multiplication rule P(A and B) = P(A) P(B) for independent events (0 for mutually exclusive "
+            "ones); addition rule P(A or B) = P(A) + P(B) - P(A and B); conditional probability P(A | B) = P(A and B) / P(B)",
+     latex=r"P(A^c) = 1 - P(A),\quad P(A\cup B) = P(A) + P(B) - P(A\cap B),\quad P(A\cap B) \overset{\text{indep.}}{=} P(A)P(B)",
+     run=run_probability_rules, reference=ref_probability_rules, wrong=_wrong_probability_rules, rnd=_rnd_probability_rules,
+     need=[r"p\(\s*a\s*\)", r"p\(\s*b\s*\)"], avoid=r"\[|bayes", prio=6,
+     aliases={"p_a": r"p\(\s*a\s*\)", "p_b": r"p\(\s*b\s*\)", "p_a_and_b": r"p\(\s*a\s*(?:and|∩)\s*b\s*\)",
+              "p_a_or_b": r"p\(\s*a\s*(?:or|∪)\s*b\s*\)"},
+     extract=_x_probability_rules, keywords=["probability rules", "addition rule", "complement rule", "multiplication rule"],
+     templates=["P(A) = 0.4, P(B) = 0.5 and P(A and B) = 0.2. Find P(not A), P(A or B) and P(A | B).",
+                "A and B are independent with P(A) = 0.3 and P(B) = 0.6. Find P(A and B) and P(A or B)."],
+     examples=[X({"p_a": 0.4, "p_b": 0.5, "p_a_and_b": 0.2},
+                 {"p_not_a": 0.6, "p_not_b": 0.5, "p_a_and_b": 0.2, "p_a_or_b": 0.7, "p_neither": 0.3, "p_a_only": 0.2, "p_b_only": 0.3,
+                  "p_a_given_b": 0.4, "p_b_given_a": 0.5}),
+               X({"p_a": 0.3, "p_b": 0.6, "relation": "independent"}, {"p_a_and_b": 0.18, "p_a_or_b": 0.72, "p_neither": 0.28, "p_a_given_b": 0.3}),
+               X({"p_a": 0.25, "p_b": 0.4, "relation": "mutually exclusive"}, {"p_a_and_b": 0.0, "p_a_or_b": 0.65, "p_neither": 0.35, "p_b_given_a": 0.0}),
+               X({"p_a": 0.5, "p_b": 0.4, "p_a_or_b": 0.7}, {"p_a_and_b": 0.2, "p_a_or_b": 0.7, "p_a_given_b": 0.5})],
+     questions=[Q("P(A) = 0.4, P(B) = 0.5 and P(A and B) = 0.2. Find P(not A), P(A or B) and P(A | B).",
+                  {"p_not_a": 0.6, "p_a_or_b": 0.7, "p_a_given_b": 0.4}),
+                Q("A and B are independent with P(A) = 0.3 and P(B) = 0.6. Find P(A and B) and P(A or B).", {"p_a_and_b": 0.18, "p_a_or_b": 0.72}),
+                Q("A and B are mutually exclusive with P(A) = 0.25 and P(B) = 0.4. Find P(A or B).", {"p_a_or_b": 0.65, "p_a_and_b": 0.0}),
+                Q("P(A) = 0.5, P(B) = 0.4 and P(A or B) = 0.7. Find P(A and B).", {"p_a_and_b": 0.2}),
+                Q("P(A) = 0.3, P(B) = 0.4 and P(A and B) = 0.5. Find P(A or B).", outcome="INVALID_INPUT"),
+                Q("P(A) = 0.3 and P(B) = 0.4. Find P(A or B).", outcome="INVALID_INPUT")])
+
+
+def run_two_way_table(table, row, column):
+    t = _matrix_ok(table, "the two-way table", 1, 1)
+    nr, nc = len(t), len(t[0])
+    if nr * nc < 2:
+        raise ValueError("a two-way table needs at least two cells")
+    for r_ in t:
+        for v in r_:
+            if v < 0:
+                raise ValueError("counts must be >= 0")
+    i, j = _whole(row, "row", 1) - 1, _whole(column, "column", 1) - 1
+    if i >= nr or j >= nc:
+        raise ValueError("the row and column must be inside the table (numbered from 1)")
+    rs, cs = [], []
+    for a in range(nr):
+        s = 0.0
+        for b in range(nc):
+            s += t[a][b]
+        rs.append(s)
+    for b in range(nc):
+        s = 0.0
+        for a in range(nr):
+            s += t[a][b]
+        cs.append(s)
+    n = 0.0
+    for s in rs:
+        n += s
+    for s in rs + cs:
+        if s <= 0:
+            raise ValueError("every row and column needs a positive total")
+    joint, rgc, cgr = [], [], []
+    for a in range(nr):
+        joint.append([t[a][b] / n for b in range(nc)])
+        rgc.append([t[a][b] / cs[b] for b in range(nc)])
+        cgr.append([t[a][b] / rs[a] for b in range(nc)])
+    return {"total": n, "joint": joint, "row_marginals": [s / n for s in rs], "column_marginals": [s / n for s in cs],
+            "row_given_column": rgc, "column_given_row": cgr, "p_row_and_column": t[i][j] / n, "p_row": rs[i] / n, "p_column": cs[j] / n,
+            "p_row_given_column": t[i][j] / cs[j], "p_column_given_row": t[i][j] / rs[i], "p_row_or_column": (rs[i] + cs[j] - t[i][j]) / n}
+
+
+def ref_two_way_table(table, row, column):
+    import numpy as np
+    from statsmodels.stats.contingency_tables import Table
+    t = np.array(table, dtype=float)
+    rm, cm = (np.asarray(m, float).ravel() for m in Table(t, shift_zeros=False).marginal_probabilities)
+    n = float(t.sum())
+    i, j = int(row) - 1, int(column) - 1
+    rgc, cgr = t / t.sum(axis=0, keepdims=True), t / t.sum(axis=1, keepdims=True)
+    return {"total": n, "joint": (t / n).tolist(), "row_marginals": [float(v) for v in rm], "column_marginals": [float(v) for v in cm],
+            "row_given_column": rgc.tolist(), "column_given_row": cgr.tolist(), "p_row_and_column": float(t[i, j] / n),
+            "p_row": float(rm[i]), "p_column": float(cm[j]), "p_row_given_column": float(rgc[i, j]), "p_column_given_row": float(cgr[i, j]),
+            "p_row_or_column": float(rm[i] + cm[j] - t[i, j] / n)}
+
+
+def _wrong_two_way_table(table, row, column):
+    """The condition confused: P(row | column) divided by the row total instead of the column total."""
+    out = run_two_way_table(table, row, column)
+    return dict(out, p_row_given_column=out["p_column_given_row"], row_given_column=out["column_given_row"])
+
+
+def _rnd_two_way_table(rng):
+    t = _rnd_table(rng, 2, 4, 50)
+    return {"table": t, "row": rng.randint(1, len(t)), "column": rng.randint(1, len(t[0]))}
+
+
+def _x_two_way_table(q, d):
+    m = re.search(r"\brow (\d+)\b", q)
+    if m:
+        d["row"] = int(m.group(1))
+    m = re.search(r"\bcolumn (\d+)\b", q)
+    if m:
+        d["column"] = int(m.group(1))
+    return None
+
+
+_cap("two_way_table_probabilities", level="beginner", name="Joint, marginal and conditional probabilities from a two-way table",
+     topic="probability",
+     purpose="From a two-way table of counts: the joint, marginal and conditional probabilities of every cell, and for a chosen "
+             "row and column P(row and column), P(row), P(column), P(row | column), P(column | row) and P(row or column).",
+     inputs=[M("table", "the two-way table of counts (rows x columns)"), I("row", "the row of interest (from 1)", lo=1),
+             I("column", "the column of interest (from 1)", lo=1)],
+     outputs=[O("p_row_given_column", "P(row | column) = cell / column total"), O("p_column_given_row", "P(column | row) = cell / row total"),
+              O("p_row_and_column", "P(row and column) = cell / grand total"), O("p_row", "P(row) = row total / grand total"),
+              O("p_column", "P(column) = column total / grand total"), O("p_row_or_column", "P(row or column)"), O("total", "grand total"),
+              O("joint", "joint probabilities of every cell"), O("row_marginals", "marginal probabilities of the rows"),
+              O("column_marginals", "marginal probabilities of the columns"), O("row_given_column", "P(row i | column j) for every cell"),
+              O("column_given_row", "P(column j | row i) for every cell")],
+     primary="p_row_given_column",
+     conditions=["counts >= 0", "every row and column has a positive total", "row and column numbered from 1"],
+     method="divide a cell by the grand total (joint), by its column total (P(row | column)) or by its row total (P(column | row)); "
+            "margins are the row and column totals over the grand total",
+     latex=r"P(R_i \mid C_j) = \frac{n_{ij}}{n_{\cdot j}},\quad P(C_j \mid R_i) = \frac{n_{ij}}{n_{i\cdot}},\quad P(R_i \cap C_j) = \frac{n_{ij}}{n}",
+     run=run_two_way_table, reference=ref_two_way_table, wrong=_wrong_two_way_table, rnd=_rnd_two_way_table,
+     need=[r"two[- ]way table|contingency table", r"conditional|given|joint|marginal|probabilit"],
+     avoid=r"chi|\btest\b|independen|expected", prio=6, extract=_x_two_way_table,
+     keywords=["two-way table", "conditional probability"],
+     templates=["From the two-way table [[30, 20], [10, 40]], find the probability of row 1 given column 2.",
+                "Two-way table [[12, 8, 5], [18, 22, 35]]: find the joint, marginal and conditional probabilities for row 2 and column 3."],
+     examples=[X({"table": "[[30, 20], [10, 40]]", "row": 1, "column": 2},
+                 {"p_row_given_column": 1 / 3, "p_column_given_row": 0.4, "p_row_and_column": 0.2, "p_row": 0.5, "p_column": 0.6,
+                  "p_row_or_column": 0.9, "total": 100.0, "row_marginals": [0.5, 0.5], "column_marginals": [0.4, 0.6]}),
+               X({"table": [[12, 8, 5], [18, 22, 35]], "row": 2, "column": 3},
+                 {"p_row_given_column": 0.875, "p_column_given_row": 35 / 75, "p_row_and_column": 0.35, "p_row": 0.75, "p_column": 0.4,
+                  "p_row_or_column": 0.8})],
+     questions=[Q("From the two-way table [[30, 20], [10, 40]], find the probability of row 1 given column 2.",
+                  {"p_row_given_column": 1 / 3, "p_row_and_column": 0.2}),
+                Q("Two-way table [[12, 8, 5], [18, 22, 35]]: find the joint, marginal and conditional probabilities for row 2 and column 3.",
+                  {"p_row_given_column": 0.875, "p_column_given_row": 35 / 75, "p_row": 0.75}),
+                Q("From the two-way table [[30, 20], [10, 40]], find the probability of row 3 given column 1.", outcome="INVALID_INPUT"),
+                Q("From the two-way table [[30, 20], [10, 40]], find the conditional probability of row 1.", outcome="NEEDS_INPUT")])
+
 # @@CAPABILITIES@@
 
 # @@VALUES-BEGIN@@
