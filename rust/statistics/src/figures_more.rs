@@ -11,7 +11,9 @@ pub fn live(s: &Solved) -> Vec<Option<Figure>> {
     match s.key {
         "cohens_d" => vec![boxes(s)],
         "ci_mean_known_sigma" | "ci_mean_t_summary" | "ci_proportion" | "ci_variance" => vec![intervals(s)],
-        "ci_two_means" | "correlation_confidence_interval" => vec![intervals(s), xy(s)],
+        // two independent samples have no pairing: drawn as two samples (boxes), never as y against x (review 11-13)
+        "ci_two_means" => vec![intervals(s), boxes(s)],
+        "correlation_confidence_interval" => vec![intervals(s), xy(s)],
         "wilson_interval" => vec![wilson(s)],
         "spearman_correlation" => vec![scatter(s), xy(s)],
         "covariance" | "pearson_correlation" => vec![scatter(s)],
