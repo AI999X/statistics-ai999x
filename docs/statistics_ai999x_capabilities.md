@@ -2301,7 +2301,7 @@ $$
 
 ![critical_value (right-tail F critical value) against df2 (denominator degrees of freedom) from 2 to 200 on a logarithmic axis](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-curve)
 
-*critical_value (right-tail F critical value) against df2 (denominator degrees of freedom) from 2 to 200 on a logarithmic axis. One curve for each value of alpha (tail area): 0.05, 0.025, 0.1. Other inputs as in the worked example: df1 = 3. 41 points per curve computed by statistics-ai999x; marked: the worked example, df2 = 20, critical_value = 3.09839.*
+*critical_value (right-tail F critical value) against df2 (denominator degrees of freedom) from 2 to 200 on a logarithmic axis. One curve for each value of alpha (tail area): 0.05, 0.025, 0.1. Other inputs as in the worked example: df1 = 3.0. 41 points per curve computed by statistics-ai999x; marked: the worked example, df2 = 20, critical_value = 3.09839.*
 
 ```python
 statistics_ai999x.solve('f_critical_value', df1=3, df2=20, alpha=0.05)
@@ -4948,7 +4948,7 @@ $$
 
 ![n (required sample size (rounded up)) against confidence (confidence level as a fraction (0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-mean-curve)
 
-*n (required sample size (rounded up)) against confidence (confidence level as a fraction (0.95 for 95%)) from 0.02 to 0.98. One curve for each value of sigma (population standard deviation (planning value)): 15, 7.5, 30. Other inputs as in the worked example: margin = 2. 41 points per curve computed by statistics-ai999x; marked: the worked example, confidence = 0.95, n = 217.*
+*n (required sample size (rounded up)) against confidence (confidence level as a fraction (0.95 for 95%)) from 0.02 to 0.98. One curve for each value of sigma (population standard deviation (planning value)): 15, 7.5, 30. Other inputs as in the worked example: margin = 2.0. 41 points per curve computed by statistics-ai999x; marked: the worked example, confidence = 0.95, n = 217.*
 
 ```python
 statistics_ai999x.solve('sample_size_mean', sigma=15, margin=2, confidence=0.95)
