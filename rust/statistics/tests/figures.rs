@@ -24,7 +24,7 @@ const KINDS: &[(&str, &[&str])] = &[
     ("ci_mean_t", &["dots", "intervals"]),
     ("ci_mean_t_summary", &["intervals"]),
     ("ci_proportion", &["intervals"]),
-    ("ci_two_means", &["intervals", "xy"]),
+    ("ci_two_means", &["intervals"]),
     ("ci_variance", &["intervals"]),
     ("coefficient_of_variation", &["dots"]),
     ("cohens_d", &["boxes"]),
