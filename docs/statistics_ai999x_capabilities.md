@@ -2807,10 +2807,6 @@ $$
 
 *Confidence intervals for the difference of the means of x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 (variance welch) at five levels, each from the package: 50 % [2.73705, 4.86295]; 80 % [1.68765, 5.91235]; 90 % [0.974776, 6.62522]; 95 % [0.278295, 7.3217]; 99 % [-1.39452, 8.99452]. An interval that excludes 0 (dashed) means a difference at that level.*
 
-![The data y (second sample) against x (first sample) as given in the worked example (5 points)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-xy)
-
-*The data y (second sample) against x (first sample) as given in the worked example (5 points). Also returned: difference = 3.8, lower = 0.278295, upper = 7.3217, df = 7.17415, standard_error = 1.49666. Other inputs: confidence = 0.95, variance = welch.*
-
 ```python
 statistics_ai999x.solve('ci_two_means', x='12, 15, 11, 18, 14', y='10, 9, 13, 11, 8', confidence=0.95, variance='welch')
 # -> difference = 3.8, lower = 0.278295, upper = 7.3217, df = 7.17415, standard_error = 1.49666   (SOLVED)
