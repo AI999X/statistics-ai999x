@@ -2547,9 +2547,9 @@ $$
 - **Assumes:** sigma known; normal population or large n; random sample
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![z confidence intervals for a mean with known σ = 8 (x̄ = 52, n = 36) at five levels, each from the package: 50 % [51](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-intervals)
+![z confidence intervals for a mean with known σ = 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-intervals)
 
-*z confidence intervals for a mean with known σ = 8 (x̄ = 52, n = 36) at five levels, each from the package: 50 % [51.1007, 52.8993]; 80 % [50.2913, 53.7087]; 90 % [49.8069, 54.1931]; 95 % [49.3867, 54.6133]; 99 % [48.5656, 55.4344]. Higher confidence, wider interval.*
+*z confidence intervals for a mean with known σ = 8.0 (x̄ = 52.0, n = 36) at five levels, each from the package: 50 % [51.1007, 52.8993]; 80 % [50.2913, 53.7087]; 90 % [49.8069, 54.1931]; 95 % [49.3867, 54.6133]; 99 % [48.5656, 55.4344]. Higher confidence, wider interval.*
 
 ```python
 statistics_ai999x.solve('ci_mean_known_sigma', xbar=52, sigma=8, n=36, confidence=0.95)
@@ -2654,9 +2654,9 @@ $$
 - **Assumes:** random sample from a roughly normal population (or large n); sigma unknown
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![t confidence intervals for a mean from summaries (x̄ = 25, s = 4, n = 16, 15 degrees of freedom) at five levels, each from the package: 50 % [24](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-intervals)
+![t confidence intervals for a mean from summaries (x̄ = 25](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-intervals)
 
-*t confidence intervals for a mean from summaries (x̄ = 25, s = 4, n = 16, 15 degrees of freedom) at five levels, each from the package: 50 % [24.3088, 25.6912]; 80 % [23.6594, 26.3406]; 90 % [23.2469, 26.7531]; 95 % [22.8686, 27.1314]; 99 % [22.0533, 27.9467].*
+*t confidence intervals for a mean from summaries (x̄ = 25.0, s = 4.0, n = 16, 15 degrees of freedom) at five levels, each from the package: 50 % [24.3088, 25.6912]; 80 % [23.6594, 26.3406]; 90 % [23.2469, 26.7531]; 95 % [22.8686, 27.1314]; 99 % [22.0533, 27.9467].*
 
 ```python
 statistics_ai999x.solve('ci_mean_t_summary', xbar=25, s=4, n=16, confidence=0.95)
@@ -2901,9 +2901,9 @@ $$
 - **Assumes:** sigma known; normal population or large n; the alternative must be stated for a one-sided claim
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The z test of a sample mean x̄ = 52 against μ₀ = 50 (σ = 5, n = 36)](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-null-density)
+![The z test of a sample mean x̄ = 52](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-null-density)
 
-*The z test of a sample mean x̄ = 52 against μ₀ = 50 (σ = 5, n = 36). Drawn: the standard normal density (density from the package's cumulative probabilities on a grid, differenced); shaded: the rejection region beyond ±1.95996 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.4, p-value = 0.0163951.*
+*The z test of a sample mean x̄ = 52.0 against μ₀ = 50.0 (σ = 5.0, n = 36). Drawn: the standard normal density (density from the package's cumulative probabilities on a grid, differenced); shaded: the rejection region beyond ±1.95996 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.4, p-value = 0.0163951.*
 
 ```python
 statistics_ai999x.solve('z_test_mean', xbar=52, mu0=50, sigma=5, n=36)
@@ -2958,7 +2958,7 @@ $$
 
 ![The sample x = 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-one-sample-dots)
 
-*The sample x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against the hypothesised mean μ₀ = 5: returned mean 5.16667, standard deviation 0.216025, t = 1.88982 with 5 degrees of freedom, p-value 0.117387.*
+*The sample x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against the hypothesised mean μ₀ = 5.0: returned mean 5.16667, standard deviation 0.216025, t = 1.88982 with 5 degrees of freedom, p-value 0.117387.*
 
 ```python
 statistics_ai999x.solve('t_test_one_sample', x='5.1, 4.9, 5.3, 5.5, 5.0, 5.2', mu0=5)
@@ -3172,9 +3172,9 @@ $$
 - **Assumes:** independent random samples; roughly normal populations or large samples
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The two-sample t test from summaries (group 1: mean 20, sd 4, n 15; group 2: mean 17, sd 5, n 12; variance pooled)](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-null-density)
+![The two-sample t test from summaries (group 1: mean 20](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-null-density)
 
-*The two-sample t test from summaries (group 1: mean 20, sd 4, n 15; group 2: mean 17, sd 5, n 12; variance pooled). Drawn: the t density with 25 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.05954 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.73379, p-value = 0.0952738.*
+*The two-sample t test from summaries (group 1: mean 20.0, sd 4.0, n 15; group 2: mean 17.0, sd 5.0, n 12; variance pooled). Drawn: the t density with 25 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.05954 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.73379, p-value = 0.0952738.*
 
 ```python
 statistics_ai999x.solve('t_test_summary_statistics', m1=20, s1=4, n1=15, m2=17, s2=5, n2=12, variance='pooled')
