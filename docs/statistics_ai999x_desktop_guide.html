@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Statistics: desktop app user guide</title>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+@page{size:A4;margin:16mm 15mm}
+body{font-family:"Segoe UI",Arial,sans-serif;font-size:10.5pt;line-height:1.45;color:#1b1f24;max-width:880px;margin:auto}
+h1{font-size:22pt;border-bottom:2px solid #2b5c8a;padding-bottom:4px;margin-top:28px;page-break-before:always}
+h1:first-of-type{page-break-before:avoid}
+h2{font-size:15pt;color:#2b5c8a;margin-top:22px;page-break-after:avoid}
+h3{font-size:12pt;margin-top:16px;page-break-after:avoid}
+pre{background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;padding:8px 10px;font-size:8.8pt;white-space:pre-wrap;page-break-inside:avoid}
+code{font-family:Consolas,monospace;font-size:9pt;background:#f4f6f8;padding:0 2px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:8px 0;font-size:9pt;width:100%;page-break-inside:auto}
+th,td{border:1px solid #cfd6dd;padding:3px 6px;vertical-align:top;text-align:left}
+th{background:#eaf0f5}
+.math{margin:6px 0;overflow-x:auto}
+.badge{display:inline-block;color:#fff;border-radius:3px;padding:0 5px;font-size:8.5pt;white-space:nowrap}
+figure{margin:10px 0;text-align:center;page-break-inside:avoid}figure img{max-width:88%}.svgfig svg{max-width:88%;height:auto}
+figcaption{font-size:9pt;color:#555}
+.pb{page-break-after:always}
+</style></head><body>
+<h1>Statistics: the desktop app, user guide</h1>
+<p><strong>Statistics</strong>, desktop app 1.6.5 for Windows and Linux. <strong>Creator / engineer:</strong> Ibnul Jaif Farabi · <strong>Company:</strong> AI999X · support@ai999x.com</p>
+<p>Statistics covers descriptive statistics, probability distributions, confidence intervals, hypothesis tests, regression and correlation, experimental design, quality control and reliability. Its desktop app holds all 112 calculations in 16 topics: pick one, change its inputs and the answer, a live scene and charts follow at once. It runs on your own computer with no network connection and nothing else to install. The pictures in this guide were taken in this app.</p>
+<h2>Contents</h2>
+<ul><li>1. Get it and start it</li><li>2. The window</li><li>3. Compute a calculation</li><li>4. Ask in words</li><li>5. The live scene and the charts</li><li>6. Light and dark</li><li>7. Every calculation</li><li>8. Other ways to use it</li></ul>
+<h2>1. Get it and start it</h2>
+<table><thead><tr><th>system</th><th>download</th></tr></thead><tbody><tr><td>Windows x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/ai999x-statistics-1.6.5-windows-x86_64.zip</td></tr><tr><td>Linux x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/ai999x-statistics-1.6.5-linux-x86_64.tar.gz</td></tr></tbody></table>
+<p>Windows: Download ai999x-statistics-1.6.5-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-statistics.exe. If Windows SmartScreen asks, choose More info → Run anyway.</p>
+<p>Linux:</p>
+<pre><code class="shell">curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/ai999x-statistics-1.6.5-linux-x86_64.tar.gz
+curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/SHA256SUMS
+sha256sum -c --ignore-missing SHA256SUMS
+tar xzf ai999x-statistics-1.6.5-linux-x86_64.tar.gz
+./ai999x-statistics-1.6.5-linux-x86_64/ai999x-statistics</code></pre>
+<p>Checksums of every download: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/SHA256SUMS. Install steps for every app: https://www.ai999x.com/desktop-cli/</p>
+<h2>2. The window</h2>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/hero.webp"><figcaption>The Statistics app, opened on One-sample t-test with its worked example.</figcaption></figure>
+<p>On the left, a search box and the topics with their calculations. In the middle, the chosen calculation: its answer at the top, then the live scene (or its charts), what the answer means and the formula. On the right, its inputs, each with a slider where that makes sense, and the Compute and Reset buttons. At the bottom, a box for a question in words.</p>
+<h2>3. Compute a calculation</h2>
+<p>Open Hypothesis tests › One-sample t-test (or type part of its name in the search box). It opens with a worked example filled in: “Perform a one-sample t-test of [5.1, 4.9, 5.3, 5.5, 5.0, 5.2] against mu0 = 5, two-sided.” The answer: t = 1.889822365, df = 5, p_value = 0.1173867951, mean = 5.166666667.</p>
+<p>Change any input (type a number with its unit, or drag its slider) and the answer, the scene and the charts follow; Compute recomputes after typing, Reset brings back the worked example. An input outside the range the formula holds for is refused with the reason, never answered with a guessed number.</p>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-1.webp"><figcaption>One-sample t-test: the live scene of the worked example.</figcaption></figure>
+<h2>4. Ask in words</h2>
+<p>Type a question as you would say it, for example “Perform a one-sample t-test of [5.1, 4.9, 5.3, 5.5, 5.0, 5.2] against mu0 = 5, two-sided.” The app reads the quantities and their units, picks the calculation and answers; the command-line program reads it the same way and printed:</p>
+<pre><code class="text">Read as: One-sample t-test
+t = 1.889822365
+df = 5</code></pre>
+<p>When a question names a quantity the app cannot place, it says what is missing instead of guessing.</p>
+<h2>5. The live scene and the charts</h2>
+<p>Every calculation draws a scene from its answer: it moves as an input changes. The Charts button shows charts that vary one input around your values; Enlarge opens one in a large view. Scenes from other topics:</p>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-2.webp"><figcaption>Normal probability below a value</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-3.webp"><figcaption>Confidence interval for a mean from data (t-interval)</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-4.webp"><figcaption>Weibull reliability, hazard rate and MTTF</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-5.webp"><figcaption>One-way ANOVA</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-6.webp"><figcaption>Fisher&#x27;s exact test (2 x 2)</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-7.webp"><figcaption>Critical value of chi-square</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/scene-8.webp"><figcaption>Arithmetic mean</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/chart-1.webp"><figcaption>One-sample t-test: a chart, enlarged.</figcaption></figure>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/chart-2.webp"><figcaption>Normal probability below a value: a chart, enlarged.</figcaption></figure>
+<h2>6. Light and dark</h2>
+<p>The app follows a light or a dark theme (the switch is in its top bar).</p>
+<figure><img src="https://www.ai999x.com/?ax_shot=statistics-ai999x/hero-dark.webp"><figcaption>The Statistics app in the dark theme.</figcaption></figure>
+<h2>7. Every calculation</h2>
+<p>112 calculations in 16 topics; each has its own entry on the model&#x27;s page (https://www.ai999x.com/models/statistics-ai999x/) with its formula, worked example and charts.</p>
+<table><thead><tr><th>topic</th><th>calculations</th></tr></thead><tbody><tr><td>Analysis of variance</td><td>One-way ANOVA</td></tr><tr><td>Categorical data</td><td>Fisher&#x27;s exact test (2 x 2), McNemar&#x27;s test for paired proportions</td></tr><tr><td>Confidence intervals</td><td>Confidence interval for a mean (sigma known, z-interval), Confidence interval for a mean from data (t-interval), Confidence interval for a mean from summary statistics (t-interval), Confidence interval for a proportion (Wald), Confidence interval for a variance and standard deviation, Confidence interval for the difference of two means, Wilson score interval for a proportion</td></tr><tr><td>Confidence intervals and tests</td><td>Critical value of chi-square, Critical value of F, Critical value of Student&#x27;s t, Critical value of z</td></tr><tr><td>Descriptive statistics</td><td>Arithmetic mean, Coefficient of variation, Five-number summary and interquartile range, Geometric mean, Harmonic mean, Mean absolute deviation, Mean and standard deviation of a frequency table, Median, Median absolute deviation, Mode, Outliers by the 1.5 IQR rule, Percentile of a data set, Population standard deviation, Population variance, Range, Sample standard deviation, Sample variance, Skewness and kurtosis, Standard error of the mean, Trimmed mean, Weighted mean, z-score of a value</td></tr><tr><td>Effect sizes</td><td>Cohen&#x27;s d and Hedges&#x27; g</td></tr><tr><td>Experimental design</td><td>2^2 factorial design: main effects and interaction, 2^3 factorial design: main effects and interactions, Cronbach&#x27;s alpha (internal consistency), Randomized complete block design (two-way ANOVA without replication)</td></tr><tr><td>Hypothesis tests</td><td>Bartlett&#x27;s test for equal variances, Chi-square goodness-of-fit test, Chi-square test for a variance, Chi-square test of independence, F-test for equality of two variances, Levene&#x27;s test for equal variances, One-proportion z-test, One-sample t-test, One-sample z-test for a mean (sigma known), Paired t-test, Two-proportion z-test, Two-sample t-test (pooled variances), Two-sample t-test from summary statistics, Welch&#x27;s two-sample t-test (unequal variances)</td></tr><tr><td>Nonparametric tests</td><td>Friedman test, Kruskal-Wallis H test, Mann-Whitney U test (exact), Mann-Whitney U test (large-sample), Sign test, Wilcoxon signed-rank test (exact), Wilcoxon signed-rank test (large-sample)</td></tr><tr><td>Power and sample size</td><td>Power of a one-sample z-test, Power of a two-sample z-test, Sample size per group to compare two means (z-test power), Sample size to estimate a mean, Sample size to estimate a proportion</td></tr><tr><td>Probability</td><td>Joint, marginal and conditional probabilities from a two-way table, Probability of at least one occurrence, Probability rules: complement, addition and multiplication</td></tr><tr><td>Probability distributions</td><td>Binomial probability: at least k successes, Binomial probability: at most k successes, Binomial probability: exactly k successes, Expected value and variance of a discrete random variable, Exponential probability above a value, Exponential probability below a value, Geometric distribution: first success on trial k, Hypergeometric probability (sampling without replacement), Inverse normal (normal percentile), Mean and standard deviation of a binomial distribution, Negative binomial: r-th success on trial n, Normal probability above a value, Normal probability below a value, Normal probability between two values, Poisson probability: at least k events, Poisson probability: at most k events, Poisson probability: exactly k events</td></tr><tr><td>Quality control</td><td>c chart limits (defects per unit), Individuals and moving range (I-MR) chart limits, p chart limits (fraction defective), Process capability (Cp, Cpk) and expected nonconforming, X-bar and R control chart limits, X-bar and S control chart limits</td></tr><tr><td>Regression and correlation</td><td>Confidence interval for a correlation (Fisher z), Covariance, Durbin-Watson statistic, Kendall&#x27;s tau-b rank correlation, Multiple linear regression, Pearson correlation coefficient, Prediction from a least squares line, Significance test for a correlation coefficient, Simple linear regression (least squares line), Spearman rank correlation</td></tr><tr><td>Reliability and survival</td><td>Exponential reliability (constant failure rate), k-out-of-n system reliability, Kaplan-Meier survival estimate, Log-rank test comparing two survival curves, Reliability of a parallel system, Reliability of a series system, Weibull reliability, hazard rate and MTTF</td></tr><tr><td>Sampling distributions</td><td>Probability that a sample mean is above a value, Probability that a sample mean is below a value</td></tr></tbody></table>
+<h2>8. Other ways to use it</h2>
+<p>The same engine runs on the command line (<code>statistics</code>, its own guide), in Python (<code>pip install statistics-ai999x</code>, <code>import statistics_ai999x</code>, its own guide) and in the browser on https://www.ai999x.com/models/statistics-ai999x/.</p>
+<p>Licence: Apache-2.0 · AI999X · https://www.ai999x.com/models/statistics-ai999x/</p></body></html>
