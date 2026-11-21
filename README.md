@@ -10,8 +10,8 @@ Statistics covers descriptive statistics, probability distributions, confidence 
 
 | | |
 |---|---|
-| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-statistics-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-statistics-1.6.6-linux-x86_64.tar.gz) |
-| **Command line** `statistics` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-linux-x86_64.tar.gz) |
+| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-statistics-1.6.7-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-statistics-1.6.7-linux-x86_64.tar.gz) |
+| **Command line** `statistics` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz) |
 | **Browser** (any device) | [Try it on the model page](https://www.ai999x.com/models/statistics-ai999x/#capabilities) |
 | **Python** 3.10+ | `pip install statistics-ai999x`: on Windows and Linux (x86-64) `pip` installs the same compiled engine; on other systems (macOS, ARM) it installs a pure-Python build that gives the same answers |
 
@@ -145,90 +145,6 @@ print(a.outcome, a.values)
 # SOLVED {'u': 19.0, 'p_value': 0.031746031746031744}
 ```
 
-## Command line: 15 examples
-
-Each command below was run with `statistics` of this release; the lines under it are the answer it printed (the full answer goes on with the method, every input in SI units and the conditions it assumes).
-
-```text
-$ statistics solve one_way_anova "g1=[23, 25, 21, 22]" "g2=[30, 28, 31, 29]" "g3=[26, 27, 24, 25]"
-f = 22.12
-p_value = 0.0003357531392
-df_between = 2
-df_within = 9
-ss_between = 92.16666667
-ss_within = 18.75
-
-$ statistics solve fisher_exact_test "table=[[8, 2], [1, 5]]" alternative=two-sided
-p_value = 0.03496503497
-odds_ratio = 20
-
-$ statistics solve ci_mean_known_sigma xbar=52 sigma=8 n=36 confidence=0.95
-lower = 49.38671469
-upper = 54.61328531
-margin_of_error = 2.613285313
-critical_value = 1.959963985
-
-$ statistics solve chi_square_critical_value df=4 alpha=0.05
-critical_value = 9.487729037
-left_critical_value = 0.7107230214
-
-$ statistics solve mean "x=[2, 4, 9]"
-mean = 5
-n = 3
-sum = 15
-
-$ statistics solve cohens_d "x=[12, 15, 11, 18, 14]" "y=[10, 9, 13, 11, 8]"
-d = 1.605793084
-hedges_g = 1.450393753
-pooled_sd = 2.366431913
-
-$ statistics solve factorial_2x2_effects "y=[28, 36, 18, 31]"
-grand_mean = 28.25
-A = 10.5
-B = -7.5
-AB = 2.5
-
-$ statistics solve bartlett_test "g1=[21, 24, 19, 26, 23]" "g2=[22, 23, 22, 24, 23]" "g3=[18, 28, 20, 30, 24]"
-statistic = 8.618215556
-df = 2
-p_value = 0.01344554065
-
-$ statistics solve friedman_test "data=[[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]]"
-chi_square = 0.4
-df = 2
-p_value = 0.8187307531
-
-$ statistics solve power_one_sample_z d=0.5 n=30 alpha=0.05 alternative=two-sided
-power = 0.7819079987
-
-$ statistics solve two_way_table_probabilities "table=[[30, 20], [10, 40]]" row=1 column=2
-total = 100
-joint = [[0.3,0.2],[0.1,0.4]]
-row_marginals = [0.5,0.5]
-column_marginals = [0.4,0.6]
-row_given_column = [[0.75,0.3333333333333333],[0.25,0.6666666666666666]]
-column_given_row = [[0.6,0.4],[0.2,0.8]]
-
-$ statistics solve binomial_at_least n=10 k=3 p=0.4
-probability = 0.8327102464
-
-$ statistics solve c_chart "counts=[3, 5, 2, 6, 4, 7, 3, 4]"
-center = 4.25
-ucl = 10.43465844
-lcl = 0
-
-$ statistics solve correlation_confidence_interval "x=[1, 2, 3, 4, 5, 6]" "y=[2, 3, 5, 4, 6, 7]" confidence=0.95
-r = 0.9428571429
-lower = 0.5591491951
-upper = 0.9938998356
-
-$ statistics solve exponential_reliability t=1000 rate=0.0002
-reliability = 0.8187307531
-unreliability = 0.1812692469
-mttf = 5000
-failure_rate = 0.0002
-```
-
 ## Guides
 
 - Desktop app guide: the window, every calculation, scenes and charts: [PDF](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_desktop_guide.pdf) · [HTML](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_desktop_guide.html) · [Markdown](https://huggingface.co/AI999X/statistics-ai999x/blob/main/docs/statistics_ai999x_desktop_guide.md)
@@ -237,13 +153,13 @@ failure_rate = 0.0002
 
 Every calculation, with its formula, a worked example and its figures: **[Statistics on ai999x.com](https://www.ai999x.com/models/statistics-ai999x/)**. Install guides for the app and the command line: [https://www.ai999x.com/desktop-cli/](https://www.ai999x.com/desktop-cli/).
 
-Version 1.6.6 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
+Version 1.6.7 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
 
 *The Future Is Self-Improving.*
 
 ## Source and releases
 
-This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/statistics-ai999x/) (`pip install .` builds it). Releases are tagged `v1.6.6`; the [GitHub release](https://github.com/AI999X/statistics-ai999x/releases/tag/v1.6.6) carries the wheel, the desktop app and the command-line program for Windows and Linux, and their checksums.
+This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/statistics-ai999x/) (`pip install .` builds it). Releases are tagged `v1.6.7`; the [GitHub release](https://github.com/AI999X/statistics-ai999x/releases/tag/v1.6.7) carries the wheel, the desktop app and the command-line program for Windows and Linux, and their checksums.
 
 ## Build the program from source
 
