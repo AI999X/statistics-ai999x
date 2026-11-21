@@ -212,15 +212,7 @@ $$
 
 ![The data x = 2, 4, 9 as dots on a number line (equal values stacked); marked: the returned mean 5 = sum 15 / n 3, the point the dots balance on](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-dots)
 
-*The data x = 2, 4, 9 as dots on a number line (equal values stacked); marked: the returned mean 5 = sum 15 / n 3, the point the dots balance on. Your inputs: x = 2, 4, 9.*
-
-![Arithmetic mean as x[3] runs from 2 to 16, every other input as you entered it (15 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-live-1)
-
-*Arithmetic mean as x[3] runs from 2 to 16, every other input as you entered it (15 solutions). Marked: your x[3] = 9 gives mean = 5. Your inputs: x = 2, 4, 9.*
-
-![Arithmetic mean as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-live-2)
-
-*Arithmetic mean as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives mean = 5. Your inputs: x = 2, 4, 9.*
+*The data x = 2, 4, 9 as dots on a number line (equal values stacked); marked: the returned mean 5 = sum 15 / n 3, the point the dots balance on.*
 
 ```python
 statistics_ai999x.solve('mean', x='2, 4, 9')
@@ -270,17 +262,9 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 7, 1, 5, 3, 9 as dots on a number line; marked: the returned median 5 of the n = 5 values, with 2 values below and 2 above](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-dots)
+![The data x = 7, 1, 5, 3, 9 as dots on a number line; marked: the returned median 5 of the n = 5 values, with as many values below as above](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-dots)
 
-*The data x = 7, 1, 5, 3, 9 as dots on a number line; marked: the returned median 5 of the n = 5 values, with 2 values below and 2 above. Your inputs: x = 7, 1, 5, 3, 9.*
-
-![Median as x[3] runs from 1 to 9, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-live-1)
-
-*Median as x[3] runs from 1 to 9, every other input as you entered it (9 solutions). Marked: your x[3] = 5 gives median = 5. Your inputs: x = 7, 1, 5, 3, 9.*
-
-![Median as x[5] runs from 2 to 16, every other input as you entered it (15 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-live-2)
-
-*Median as x[5] runs from 2 to 16, every other input as you entered it (15 solutions). Marked: your x[5] = 9 gives median = 5. Your inputs: x = 7, 1, 5, 3, 9.*
+*The data x = 7, 1, 5, 3, 9 as dots on a number line; marked: the returned median 5 of the n = 5 values, with as many values below as above.*
 
 ```python
 statistics_ai999x.solve('median', x='7, 1, 5, 3, 9')
@@ -331,15 +315,7 @@ $$
 
 ![How often each value occurs in x = 3, 7, 7, 2, 9, 7, 3 (counts tallied from the input); the returned mode 7 with frequency 3 is in the first colour](https://www.ai999x.com/?ax_fig=statistics-ai999x/mode-bars)
 
-*How often each value occurs in x = 3, 7, 7, 2, 9, 7, 3 (counts tallied from the input); the returned mode 7 with frequency 3 is in the first colour. Your inputs: x = 3, 7, 7, 2, 9, 7, 3.*
-
-![How often the mode occurs as x[2] runs from 1 to 13, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mode-live-1)
-
-*How often the mode occurs as x[2] runs from 1 to 13, every other input as you entered it (13 solutions). Marked: your x[2] = 7 gives frequency = 3. Your inputs: x = 3, 7, 7, 2, 9, 7, 3.*
-
-![How often the mode occurs as x[3] runs from 1 to 13, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mode-live-2)
-
-*How often the mode occurs as x[3] runs from 1 to 13, every other input as you entered it (13 solutions). Marked: your x[3] = 7 gives frequency = 3. Your inputs: x = 3, 7, 7, 2, 9, 7, 3.*
+*How often each value occurs in x = 3, 7, 7, 2, 9, 7, 3 (counts tallied from the input); the returned mode 7 with frequency 3 is in the first colour.*
 
 ```python
 statistics_ai999x.solve('mode', x='3, 7, 7, 2, 9, 7, 3')
@@ -390,15 +366,7 @@ $$
 
 ![The data x = 12, 4, 19, 7; marked: the returned minimum 4, maximum 19 and the range 15 between them](https://www.ai999x.com/?ax_fig=statistics-ai999x/range-dots)
 
-*The data x = 12, 4, 19, 7; marked: the returned minimum 4, maximum 19 and the range 15 between them. Your inputs: x = 12, 4, 19, 7.*
-
-![Maximum minus minimum as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/range-live-1)
-
-*Maximum minus minimum as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives range = 15. Your inputs: x = 12, 4, 19, 7.*
-
-![Maximum minus minimum as x[3] runs from 0 to 38, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/range-live-2)
-
-*Maximum minus minimum as x[3] runs from 0 to 38, every other input as you entered it (21 solutions). Marked: your x[3] = 19 gives range = 15. Your inputs: x = 12, 4, 19, 7.*
+*The data x = 12, 4, 19, 7; marked: the returned minimum 4, maximum 19 and the range 15 between them.*
 
 ```python
 statistics_ai999x.solve('range', x='12, 4, 19, 7')
@@ -442,17 +410,9 @@ $$
 - **Assumes:** the data are the whole population (divisor n)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (from the inputs and the mean); the returned population variance 4 is their sum divided by n (standard deviation 2)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-variance-bars)
+![For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (derived from the inputs and the mean); the returned population variance 4 is their sum divided by n (standard deviation 2)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-variance-bars)
 
-*For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (from the inputs and the mean); the returned population variance 4 is their sum divided by n (standard deviation 2). Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Population variance as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-variance-live-1)
-
-*Population variance as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives variance = 4. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Population variance as x[3] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-variance-live-2)
-
-*Population variance as x[3] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[3] = 4 gives variance = 4. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
+*For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (derived from the inputs and the mean); the returned population variance 4 is their sum divided by n (standard deviation 2).*
 
 ```python
 statistics_ai999x.solve('population_variance', x='2, 4, 4, 4, 5, 5, 7, 9')
@@ -503,17 +463,9 @@ $$
 - **Assumes:** the data are a sample (divisor $n - 1$, Bessel's correction); at least two values
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (from the inputs and the mean); the returned sample variance 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-variance-bars)
+![For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (derived from the inputs and the mean); the returned sample variance 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-variance-bars)
 
-*For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (from the inputs and the mean); the returned sample variance 4.571 is their sum divided by n - 1 (standard deviation 2.138). Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Sample variance as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-variance-live-1)
-
-*Sample variance as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives variance = 4.571. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Sample variance as x[3] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-variance-live-2)
-
-*Sample variance as x[3] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[3] = 4 gives variance = 4.571. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
+*For x = 2, 4, 4, 4, 5, 5, 7, 9: each observation's squared distance from the returned mean 5 (derived from the inputs and the mean); the returned sample variance 4.57143 is their sum divided by n − 1 (standard deviation 2.13809).*
 
 ```python
 statistics_ai999x.solve('sample_variance', x='2, 4, 4, 4, 5, 5, 7, 9')
@@ -564,17 +516,9 @@ $$
 - **Assumes:** the data are the whole population (divisor n)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned standard deviation 2 either side](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-standard-deviation-dots)
+![The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned population standard deviation 2 either side (variance 4)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-standard-deviation-dots)
 
-*The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned standard deviation 2 either side. (population variance 4) Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Population standard deviation as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-standard-deviation-live-1)
-
-*Population standard deviation as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives standard_deviation = 2. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Population standard deviation as x[3] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/population-standard-deviation-live-2)
-
-*Population standard deviation as x[3] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[3] = 4 gives standard_deviation = 2. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
+*The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned population standard deviation 2 either side (variance 4).*
 
 ```python
 statistics_ai999x.solve('population_standard_deviation', x='2, 4, 4, 4, 5, 5, 7, 9')
@@ -625,17 +569,9 @@ $$
 - **Assumes:** the data are a sample (divisor $n - 1$, Bessel's correction); at least two values
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned standard deviation 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-standard-deviation-dots)
+![The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned sample standard deviation 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-standard-deviation-dots)
 
-*The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned standard deviation 2.138 either side. (sample variance 4.571) Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Sample standard deviation as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-standard-deviation-live-1)
-
-*Sample standard deviation as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives standard_deviation = 2.138. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
-
-![Sample standard deviation as x[3] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-standard-deviation-live-2)
-
-*Sample standard deviation as x[3] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[3] = 4 gives standard_deviation = 2.138. Your inputs: x = 2, 4, 4, 4, 5, 5, 7, 9.*
+*The data x = 2, 4, 4, 4, 5, 5, 7, 9 (n = 8); marked: the returned mean 5 and, dashed, one returned sample standard deviation 2.13809 either side (variance 4.57143).*
 
 ```python
 statistics_ai999x.solve('sample_standard_deviation', x='2, 4, 4, 4, 5, 5, 7, 9')
@@ -685,17 +621,9 @@ $$
 - **Assumes:** $\sigma > 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 70, σ = 10 (from the model's cumulative probabilities on 101 points, differenced), with lines one and two standard deviations from the mean; marked: x = 85 and the returned z = 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-score-density)
+![A value x = 85 on the normal density with μ = 70, σ = 10 (density from the package's cumulative probabilities on a grid, differenced), with lines one and two standard deviations from the mean; marked: the returned z = 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-score-density)
 
-*The normal density with μ = 70, σ = 10 (from the model's cumulative probabilities on 101 points, differenced), with lines one and two standard deviations from the mean; marked: x = 85 and the returned z = 1.5, its distance from μ in standard deviations. Your inputs: x = 85, mu = 70, sigma = 10.*
-
-![Number of standard deviations x lies above](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-score-live-1)
-
-*Number of standard deviations x lies above... as x runs from 21.25 to 148.8, every other input as you entered it (41 solutions). Marked: your x = 85 gives z = 1.5. Your inputs: x = 85, mu = 70, sigma = 10.*
-
-![Number of standard deviations x lies above](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-score-live-2)
-
-*Number of standard deviations x lies above... as μ runs from 17.5 to 122.5, every other input as you entered it (29 solutions). Marked: your μ = 70 gives z = 1.5. Your inputs: x = 85, mu = 70, sigma = 10.*
+*A value x = 85 on the normal density with μ = 70, σ = 10 (density from the package's cumulative probabilities on a grid, differenced), with lines one and two standard deviations from the mean; marked: the returned z = 1.5, its distance from μ in standard deviations.*
 
 ```python
 statistics_ai999x.solve('z_score', x=85, mu=70, sigma=10)
@@ -742,7 +670,7 @@ $$
 
 ![The values 90, 80, 70 with weights 3, 2, 1 (total weight 6) as stems; marked: the returned weighted mean 83](https://www.ai999x.com/?ax_fig=statistics-ai999x/weighted-mean-stems)
 
-*The values 90, 80, 70 with weights 3, 2, 1 (total weight 6) as stems; marked: the returned weighted mean 83.33, pulled towards the heavily weighted values, and the unweighted mean 80 from the model's mean. Your inputs: x = 90, 80, 70, w = 3, 2, 1.*
+*The values 90, 80, 70 with weights 3, 2, 1 (total weight 6) as stems; marked: the returned weighted mean 83.3333, pulled towards the heavily weighted values, and the unweighted mean 80 from the package.*
 
 ```python
 statistics_ai999x.solve('weighted_mean', x='90, 80, 70', w='3, 2, 1')
@@ -793,15 +721,7 @@ $$
 
 ![A box plot of x = 1, 3, 5, 7, 9, 11, 13, 15 drawn from the returned five-number summary: minimum 1, Q1 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/five-number-summary-box)
 
-*A box plot of x = 1, 3, 5, 7, 9, 11, 13, 15 drawn from the returned five-number summary: minimum 1, Q1 4.5, median 8, Q3 11.5, maximum 15 (IQR 7), with the data below. Your inputs: x = 1, 3, 5, 7, 9, 11, 13, 15.*
-
-![Smallest value as x[1] runs from 0 to 5, every other input as you entered it (6 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/five-number-summary-live-1)
-
-*Smallest value as x[1] runs from 0 to 5, every other input as you entered it (6 solutions). Marked: your x[1] = 1 gives minimum = 1. Your inputs: x = 1, 3, 5, 7, 9, 11, 13, 15.*
-
-![Interquartile range Q3 - Q1 as x[3] runs from 1 to 9, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/five-number-summary-live-2)
-
-*Interquartile range Q3 - Q1 as x[3] runs from 1 to 9, every other input as you entered it (9 solutions). Marked: your x[3] = 5 gives iqr = 7. Your inputs: x = 1, 3, 5, 7, 9, 11, 13, 15.*
+*A box plot of x = 1, 3, 5, 7, 9, 11, 13, 15 drawn from the returned five-number summary: minimum 1, Q1 4.5, median 8, Q3 11.5, maximum 15 (IQR 7, method default), with the data below.*
 
 ```python
 statistics_ai999x.solve('five_number_summary', x='1, 3, 5, 7, 9, 11, 13, 15')
@@ -850,13 +770,9 @@ $$
 - **Assumes:** $0  \leq  p  \leq  100$; linear interpolation (type 7) unless method = weibull (type 6)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The p-th percentile as p runs from 22](https://www.ai999x.com/?ax_fig=statistics-ai999x/percentile-live-1)
+![The p-th percentile of x = 15, 20, 35, 40, 50 for p = 0 … 100 (one package run every 2 points), the data values shown on the left edge; between data values the percentile is interpolated](https://www.ai999x.com/?ax_fig=statistics-ai999x/percentile-curve)
 
-*The p-th percentile as p runs from 22.5 to 97.94, every other input as you entered it (20 solutions). Marked: your p = 90 gives percentile = 46. Your inputs: x = 15, 20, 35, 40, 50, p = 90.*
-
-![The p-th percentile as x[5] runs from 25 to 75, every other input as you entered it (27 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/percentile-live-2)
-
-*The p-th percentile as x[5] runs from 25 to 75, every other input as you entered it (27 solutions). Marked: your x[5] = 50 gives percentile = 46. Your inputs: x = 15, 20, 35, 40, 50, p = 90.*
+*The p-th percentile of x = 15, 20, 35, 40, 50 for p = 0 … 100 (one package run every 2 points), the data values shown on the left edge; between data values the percentile is interpolated. Marked: the worked example p = 90, percentile 46.*
 
 ```python
 statistics_ai999x.solve('percentile', x='15, 20, 35, 40, 50', p=90)
@@ -906,17 +822,9 @@ $$
 - **Assumes:** positive mean; sample standard deviation $(n - 1)$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 10, 12, 14, 16, 18 (n = 5); marked: the returned mean 14 and, dashed, one returned standard deviation 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/coefficient-of-variation-dots)
+![The data x = 10, 12, 14, 16, 18; marked: the returned mean 14 and, dashed, one standard deviation 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/coefficient-of-variation-dots)
 
-*The data x = 10, 12, 14, 16, 18 (n = 5); marked: the returned mean 14 and, dashed, one returned standard deviation 3.162 either side. The coefficient of variation is their ratio: 0.2259 (22.59 %). Your inputs: x = 10, 12, 14, 16, 18.*
-
-![Cv as x[5] runs from 0 to 38, every other input as you entered it (39 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/coefficient-of-variation-live-1)
-
-*Cv as x[5] runs from 0 to 38, every other input as you entered it (39 solutions). Marked: your x[5] = 18 gives cv = 0.2259. Your inputs: x = 10, 12, 14, 16, 18.*
-
-![Cv as x[1] runs from 0 to 30, every other input as you entered it (16 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/coefficient-of-variation-live-2)
-
-*Cv as x[1] runs from 0 to 30, every other input as you entered it (16 solutions). Marked: your x[1] = 10 gives cv = 0.2259. Your inputs: x = 10, 12, 14, 16, 18.*
+*The data x = 10, 12, 14, 16, 18; marked: the returned mean 14 and, dashed, one standard deviation 3.16228 either side. The coefficient of variation is their ratio: 0.225877 (22.5877 %).*
 
 ```python
 statistics_ai999x.solve('coefficient_of_variation', x='10, 12, 14, 16, 18')
@@ -960,13 +868,9 @@ $$
 - **Assumes:** independent trials with the same probability p
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-at-least-one-live-1)
+![probability (1 - (1 - p)^n) against p (probability of the event on one trial) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-at-least-one-curve)
 
-*Probability as p runs from 0.05 to 0.35, every other input as you entered it (41 solutions). Marked: your p = 0.2 gives probability = 0.6723. Your inputs: p = 0.2, n = 5.*
-
-![Probability as n runs from 1 to 9, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-at-least-one-live-2)
-
-*Probability as n runs from 1 to 9, every other input as you entered it (9 solutions). Marked: your n = 5 gives probability = 0.6723. Your inputs: p = 0.2, n = 5.*
+*probability (1 - (1 - p)^n) against p (probability of the event on one trial) from 0.02 to 0.98. One curve for each value of n (number of independent trials): 5, 2, 10. 41 points per curve computed by statistics-ai999x; marked: the worked example, p = 0.2, probability = 0.67232.*
 
 ```python
 statistics_ai999x.solve('probability_at_least_one', p=0.2, n=5)
@@ -1014,17 +918,9 @@ $$
 - **Assumes:** all values positive
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 2, 8 with three means from the model: arithmetic 5, geometric 4, harmonic 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-mean-dots)
+![The data x = 2, 8 with three means from the package: arithmetic 5, geometric 4, harmonic 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-mean-dots)
 
-*The data x = 2, 8 with three means from the model: arithmetic 5, geometric 4, harmonic 3.2. The geometric mean of this capability is the solid line: 4. Your inputs: x = 2, 8.*
-
-![N-th root of the product as x[1] runs from 1 to 6, every other input as you entered it (6 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-mean-live-1)
-
-*N-th root of the product as x[1] runs from 1 to 6, every other input as you entered it (6 solutions). Marked: your x[1] = 2 gives geometric_mean = 4. Your inputs: x = 2, 8.*
-
-![N-th root of the product as x[2] runs from 2 to 14, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-mean-live-2)
-
-*N-th root of the product as x[2] runs from 2 to 14, every other input as you entered it (13 solutions). Marked: your x[2] = 8 gives geometric_mean = 4. Your inputs: x = 2, 8.*
+*The data x = 2, 8 with three means from the package: arithmetic 5, geometric 4, harmonic 3.2 (always in this order, harmonic ≤ geometric ≤ arithmetic). The geometric mean of this capability is in the first colour: 4.*
 
 ```python
 statistics_ai999x.solve('geometric_mean', x='2, 8')
@@ -1071,17 +967,9 @@ $$
 - **Assumes:** all values positive
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 40, 60 with three means from the model: arithmetic 50, geometric 48](https://www.ai999x.com/?ax_fig=statistics-ai999x/harmonic-mean-dots)
+![The data x = 40, 60 with three means from the package: arithmetic 50, geometric 48](https://www.ai999x.com/?ax_fig=statistics-ai999x/harmonic-mean-dots)
 
-*The data x = 40, 60 with three means from the model: arithmetic 50, geometric 48.99, harmonic 48. The harmonic mean of this capability is the solid line: 48. Your inputs: x = 40, 60.*
-
-![N divided by the sum of reciprocals as x[1] runs from 20 to 60, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/harmonic-mean-live-1)
-
-*N divided by the sum of reciprocals as x[1] runs from 20 to 60, every other input as you entered it (41 solutions). Marked: your x[1] = 40 gives harmonic_mean = 48. Your inputs: x = 40, 60.*
-
-![N divided by the sum of reciprocals as x[2] runs from 30 to 90, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/harmonic-mean-live-2)
-
-*N divided by the sum of reciprocals as x[2] runs from 30 to 90, every other input as you entered it (21 solutions). Marked: your x[2] = 60 gives harmonic_mean = 48. Your inputs: x = 40, 60.*
+*The data x = 40, 60 with three means from the package: arithmetic 50, geometric 48.9898, harmonic 48 (always in this order, harmonic ≤ geometric ≤ arithmetic). The harmonic mean of this capability is in the first colour: 48.*
 
 ```python
 statistics_ai999x.solve('harmonic_mean', x='40, 60')
@@ -1124,17 +1012,9 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 2, 4, 6, 8 with each value's distance to the returned mean 5 drawn as a segment; the returned mean absolute deviation 2 (dashed either side) is the average of those distances](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-absolute-deviation-dots)
+![The data x = 2, 4, 6, 8 with each value's distance to the returned mean 5 drawn as a segment; the returned mean absolute deviation 2 is the average length of those segments, drawn dashed either side of the mean](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-absolute-deviation-dots)
 
-*The data x = 2, 4, 6, 8 with each value's distance to the returned mean 5 drawn as a segment; the returned mean absolute deviation 2 (dashed either side) is the average of those distances. Your inputs: x = 2, 4, 6, 8.*
-
-![Average distance from the mean as x[4] runs from 2 to 14, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-absolute-deviation-live-1)
-
-*Average distance from the mean as x[4] runs from 2 to 14, every other input as you entered it (13 solutions). Marked: your x[4] = 8 gives mean_absolute_deviation = 2. Your inputs: x = 2, 4, 6, 8.*
-
-![Average distance from the mean as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mean-absolute-deviation-live-2)
-
-*Average distance from the mean as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives mean_absolute_deviation = 2. Your inputs: x = 2, 4, 6, 8.*
+*The data x = 2, 4, 6, 8 with each value's distance to the returned mean 5 drawn as a segment; the returned mean absolute deviation 2 is the average length of those segments, drawn dashed either side of the mean.*
 
 ```python
 statistics_ai999x.solve('mean_absolute_deviation', x='2, 4, 6, 8')
@@ -1176,17 +1056,9 @@ $$
 - **Assumes:** unscaled (multiply by 1.4826 to estimate a normal sigma)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 1, 1, 2, 2, 4, 6, 9 with each value's distance to the returned median 2 drawn as a segment; the returned median absolute deviation 1 (dashed either side) is the median of those distances](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-absolute-deviation-dots)
+![The data x = 1, 1, 2, 2, 4, 6, 9 with each value's distance to the returned median 2 drawn as a segment; the returned median absolute deviation 1 is the median of those distances (dashed either side), robust to the long segments of extreme values](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-absolute-deviation-dots)
 
-*The data x = 1, 1, 2, 2, 4, 6, 9 with each value's distance to the returned median 2 drawn as a segment; the returned median absolute deviation 1 (dashed either side) is the median of those distances. Your inputs: x = 1, 1, 2, 2, 4, 6, 9.*
-
-![Median absolute deviation as x[1] runs from 0 to 5, every other input as you entered it (6 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-absolute-deviation-live-1)
-
-*Median absolute deviation as x[1] runs from 0 to 5, every other input as you entered it (6 solutions). Marked: your x[1] = 1 gives median_absolute_deviation = 1. Your inputs: x = 1, 1, 2, 2, 4, 6, 9.*
-
-![Median absolute deviation as x[2] runs from 0 to 5, every other input as you entered it (6 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/median-absolute-deviation-live-2)
-
-*Median absolute deviation as x[2] runs from 0 to 5, every other input as you entered it (6 solutions). Marked: your x[2] = 1 gives median_absolute_deviation = 1. Your inputs: x = 1, 1, 2, 2, 4, 6, 9.*
+*The data x = 1, 1, 2, 2, 4, 6, 9 with each value's distance to the returned median 2 drawn as a segment; the returned median absolute deviation 1 is the median of those distances (dashed either side), robust to the long segments of extreme values.*
 
 ```python
 statistics_ai999x.solve('median_absolute_deviation', x='1, 1, 2, 2, 4, 6, 9')
@@ -1229,17 +1101,9 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The data x = 12, 15, 11, 18, 14 (n = 5); marked: the mean 14 (from the model's mean); dashed: one returned standard deviation 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/standard-error-of-mean-dots)
+![The data x = 12, 15, 11, 18, 14 (n = 5); marked: the mean 14 (from the package's mean), dashed: one returned standard deviation 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/standard-error-of-mean-dots)
 
-*The data x = 12, 15, 11, 18, 14 (n = 5); marked: the mean 14 (from the model's mean); dashed: one returned standard deviation 2.739 either side; shaded: one returned standard error 1.225 either side, the uncertainty of the mean itself. Your inputs: x = 12, 15, 11, 18, 14.*
-
-![Standard error as x[4] runs from 0 to 38, every other input as you entered it (39 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/standard-error-of-mean-live-1)
-
-*Standard error as x[4] runs from 0 to 38, every other input as you entered it (39 solutions). Marked: your x[4] = 18 gives standard_error = 1.225. Your inputs: x = 12, 15, 11, 18, 14.*
-
-![Standard error as x[2] runs from 0 to 34, every other input as you entered it (19 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/standard-error-of-mean-live-2)
-
-*Standard error as x[2] runs from 0 to 34, every other input as you entered it (19 solutions). Marked: your x[2] = 15 gives standard_error = 1.225. Your inputs: x = 12, 15, 11, 18, 14.*
+*The data x = 12, 15, 11, 18, 14 (n = 5); marked: the mean 14 (from the package's mean), dashed: one returned standard deviation 2.73861 either side, shaded: one returned standard error 1.22474 = sd/√n either side, the uncertainty of the mean itself.*
 
 ```python
 statistics_ai999x.solve('standard_error_of_mean', x='12, 15, 11, 18, 14')
@@ -1287,7 +1151,7 @@ $$
 
 ![The frequency table x = 1, 2, 3, 4, f = 3, 5, 8, 4 (n = 20) as bars; marked: the returned mean 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/frequency-table-statistics-bars)
 
-*The frequency table x = 1, 2, 3, 4, f = 3, 5, 8, 4 (n = 20) as bars; marked: the returned mean 2.65 and, dashed, one returned sample standard deviation 0.9881 either side (population sd 0.9631). Your inputs: x = 1, 2, 3, 4, f = 3, 5, 8, 4.*
+*The frequency table x = 1, 2, 3, 4, f = 3, 5, 8, 4 (n = 20) as bars; marked: the returned mean 2.65 and, dashed, one returned sample standard deviation 0.988087 either side (population sd 0.963068).*
 
 ```python
 statistics_ai999x.solve('frequency_table_statistics', x='1, 2, 3, 4', f='3, 5, 8, 4')
@@ -1333,15 +1197,7 @@ $$
 
 ![The data x = 2, 4, 5, 6, 7, 8, 9, 10, 12, 50 with the proportion 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/trimmed-mean-dots)
 
-*The data x = 2, 4, 5, 6, 7, 8, 9, 10, 12, 50 with the proportion 0.1 cut from each end: the returned 1 value(s) at each end are grey. Marked: the returned trimmed mean 7.625 and, dashed, the untrimmed mean 11.3 from the model. Your inputs: x = 2, 4, 5, 6, 7, 8, 9, 10..., proportion = 0.1.*
-
-![Mean of the remaining values as proportion runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/trimmed-mean-live-1)
-
-*Mean of the remaining values as proportion runs from 0.025 to 0.175, every other input as you entered it (41 solutions). Marked: your proportion = 0.1 gives trimmed_mean = 7.625. Your inputs: x = 2, 4, 5, 6, 7, 8, 9, 10..., proportion = 0.1.*
-
-![Mean of the remaining values as x[5] runs from 1 to 13, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/trimmed-mean-live-2)
-
-*Mean of the remaining values as x[5] runs from 1 to 13, every other input as you entered it (13 solutions). Marked: your x[5] = 7 gives trimmed_mean = 7.625. Your inputs: x = 2, 4, 5, 6, 7, 8, 9, 10..., proportion = 0.1.*
+*The data x = 2, 4, 5, 6, 7, 8, 9, 10, 12, 50 with the proportion 0.1 cut from each end: the returned 1 value(s) at each end are greyed. Marked: the returned trimmed mean 7.625 and, dashed, the untrimmed mean 11.3 from the package, pulled by the extreme value.*
 
 ```python
 statistics_ai999x.solve('trimmed_mean', x='2, 4, 5, 6, 7, 8, 9, 10, 12, 50', proportion=0.1)
@@ -1391,15 +1247,7 @@ $$
 
 ![x = 10, 12, 12, 13, 12, 11, 14, 13, 15, 102 with its box (Q1 12, median 12](https://www.ai999x.com/?ax_fig=statistics-ai999x/iqr-outliers-box)
 
-*x = 10, 12, 12, 13, 12, 11, 14, 13, 15, 102 with its box (Q1 12, median 12.5 from the model's five-number summary, Q3 13.75; whiskers to the most extreme values inside the fences) and the returned fences Q1 - 1.5·IQR = 9.375 and Q3 + 1.5·IQR = 16.38 (IQR 1.75); the returned outliers 102 lie beyond them. Your inputs: x = 10, 12, 12, 13, 12, 11....*
-
-![Q3 + 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/iqr-outliers-live-1)
-
-*Q3 + 1.5 IQR as x[2] runs from 0 to 32, every other input as you entered it (33 solutions). Marked: your x[2] = 12 gives upper_fence = 16.38. Your inputs: x = 10, 12, 12, 13, 12, 11....*
-
-![Q3 + 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/iqr-outliers-live-2)
-
-*Q3 + 1.5 IQR as x[3] runs from 0 to 32, every other input as you entered it (17 solutions). Marked: your x[3] = 12 gives upper_fence = 16.38. Your inputs: x = 10, 12, 12, 13, 12, 11....*
+*x = 10, 12, 12, 13, 12, 11, 14, 13, 15, 102 with its box (Q1 12, median 12.5, Q3 13.75; whiskers to the most extreme values inside the fences) and the returned fences Q1 − 1.5·IQR = 9.375 and Q3 + 1.5·IQR = 16.375 (IQR 1.75); the returned outliers 102 lie beyond them.*
 
 ```python
 statistics_ai999x.solve('iqr_outliers', x='10, 12, 12, 13, 12, 11, 14, 13, 15, 102')
@@ -1446,7 +1294,7 @@ $$
 
 ![The distribution x = 0, 1, 2, 3 with probabilities 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/discrete-random-variable-stems)
 
-*The distribution x = 0, 1, 2, 3 with probabilities 0.1, 0.3, 0.4, 0.2; marked: the returned expected value 1.7 (the balance point) and, dashed, one returned standard deviation 0.9 either side (variance 0.81). Your inputs: x = 0, 1, 2, 3, p = 0.1, 0.3, 0.4, 0.2.*
+*The distribution x = 0, 1, 2, 3 with probabilities 0.1, 0.3, 0.4, 0.2; marked: the returned expected value 1.7 (the balance point) and, dashed, one returned standard deviation 0.9 either side (variance 0.81).*
 
 ```python
 statistics_ai999x.solve('discrete_random_variable', x='0, 1, 2, 3', p='0.1, 0.3, 0.4, 0.2')
@@ -1493,15 +1341,7 @@ $$
 
 ![The data x = 2, 3, 3, 4, 8, 12, 20 with its mean 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/skewness-kurtosis-dots)
 
-*The data x = 2, 3, 3, 4, 8, 12, 20 with its mean 7.429 and median 4 (from the model). Returned: skewness 1.4 (biased 1.08), excess kurtosis 1.372 (biased -0.1783). Your inputs: x = 2, 3, 3, 4, 8, 12, 20.*
-
-![Adjusted skewness G1 as x[5] runs from 2 to 14, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/skewness-kurtosis-live-1)
-
-*Adjusted skewness G1 as x[5] runs from 2 to 14, every other input as you entered it (13 solutions). Marked: your x[5] = 8 gives skewness = 1.4. Your inputs: x = 2, 3, 3, 4, 8, 12, 20.*
-
-![Adjusted skewness G1 as x[6] runs from 0 to 32, every other input as you entered it (17 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/skewness-kurtosis-live-2)
-
-*Adjusted skewness G1 as x[6] runs from 0 to 32, every other input as you entered it (17 solutions). Marked: your x[6] = 12 gives skewness = 1.4. Your inputs: x = 2, 3, 3, 4, 8, 12, 20.*
+*The data x = 2, 3, 3, 4, 8, 12, 20 with its mean 7.42857 and median 4 (from the package): the long right tail pulls the mean above the median. Returned: skewness 1.39985 (biased 1.08001), excess kurtosis 1.37206 (biased -0.178307).*
 
 ```python
 statistics_ai999x.solve('skewness_kurtosis', x='2, 3, 3, 4, 8, 12, 20')
@@ -1547,15 +1387,11 @@ $$
 
 ![The binomial distribution with n = 10 trials and p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-exactly-stems)
 
-*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 to 10, each from the model's binomial run; the stems with k = 3 are in the first colour and carry the returned probability 0.215. Your inputs: n = 10, k = 3, p = 0.4.*
+*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 … 10, each from the package; the stems with k = 3 are in the first colour and carry the returned probability 0.214991.*
 
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-exactly-live-1)
+![probability (P(X = k)) against n (number of trials) from 1 to 20](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-exactly-curve)
 
-*Probability as p runs from 0.1 to 0.7, every other input as you entered it (41 solutions). Marked: your p = 0.4 gives probability = 0.215. Your inputs: n = 10, k = 3, p = 0.4.*
-
-![Probability as n runs from 3 to 29, every other input as you entered it (15 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-exactly-live-2)
-
-*Probability as n runs from 3 to 29, every other input as you entered it (15 solutions). Marked: your n = 10 gives probability = 0.215. Your inputs: n = 10, k = 3, p = 0.4.*
+*probability (P(X = k)) against n (number of trials) from 1 to 20. One curve for each value of p (probability of success on each trial): 0.4, 0.26, 0.74. Other inputs as in the worked example: k = 3. 18 points per curve computed by statistics-ai999x; marked: the worked example, n = 10, probability = 0.214991.*
 
 ```python
 statistics_ai999x.solve('binomial_exactly', n=10, k=3, p=0.4)
@@ -1607,15 +1443,7 @@ $$
 
 ![The binomial distribution with n = 10 trials and p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-most-stems)
 
-*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 to 10, each from the model's binomial run; the stems with k ≤ 3 are in the first colour and carry the returned probability 0.3823. Your inputs: n = 10, k = 3, p = 0.4.*
-
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-most-live-1)
-
-*Probability as p runs from 0.1 to 0.7, every other input as you entered it (41 solutions). Marked: your p = 0.4 gives probability = 0.3823. Your inputs: n = 10, k = 3, p = 0.4.*
-
-![Probability as n runs from 3 to 29, every other input as you entered it (15 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-most-live-2)
-
-*Probability as n runs from 3 to 29, every other input as you entered it (15 solutions). Marked: your n = 10 gives probability = 0.3823. Your inputs: n = 10, k = 3, p = 0.4.*
+*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 … 10, each from the package; the stems with k ≤ 3 are in the first colour and carry the returned probability 0.382281.*
 
 ```python
 statistics_ai999x.solve('binomial_at_most', n=10, k=3, p=0.4)
@@ -1667,15 +1495,11 @@ $$
 
 ![The binomial distribution with n = 10 trials and p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-least-stems)
 
-*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 to 10, each from the model's binomial run; the stems with k ≥ 3 are in the first colour and carry the returned probability 0.8327. Your inputs: n = 10, k = 3, p = 0.4.*
+*The binomial distribution with n = 10 trials and p = 0.4: P(X = k) for k = 0 … 10, each from the package; the stems with k ≥ 3 are in the first colour and carry the returned probability 0.83271.*
 
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-least-live-1)
+![probability (P(X >= k)) against p (probability of success on each trial) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-least-curve)
 
-*Probability as p runs from 0.1 to 0.7, every other input as you entered it (41 solutions). Marked: your p = 0.4 gives probability = 0.8327. Your inputs: n = 10, k = 3, p = 0.4.*
-
-![Probability as n runs from 3 to 29, every other input as you entered it (15 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-at-least-live-2)
-
-*Probability as n runs from 3 to 29, every other input as you entered it (15 solutions). Marked: your n = 10 gives probability = 0.8327. Your inputs: n = 10, k = 3, p = 0.4.*
+*probability (P(X >= k)) against p (probability of success on each trial) from 0.02 to 0.98. One curve for each value of k (number of successes): 3, 4, 5. Other inputs as in the worked example: n = 10. 41 points per curve computed by statistics-ai999x; marked: the worked example, p = 0.4, probability = 0.83271.*
 
 ```python
 statistics_ai999x.solve('binomial_at_least', n=10, k=3, p=0.4)
@@ -1726,17 +1550,9 @@ $$
 - **Assumes:** $0 < p < 1$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The binomial distribution with n = 50 trials and p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-mean-sd-stems)
+![The binomial distribution with n = 50, p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-mean-sd-stems)
 
-*The binomial distribution with n = 50 trials and p = 0.3: P(X = k) for k = 0 to 32, each from the model's binomial run; marked: the returned mean 15 and, dashed, one returned standard deviation 3.24 either side (variance 10.5). Your inputs: n = 50, p = 0.3.*
-
-![Mean as n runs from 30 to 70, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-mean-sd-live-1)
-
-*Mean as n runs from 30 to 70, every other input as you entered it (41 solutions). Marked: your n = 50 gives mean = 15. Your inputs: n = 50, p = 0.3.*
-
-![Mean as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/binomial-mean-sd-live-2)
-
-*Mean as p runs from 0.075 to 0.525, every other input as you entered it (29 solutions). Marked: your p = 0.3 gives mean = 15. Your inputs: n = 50, p = 0.3.*
+*The binomial distribution with n = 50, p = 0.3 (probabilities from the package's binomial runs, k = 2 … 28); marked: the returned mean 15 and, dashed, one returned standard deviation 3.24037 either side (variance 10.5).*
 
 ```python
 statistics_ai999x.solve('binomial_mean_sd', n=50, p=0.3)
@@ -1779,17 +1595,13 @@ $$
 - **Assumes:** events independent, at a constant mean rate; $\lambda > 0$, k a whole number
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k = 2 are in the first colour and carry the returned probability 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-exactly-stems)
+![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k = 2 are in the first colour and carry the returned probability 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-exactly-stems)
 
-*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k = 2 are in the first colour and carry the returned probability 0.1465. Your inputs: lam = 4, k = 2.*
+*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k = 2 are in the first colour and carry the returned probability 0.146525.*
 
-![The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-exactly-live-1)
+![probability (the Poisson probability) against k (number of events) from 1 to 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-exactly-curve)
 
-*The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions). Marked: your λ = 4 gives probability = 0.1465. Your inputs: lam = 4, k = 2.*
-
-![The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-exactly-live-2)
-
-*The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions). Marked: your k = 2 gives probability = 0.1465. Your inputs: lam = 4, k = 2.*
+*probability (the Poisson probability) against k (number of events) from 1 to 10. One curve for each value of lam (the mean number of events (lambda > 0)): 4, 2, 8. 10 points per curve computed by statistics-ai999x; marked: the worked example, k = 2, probability = 0.146525.*
 
 ```python
 statistics_ai999x.solve('poisson_exactly', lam=4, k=2)
@@ -1838,17 +1650,13 @@ $$
 - **Assumes:** events independent, at a constant mean rate; $\lambda > 0$, k a whole number
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k ≤ 2 are in the first colour and carry the returned probability 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-most-stems)
+![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≤ 2 are in the first colour and carry the returned probability 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-most-stems)
 
-*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k ≤ 2 are in the first colour and carry the returned probability 0.2381. Your inputs: lam = 4, k = 2.*
+*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≤ 2 are in the first colour and carry the returned probability 0.238103.*
 
-![The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-most-live-1)
+![probability (the Poisson probability) against k (number of events) from 1 to 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-most-curve)
 
-*The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions). Marked: your λ = 4 gives probability = 0.2381. Your inputs: lam = 4, k = 2.*
-
-![The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-most-live-2)
-
-*The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions). Marked: your k = 2 gives probability = 0.2381. Your inputs: lam = 4, k = 2.*
+*probability (the Poisson probability) against k (number of events) from 1 to 10. One curve for each value of lam (the mean number of events (lambda > 0)): 4, 2, 8. 10 points per curve computed by statistics-ai999x; marked: the worked example, k = 2, probability = 0.238103.*
 
 ```python
 statistics_ai999x.solve('poisson_at_most', lam=4, k=2)
@@ -1897,17 +1705,13 @@ $$
 - **Assumes:** events independent, at a constant mean rate; $\lambda > 0$, k a whole number
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k ≥ 2 are in the first colour and carry the returned probability 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-least-stems)
+![The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/poisson-at-least-stems.svg)
 
-*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 to 16, each from the model's Poisson run; the stems with k ≥ 2 are in the first colour and carry the returned probability 0.9084. Your inputs: lam = 4, k = 2.*
+*The Poisson distribution with mean λ = 4: P(X = k) for k = 0 … 14, each from the package; the stems with k ≥ 2 carry P(X ≥ 2) = 0.908422; marked: the most probable count k = 4, P = 0.195367.*
 
-![The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-least-live-1)
+![probability (the Poisson probability) against lam (the mean number of events (lambda > 0)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-least-curve)
 
-*The Poisson probability as λ runs from 1 to 7, every other input as you entered it (41 solutions). Marked: your λ = 4 gives probability = 0.9084. Your inputs: lam = 4, k = 2.*
-
-![The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/poisson-at-least-live-2)
-
-*The Poisson probability as k runs from 0 to 6, every other input as you entered it (7 solutions). Marked: your k = 2 gives probability = 0.9084. Your inputs: lam = 4, k = 2.*
+*probability (the Poisson probability) against lam (the mean number of events (lambda > 0)) from 0.4 to 40 on a logarithmic axis. One curve for each value of k (number of events): 2, 3, 4. 41 points per curve computed by statistics-ai999x; marked: the worked example, lam = 4, probability = 0.908422.*
 
 ```python
 statistics_ai999x.solve('poisson_at_least', lam=4, k=2)
@@ -1959,15 +1763,11 @@ $$
 
 ![The geometric distribution with success probability p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-probability-stems)
 
-*The geometric distribution with success probability p = 0.2: P(first success on trial k) for k = 1 to 21, each from the model; marked: k = 4, P = 0.1024; the stems k ≤ 4 carry the returned cumulative probability 0.5904. Your inputs: p = 0.2, k = 4.*
+*The geometric distribution with success probability p = 0.2: P(first success on trial k) for k = 1 … 15, each from the package; marked: k = 4, P = 0.1024; the stems k ≤ 4 carry the returned cumulative probability 0.5904.*
 
-![Probability as k runs from 1 to 8, every other input as you entered it (8 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-probability-live-1)
+![probability (P(X = k) = (1 - p)^(k-1) p) against p (probability of success on each trial) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-probability-curve)
 
-*Probability as k runs from 1 to 8, every other input as you entered it (8 solutions). Marked: your k = 4 gives probability = 0.1024. Your inputs: p = 0.2, k = 4.*
-
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/geometric-probability-live-2)
-
-*Probability as p runs from 0.05 to 0.35, every other input as you entered it (29 solutions). Marked: your p = 0.2 gives probability = 0.1024. Your inputs: p = 0.2, k = 4.*
+*probability (P(X = k) = (1 - p)^(k-1) p) against p (probability of success on each trial) from 0.02 to 0.98. One curve for each value of k (the trial number (1, 2, ...)): 4, 2, 8. 41 points per curve computed by statistics-ai999x; marked: the worked example, p = 0.2, probability = 0.1024.*
 
 ```python
 statistics_ai999x.solve('geometric_probability', p=0.2, k=4)
@@ -2013,17 +1813,13 @@ $$
 - **Assumes:** draws without replacement; $K  \leq  N$, $n  \leq  N$, $k  \leq  n$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![A sample of n = 10 drawn without replacement from N = 50 items of which K = 5 are successes: P(X = k) for every possible k (0 to 5), each from the model](https://www.ai999x.com/?ax_fig=statistics-ai999x/hypergeometric-probability-stems)
+![The hypergeometric distribution: a sample of n = 10 drawn without replacement from N = 50 items of which K = 5 are successes; P(X = k) for every possible k, each from the package](https://www.ai999x.com/?ax_fig=statistics-ai999x/hypergeometric-probability-stems)
 
-*A sample of n = 10 drawn without replacement from N = 50 items of which K = 5 are successes: P(X = k) for every possible k (0 to 5), each from the model. Marked: k = 2, P = 0.2098; the stems k ≤ 2 carry the returned cumulative 0.9517. Your inputs: N = 50, K = 5, n = 10, k = 2.*
+*The hypergeometric distribution: a sample of n = 10 drawn without replacement from N = 50 items of which K = 5 are successes; P(X = k) for every possible k, each from the package. Marked: k = 2, P = 0.20984; the stems k ≤ 2 carry the returned cumulative 0.95174.*
 
-![Probability as k runs from 0 to 6, every other input as you entered it (7 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/hypergeometric-probability-live-1)
+![probability (P(X = k)) against N (population size) from 1 to 100 on a logarithmic axis](https://www.ai999x.com/?ax_fig=statistics-ai999x/hypergeometric-probability-curve)
 
-*Probability as k runs from 0 to 6, every other input as you entered it (7 solutions). Marked: your k = 2 gives probability = 0.2098. Your inputs: N = 50, K = 5, n = 10, k = 2.*
-
-![Probability as K runs from 1 to 9, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/hypergeometric-probability-live-2)
-
-*Probability as K runs from 1 to 9, every other input as you entered it (9 solutions). Marked: your K = 5 gives probability = 0.2098. Your inputs: N = 50, K = 5, n = 10, k = 2.*
+*probability (P(X = k)) against N (population size) from 1 to 100 on a logarithmic axis. One curve for each value of k (number of successes drawn): 2, 3, 4. Other inputs as in the worked example: K = 5, n = 10. 21 points per curve computed by statistics-ai999x; marked: the worked example, N = 50, probability = 0.20984.*
 
 ```python
 statistics_ai999x.solve('hypergeometric_probability', N=50, K=5, n=10, k=2)
@@ -2075,15 +1871,11 @@ $$
 
 ![The negative binomial distribution of the trial on which success number r = 3 occurs (p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/negative-binomial-probability-stems)
 
-*The negative binomial distribution of the trial on which success number r = 3 occurs (p = 0.4), for n = 3 to 18, each from the model; the visitor's n = 7 has the returned probability 0.1244. Your inputs: r = 3, p = 0.4, n = 7.*
+*The negative binomial distribution of the trial on which success number r = 3 occurs (p = 0.4), for n = 3 … 26, each from the package; the worked example n = 7 has the returned probability 0.124416.*
 
-![Probability as n runs from 3 to 13, every other input as you entered it (11 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/negative-binomial-probability-live-1)
+![probability (C(n-1, r-1) p^r (1-p)^(n-r)) against p (probability of success) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/negative-binomial-probability-curve)
 
-*Probability as n runs from 3 to 13, every other input as you entered it (11 solutions). Marked: your n = 7 gives probability = 0.1244. Your inputs: r = 3, p = 0.4, n = 7.*
-
-![Probability as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/negative-binomial-probability-live-2)
-
-*Probability as p runs from 0.1 to 0.7, every other input as you entered it (29 solutions). Marked: your p = 0.4 gives probability = 0.1244. Your inputs: r = 3, p = 0.4, n = 7.*
+*probability (C(n-1, r-1) p^r (1-p)^(n-r)) against p (probability of success) from 0.02 to 0.98. One curve for each value of n (the trial number): 7, 3, 14. Other inputs as in the worked example: r = 3. 41 points per curve computed by statistics-ai999x; marked: the worked example, p = 0.4, probability = 0.124416.*
 
 ```python
 statistics_ai999x.solve('negative_binomial_probability', r=3, p=0.4, n=7)
@@ -2128,17 +1920,9 @@ $$
 - **Assumes:** X normally distributed; $\sigma > 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(X < 120) = 0](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/normal-probability-below-density.svg)
+![The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X < 120) = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-below-density)
 
-*The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(X < 120) = 0.9088 as returned; marked: x = 120, z = 1.333. Your inputs: x = 120, mu = 100, sigma = 15.*
-
-![P(X < x) as x runs from 30 to 210, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-below-live-1)
-
-*P(X < x) as x runs from 30 to 210, every other input as you entered it (41 solutions). Marked: your x = 120 gives probability = 0.9088. Your inputs: x = 120, mu = 100, sigma = 15.*
-
-![P(X < x) as μ runs from 25 to 175, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-below-live-2)
-
-*P(X < x) as μ runs from 25 to 175, every other input as you entered it (29 solutions). Marked: your μ = 100 gives probability = 0.9088. Your inputs: x = 120, mu = 100, sigma = 15.*
+*The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X < 120) = 0.908789 as returned; marked: x = 120, z = 1.33333.*
 
 ```python
 statistics_ai999x.solve('normal_probability_below', x=120, mu=100, sigma=15)
@@ -2190,17 +1974,9 @@ $$
 - **Assumes:** X normally distributed; $\sigma > 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(X > 130) = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-above-density)
+![The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X > 130) = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-above-density)
 
-*The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(X > 130) = 0.02275 as returned; marked: x = 130, z = 2. Your inputs: x = 130, mu = 100, sigma = 15.*
-
-![P(X > x) as x runs from 32](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-above-live-1)
-
-*P(X > x) as x runs from 32.5 to 227.5, every other input as you entered it (41 solutions). Marked: your x = 130 gives probability = 0.02275. Your inputs: x = 130, mu = 100, sigma = 15.*
-
-![P(X > x) as μ runs from 25 to 175, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-above-live-2)
-
-*P(X > x) as μ runs from 25 to 175, every other input as you entered it (29 solutions). Marked: your μ = 100 gives probability = 0.02275. Your inputs: x = 130, mu = 100, sigma = 15.*
+*The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X > 130) = 0.0227501 as returned; marked: x = 130, z = 2.*
 
 ```python
 statistics_ai999x.solve('normal_probability_above', x=130, mu=100, sigma=15)
@@ -2248,17 +2024,9 @@ $$
 - **Assumes:** X normally distributed; $\sigma > 0$; $a < b$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(85 < X < 115) = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-between-density)
+![The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(85 < X < 115) = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-between-density)
 
-*The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: P(85 < X < 115) = 0.6827 as returned, between z = -1 and z = 1. Your inputs: a = 85, b = 115, mu = 100, sigma = 15.*
-
-![P(a < X < b) as μ runs from 25 to 175, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-between-live-1)
-
-*P(a < X < b) as μ runs from 25 to 175, every other input as you entered it (41 solutions). Marked: your μ = 100 gives probability = 0.6827. Your inputs: a = 85, b = 115, mu = 100, sigma = 15.*
-
-![P(a < X < b) as b runs from 90](https://www.ai999x.com/?ax_fig=statistics-ai999x/normal-probability-between-live-2)
-
-*P(a < X < b) as b runs from 90.36 to 201.2, every other input as you entered it (19 solutions). Marked: your b = 115 gives probability = 0.6827. Your inputs: a = 85, b = 115, mu = 100, sigma = 15.*
+*The normal density with μ = 100, σ = 15 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(85 < X < 115) = 0.682689 as returned, between z = -1 and z = 1.*
 
 ```python
 statistics_ai999x.solve('normal_probability_between', a=85, b=115, mu=100, sigma=15)
@@ -2309,17 +2077,9 @@ $$
 - **Assumes:** $0 < p < 1$; $\sigma > 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: the area p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/inverse-normal-density)
+![The value below which a normal variable (μ = 100, σ = 15) falls with probability p = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/inverse-normal-density)
 
-*The normal density with μ = 100, σ = 15 (from the model's cumulative probabilities on 101 points, differenced); shaded: the area p = 0.9 below the returned x = 119.2 (z = 1.282). Your inputs: p = 0.9, mu = 100, sigma = 15.*
-
-![X as p runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/inverse-normal-live-1)
-
-*X as p runs from 0.225 to 0.9675, every other input as you entered it (23 solutions). Marked: your p = 0.9 gives x = 119.2. Your inputs: p = 0.9, mu = 100, sigma = 15.*
-
-![X as μ runs from 25 to 175, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/inverse-normal-live-2)
-
-*X as μ runs from 25 to 175, every other input as you entered it (29 solutions). Marked: your μ = 100 gives x = 119.2. Your inputs: p = 0.9, mu = 100, sigma = 15.*
+*The value below which a normal variable (μ = 100, σ = 15) falls with probability p = 0.9: the returned x = 119.223 (z = 1.28155). Drawn: the density (density from the package's cumulative probabilities on a grid, differenced), the area p shaded.*
 
 ```python
 statistics_ai999x.solve('inverse_normal', p=0.9, mu=100, sigma=15)
@@ -2368,17 +2128,13 @@ $$
 - **Assumes:** $0 < \alpha < 1$; a confidence level is read as two-tailed
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The standard normal density (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the two-tailed area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-critical-value-density)
+![The standard normal density (density from the package's quantiles at 121 cumulative probabilities, differenced, right-tailed critical values at 121 levels); shaded: the two-tailed area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-critical-value-density)
 
-*The standard normal density (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the two-tailed area α = 0.05 beyond ±1.96, the returned critical value. Your inputs: alpha = 0.05, tails = two-tailed.*
+*The standard normal density (density from the package's quantiles at 121 cumulative probabilities, differenced, right-tailed critical values at 121 levels); shaded: the two-tailed area α = 0.05 beyond the returned critical value 1.95996.*
 
-![Z critical value (negative for a left-tailed](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-critical-value-live-1)
+![critical_value (z critical value (negative for a left-tailed test)) against alpha (significance level (1 - confidence)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-critical-value-curve)
 
-*Z critical value (negative for a left-tailed... as α runs from 0.0125 to 0.0875, every other input as you entered it (41 solutions). Marked: your α = 0.05 gives critical_value = 1.96. Your inputs: alpha = 0.05, tails = two-tailed.*
-
-![Z critical value (negative for a left-tailed](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-critical-value-live-2)
-
-*Z critical value (negative for a left-tailed... for every choice of tails, every other input as you entered it (highlighted: your choice). two-tailed: 1.96; right-tailed: 1.645; left-tailed: -1.645. Your inputs: alpha = 0.05, tails = two-tailed.*
+*critical_value (z critical value (negative for a left-tailed test)) against alpha (significance level (1 - confidence)) from 0.005 to 0.5 on a logarithmic axis. One curve for each value of tails (two-tailed, right-tailed or left-tailed): two-tailed, right-tailed, left-tailed. 41 points per curve computed by statistics-ai999x; marked: the worked example, alpha = 0.05, critical_value = 1.95996.*
 
 ```python
 statistics_ai999x.solve('z_critical_value', alpha=0.05, tails='two-tailed')
@@ -2428,21 +2184,13 @@ $$
 - **Assumes:** $df > 0$; $0 < \alpha < 1$; a confidence level is read as two-tailed
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The t density with 10 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the two-tailed area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-density)
+![The t density with df = 10 (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the two-tailed area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-density)
 
-*The t density with 10 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the two-tailed area α = 0.05 beyond ±2.228, the returned critical value. Your inputs: df = 10, alpha = 0.05, tails = two-tailed.*
+*The t density with df = 10 (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the two-tailed area α = 0.05 beyond the returned critical value 2.22814.*
 
-![T critical value (negative for a left-tailed](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-live-1)
+![critical_value (t critical value (negative for a left-tailed test)) against df (degrees of freedom (> 0)) from 1 to 100 on a logarithmic axis](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-curve)
 
-*T critical value (negative for a left-tailed... as α runs from 0.0125 to 0.0875, every other input as you entered it (41 solutions). Marked: your α = 0.05 gives critical_value = 2.228. Your inputs: df = 10, alpha = 0.05, tails = two-tailed.*
-
-![T critical value (negative for a left-tailed](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-live-2)
-
-*T critical value (negative for a left-tailed... for every choice of tails, every other input as you entered it (highlighted: your choice). two-tailed: 2.228; right-tailed: 1.812; left-tailed: -1.812. Your inputs: df = 10, alpha = 0.05, tails = two-tailed.*
-
-![T critical value (negative for a left-tailed](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-critical-value-live-3)
-
-*T critical value (negative for a left-tailed... as df runs from 2.5 to 17.5, every other input as you entered it (29 solutions). Marked: your df = 10 gives critical_value = 2.228. Your inputs: df = 10, alpha = 0.05, tails = two-tailed.*
+*critical_value (t critical value (negative for a left-tailed test)) against df (degrees of freedom (> 0)) from 1 to 100 on a logarithmic axis. One curve for each value of alpha (significance level (1 - confidence)): 0.05, 0.025, 0.1. Other inputs as in the worked example: tails = two-tailed. 41 points per curve computed by statistics-ai999x; marked: the worked example, df = 10, critical_value = 2.22814.*
 
 ```python
 statistics_ai999x.solve('t_critical_value', df=10, alpha=0.05, tails='two-tailed')
@@ -2492,17 +2240,13 @@ $$
 - **Assumes:** $df > 0$; $0 < \alpha < 1$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The chi-square density with 4 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the upper area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-critical-value-density)
+![The chi-square density with df = 4 (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the upper area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-critical-value-density)
 
-*The chi-square density with 4 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the upper area α = 0.05 beyond the returned critical value 9.488 and, paler, the lower area α below the returned left critical value 0.7107. Your inputs: df = 4, alpha = 0.05.*
+*The chi-square density with df = 4 (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the upper area α = 0.05 beyond the returned critical value 9.48773 and, paler, the lower area α below the returned left critical value 0.710723.*
 
-![Right-tail critical value as df runs from 1 to 7, every other input as you entered it (35 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-critical-value-live-1)
+![critical_value (right-tail critical value) against df (degrees of freedom (> 0)) from 2 to 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-critical-value-curve)
 
-*Right-tail critical value as df runs from 1 to 7, every other input as you entered it (35 solutions). Marked: your df = 4 gives critical_value = 9.488. Your inputs: df = 4, alpha = 0.05.*
-
-![Right-tail critical value as α runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-critical-value-live-2)
-
-*Right-tail critical value as α runs from 0.0125 to 0.0875, every other input as you entered it (13 solutions). Marked: your α = 0.05 gives critical_value = 9.488. Your inputs: df = 4, alpha = 0.05.*
+*critical_value (right-tail critical value) against df (degrees of freedom (> 0)) from 2 to 6. One curve for each value of alpha (tail area): 0.05, 0.025, 0.1. 31 points per curve computed by statistics-ai999x; marked: the worked example, df = 4, critical_value = 9.48773.*
 
 ```python
 statistics_ai999x.solve('chi_square_critical_value', df=4, alpha=0.05)
@@ -2551,17 +2295,13 @@ $$
 - **Assumes:** df1, $df2 > 0$; $0 < \alpha < 1$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The F density with 3 and 20 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the upper area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-density)
+![The F density with 3 and 20 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the upper area α = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-density)
 
-*The F density with 3 and 20 degrees of freedom (from the model's quantiles, differentiated and joined by a monotone cubic); shaded: the upper area α = 0.05 beyond the returned critical value 3.098. Your inputs: df1 = 3, df2 = 20, alpha = 0.05.*
+*The F density with 3 and 20 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the upper area α = 0.05 beyond the returned critical value 3.09839.*
 
-![Right-tail F critical value as α runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-live-1)
+![critical_value (right-tail F critical value) against df2 (denominator degrees of freedom) from 2 to 200 on a logarithmic axis](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-curve)
 
-*Right-tail F critical value as α runs from 0.0125 to 0.0875, every other input as you entered it (41 solutions). Marked: your α = 0.05 gives critical_value = 3.098. Your inputs: df1 = 3, df2 = 20, alpha = 0.05.*
-
-![Right-tail F critical value as df1 runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-critical-value-live-2)
-
-*Right-tail F critical value as df1 runs from 0.75 to 5.25, every other input as you entered it (29 solutions). Marked: your df1 = 3 gives critical_value = 3.098. Your inputs: df1 = 3, df2 = 20, alpha = 0.05.*
+*critical_value (right-tail F critical value) against df2 (denominator degrees of freedom) from 2 to 200 on a logarithmic axis. One curve for each value of alpha (tail area): 0.05, 0.025, 0.1. Other inputs as in the worked example: df1 = 3.0. 41 points per curve computed by statistics-ai999x; marked: the worked example, df2 = 20, critical_value = 3.09839.*
 
 ```python
 statistics_ai999x.solve('f_critical_value', df1=3, df2=20, alpha=0.05)
@@ -2607,15 +2347,11 @@ $$
 
 ![The exponential density with rate 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-below-density)
 
-*The exponential density with rate 0.5 (from the model's cumulative probabilities on 91 points, differenced); shaded: P(X < 3) = 0.7769 as returned. Your inputs: x = 3, rate = 0.5.*
+*The exponential density with rate 0.5 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X < 3) = 0.77687 as returned.*
 
-![P(X < x) as x runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-below-live-1)
+![probability (P(X < x)) against x (the value (>= 0)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-below-curve)
 
-*P(X < x) as x runs from 0.75 to 5.25, every other input as you entered it (41 solutions). Marked: your x = 3 gives probability = 0.7769. Your inputs: x = 3, rate = 0.5.*
-
-![P(X < x) as rate runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-below-live-2)
-
-*P(X < x) as rate runs from 0.125 to 0.875, every other input as you entered it (29 solutions). Marked: your rate = 0.5 gives probability = 0.7769. Your inputs: x = 3, rate = 0.5.*
+*probability (P(X < x)) against x (the value (>= 0)) from 0.3 to 30 on a logarithmic axis. One curve for each value of rate (rate lambda (events per unit)): 0.5, 0.25, 1. 41 points per curve computed by statistics-ai999x; marked: the worked example, x = 3, probability = 0.77687.*
 
 ```python
 statistics_ai999x.solve('exponential_probability_below', x=3, rate=0.5)
@@ -2661,15 +2397,11 @@ $$
 
 ![The exponential density with rate 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-above-density)
 
-*The exponential density with rate 0.5 (from the model's cumulative probabilities on 91 points, differenced); shaded: P(X > 3) = 0.2231 as returned. Your inputs: x = 3, rate = 0.5.*
+*The exponential density with rate 0.5 (density from the package's cumulative probabilities on a grid, differenced); shaded: P(X > 3) = 0.22313 as returned.*
 
-![P(X > x) as x runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-above-live-1)
+![probability (P(X > x)) against x (the value (>= 0)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-above-curve)
 
-*P(X > x) as x runs from 0.75 to 5.25, every other input as you entered it (41 solutions). Marked: your x = 3 gives probability = 0.2231. Your inputs: x = 3, rate = 0.5.*
-
-![P(X > x) as rate runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-probability-above-live-2)
-
-*P(X > x) as rate runs from 0.125 to 0.875, every other input as you entered it (29 solutions). Marked: your rate = 0.5 gives probability = 0.2231. Your inputs: x = 3, rate = 0.5.*
+*probability (P(X > x)) against x (the value (>= 0)) from 0.3 to 30 on a logarithmic axis. One curve for each value of rate (rate lambda (events per unit)): 0.5, 0.25, 1. 41 points per curve computed by statistics-ai999x; marked: the worked example, x = 3, probability = 0.22313.*
 
 ```python
 statistics_ai999x.solve('exponential_probability_above', x=3, rate=0.5)
@@ -2716,17 +2448,9 @@ $$
 - **Assumes:** population normal, or n large enough for the central limit theorem; independent observations
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The distribution of the mean (μ = 50, standard error 2 as returned), from the model's normal cumulative probabilities, differenced, beside the wider density of one observation (σ = 10, dashed)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-below-density)
+![The distribution of the mean of n = 25 observations (μ = 50, σ = 10): normal with the returned standard error 2, drawn from the package's normal cumulative probabilities (differenced), beside the wider density of one observation (dashed)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-below-density)
 
-*The distribution of the mean (μ = 50, standard error 2 as returned), from the model's normal cumulative probabilities, differenced, beside the wider density of one observation (σ = 10, dashed). Shaded: P(x̄ < 52) = 0.8413; marked: z = 1. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
-
-![The probability as x runs from 13 to 91, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-below-live-1)
-
-*The probability as x runs from 13 to 91, every other input as you entered it (41 solutions). Marked: your x = 52 gives probability = 0.8413. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
-
-![The probability as μ runs from 12](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-below-live-2)
-
-*The probability as μ runs from 12.5 to 87.5, every other input as you entered it (29 solutions). Marked: your μ = 50 gives probability = 0.8413. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
+*The distribution of the mean of n = 25 observations (μ = 50, σ = 10): normal with the returned standard error 2, drawn from the package's normal cumulative probabilities (differenced), beside the wider density of one observation (dashed). Shaded: P(x̄ < 52) = 0.841345; marked: z = 1.*
 
 ```python
 statistics_ai999x.solve('sample_mean_probability_below', x=52, mu=50, sigma=10, n=25)
@@ -2773,17 +2497,9 @@ $$
 - **Assumes:** population normal, or n large enough for the central limit theorem; independent observations
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The distribution of the mean (μ = 50, standard error 2 as returned), from the model's normal cumulative probabilities, differenced, beside the wider density of one observation (σ = 10, dashed)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-above-density)
+![The distribution of the mean of n = 25 observations (μ = 50, σ = 10): normal with the returned standard error 2, drawn from the package's normal cumulative probabilities (differenced), beside the wider density of one observation (dashed)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-above-density)
 
-*The distribution of the mean (μ = 50, standard error 2 as returned), from the model's normal cumulative probabilities, differenced, beside the wider density of one observation (σ = 10, dashed). Shaded: P(x̄ > 52) = 0.1587; marked: z = 1. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
-
-![The probability as x runs from 13 to 91, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-above-live-1)
-
-*The probability as x runs from 13 to 91, every other input as you entered it (41 solutions). Marked: your x = 52 gives probability = 0.1587. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
-
-![The probability as μ runs from 12](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-mean-probability-above-live-2)
-
-*The probability as μ runs from 12.5 to 87.5, every other input as you entered it (29 solutions). Marked: your μ = 50 gives probability = 0.1587. Your inputs: x = 52, mu = 50, sigma = 10, n = 25.*
+*The distribution of the mean of n = 25 observations (μ = 50, σ = 10): normal with the returned standard error 2, drawn from the package's normal cumulative probabilities (differenced), beside the wider density of one observation (dashed). Shaded: P(x̄ > 52) = 0.158655; marked: z = 1.*
 
 ```python
 statistics_ai999x.solve('sample_mean_probability_above', x=52, mu=50, sigma=10, n=25)
@@ -2831,17 +2547,9 @@ $$
 - **Assumes:** sigma known; normal population or large n; random sample
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [51](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-intervals)
+![z confidence intervals for a mean with known σ = 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [51.1, 52.9]; 80 % [50.29, 53.71]; 90 % [49.81, 54.19]; 95 % [49.39, 54.61]; 99 % [48.57, 55.43]; centre x̄ = 52; the visitor's level 95 % in the first colour. Higher confidence, wider interval. Your inputs: xbar = 52, sigma = 8, n = 36, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 49.39. Your inputs: xbar = 52, sigma = 8, n = 36, confidence = 0.95.*
-
-![Lower limit as xbar runs from 13 to 91, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-known-sigma-live-2)
-
-*Lower limit as xbar runs from 13 to 91, every other input as you entered it (29 solutions). Marked: your xbar = 52 gives lower = 49.39. Your inputs: xbar = 52, sigma = 8, n = 36, confidence = 0.95.*
+*z confidence intervals for a mean with known σ = 8.0 (x̄ = 52.0, n = 36) at five levels, each from the package: 50 % [51.1007, 52.8993]; 80 % [50.2913, 53.7087]; 90 % [49.8069, 54.1931]; 95 % [49.3867, 54.6133]; 99 % [48.5656, 55.4344]. Higher confidence, wider interval.*
 
 ```python
 statistics_ai999x.solve('ci_mean_known_sigma', xbar=52, sigma=8, n=36, confidence=0.95)
@@ -2890,21 +2598,13 @@ $$
 - **Assumes:** random sample from a roughly normal population (or large n); sigma unknown
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The sample x = 12, 15, 11, 18, 14, 16 with the returned 95 % t interval for the population mean shaded: [11](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-dots.svg)
+![t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/ci-mean-t-intervals.svg)
 
-*The sample x = 12, 15, 11, 18, 14, 16 with the returned 95 % t interval for the population mean shaded: [11.62, 17.04] around the mean 14.33 (margin 2.71, t critical value 2.571, 5 degrees of freedom). The interval covers where μ plausibly is, not where the data are. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
+*t confidence intervals for the mean of x = 12, 15, 11, 18, 14, 16 at 5 confidence levels, each from the package: 50 % [13.5673, 15.0993]; 80 % [12.7776, 15.8891]; 90 % [12.2093, 16.4574]; 95 % [11.6237, 17.043]; 99 % [10.0831, 18.5836] (sample mean 14.3333, 5 degrees of freedom); higher confidence, wider interval.*
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [13](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-intervals)
+![The sample x = 12, 15, 11, 18, 14, 16 with the returned 95 % t interval for the population mean shaded: [11](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-dots)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [13.57, 15.1]; 80 % [12.78, 15.89]; 90 % [12.21, 16.46]; 95 % [11.62, 17.04]; 99 % [10.08, 18.58]; centre mean = 14.33; the visitor's level 95 % in the first colour. Higher confidence, wider interval. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 11.62. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
-
-![Lower limit as x[4] runs from 0 to 38, every other input as you entered it (20 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-live-2)
-
-*Lower limit as x[4] runs from 0 to 38, every other input as you entered it (20 solutions). Marked: your x[4] = 18 gives lower = 11.62. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
+*The sample x = 12, 15, 11, 18, 14, 16 with the returned 95 % t interval for the population mean shaded: [11.6237, 17.043] around the mean 14.3333 (margin 2.70963, t critical value 2.57058, 5 degrees of freedom). The interval covers where μ plausibly is, not where the data are.*
 
 ```python
 statistics_ai999x.solve('ci_mean_t', x='12, 15, 11, 18, 14, 16', confidence=0.95)
@@ -2954,17 +2654,9 @@ $$
 - **Assumes:** random sample from a roughly normal population (or large n); sigma unknown
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [24](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-intervals)
+![t confidence intervals for a mean from summaries (x̄ = 25](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [24.31, 25.69]; 80 % [23.66, 26.34]; 90 % [23.25, 26.75]; 95 % [22.87, 27.13]; 99 % [22.05, 27.95]; centre x̄ = 25; the visitor's level 95 % in the first colour. Higher confidence, wider interval. Your inputs: xbar = 25, s = 4, n = 16, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 22.87. Your inputs: xbar = 25, s = 4, n = 16, confidence = 0.95.*
-
-![Lower limit as xbar runs from 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-mean-t-summary-live-2)
-
-*Lower limit as xbar runs from 6.25 to 43.75, every other input as you entered it (29 solutions). Marked: your xbar = 25 gives lower = 22.87. Your inputs: xbar = 25, s = 4, n = 16, confidence = 0.95.*
+*t confidence intervals for a mean from summaries (x̄ = 25.0, s = 4.0, n = 16, 15 degrees of freedom) at five levels, each from the package: 50 % [24.3088, 25.6912]; 80 % [23.6594, 26.3406]; 90 % [23.2469, 26.7531]; 95 % [22.8686, 27.1314]; 99 % [22.0533, 27.9467].*
 
 ```python
 statistics_ai999x.solve('ci_mean_t_summary', xbar=25, s=4, n=16, confidence=0.95)
@@ -3011,17 +2703,9 @@ $$
 - **Assumes:** $0 < x < n$; large sample: n p and n(1 - p) at least about 10; limits clipped to [0, 1]
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-proportion-intervals)
+![Confidence intervals for a proportion (48 successes in n = 120, p̂ = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-proportion-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [0.3698, 0.4302]; 80 % [0.3427, 0.4573]; 90 % [0.3264, 0.4736]; 95 % [0.3123, 0.4877]; 99 % [0.2848, 0.5152]; centre p̂ = 0.4; the visitor's level 95 % in the first colour. Your inputs: x = 48, n = 120, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-proportion-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 0.3123. Your inputs: x = 48, n = 120, confidence = 0.95.*
-
-![Lower limit as x runs from 28 to 68, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-proportion-live-2)
-
-*Lower limit as x runs from 28 to 68, every other input as you entered it (21 solutions). Marked: your x = 48 gives lower = 0.3123. Your inputs: x = 48, n = 120, confidence = 0.95.*
+*Confidence intervals for a proportion (48 successes in n = 120, p̂ = 0.4) at five levels, each from the package: 50 % [0.369836, 0.430164]; 80 % [0.342687, 0.457313]; 90 % [0.32644, 0.47356]; 95 % [0.312348, 0.487652]; 99 % [0.284805, 0.515195].*
 
 ```python
 statistics_ai999x.solve('ci_proportion', x=48, n=120, confidence=0.95)
@@ -3068,17 +2752,9 @@ $$
 - **Assumes:** $0  \leq  x  \leq  n$; independent trials
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![95 % intervals for a proportion for every count x = 0 to 20 out of n = 20: Wilson (this capability) beside the normal-approximation interval of the model's ci_proportion](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilson-interval-intervals)
+![95 % intervals for a proportion for every count x = 0 … 20 out of n = 20: Wilson (this capability) beside the normal-approximation interval of the package's ci_proportion](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilson-interval-intervals)
 
-*95 % intervals for a proportion for every count x = 0 to 20 out of n = 20: Wilson (this capability) beside the normal-approximation interval of the model's ci_proportion. Near 0 and n the normal interval collapses or leaves [0, 1]; Wilson does not. Marked: the visitor's x = 3, [0.05237, 0.3604]. Your inputs: x = 3, n = 20, confidence = 0.95.*
-
-![Lower limit as x runs from 0 to 7, every other input as you entered it (8 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilson-interval-live-1)
-
-*Lower limit as x runs from 0 to 7, every other input as you entered it (8 solutions). Marked: your x = 3 gives lower = 0.05237. Your inputs: x = 3, n = 20, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilson-interval-live-2)
-
-*Lower limit as confidence runs from 0.2375 to 0.95, every other input as you entered it (15 solutions). Marked: your confidence = 0.95 gives lower = 0.05237. Your inputs: x = 3, n = 20, confidence = 0.95.*
+*95 % intervals for a proportion for every count x = 0 … 20 out of n = 20: Wilson (this capability) beside the normal-approximation interval of the package's ci_proportion. Near 0 and n the Wald interval collapses or leaves [0, 1]; Wilson does not. Marked: the worked example x = 3, [0.0523687, 0.360419].*
 
 ```python
 statistics_ai999x.solve('wilson_interval', x=3, n=20, confidence=0.95)
@@ -3127,21 +2803,9 @@ $$
 - **Assumes:** independent random samples; roughly normal populations or large samples
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [2](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-intervals)
+![Confidence intervals for the difference of the means of x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 (variance welch) at five levels, each from the package: 50 % [2](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [2.737, 4.863]; 80 % [1.688, 5.912]; 90 % [0.9748, 6.625]; 95 % [0.2783, 7.322]; 99 % [-1.395, 8.995]; centre difference = 3.8; the visitor's level 95 % in the first colour. An interval that excludes 0 (dashed) means a difference at that level. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8, confidence = 0.95, variance = welch.*
-
-![Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-boxes)
-
-*Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10.2. Returned: degrees of freedom 7.174. In SI units: lower = 0.2783. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8, confidence = 0.95, variance = welch.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 0.2783. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8, confidence = 0.95, variance = welch.*
-
-![Lower limit for every choice of variance, every other input as you entered it (highlighted: your choice)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-two-means-live-2)
-
-*Lower limit for every choice of variance, every other input as you entered it (highlighted: your choice). welch: 0.2783; pooled: 0.3487. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8, confidence = 0.95, variance = welch.*
+*Confidence intervals for the difference of the means of x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 (variance welch) at five levels, each from the package: 50 % [2.73705, 4.86295]; 80 % [1.68765, 5.91235]; 90 % [0.974776, 6.62522]; 95 % [0.278295, 7.3217]; 99 % [-1.39452, 8.99452]. An interval that excludes 0 (dashed) means a difference at that level.*
 
 ```python
 statistics_ai999x.solve('ci_two_means', x='12, 15, 11, 18, 14', y='10, 9, 13, 11, 8', confidence=0.95, variance='welch')
@@ -3188,17 +2852,9 @@ $$
 - **Assumes:** normal population (the interval is sensitive to non-normality)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [5](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-variance-intervals)
+![Chi-square confidence intervals for the variance of x = 12, 15, 11, 18, 14, 16 (sample variance 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-variance-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [5.031, 12.46]; 80 % [3.609, 20.7]; 90 % [3.011, 29.1]; 95 % [2.598, 40.1]; 99 % [1.99, 80.96]; centre s² = 6.667; the visitor's level 95 % in the first colour. They are not symmetric about s²: the chi-square distribution is skewed. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
-
-![Lower limit for the variance as x[4] runs from 0 to 38, every other input as you entered it (39 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-variance-live-1)
-
-*Lower limit for the variance as x[4] runs from 0 to 38, every other input as you entered it (39 solutions). Marked: your x[4] = 18 gives lower = 2.598. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
-
-![Lower limit for the variance as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/ci-variance-live-2)
-
-*Lower limit for the variance as confidence runs from 0.2375 to 0.95, every other input as you entered it (15 solutions). Marked: your confidence = 0.95 gives lower = 2.598. Your inputs: x = 12, 15, 11, 18, 14, 16, confidence = 0.95.*
+*Chi-square confidence intervals for the variance of x = 12, 15, 11, 18, 14, 16 (sample variance 6.66667) at five levels, each from the package: 50 % [5.03093, 12.4629]; 80 % [3.60893, 20.7]; 90 % [3.01101, 29.1]; 95 % [2.59757, 40.1021]; 99 % [1.9901, 80.9569]. They are not symmetric about s²: the chi-square distribution is skewed.*
 
 ```python
 statistics_ai999x.solve('ci_variance', x='12, 15, 11, 18, 14, 16', confidence=0.95)
@@ -3245,17 +2901,9 @@ $$
 - **Assumes:** sigma known; normal population or large n; the alternative must be stated for a one-sided claim
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-null-density)
+![The z test of a sample mean x̄ = 52](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-null-density)
 
-*Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1.96 and above 1.96 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.4, p-value = 0.0164. Your inputs: xbar = 52, mu0 = 50, sigma = 5, n = 36.*
-
-![P-value for the chosen alternative as xbar runs from 46](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-live-1)
-
-*P-value for the chosen alternative as xbar runs from 46.15 to 53.95, every other input as you entered it (29 solutions). Marked: your xbar = 52 gives p_value = 0.0164. Your inputs: xbar = 52, mu0 = 50, sigma = 5, n = 36.*
-
-![P-value for the chosen alternative as μ0 runs from 47](https://www.ai999x.com/?ax_fig=statistics-ai999x/z-test-mean-live-2)
-
-*P-value for the chosen alternative as μ0 runs from 47.12 to 58.65, every other input as you entered it (13 solutions). Marked: your μ0 = 50 gives p_value = 0.0164. Your inputs: xbar = 52, mu0 = 50, sigma = 5, n = 36.*
+*The z test of a sample mean x̄ = 52.0 against μ₀ = 50.0 (σ = 5.0, n = 36). Drawn: the standard normal density (density from the package's cumulative probabilities on a grid, differenced); shaded: the rejection region beyond ±1.95996 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.4, p-value = 0.0163951.*
 
 ```python
 statistics_ai999x.solve('z_test_mean', xbar=52, mu0=50, sigma=5, n=36)
@@ -3304,21 +2952,13 @@ $$
 - **Assumes:** random sample from a roughly normal population (or large n); the alternative must be stated for a one-sided claim
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the t density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
+![The one-sample t test of x = 5](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/t-test-one-sample-density.svg)
 
-*Drawn: the t density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.571 and above 2.571 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.89, p-value = 0.1174. Your inputs: x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2, mu0 = 5.*
+*The one-sample t test of x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against μ₀ = 5: the t density with 5 degrees of freedom (from the package's quantiles at 121 cumulative probabilities, differenced), the two-tailed rejection region beyond ±2.57058 for α = 0.05 shaded; marked: t = 1.88982, p-value = 0.117387.*
 
 ![The sample x = 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-one-sample-dots)
 
-*The sample x = 5.1, 4.9, 5.3, 5.5, 5, 5.2 against the hypothesised mean μ₀ = 5: returned mean 5.167, standard deviation 0.216, t = 1.89 with 5 degrees of freedom, p-value 0.1174. Your inputs: x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2, mu0 = 5.*
-
-![P-value as μ0 runs from 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-one-sample-live-1)
-
-*P-value as μ0 runs from 4.625 to 5.562, every other input as you entered it (26 solutions). Marked: your μ0 = 5 gives p_value = 0.1174. Your inputs: x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2, mu0 = 5.*
-
-![P-value as x[1] runs from 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-one-sample-live-2)
-
-*P-value as x[1] runs from 1.275 to 8.925, every other input as you entered it (25 solutions). Marked: your x[1] = 5.1 gives p_value = 0.1174. Your inputs: x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2, mu0 = 5.*
+*The sample x = 5.1, 4.9, 5.3, 5.5, 5.0, 5.2 against the hypothesised mean μ₀ = 5.0: returned mean 5.16667, standard deviation 0.216025, t = 1.88982 with 5 degrees of freedom, p-value 0.117387.*
 
 ```python
 statistics_ai999x.solve('t_test_one_sample', x='5.1, 4.9, 5.3, 5.5, 5.0, 5.2', mu0=5)
@@ -3366,13 +3006,13 @@ $$
 - **Assumes:** independent random samples; roughly normal populations or large samples; equal population variances assumed
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-two-sample-pooled-boxes)
+![The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-two-sample-pooled-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10.2. Returned: t 2.539, degrees of freedom 8, p-value 0.03477. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8.*
+*The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10.2. Pooled t test: difference 3.8, t = 2.53898, 8 degrees of freedom, p-value 0.0347658.*
 
-![Drawn: the t density with 8 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-two-sample-pooled-null-density)
+![The pooled two-sample t test of x = 12, 15, 11, 18, 14 against y = 10, 9, 13, 11, 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-two-sample-pooled-null-density)
 
-*Drawn: the t density with 8 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.306 and above 2.306 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.539, p-value = 0.03477. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8.*
+*The pooled two-sample t test of x = 12, 15, 11, 18, 14 against y = 10, 9, 13, 11, 8. Drawn: the t density with 8 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.306 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.53898, p-value = 0.0347658.*
 
 ```python
 statistics_ai999x.solve('t_test_two_sample_pooled', x='12, 15, 11, 18, 14', y='10, 9, 13, 11, 8')
@@ -3420,13 +3060,13 @@ $$
 - **Assumes:** independent random samples; roughly normal populations or large samples; Welch-Satterthwaite degrees of freedom
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/welch-t-test-boxes)
+![The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/welch-t-test-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10.2. Returned: t 2.539, degrees of freedom 7.174, p-value 0.03795. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8.*
+*The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10.2. Welch's t test: difference 3.8, t = 2.53898, 7.17415 degrees of freedom (Welch–Satterthwaite), p-value 0.0379455.*
 
-![Drawn: the t density with 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/welch-t-test-null-density)
+![Welch's t test of x = 12, 15, 11, 18, 14 against y = 10, 9, 13, 11, 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/welch-t-test-null-density)
 
-*Drawn: the t density with 7.174 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.353 and above 2.353 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.539, p-value = 0.03795. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8.*
+*Welch's t test of x = 12, 15, 11, 18, 14 against y = 10, 9, 13, 11, 8. Drawn: the t density with 7.17415 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.35304 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.53898, p-value = 0.0379455.*
 
 ```python
 statistics_ai999x.solve('welch_t_test', x='12, 15, 11, 18, 14', y='10, 9, 13, 11, 8')
@@ -3474,13 +3114,13 @@ $$
 - **Assumes:** pairs measured on the same units; differences roughly normal (or many pairs)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the t density with 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2](https://www.ai999x.com/?ax_fig=statistics-ai999x/paired-t-test-null-density)
+![Each pair (x, y) = (200, 190, 210, 220, 205) → (195, 185, 200, 214, 200) joined by a line, falling lines in the first colour](https://www.ai999x.com/?ax_fig=statistics-ai999x/paired-t-test-pairs)
 
-*Drawn: the t density with 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.776 and above 2.776 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 6.395, p-value = 0.00307. Your inputs: x = 200, 190, 210, 220, 205, y = 195, 185, 200, 214, 200.*
+*Each pair (x, y) = (200, 190, 210, 220, 205) → (195, 185, 200, 214, 200) joined by a line, falling lines in the first colour. Returned: mean difference 6.2, t = 6.39481, 4 degrees of freedom, p-value 0.00307015.*
 
-![Each pair (x, y) = (200, 190, 210, 220, 205) to (195, 185, 200, 214, 200) joined by a line, falling lines in the first colour](https://www.ai999x.com/?ax_fig=statistics-ai999x/paired-t-test-pairs)
+![The paired t test of x = 200, 190, 210, 220, 205 against y = 195, 185, 200, 214, 200](https://www.ai999x.com/?ax_fig=statistics-ai999x/paired-t-test-null-density)
 
-*Each pair (x, y) = (200, 190, 210, 220, 205) to (195, 185, 200, 214, 200) joined by a line, falling lines in the first colour. Returned: mean difference 6.2, t = 6.395, 4 degrees of freedom, p-value 0.00307. Your inputs: x = 200, 190, 210, 220, 205, y = 195, 185, 200, 214, 200.*
+*The paired t test of x = 200, 190, 210, 220, 205 against y = 195, 185, 200, 214, 200. Drawn: the t density with 4 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.77645 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 6.39481, p-value = 0.00307015.*
 
 ```python
 statistics_ai999x.solve('paired_t_test', x='200, 190, 210, 220, 205', y='195, 185, 200, 214, 200')
@@ -3532,21 +3172,9 @@ $$
 - **Assumes:** independent random samples; roughly normal populations or large samples
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the t density with 25 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-null-density)
+![The two-sample t test from summaries (group 1: mean 20](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-null-density)
 
-*Drawn: the t density with 25 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.06 and above 2.06 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.734, p-value = 0.09527. Your inputs: m1 = 20, s1 = 4, n1 = 15, m2 = 17, s2 = 5, n2 = 12, variance = pooled.*
-
-![P-value as m1 runs from 13](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-live-1)
-
-*P-value as m1 runs from 13.25 to 20.75, every other input as you entered it (31 solutions). Marked: your m1 = 20 gives p_value = 0.09527. Your inputs: m1 = 20, s1 = 4, n1 = 15, m2 = 17, s2 = 5, n2 = 12, variance = pooled.*
-
-![P-value for every choice of variance, every other input as you entered it (highlighted: your choice)](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-live-2)
-
-*P-value for every choice of variance, every other input as you entered it (highlighted: your choice). welch: 0.1059; pooled: 0.09527. Your inputs: m1 = 20, s1 = 4, n1 = 15, m2 = 17, s2 = 5, n2 = 12, variance = pooled.*
-
-![P-value as m2 runs from 16](https://www.ai999x.com/?ax_fig=statistics-ai999x/t-test-summary-statistics-live-3)
-
-*P-value as m2 runs from 16.49 to 24.65, every other input as you entered it (18 solutions). Marked: your m2 = 17 gives p_value = 0.09527. Your inputs: m1 = 20, s1 = 4, n1 = 15, m2 = 17, s2 = 5, n2 = 12, variance = pooled.*
+*The two-sample t test from summaries (group 1: mean 20.0, sd 4.0, n 15; group 2: mean 17.0, sd 5.0, n 12; variance pooled). Drawn: the t density with 25 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.05954 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 1.73379, p-value = 0.0952738.*
 
 ```python
 statistics_ai999x.solve('t_test_summary_statistics', m1=20, s1=4, n1=15, m2=17, s2=5, n2=12, variance='pooled')
@@ -3593,17 +3221,9 @@ $$
 - **Assumes:** n p0 and n(1 - p0) at least about 10; independent trials
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1](https://www.ai999x.com/?ax_fig=statistics-ai999x/proportion-z-test-null-density)
+![The z test of 58 successes in n = 100 (proportion 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/proportion-z-test-null-density)
 
-*Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1.96 and above 1.96 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 1.6, p-value = 0.1096. Your inputs: x = 58, n = 100, p0 = 0.5.*
-
-![P-value as p0 runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/proportion-z-test-live-1)
-
-*P-value as p0 runs from 0.4813 to 0.6875, every other input as you entered it (36 solutions). Marked: your p0 = 0.5 gives p_value = 0.1096. Your inputs: x = 58, n = 100, p0 = 0.5.*
-
-![P-value as x runs from 38 to 78, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/proportion-z-test-live-2)
-
-*P-value as x runs from 38 to 78, every other input as you entered it (21 solutions). Marked: your x = 58 gives p_value = 0.1096. Your inputs: x = 58, n = 100, p0 = 0.5.*
+*The z test of 58 successes in n = 100 (proportion 0.58) against p₀ = 0.5. Drawn: the standard normal density (density from the package's cumulative probabilities on a grid, differenced); shaded: the rejection region beyond ±1.95996 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 1.6, p-value = 0.109599.*
 
 ```python
 statistics_ai999x.solve('proportion_z_test', x=58, n=100, p0=0.5)
@@ -3652,17 +3272,9 @@ $$
 - **Assumes:** independent samples; at least about 10 successes and failures in each sample
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-proportion-z-test-null-density)
+![The z test of 45/100 against 30/100 (difference 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-proportion-z-test-null-density)
 
-*Drawn: the standard normal density (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -1.96 and above 1.96 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.191, p-value = 0.02846. Your inputs: x1 = 45, n1 = 100, x2 = 30, n2 = 100.*
-
-![P-value as x1 runs from 25 to 65, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-proportion-z-test-live-1)
-
-*P-value as x1 runs from 25 to 65, every other input as you entered it (41 solutions). Marked: your x1 = 45 gives p_value = 0.02846. Your inputs: x1 = 45, n1 = 100, x2 = 30, n2 = 100.*
-
-![P-value as x2 runs from 10 to 50, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-proportion-z-test-live-2)
-
-*P-value as x2 runs from 10 to 50, every other input as you entered it (21 solutions). Marked: your x2 = 30 gives p_value = 0.02846. Your inputs: x1 = 45, n1 = 100, x2 = 30, n2 = 100.*
+*The z test of 45/100 against 30/100 (difference 0.15, pooled proportion 0.375). Drawn: the standard normal density (density from the package's cumulative probabilities on a grid, differenced); shaded: the rejection region beyond ±1.95996 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: z = 2.19089, p-value = 0.0284597.*
 
 ```python
 statistics_ai999x.solve('two_proportion_z_test', x1=45, n1=100, x2=30, n2=100)
@@ -3709,17 +3321,13 @@ $$
 - **Assumes:** independent observations; expected counts at least about 5; proportions are rescaled to sum to 1
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Observed counts 18, 22, 20, 25, 15 beside the expected counts returned by the model (20, 20, 20, 20, 20)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-goodness-of-fit-bars)
+![Observed counts 18, 22, 20, 25, 15 against equal proportions, beside the expected counts returned by the package (20, 20, 20, 20, 20)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-goodness-of-fit-bars)
 
-*Observed counts 18, 22, 20, 25, 15 beside the expected counts returned by the model (20, 20, 20, 20, 20). χ² = 2.9 with 4 degrees of freedom, p-value 0.5747. Your inputs: observed = 18, 22, 20, 25, 15.*
+*Observed counts 18, 22, 20, 25, 15 against equal proportions, beside the expected counts returned by the package (20, 20, 20, 20, 20). χ² = 2.9 with 4 degrees of freedom, p-value 0.574697.*
 
-![Drawn: the chi-square density with 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 9](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-goodness-of-fit-null-density)
+![The goodness-of-fit test of 18, 22, 20, 25, 15](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-goodness-of-fit-null-density)
 
-*Drawn: the chi-square density with 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 9.488 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 2.9, p-value = 0.5747. Your inputs: observed = 18, 22, 20, 25, 15.*
-
-![Every entry of expected as computed for your inputs (5 entries: 20, 20, 20, 20, 20)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-goodness-of-fit-live-1)
-
-*Every entry of expected as computed for your inputs (5 entries: 20, 20, 20, 20, 20). Your inputs: observed = 18, 22, 20, 25, 15.*
+*The goodness-of-fit test of 18, 22, 20, 25, 15. Drawn: the chi-square density with 4 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 9.48773 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 2.9, p-value = 0.574697.*
 
 ```python
 statistics_ai999x.solve('chi_square_goodness_of_fit', observed='18, 22, 20, 25, 15')
@@ -3769,21 +3377,13 @@ $$
 - **Assumes:** independent observations; expected counts at least about 5; no continuity correction
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/chi-square-independence-null-density.svg)
+![The chi-square test of independence for the table [[20, 30], [25, 25]]](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-independence-null-density)
 
-*Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3.841 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 1.01, p-value = 0.3149. Your inputs: table = [[20, 30], [25, 25]].*
+*The chi-square test of independence for the table [[20, 30], [25, 25]]. Drawn: the chi-square density with 1 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 3.84146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 1.0101, p-value = 0.314879.*
 
-![Upper-tail p-value as table[2,2] runs from 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-independence-live-1)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); expected (returned)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-independence-matrix)
 
-*Upper-tail p-value as table[2,2] runs from 6.25 to 43.75, every other input as you entered it (41 solutions). Marked: your table[2,2] = 25 gives p_value = 0.3149. Your inputs: table = [[20, 30], [25, 25]].*
-
-![Each cell is one entry of expected for your inputs (row by row; shade by size and sign)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-independence-live-2)
-
-*Each cell is one entry of expected for your inputs (row by row; shade by size and sign). Your inputs: table = [[20, 30], [25, 25]].*
-
-![Upper-tail p-value as table[1,1] runs from 5 to 35, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-independence-live-3)
-
-*Upper-tail p-value as table[1,1] runs from 5 to 35, every other input as you entered it (29 solutions). Marked: your table[1,1] = 20 gives p_value = 0.3149. Your inputs: table = [[20, 30], [25, 25]].*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); expected (returned). Returned with them by statistics-ai999x: chi_square = 1.0101, df = 1, p_value = 0.314879.*
 
 ```python
 statistics_ai999x.solve('chi_square_independence', table='[[20, 30], [25, 25]]')
@@ -3831,17 +3431,9 @@ $$
 - **Assumes:** normal population (the test is sensitive to non-normality)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the chi-square density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-variance-test-null-density)
+![The chi-square test of x = 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-variance-test-null-density)
 
-*Drawn: the chi-square density with 5 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below 0.8312 and above 12.83 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 6.667, p-value = 0.4933. Your inputs: x = 10.2, 9.8, 10.5, 10.1..., sigma0 = 0.3.*
-
-![P-value as x[1] runs from 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-variance-test-live-1)
-
-*P-value as x[1] runs from 8.67 to 11.35, every other input as you entered it (32 solutions). Marked: your x[1] = 10.2 gives p_value = 0.4933. Your inputs: x = 10.2, 9.8, 10.5, 10.1..., sigma0 = 0.3.*
-
-![P-value as x[2] runs from 8](https://www.ai999x.com/?ax_fig=statistics-ai999x/chi-square-variance-test-live-2)
-
-*P-value as x[2] runs from 8.33 to 12.01, every other input as you entered it (13 solutions). Marked: your x[2] = 9.8 gives p_value = 0.4933. Your inputs: x = 10.2, 9.8, 10.5, 10.1..., sigma0 = 0.3.*
+*The chi-square test of x = 10.2, 9.8, 10.5, 10.1, 9.6, 10.4 against σ₀ = 0.3 (sample variance 0.12). Drawn: the chi-square density with 5 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 11.0705 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 6.66667, p-value = 0.493268.*
 
 ```python
 statistics_ai999x.solve('chi_square_variance_test', x='10.2, 9.8, 10.5, 10.1, 9.6, 10.4', sigma0=0.3)
@@ -3888,21 +3480,13 @@ $$
 - **Assumes:** independent samples from normal populations (sensitive to non-normality)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 21, 24, 19, 26, 23, 25; y = 22, 23, 22, 24, 23), each labelled with its variance from the model: x 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-boxes)
+![The samples x = 21, 24, 19, 26, 23, 25 and y = 22, 23, 22, 24, 23 as box plots (quartiles from the package's percentiles); labelled with their sample variances from the package (6](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 21, 24, 19, 26, 23, 25; y = 22, 23, 22, 24, 23), each labelled with its variance from the model: x 6.8, y 0.7. Returned: F 9.714, df1 5, df2 4, p-value 0.04686. Your inputs: x = 21, 24, 19, 26, 23, 25, y = 22, 23, 22, 24, 23.*
+*The samples x = 21, 24, 19, 26, 23, 25 and y = 22, 23, 22, 24, 23 as box plots (quartiles from the package's percentiles); labelled with their sample variances from the package (6.8, 0.7). F test: F = 9.71429 with 5 and 4 degrees of freedom, p-value 0.046857.*
 
-![Drawn: the F density with 5 and 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-null-density)
+![The F test of equal variances for x = 21, 24, 19, 26, 23, 25 and y = 22, 23, 22, 24, 23 (one-sided region drawn)](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-null-density)
 
-*Drawn: the F density with 5 and 4 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below 0.1354 and above 9.364 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 9.714, p-value = 0.04686. Your inputs: x = 21, 24, 19, 26, 23, 25, y = 22, 23, 22, 24, 23.*
-
-![P-value as y[0] runs from 2 to 42, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-live-1)
-
-*P-value as y[0] runs from 2 to 42, every other input as you entered it (41 solutions). Marked: your y[0] = 22 gives p_value = 0.04686. Your inputs: x = 21, 24, 19, 26, 23, 25, y = 22, 23, 22, 24, 23.*
-
-![P-value as y[1] runs from 3 to 43, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/f-test-variances-live-2)
-
-*P-value as y[1] runs from 3 to 43, every other input as you entered it (21 solutions). Marked: your y[1] = 23 gives p_value = 0.04686. Your inputs: x = 21, 24, 19, 26, 23, 25, y = 22, 23, 22, 24, 23.*
+*The F test of equal variances for x = 21, 24, 19, 26, 23, 25 and y = 22, 23, 22, 24, 23 (one-sided region drawn). Drawn: the F density with 5 and 4 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 6.25606 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 9.71429, p-value = 0.046857.*
 
 ```python
 statistics_ai999x.solve('f_test_variances', x='21, 24, 19, 26, 23, 25', y='22, 23, 22, 24, 23')
@@ -3948,9 +3532,9 @@ $$
 - **Assumes:** paired observations; linear relationship; the p-value assumes bivariate normality
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The pairs x = 1, 2, 3, 4, 5, y = 2, 4, 5, 4, 5 with the least-squares line from the model's regression run (y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/pearson-correlation-scatter)
+![The pairs x = 1, 2, 3, 4, 5, y = 2, 4, 5, 4, 5 with the least-squares line from the package's regression run (y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/pearson-correlation-scatter)
 
-*The pairs x = 1, 2, 3, 4, 5, y = 2, 4, 5, 4, 5 with the least-squares line from the model's regression run (y = 2.2 + 0.6x); returned: r = 0.7746, R² = 0.6, p-value 0.124 (n = 5). Your inputs: x = 1, 2, 3, 4, 5, y = 2, 4, 5, 4, 5.*
+*The pairs x = 1, 2, 3, 4, 5, y = 2, 4, 5, 4, 5 with the least-squares line from the package's regression run (y = 2.2 + 0.6x); returned: r = 0.774597, R² = 0.6, p-value 0.124027 (n = 5).*
 
 ```python
 statistics_ai999x.solve('pearson_correlation', x='1, 2, 3, 4, 5', y='2, 4, 5, 4, 5')
@@ -3997,17 +3581,13 @@ $$
 - **Assumes:** $-1 < r < 1$; bivariate normal data
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the t density with 28 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-t-test-null-density)
+![The t test of a correlation r = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-t-test-null-density)
 
-*Drawn: the t density with 28 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the two-sided rejection region below -2.048 and above 2.048 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.666, p-value = 0.01259. Your inputs: r = 0.45, n = 30.*
+*The t test of a correlation r = 0.45 from n = 30 pairs. Drawn: the t density with 28 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region beyond ±2.04841 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: t = 2.66641, p-value = 0.0125911.*
 
-![P-value as r runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-t-test-live-1)
+![p_value (p-value) against n (number of pairs (>= 3)) from 1 to 60 on a logarithmic axis](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-t-test-curve)
 
-*P-value as r runs from 0.1125 to 0.7875, every other input as you entered it (41 solutions). Marked: your r = 0.45 gives p_value = 0.01259. Your inputs: r = 0.45, n = 30.*
-
-![P-value as n runs from 10 to 50, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-t-test-live-2)
-
-*P-value as n runs from 10 to 50, every other input as you entered it (21 solutions). Marked: your n = 30 gives p_value = 0.01259. Your inputs: r = 0.45, n = 30.*
+*p_value (p-value) against n (number of pairs (>= 3)) from 1 to 60 on a logarithmic axis. One curve for each value of r (sample correlation coefficient): 0.45, 0.26, 0.74. 27 points per curve computed by statistics-ai999x; marked: the worked example, n = 30, p_value = 0.0125911.*
 
 ```python
 statistics_ai999x.solve('correlation_t_test', r=0.45, n=30)
@@ -4053,17 +3633,13 @@ $$
 - **Assumes:** bivariate normal data; at least 4 pairs; |r| < 1
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Confidence intervals at 5 levels, each a run of the model: 50 % [0](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-confidence-interval-intervals)
+![Confidence intervals for the correlation of x = 1, 2, 3, 4, 5, 6 and y = 2, 3, 5, 4, 6, 7 (r = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-confidence-interval-intervals)
 
-*Confidence intervals at 5 levels, each a run of the model: 50 % [0.8795, 0.9734]; 80 % [0.7712, 0.9867]; 90 % [0.6715, 0.9912]; 95 % [0.5591, 0.9939]; 99 % [0.2692, 0.997]; centre r = 0.9429; the visitor's level 95 % in the first colour. They are asymmetric about r and stay inside [-1, 1]. Your inputs: x = 1, 2, 3, 4, 5, 6, y = 2, 3, 5, 4, 6, 7, confidence = 0.95.*
+*Confidence intervals for the correlation of x = 1, 2, 3, 4, 5, 6 and y = 2, 3, 5, 4, 6, 7 (r = 0.942857) at five levels, each from the package: 50 % [0.879547, 0.973363]; 80 % [0.771198, 0.986696]; 90 % [0.671529, 0.991234]; 95 % [0.559149, 0.9939]; 99 % [0.269222, 0.997]; they are asymmetric about r and stay inside [−1, 1].*
 
-![The data y against x as given (6 points)](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-confidence-interval-xy)
+![The data y (paired values of the second variable (y)) against x (values of the first variable (x)) as given in the worked example (6 points)](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-confidence-interval-xy)
 
-*The data y against x as given (6 points). Returned: lower = 0.5591, upper = 0.9939, r = 0.9429. Your inputs: x = 1, 2, 3, 4, 5, 6, y = 2, 3, 5, 4, 6, 7, confidence = 0.95.*
-
-![Lower limit as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/correlation-confidence-interval-live-1)
-
-*Lower limit as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives lower = 0.5591. Your inputs: x = 1, 2, 3, 4, 5, 6, y = 2, 3, 5, 4, 6, 7, confidence = 0.95.*
+*The data y (paired values of the second variable (y)) against x (values of the first variable (x)) as given in the worked example (6 points). Also returned: r = 0.942857, lower = 0.559149, upper = 0.9939. Other inputs: confidence = 0.95.*
 
 ```python
 statistics_ai999x.solve('correlation_confidence_interval', x='1, 2, 3, 4, 5, 6', y='2, 3, 5, 4, 6, 7', confidence=0.95)
@@ -4108,13 +3684,13 @@ $$
 - **Assumes:** paired ordinal or continuous data; p-value by the t approximation
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The ranks of x = 10, 20, 30, 40, 50 against the ranks of y = 12, 25, 22, 41, 48 (ranks from the inputs, ties averaged); Spearman's ρ is the correlation of these ranks: returned ρ = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/spearman-correlation-scatter)
+![The ranks of x = 10, 20, 30, 40, 50 against the ranks of y = 12, 25, 22, 41, 48 (ranks derived from the inputs); Spearman's ρ is the correlation of these ranks: returned ρ = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/spearman-correlation-scatter)
 
-*The ranks of x = 10, 20, 30, 40, 50 against the ranks of y = 12, 25, 22, 41, 48 (ranks from the inputs, ties averaged); Spearman's ρ is the correlation of these ranks: returned ρ = 0.9, p-value 0.03739. Your inputs: x = 10, 20, 30, 40, 50, y = 12, 25, 22, 41, 48.*
+*The ranks of x = 10, 20, 30, 40, 50 against the ranks of y = 12, 25, 22, 41, 48 (ranks derived from the inputs); Spearman's ρ is the correlation of these ranks: returned ρ = 0.9, p-value 0.0373861.*
 
-![The data y against x as given (5 points)](https://www.ai999x.com/?ax_fig=statistics-ai999x/spearman-correlation-xy)
+![The data y (paired values of the second variable (y)) against x (values of the first variable (x)) as given in the worked example (5 points)](https://www.ai999x.com/?ax_fig=statistics-ai999x/spearman-correlation-xy)
 
-*The data y against x as given (5 points). Returned: rho = 0.9, p_value = 0.03739, n = 5. Your inputs: x = 10, 20, 30, 40, 50, y = 12, 25, 22, 41, 48.*
+*The data y (paired values of the second variable (y)) against x (values of the first variable (x)) as given in the worked example (5 points). Also returned: rho = 0.9, p_value = 0.0373861, n = 5.*
 
 ```python
 statistics_ai999x.solve('spearman_correlation', x='10, 20, 30, 40, 50', y='12, 25, 22, 41, 48')
@@ -4162,7 +3738,7 @@ $$
 
 ![Every pair of the points x = 1, 2, 3, 4, 5, 6, y = 2, 1, 4, 3, 6, 5 joined: rising segments (concordant) in the first colour, falling (discordant) in the second (classified from the inputs)](https://www.ai999x.com/?ax_fig=statistics-ai999x/kendall-tau-pairs)
 
-*Every pair of the points x = 1, 2, 3, 4, 5, 6, y = 2, 1, 4, 3, 6, 5 joined: rising segments (concordant) in the first colour, falling (discordant) in the second (classified from the inputs). Returned: 12 concordant, 3 discordant, τ = 0.6, p-value 0.09087. Your inputs: x = 1, 2, 3, 4, 5, 6, y = 2, 1, 4, 3, 6, 5.*
+*Every pair of the points x = 1, 2, 3, 4, 5, 6, y = 2, 1, 4, 3, 6, 5 joined: rising segments (concordant) in the first colour, falling (discordant) in the second (classified from the inputs). Returned: 12 concordant, 3 discordant, τ = 0.6, p-value 0.0908739.*
 
 ```python
 statistics_ai999x.solve('kendall_tau', x='1, 2, 3, 4, 5, 6', y='2, 1, 4, 3, 6, 5')
@@ -4206,9 +3782,9 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The pairs x = 2, 4, 6, 8, y = 1, 3, 2, 5 with the means of x and y (from the model's mean: 5, 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/covariance-scatter)
+![The pairs x = 2, 4, 6, 8, y = 1, 3, 2, 5 with the means of x and y (from the package) as a cross; each rectangle is a product (x − x̄)(y − ȳ) (derived), positive in the first colour, negative in the second](https://www.ai999x.com/?ax_fig=statistics-ai999x/covariance-scatter)
 
-*The pairs x = 2, 4, 6, 8, y = 1, 3, 2, 5 with the means of x and y (from the model's mean: 5, 2.75) as dashed lines; each rectangle is a product (x - x̄)(y - ȳ), positive in the first colour, negative in the second. Their average is the covariance: sample 3.667, population 2.75. Your inputs: x = 2, 4, 6, 8, y = 1, 3, 2, 5.*
+*The pairs x = 2, 4, 6, 8, y = 1, 3, 2, 5 with the means of x and y (from the package) as a cross; each rectangle is a product (x − x̄)(y − ȳ) (derived), positive in the first colour, negative in the second. Their average is the covariance: sample 3.66667, population 2.75.*
 
 ```python
 statistics_ai999x.solve('covariance', x='2, 4, 6, 8', y='1, 3, 2, 5')
@@ -4258,13 +3834,13 @@ $$
 - **Assumes:** at least 3 pairs, x not all equal; inference assumes independent normal errors with constant variance
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The least-squares line through x = 1, 2, 3, 4, 5, y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/simple-linear-regression-fit)
+![The least-squares line through x = 1, 2, 3, 4, 5, y = 2](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/simple-linear-regression-fit.svg)
 
-*The least-squares line through x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2: intercept 0.16 (standard error 0.1433), slope 1.98 (standard error 0.0432), r = 0.9993, R² = 0.9986, p-value of the slope 2.287e-05, as returned by the model. Your inputs: x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2.*
+*The least-squares line through x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2: intercept 0.16 (standard error 0.143295), slope 1.98 (standard error 0.0432049), r = 0.999287, R² = 0.998574, p-value of the slope 2.2873e-05, as returned by the package.*
 
-![Residuals of y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/simple-linear-regression-residuals)
+![Residuals of x = 1, 2, 3, 4, 5, y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/simple-linear-regression-residuals)
 
-*Residuals of y = 2.2, 4.1, 6.1, 7.9, 10.2 from the returned line ŷ = 0.16 + 1.98x (from the inputs and the returned coefficients), with the returned residual standard error 0.1366 either side of zero (dashed; R² = 0.9986): no pattern means the straight line fits. Your inputs: x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2.*
+*Residuals of x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2 from the returned line ŷ = 0.16 + 1.98x (derived from the inputs and the returned coefficients), with the returned residual standard error 0.136626 either side of zero (R² = 0.998574): no pattern means the straight line fits.*
 
 ```python
 statistics_ai999x.solve('simple_linear_regression', x='1, 2, 3, 4, 5', y='2.2, 4.1, 6.1, 7.9, 10.2')
@@ -4312,11 +3888,7 @@ $$
 
 ![The data x = 1, 2, 3, 4, 5, y = 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/regression-prediction-fit)
 
-*The data x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2 with the returned least-squares line (intercept 0.16, slope 1.98); marked: the prediction at x₀ = 3.5, ŷ = 7.09. Your inputs: x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2, x0 = 3.5.*
-
-![B0 + b1 x0 as x0 runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/regression-prediction-live-1)
-
-*B0 + b1 x0 as x0 runs from 0.875 to 6.125, every other input as you entered it (41 solutions). Marked: your x0 = 3.5 gives y_hat = 7.09. Your inputs: x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2, x0 = 3.5.*
+*The data x = 1, 2, 3, 4, 5, y = 2.2, 4.1, 6.1, 7.9, 10.2 with the returned least-squares line (intercept 0.16, slope 1.98); marked: the prediction at x₀ = 3.5, ŷ = 7.09.*
 
 ```python
 statistics_ai999x.solve('regression_prediction', x='1, 2, 3, 4, 5', y='2.2, 4.1, 6.1, 7.9, 10.2', x0=3.5)
@@ -4364,21 +3936,9 @@ $$
 - **Assumes:** $n > k + 1$; predictors not collinear; inference assumes independent normal errors
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Observed y = 10, 12, 15, 19, 22, 25 against the fitted values from the returned coefficients 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/multiple-linear-regression-fit)
+![Observed y = 10, 12, 15, 19, 22, 25 against the fitted values (derived from the returned coefficients 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/multiple-linear-regression-fit)
 
-*Observed y = 10, 12, 15, 19, 22, 25 against the fitted values from the returned coefficients 6.229, 3.062, 0.0625 (intercept first, then one per column of X); vertical segments are the residuals, the dashed line is a perfect fit. Returned: R² = 0.9937 (adjusted 0.9894), F = 235, residual SE 0.6009. Your inputs: X = [[1, 2], [2, 1], [3, 4]..., y = 10, 12, 15, 19, 22, 25.*
-
-![R squared as y[6] runs from 5 to 45, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/multiple-linear-regression-live-1)
-
-*R squared as y[6] runs from 5 to 45, every other input as you entered it (41 solutions). Marked: your y[6] = 25 gives r_squared = 0.9937. Your inputs: X = [[1, 2], [2, 1], [3, 4]..., y = 10, 12, 15, 19, 22, 25.*
-
-![The 6 rows of X as points (first column across, second up), coloured by y](https://www.ai999x.com/?ax_fig=statistics-ai999x/multiple-linear-regression-live-2)
-
-*The 6 rows of X as points (first column across, second up), coloured by y. Your inputs: X = [[1, 2], [2, 1], [3, 4]..., y = 10, 12, 15, 19, 22, 25.*
-
-![Every entry of coefficients as computed for your inputs (3 entries: 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/multiple-linear-regression-live-3)
-
-*Every entry of coefficients as computed for your inputs (3 entries: 6.229, 3.062, 0.0625). Your inputs: X = [[1, 2], [2, 1], [3, 4]..., y = 10, 12, 15, 19, 22, 25.*
+*Observed y = 10, 12, 15, 19, 22, 25 against the fitted values (derived from the returned coefficients 6.22917, 3.0625, 0.0625: intercept first, then one per column of X = [[1, 2], [2, 1], [3, 4], [4, 3], [5, 6], [6, 5]]); vertical segments are the residuals. Returned: R² = 0.993659 (adjusted 0.989431), F = 235.038, residual SE 0.600925.*
 
 ```python
 statistics_ai999x.solve('multiple_linear_regression', X='[[1, 2], [2, 1], [3, 4], [4, 3], [5, 6], [6, 5]]', y='10, 12, 15, 19, 22, 25')
@@ -4422,15 +3982,7 @@ $$
 
 ![Regression residuals 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/durbin-watson-series)
 
-*Regression residuals 0.5, -0.2, 0.3, -0.4, 0.1, 0.6, -0.5 in time order, consecutive ones joined. The returned Durbin-Watson statistic 2.534 compares successive differences with the residuals: near 2 no autocorrelation, below 2 positive, above 2 negative. Your inputs: residuals = 0.5, -0.2, 0.3, -0.4....*
-
-![Durbin watson as residuals[1] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/durbin-watson-live-1)
-
-*Durbin watson as residuals[1] runs from 0.125 to 0.875, every other input as you entered it (41 solutions). Marked: your residuals[1] = 0.5 gives durbin_watson = 2.534. Your inputs: residuals = 0.5, -0.2, 0.3, -0.4....*
-
-![Durbin watson as residuals[3] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/durbin-watson-live-2)
-
-*Durbin watson as residuals[3] runs from 0.075 to 0.525, every other input as you entered it (29 solutions). Marked: your residuals[3] = 0.3 gives durbin_watson = 2.534. Your inputs: residuals = 0.5, -0.2, 0.3, -0.4....*
+*Regression residuals 0.5, -0.2, 0.3, -0.4, 0.1, 0.6, -0.5 in time order, consecutive ones joined. The returned Durbin–Watson statistic 2.53448 compares successive differences with the residuals: near 2 no autocorrelation, below 2 positive, above 2 negative (residuals that alternate in sign).*
 
 ```python
 statistics_ai999x.solve('durbin_watson', residuals='0.5, -0.2, 0.3, -0.4, 0.1, 0.6, -0.5')
@@ -4484,13 +4036,13 @@ $$
 - **Assumes:** independent groups; roughly normal populations with equal variances
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25), each labelled with its median from the model: g1 22](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
+![Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/one-way-anova-boxes.svg)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25), each labelled with its median from the model: g1 22.5, g2 29.5, g3 25.5. Returned: F 22.12, df between 2, df within 9, p-value 0.0003358, η² 0.831. Your inputs: g1 = 23, 25, 21, 22, g2 = 30, 28, 31, 29, g3 = 26, 27, 24, 25.*
+*Box plots of 3 groups (g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25): each box spans the quartiles and the bar is the median, all from the package's percentiles (g1 median 22.5, quartiles 21.75–23.5; g2 median 29.5, quartiles 28.75–30.25; g3 median 25.5, quartiles 24.75–26.25). One-way ANOVA: F = 22.12 with 2 and 9 degrees of freedom, p-value 0.000335753, η² = 0.830954.*
 
-![Drawn: the F density with 2 and 9 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/one-way-anova-null-density)
+![One-way ANOVA of g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25 (SS between 92](https://www.ai999x.com/?ax_fig=statistics-ai999x/one-way-anova-null-density)
 
-*Drawn: the F density with 2 and 9 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 4.256 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 22.12, p-value = 0.0003358. Your inputs: g1 = 23, 25, 21, 22, g2 = 30, 28, 31, 29, g3 = 26, 27, 24, 25.*
+*One-way ANOVA of g1 = 23, 25, 21, 22; g2 = 30, 28, 31, 29; g3 = 26, 27, 24, 25 (SS between 92.1667, SS within 18.75). Drawn: the F density with 2 and 9 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 4.25649 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 22.12, p-value = 0.000335753.*
 
 ```python
 statistics_ai999x.solve('one_way_anova', g1='23, 25, 21, 22', g2='30, 28, 31, 29', g3='26, 27, 24, 25')
@@ -4542,21 +4094,13 @@ $$
 - **Assumes:** one observation per block and treatment; additive model (no block x treatment interaction); normal errors with constant variance
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The stated data = [[12, 14, 15], [10, 13, 13], [11, 15, 16], [9, 12, 14]] as a heat map (each cell shaded by its value)](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-matrix)
+![Randomized block ANOVA of [[12, 14, 15], [10, 13, 13], [11, 15, 16], [9, 12, 14]] (rows blocks, columns treatments): the treatment F](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-null-density)
 
-*The stated data = [[12, 14, 15], [10, 13, 13], [11, 15, 16], [9, 12, 14]] as a heat map (each cell shaded by its value). In SI units: p_treatment = 0.0003644. Your inputs: data = [[12, 14, 15], [10, 13....*
+*Randomized block ANOVA of [[12, 14, 15], [10, 13, 13], [11, 15, 16], [9, 12, 14]] (rows blocks, columns treatments): the treatment F. The block F is 9.25 (p-value 0.0114399). Drawn: the F density with 2 and 6 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 5.14325 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 39, p-value = 0.000364431.*
 
-![Drawn: the F density with 2 and 6 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-null-density)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input)](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-matrix)
 
-*Drawn: the F density with 2 and 6 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5.143 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: F = 39. In SI units: p_treatment = 0.0003644. Your inputs: data = [[12, 14, 15], [10, 13....*
-
-![P-value for treatments as data[1,1] runs from 3 to 21, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-live-1)
-
-*P-value for treatments as data[1,1] runs from 3 to 21, every other input as you entered it (41 solutions). Marked: your data[1,1] = 12 gives p_treatment = 0.0003644. Your inputs: data = [[12, 14, 15], [10, 13....*
-
-![P-value for treatments as data[1,3] runs from 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/randomized-block-anova-live-2)
-
-*P-value for treatments as data[1,3] runs from 3.75 to 26.25, every other input as you entered it (29 solutions). Marked: your data[1,3] = 15 gives p_treatment = 0.0003644. Your inputs: data = [[12, 14, 15], [10, 13....*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input). Returned with them by statistics-ai999x: f_treatment = 39, p_treatment = 0.000364431, f_block = 9.25, p_block = 0.0114399, ss_treatment = 34.6667, ss_block = 12.3333, ss_error = 2.66667, df_treatment = 2, df_block = 3, df_error = 6.*
 
 ```python
 statistics_ai999x.solve('randomized_block_anova', data='[[12, 14, 15], [10, 13, 13], [11, 15, 16], [9, 12, 14]]')
@@ -4606,17 +4150,13 @@ $$
 - **Assumes:** independent groups, at least 2 values each
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its median from the model: g1 23, g2 23, g3 24](https://www.ai999x.com/?ax_fig=statistics-ai999x/levene-test-boxes)
+![Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24); the bar in each box is the median (g1 23, g2 23, g3 24), the centre Levene's test measures spread from (center = median)](https://www.ai999x.com/?ax_fig=statistics-ai999x/levene-test-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its median from the model: g1 23, g2 23, g3 24. Returned: W 4.977, df1 2, df2 12, p-value 0.02666. Your inputs: g1 = 21, 24, 19, 26, 23, g2 = 22, 23, 22, 24, 23, g3 = 18, 28, 20, 30, 24, center = median.*
+*Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24); the bar in each box is the median (g1 23, g2 23, g3 24), the centre Levene's test measures spread from (center = median). Returned: W = 4.97727 with 2 and 12 degrees of freedom, p-value 0.026665.*
 
-![Drawn: the F density with 2 and 12 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/levene-test-null-density)
+![Levene's test (center = median) for g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24](https://www.ai999x.com/?ax_fig=statistics-ai999x/levene-test-null-density)
 
-*Drawn: the F density with 2 and 12 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3.885 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: W = 4.977, p-value = 0.02666. Your inputs: g1 = 21, 24, 19, 26, 23, g2 = 22, 23, 22, 24, 23, g3 = 18, 28, 20, 30, 24, center = median.*
-
-![P-value for every choice of center, every other input as you entered it (highlighted: your choice)](https://www.ai999x.com/?ax_fig=statistics-ai999x/levene-test-live-1)
-
-*P-value for every choice of center, every other input as you entered it (highlighted: your choice). median: 0.02666; mean: 0.02271. Your inputs: g1 = 21, 24, 19, 26, 23, g2 = 22, 23, 22, 24, 23, g3 = 18, 28, 20, 30, 24, center = median.*
+*Levene's test (center = median) for g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24. Drawn: the F density with 2 and 12 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 3.88529 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: W = 4.97727, p-value = 0.026665.*
 
 ```python
 statistics_ai999x.solve('levene_test', g1='21, 24, 19, 26, 23', g2='22, 23, 22, 24, 23', g3='18, 28, 20, 30, 24', center='median')
@@ -4664,13 +4204,13 @@ $$
 - **Assumes:** normal populations (Bartlett's test is sensitive to non-normality); at least 2 values per group
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its variance from the model: g1 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/bartlett-test-boxes)
+![Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its sample variance from the package: g1 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/bartlett-test-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its variance from the model: g1 7.3, g2 0.7, g3 26. Returned: statistic 8.618, degrees of freedom 2, p-value 0.01345. Your inputs: g1 = 21, 24, 19, 26, 23, g2 = 22, 23, 22, 24, 23, g3 = 18, 28, 20, 30, 24.*
+*Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24), each labelled with its sample variance from the package: g1 7.3, g2 0.7, g3 26. Bartlett's test of equal variances: statistic 8.61822, 2 degrees of freedom, p-value 0.0134455.*
 
-![Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/bartlett-test-null-density)
+![Bartlett's test of equal variances for g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24](https://www.ai999x.com/?ax_fig=statistics-ai999x/bartlett-test-null-density)
 
-*Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5.991 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: B = 8.618, p-value = 0.01345. Your inputs: g1 = 21, 24, 19, 26, 23, g2 = 22, 23, 22, 24, 23, g3 = 18, 28, 20, 30, 24.*
+*Bartlett's test of equal variances for g1 = 21, 24, 19, 26, 23; g2 = 22, 23, 22, 24, 23; g3 = 18, 28, 20, 30, 24. Drawn: the chi-square density with 2 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 5.99146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 8.61822, p-value = 0.0134455.*
 
 ```python
 statistics_ai999x.solve('bartlett_test', g1='21, 24, 19, 26, 23', g2='22, 23, 22, 24, 23', g3='18, 28, 20, 30, 24')
@@ -4717,15 +4257,7 @@ $$
 
 ![The samples x = 3, 5, 4, 6, 7 (upper row) and y = 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-u-ranks)
 
-*The samples x = 3, 5, 4, 6, 7 (upper row) and y = 1.5, 2.6, 2.2, 3.9 (lower row) on one axis, each labelled with its rank in the combined sample (ranks from the inputs, ties averaged). Returned: U = 19, p-value 0.03734. Your inputs: x = 3, 5, 4, 6, 7, y = 1.5, 2.6, 2.2, 3.9.*
-
-![P-value as x[2] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-u-live-1)
-
-*P-value as x[2] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your x[2] = 4 gives p_value = 0.03734. Your inputs: x = 3, 5, 4, 6, 7, y = 1.5, 2.6, 2.2, 3.9.*
-
-![P-value as x[0] runs from 0 to 7, every other input as you entered it (8 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-u-live-2)
-
-*P-value as x[0] runs from 0 to 7, every other input as you entered it (8 solutions). Marked: your x[0] = 3 gives p_value = 0.03734. Your inputs: x = 3, 5, 4, 6, 7, y = 1.5, 2.6, 2.2, 3.9.*
+*The samples x = 3, 5, 4, 6, 7 (upper row) and y = 1.5, 2.6, 2.2, 3.9 (lower row) on one axis, each labelled with its rank in the combined sample (ranks derived from the inputs). Returned: U = 19, p-value 0.0373364.*
 
 ```python
 statistics_ai999x.solve('mann_whitney_u', x='3, 5, 4, 6, 7', y='1.5, 2.6, 2.2, 3.9')
@@ -4772,15 +4304,7 @@ $$
 
 ![The samples x = 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-exact-ranks)
 
-*The samples x = 3.1, 5.2, 4.3, 6.4, 7.5 (upper row) and y = 1.5, 2.6, 2.2, 3.9 (lower row) on one axis, each labelled with its rank in the combined sample (ranks from the inputs, ties averaged). Returned: U = 19, p-value 0.03175. Your inputs: x = 3.1, 5.2, 4.3, 6.4, 7.5, y = 1.5, 2.6, 2.2, 3.9.*
-
-![P-value as x[4] runs from -7](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-exact-live-1)
-
-*P-value as x[4] runs from -7.5 to 22.5, every other input as you entered it (35 solutions). Marked: your x[4] = 7.5 gives p_value = 0.03175. Your inputs: x = 3.1, 5.2, 4.3, 6.4, 7.5, y = 1.5, 2.6, 2.2, 3.9.*
-
-![P-value as y[2] runs from -2](https://www.ai999x.com/?ax_fig=statistics-ai999x/mann-whitney-exact-live-2)
-
-*P-value as y[2] runs from -2.2 to 6.6, every other input as you entered it (29 solutions). Marked: your y[2] = 2.2 gives p_value = 0.03175. Your inputs: x = 3.1, 5.2, 4.3, 6.4, 7.5, y = 1.5, 2.6, 2.2, 3.9.*
+*The samples x = 3.1, 5.2, 4.3, 6.4, 7.5 (upper row) and y = 1.5, 2.6, 2.2, 3.9 (lower row) on one axis, each labelled with its rank in the combined sample (ranks derived from the inputs). Returned: U = 19, p-value 0.031746.*
 
 ```python
 statistics_ai999x.solve('mann_whitney_exact', x='3.1, 5.2, 4.3, 6.4, 7.5', y='1.5, 2.6, 2.2, 3.9')
@@ -4827,9 +4351,9 @@ $$
 - **Assumes:** paired data, symmetric distribution of differences; zero differences dropped; normal approximation with tie correction, no continuity correction
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour; each labelled with the rank of its absolute value](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilcoxon-signed-rank-differences)
+![The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour; each labelled with the rank of its absolute value (derived)](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilcoxon-signed-rank-differences)
 
-*The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour; each labelled with the rank of its absolute value. Returned: R+ = 24, statistic 12 (n = 8), p-value 0.4008. Your inputs: x = 125, 115, 130, 140, 141..., y = 110, 122, 125, 120, 140....*
+*The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour; each labelled with the rank of its absolute value (derived). Returned: R+ = 24, statistic 12 (n = 8), p-value 0.400814.*
 
 ```python
 statistics_ai999x.solve('wilcoxon_signed_rank', x='125, 115, 130, 140, 141, 115, 140, 125', y='110, 122, 125, 120, 140, 124, 123, 137')
@@ -4876,9 +4400,9 @@ $$
 - **Assumes:** paired data, symmetric distribution of differences; zero differences dropped; no zero and no tied absolute differences; at most 60 differences
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour; each labelled with the rank of its absolute value](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilcoxon-signed-rank-exact-differences)
+![The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour; each labelled with the rank of its absolute value (derived)](https://www.ai999x.com/?ax_fig=statistics-ai999x/wilcoxon-signed-rank-exact-differences)
 
-*The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour; each labelled with the rank of its absolute value. Returned: R+ = 24, statistic 12 (n = 8), p-value 0.4609. Your inputs: x = 125, 115, 130, 140, 141..., y = 110, 122, 125, 120, 140....*
+*The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour; each labelled with the rank of its absolute value (derived). Returned: R+ = 24, statistic 12 (n = 8), exact p-value 0.460938.*
 
 ```python
 statistics_ai999x.solve('wilcoxon_signed_rank_exact', x='125, 115, 130, 140, 141, 115, 140, 125', y='110, 122, 125, 120, 140, 124, 123, 137')
@@ -4926,13 +4450,13 @@ $$
 - **Assumes:** independent groups, ordinal or continuous data; chi-square approximation (about 5 or more per group)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6), each labelled with its median from the model: g1 8, g2 20](https://www.ai999x.com/?ax_fig=statistics-ai999x/kruskal-wallis-boxes)
+![Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6); medians g1 8, g2 20](https://www.ai999x.com/?ax_fig=statistics-ai999x/kruskal-wallis-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 3 groups (g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6), each labelled with its median from the model: g1 8, g2 20.5, g3 26.5. Returned: H 2.854, degrees of freedom 2, p-value 0.2401. Your inputs: g1 = 27, 2, 4, 18, 7, 9, g2 = 20, 8, 14, 36, 21, 22, g3 = 34, 31, 3, 23, 30, 6.*
+*Box plots (quartiles from the package's percentiles) and data of 3 groups (g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6); medians g1 8, g2 20.5, g3 26.5. Kruskal–Wallis test: H = 2.8538, 2 degrees of freedom, p-value 0.240052.*
 
-![Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/kruskal-wallis-null-density)
+![The Kruskal–Wallis test for g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6](https://www.ai999x.com/?ax_fig=statistics-ai999x/kruskal-wallis-null-density)
 
-*Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5.991 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: H = 2.854, p-value = 0.2401. Your inputs: g1 = 27, 2, 4, 18, 7, 9, g2 = 20, 8, 14, 36, 21, 22, g3 = 34, 31, 3, 23, 30, 6.*
+*The Kruskal–Wallis test for g1 = 27, 2, 4, 18, 7, 9; g2 = 20, 8, 14, 36, 21, 22; g3 = 34, 31, 3, 23, 30, 6. Drawn: the chi-square density with 2 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 5.99146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: H = 2.8538, p-value = 0.240052.*
 
 ```python
 statistics_ai999x.solve('kruskal_wallis', g1='27, 2, 4, 18, 7, 9', g2='20, 8, 14, 36, 21, 22', g3='34, 31, 3, 23, 30, 6')
@@ -4976,21 +4500,13 @@ $$
 - **Assumes:** at least 3 treatments and 2 blocks; chi-square approximation
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The stated data = [[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]] as a heat map (each cell shaded by its value)](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-matrix)
+![Friedman's test for the blocks [[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]]](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-null-density)
 
-*The stated data = [[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]] as a heat map (each cell shaded by its value). Returned: degrees of freedom 2, p-value 0.8187. Your inputs: data = [[7, 9, 8], [6, 5, 7]....*
+*Friedman's test for the blocks [[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]]. Drawn: the chi-square density with 2 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 5.99146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 0.4, p-value = 0.818731.*
 
-![Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-null-density)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input)](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-matrix)
 
-*Drawn: the chi-square density with 2 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 5.991 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 0.4, p-value = 0.8187. Your inputs: data = [[7, 9, 8], [6, 5, 7]....*
-
-![Chi-square p-value as data[1,2] runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-live-1)
-
-*Chi-square p-value as data[1,2] runs from 2.25 to 15.75, every other input as you entered it (41 solutions). Marked: your data[1,2] = 9 gives p_value = 0.8187. Your inputs: data = [[7, 9, 8], [6, 5, 7]....*
-
-![Chi-square p-value as data[1,1] runs from 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/friedman-test-live-2)
-
-*Chi-square p-value as data[1,1] runs from 1.75 to 12.25, every other input as you entered it (29 solutions). Marked: your data[1,1] = 7 gives p_value = 0.8187. Your inputs: data = [[7, 9, 8], [6, 5, 7]....*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input). Returned with them by statistics-ai999x: chi_square = 0.4, df = 2, p_value = 0.818731.*
 
 ```python
 statistics_ai999x.solve('friedman_test', data='[[7, 9, 8], [6, 5, 7], [9, 7, 6], [8, 5, 6], [7, 8, 9]]')
@@ -5036,13 +4552,13 @@ $$
 - **Assumes:** paired data; zero differences dropped
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour](https://www.ai999x.com/?ax_fig=statistics-ai999x/sign-test-differences)
+![The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour](https://www.ai999x.com/?ax_fig=statistics-ai999x/sign-test-differences)
 
-*The differences x - y of the pairs (from the inputs: 15, -7, 5, 20, 1, -9, 17, -12), positive in the first colour. Returned: 5 positive of 8 non-zero differences, p-value 0.7266. Your inputs: x = 125, 115, 130, 140, 141..., y = 110, 122, 125, 120, 140....*
+*The differences x − y of the pairs x = 125, 115, 130, 140, 141, 115, 140, 125, y = 110, 122, 125, 120, 140, 124, 123, 137 (derived from the inputs), positive in the first colour. Returned: 5 positive of 8 non-zero differences, p-value 0.726562.*
 
-![Under the null hypothesis the count of positive signs among the 8 non-zero differences is binomial (n = 8, p = 1/2): each probability from the model's binomial run](https://www.ai999x.com/?ax_fig=statistics-ai999x/sign-test-stems)
+![Under the null hypothesis the count of positive signs among the 8 non-zero differences is binomial (n = 8, p = 1/2): each probability from the package's binomial run](https://www.ai999x.com/?ax_fig=statistics-ai999x/sign-test-stems)
 
-*Under the null hypothesis the count of positive signs among the 8 non-zero differences is binomial (n = 8, p = 1/2): each probability from the model's binomial run. The counts the two-sided p-value adds up are in the first colour; observed 5, returned p-value 0.7266. Your inputs: x = 125, 115, 130, 140, 141..., y = 110, 122, 125, 120, 140....*
+*Under the null hypothesis the count of positive signs among the 8 non-zero differences is binomial (n = 8, p = 1/2): each probability from the package's binomial run. Counts at least as far from 8/2 as the observed 5 are in the first colour; the returned p-value is 0.726562.*
 
 ```python
 statistics_ai999x.solve('sign_test', x='125, 115, 130, 140, 141, 115, 140, 125', y='110, 122, 125, 120, 140, 124, 123, 137')
@@ -5086,17 +4602,13 @@ $$
 - **Assumes:** fixed margins (conditional test); whole-number counts
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The stated table = [[8, 2], [1, 5]] as a heat map (each cell shaded by its value)](https://www.ai999x.com/?ax_fig=statistics-ai999x/fisher-exact-test-matrix)
+![With the margins of the table [[8, 2], [1, 5]] fixed (row total 10, column total 9, 16 in all, derived from the inputs), the top-left count is hypergeometric: each probability from the package's hypergeometric run](https://www.ai999x.com/?ax_fig=statistics-ai999x/fisher-exact-test-stems)
 
-*The stated table = [[8, 2], [1, 5]] as a heat map (each cell shaded by its value). Returned: p-value 0.03497. Your inputs: table = [[8, 2], [1, 5]].*
+*With the margins of the table [[8, 2], [1, 5]] fixed (row total 10, column total 9, 16 in all, derived from the inputs), the top-left count is hypergeometric: each probability from the package's hypergeometric run. Tables as or less probable than the observed one are in the first colour; the returned two-sided p-value is 0.034965, odds ratio 20.*
 
-![With the margins of the table fixed (first row 10, first column 9, 16 in all, from the inputs), the top-left count is hypergeometric: each probability from the model's hypergeometric run](https://www.ai999x.com/?ax_fig=statistics-ai999x/fisher-exact-test-stems)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input)](https://www.ai999x.com/?ax_fig=statistics-ai999x/fisher-exact-test-matrix)
 
-*With the margins of the table fixed (first row 10, first column 9, 16 in all, from the inputs), the top-left count is hypergeometric: each probability from the model's hypergeometric run. The tables counted by the two-sided p-value are in the first colour; the returned p-value is 0.03497, odds ratio 20. Your inputs: table = [[8, 2], [1, 5]].*
-
-![Exact p-value (two-sided: tables no more](https://www.ai999x.com/?ax_fig=statistics-ai999x/fisher-exact-test-live-1)
-
-*Exact p-value (two-sided: tables no more... as table[1,1] runs from 0 to 24, every other input as you entered it (4 solutions). Values in this range where the inputs admit no answer (48 of 52) are left out. Marked: your table[1,1] = 8 gives p_value = 0.03497. Your inputs: table = [[8, 2], [1, 5]].*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input). Returned with them by statistics-ai999x: p_value = 0.034965, odds_ratio = 20.*
 
 ```python
 statistics_ai999x.solve('fisher_exact_test', table='[[8, 2], [1, 5]]')
@@ -5141,17 +4653,13 @@ $$
 - **Assumes:** paired (matched) binary outcomes; $b + c > 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The stated table = [[30, 12], [5, 53]] as a heat map (each cell shaded by its value)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mcnemar-test-matrix)
+![McNemar's test for the paired table [[30, 12], [5, 53]] (17 discordant pairs; exact p-value 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/mcnemar-test-null-density)
 
-*The stated table = [[30, 12], [5, 53]] as a heat map (each cell shaded by its value). Returned: p-value 0.1456. Your inputs: table = [[30, 12], [5, 53]].*
+*McNemar's test for the paired table [[30, 12], [5, 53]] (17 discordant pairs; exact p-value 0.143463). Drawn: the chi-square density with 1 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 3.84146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 2.11765, p-value = 0.14561.*
 
-![Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/mcnemar-test-null-density)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mcnemar-test-matrix)
 
-*Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 17 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3.841 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 2.118, p-value = 0.1456. Your inputs: table = [[30, 12], [5, 53]].*
-
-![Chi-square p-value as table[1,2] runs from 0 to 36, every other input as you entered it (10 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/mcnemar-test-live-1)
-
-*Chi-square p-value as table[1,2] runs from 0 to 36, every other input as you entered it (10 solutions). Values in this range where the inputs admit no answer (42 of 52) are left out. Marked: your table[1,2] = 12 gives p_value = 0.1456. Your inputs: table = [[30, 12], [5, 53]].*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input). Returned with them by statistics-ai999x: chi_square = 2.11765, p_value = 0.14561, exact_p_value = 0.143463, discordant = 17.*
 
 ```python
 statistics_ai999x.solve('mcnemar_test', table='[[30, 12], [5, 53]]')
@@ -5196,9 +4704,9 @@ $$
 - **Assumes:** independent samples
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/cohens-d-boxes)
+![The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/cohens-d-boxes)
 
-*Box plots (quartiles from the model's five-number summaries) and data of 2 groups (x = 12, 15, 11, 18, 14; y = 10, 9, 13, 11, 8), each labelled with its mean from the model: x 14, y 10.2. Returned: Cohen's d 1.606, Hedges' g 1.45, pooled sd 2.366. Your inputs: x = 12, 15, 11, 18, 14, y = 10, 9, 13, 11, 8.*
+*The two samples x = 12, 15, 11, 18, 14 and y = 10, 9, 13, 11, 8 as box plots (quartiles from the package's percentiles) with their data; marked: the sample means from the package, 14 and 10.2. Returned: Cohen's d = 1.60579 (Hedges' g = 1.45039), the difference of the means in units of the pooled standard deviation 2.36643.*
 
 ```python
 statistics_ai999x.solve('cohens_d', x='12, 15, 11, 18, 14', y='10, 9, 13, 11, 8')
@@ -5242,17 +4750,9 @@ $$
 - **Assumes:** at least 2 items and 2 respondents
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The stated data = [[4, 5, 4], [3, 3, 4], [5, 5, 5], [2, 3, 2], [4, 4, 3]] as a heat map (each cell shaded by its value)](https://www.ai999x.com/?ax_fig=statistics-ai999x/cronbach-alpha-matrix)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input)](https://www.ai999x.com/?ax_fig=statistics-ai999x/cronbach-alpha-matrix)
 
-*The stated data = [[4, 5, 4], [3, 3, 4], [5, 5, 5], [2, 3, 2], [4, 4, 3]] as a heat map (each cell shaded by its value). In SI units: alpha = 0.913. Your inputs: data = [[4, 5, 4], [3, 3, 4]....*
-
-![Alpha as data[1,1] runs from 1 to 7, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/cronbach-alpha-live-1)
-
-*Alpha as data[1,1] runs from 1 to 7, every other input as you entered it (41 solutions). Marked: your data[1,1] = 4 gives α = 0.913. Your inputs: data = [[4, 5, 4], [3, 3, 4]....*
-
-![Alpha as data[1,3] runs from 1 to 7, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/cronbach-alpha-live-2)
-
-*Alpha as data[1,3] runs from 1 to 7, every other input as you entered it (29 solutions). Marked: your data[1,3] = 4 gives α = 0.913. Your inputs: data = [[4, 5, 4], [3, 3, 4]....*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): data (input). Returned with them by statistics-ai999x: alpha = 0.913043, items = 3, respondents = 5.*
 
 ```python
 statistics_ai999x.solve('cronbach_alpha', data='[[4, 5, 4], [3, 3, 4], [5, 5, 5], [2, 3, 2], [4, 4, 3]]')
@@ -5299,15 +4799,7 @@ $$
 
 ![Interaction plot of the 2×2 factorial responses y = 28, 36, 18, 31 in standard order ((1), a, b, ab): one line per level of B across the levels of A; non-parallel lines show interaction](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2-effects-interaction)
 
-*Interaction plot of the 2×2 factorial responses y = 28, 36, 18, 31 in standard order ((1), a, b, ab): one line per level of B across the levels of A; non-parallel lines show interaction. Returned: grand mean 28.25, main effects A = 10.5, B = -7.5, interaction AB = 2.5. Your inputs: y = 28, 36, 18, 31.*
-
-![Effect A as y[1] runs from 8 to 48, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2-effects-live-1)
-
-*Effect A as y[1] runs from 8 to 48, every other input as you entered it (41 solutions). Marked: your y[1] = 28 gives A = 10.5. Your inputs: y = 28, 36, 18, 31.*
-
-![Effect A as y[2] runs from 16 to 56, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2-effects-live-2)
-
-*Effect A as y[2] runs from 16 to 56, every other input as you entered it (21 solutions). Marked: your y[2] = 36 gives A = 10.5. Your inputs: y = 28, 36, 18, 31.*
+*Interaction plot of the 2×2 factorial responses y = 28, 36, 18, 31 in standard order ((1), a, b, ab): one line per level of B across the levels of A; non-parallel lines show interaction. Returned: grand mean 28.25, main effects A = 10.5, B = -7.5, interaction AB = 2.5.*
 
 ```python
 statistics_ai999x.solve('factorial_2x2_effects', y='28, 36, 18, 31')
@@ -5358,15 +4850,7 @@ $$
 
 ![The seven effects returned for the 2×2×2 factorial responses y = 22, 32, 35, 55, 44, 40, 60, 39 (standard order): A = 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2x2-effects-bars)
 
-*The seven effects returned for the 2×2×2 factorial responses y = 22, 32, 35, 55, 44, 40, 60, 39 (standard order): A = 1.25, B = 12.75, C = 9.75, AB = -1.75, AC = -13.75, BC = -5.25, ABC = -6.75; grand mean 40.88; the largest in size in the first colour. Your inputs: y = 22, 32, 35, 55, 44, 40....*
-
-![Effect A as y[1] runs from 2 to 42, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2x2-effects-live-1)
-
-*Effect A as y[1] runs from 2 to 42, every other input as you entered it (41 solutions). Marked: your y[1] = 22 gives A = 1.25. Your inputs: y = 22, 32, 35, 55, 44, 40....*
-
-![Effect A as y[2] runs from 12 to 52, every other input as you entered it (21 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/factorial-2x2x2-effects-live-2)
-
-*Effect A as y[2] runs from 12 to 52, every other input as you entered it (21 solutions). Marked: your y[2] = 32 gives A = 1.25. Your inputs: y = 22, 32, 35, 55, 44, 40....*
+*The seven effects returned for the 2×2×2 factorial responses y = 22, 32, 35, 55, 44, 40, 60, 39 (standard order): A = 1.25, B = 12.75, C = 9.75, AB = -1.75, AC = -13.75, BC = -5.25, ABC = -6.75; grand mean 40.875.*
 
 ```python
 statistics_ai999x.solve('factorial_2x2x2_effects', y='22, 32, 35, 55, 44, 40, 60, 39')
@@ -5411,13 +4895,9 @@ $$
 - **Assumes:** large-sample (Wald) interval; simple random sample
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Required sample size as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-proportion-live-1)
+![n (required sample size (rounded up)) against confidence (confidence level as a fraction (0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-proportion-curve)
 
-*Required sample size as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives n = 1068. Your inputs: margin = 0.03, confidence = 0.95.*
-
-![Required sample size as margin runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-proportion-live-2)
-
-*Required sample size as margin runs from 0.0075 to 0.0525, every other input as you entered it (29 solutions). Marked: your margin = 0.03 gives n = 1068. Your inputs: margin = 0.03, confidence = 0.95.*
+*n (required sample size (rounded up)) against confidence (confidence level as a fraction (0.95 for 95%)) from 0.02 to 0.98. One curve for each value of margin (margin of error (as a proportion, 0.03 for 3 points)): 0.03, 0.26, 0.74. 41 points per curve computed by statistics-ai999x; marked: the worked example, confidence = 0.95, n = 1068.*
 
 ```python
 statistics_ai999x.solve('sample_size_proportion', margin=0.03, confidence=0.95)
@@ -5462,13 +4942,9 @@ $$
 - **Assumes:** sigma known or a planning estimate
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Required sample size as confidence runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-mean-live-1)
+![n (required sample size (rounded up)) against confidence (confidence level as a fraction (0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-mean-curve)
 
-*Required sample size as confidence runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your confidence = 0.95 gives n = 217. Your inputs: sigma = 15, margin = 2, confidence = 0.95.*
-
-![Required sample size as σ runs from 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-mean-live-2)
-
-*Required sample size as σ runs from 3.75 to 26.25, every other input as you entered it (29 solutions). Marked: your σ = 15 gives n = 217. Your inputs: sigma = 15, margin = 2, confidence = 0.95.*
+*n (required sample size (rounded up)) against confidence (confidence level as a fraction (0.95 for 95%)) from 0.02 to 0.98. One curve for each value of sigma (population standard deviation (planning value)): 15, 7.5, 30. Other inputs as in the worked example: margin = 2.0. 41 points per curve computed by statistics-ai999x; marked: the worked example, confidence = 0.95, n = 217.*
 
 ```python
 statistics_ai999x.solve('sample_size_mean', sigma=15, margin=2, confidence=0.95)
@@ -5513,13 +4989,9 @@ $$
 - **Assumes:** normal approximation (sigma known); two-sided power includes both rejection tails
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Probability of rejecting H0 when the effect is d as d runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-one-sample-z-live-1)
+![power (probability of rejecting H0 when the effect is d) against d (standardized effect size (difference / sigma)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-one-sample-z-curve)
 
-*Probability of rejecting H0 when the effect is d as d runs from 0.125 to 0.875, every other input as you entered it (41 solutions). Marked: your d = 0.5 gives power = 0.7819. Your inputs: d = 0.5, n = 30, alpha = 0.05.*
-
-![Probability of rejecting H0 when the effect is d as n runs from 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-one-sample-z-live-2)
-
-*Probability of rejecting H0 when the effect is d as n runs from 7.5 to 52.5, every other input as you entered it (29 solutions). Marked: your n = 30 gives power = 0.7819. Your inputs: d = 0.5, n = 30, alpha = 0.05.*
+*power (probability of rejecting H0 when the effect is d) against d (standardized effect size (difference / sigma)) from 0.05 to 5 on a logarithmic axis. One curve for each value of n (sample size): 30, 15, 60. Other inputs as in the worked example: alpha = 0.05. 41 points per curve computed by statistics-ai999x; marked: the worked example, d = 0.5, power = 0.781908.*
 
 ```python
 statistics_ai999x.solve('power_one_sample_z', d=0.5, n=30, alpha=0.05)
@@ -5564,13 +5036,9 @@ $$
 - **Assumes:** normal approximation (sigma known); two-sided power includes both rejection tails
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Probability of rejecting H0 when the effect is d as d runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-two-sample-z-live-1)
+![power (probability of rejecting H0 when the effect is d) against d (standardized effect size (difference / sigma)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-two-sample-z-curve)
 
-*Probability of rejecting H0 when the effect is d as d runs from 0.125 to 0.875, every other input as you entered it (41 solutions). Marked: your d = 0.5 gives power = 0.4907. Your inputs: d = 0.5, n = 30, alpha = 0.05.*
-
-![Probability of rejecting H0 when the effect is d as n runs from 7](https://www.ai999x.com/?ax_fig=statistics-ai999x/power-two-sample-z-live-2)
-
-*Probability of rejecting H0 when the effect is d as n runs from 7.5 to 52.5, every other input as you entered it (29 solutions). Marked: your n = 30 gives power = 0.4907. Your inputs: d = 0.5, n = 30, alpha = 0.05.*
+*power (probability of rejecting H0 when the effect is d) against d (standardized effect size (difference / sigma)) from 0.05 to 5 on a logarithmic axis. One curve for each value of n (sample size per group): 30, 15, 60. Other inputs as in the worked example: alpha = 0.05. 41 points per curve computed by statistics-ai999x; marked: the worked example, d = 0.5, power = 0.490686.*
 
 ```python
 statistics_ai999x.solve('power_two_sample_z', d=0.5, n=30, alpha=0.05)
@@ -5616,13 +5084,9 @@ $$
 - **Assumes:** equal group sizes; normal approximation; two-sided power includes both tails
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Required size per group as d runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-two-means-live-1)
+![n_per_group (required size per group (rounded up)) against d (standardized effect size (difference / sigma)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-two-means-curve)
 
-*Required size per group as d runs from 0.125 to 0.875, every other input as you entered it (41 solutions). Marked: your d = 0.5 gives n_per_group = 63. Your inputs: d = 0.5, alpha = 0.05, power = 0.8.*
-
-![Required size per group as power runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/sample-size-two-means-live-2)
-
-*Required size per group as power runs from 0.2 to 0.9714, every other input as you entered it (19 solutions). Marked: your power = 0.8 gives n_per_group = 63. Your inputs: d = 0.5, alpha = 0.05, power = 0.8.*
+*n_per_group (required size per group (rounded up)) against d (standardized effect size (difference / sigma)) from 0.05 to 5 on a logarithmic axis, logarithmic output axis. One curve for each value of alpha (significance level): 0.05, 0.025, 0.1. Other inputs as in the worked example: power = 0.8. 41 points per curve computed by statistics-ai999x; marked: the worked example, d = 0.5, n_per_group = 63.*
 
 ```python
 statistics_ai999x.solve('sample_size_two_means', d=0.5, alpha=0.05, power=0.8)
@@ -5672,17 +5136,9 @@ $$
 - **Assumes:** equal subgroup sizes 2 to 10; standard 3-decimal control chart constants (A2, D3, D4)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![x̄ chart (top) and R chart (bottom) for 3 subgroups: subgroup means and ranges from the model's mean and range runs; returned centre 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-r-chart-control-chart)
+![x̄ chart (top) and R chart (bottom) for the subgroups [[10](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-r-chart-control-chart)
 
-*x̄ chart (top) and R chart (bottom) for 3 subgroups: subgroup means and ranges from the model's mean and range runs; returned centre 10.03, limits 9.733 to 10.32; R̄ 0.4, limits 0 to 0.9128. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
-
-![X-bar UCL as data[1,1] runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-r-chart-live-1)
-
-*X-bar UCL as data[1,1] runs from 2.55 to 17.85, every other input as you entered it (41 solutions). Marked: your data[1,1] = 10.2 gives xbar_ucl = 10.32. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
-
-![X-bar UCL as data[1,2] runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-r-chart-live-2)
-
-*X-bar UCL as data[1,2] runs from 2.475 to 17.32, every other input as you entered it (29 solutions). Marked: your data[1,2] = 9.9 gives xbar_ucl = 10.32. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
+*x̄ chart (top) and R chart (bottom) for the subgroups [[10.2, 9.9, 10.1, 10.0], [10.3, 10.1, 9.8, 10.2], [9.9, 10.0, 10.1, 9.7]]: subgroup means and ranges from the package's mean and range runs; returned centre x̿ = 10.025, limits 9.7334 – 10.3166 (A2 = 0.729); R̄ = 0.4, limits 0 – 0.9128 (D3 = 0, D4 = 2.282).*
 
 ```python
 statistics_ai999x.solve('xbar_r_chart', data='[[10.2, 9.9, 10.1, 10.0], [10.3, 10.1, 9.8, 10.2], [9.9, 10.0, 10.1, 9.7]]')
@@ -5732,17 +5188,9 @@ $$
 - **Assumes:** equal subgroup sizes 2 to 10; standard 3-decimal constants (A3, B3, B4)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![x̄ chart (top) and s chart (bottom) for 3 subgroups: subgroup means and standard deviations from the model's mean and standard deviation runs; returned centre 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-s-chart-control-chart)
+![x̄ chart (top) and s chart (bottom) for the subgroups [[10](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-s-chart-control-chart)
 
-*x̄ chart (top) and s chart (bottom) for 3 subgroups: subgroup means and standard deviations from the model's mean and standard deviation runs; returned centre 10.03, limits 9.745 to 10.3; s̄ 0.172, limits 0 to 0.3897. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
-
-![X-bar UCL as data[1,1] runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-s-chart-live-1)
-
-*X-bar UCL as data[1,1] runs from 2.55 to 17.85, every other input as you entered it (41 solutions). Marked: your data[1,1] = 10.2 gives xbar_ucl = 10.3. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
-
-![X-bar UCL as data[1,2] runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/xbar-s-chart-live-2)
-
-*X-bar UCL as data[1,2] runs from 2.475 to 17.32, every other input as you entered it (29 solutions). Marked: your data[1,2] = 9.9 gives xbar_ucl = 10.3. Your inputs: data = [[10.2, 9.9, 10.1, 10.0],....*
+*x̄ chart (top) and s chart (bottom) for the subgroups [[10.2, 9.9, 10.1, 10.0], [10.3, 10.1, 9.8, 10.2], [9.9, 10.0, 10.1, 9.7]]: subgroup means and standard deviations from the package's runs; returned centre 10.025, limits 9.74503 – 10.305 (A3 = 1.628); s̄ = 0.171969, limits 0 – 0.389681 (B3 = 0, B4 = 2.266).*
 
 ```python
 statistics_ai999x.solve('xbar_s_chart', data='[[10.2, 9.9, 10.1, 10.0], [10.3, 10.1, 9.8, 10.2], [9.9, 10.0, 10.1, 9.7]]')
@@ -5791,15 +5239,7 @@ $$
 
 ![Individuals chart (top) of x = 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/individuals-moving-range-chart-control-chart)
 
-*Individuals chart (top) of x = 10.2, 9.8, 10.5, 10.1, 9.7, 10.3, 10 with the returned centre 10.09 and limits 8.844 to 11.33; moving-range chart (bottom) of the absolute differences of successive values (from the inputs) with the returned mean moving range 0.4667 and limits 0 to 1.525. Your inputs: x = 10.2, 9.8, 10.5, 10.1....*
-
-![Mean + 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/individuals-moving-range-chart-live-1)
-
-*Mean + 2.66 MR-bar as x[3] runs from 2.625 to 18.38, every other input as you entered it (41 solutions). Marked: your x[3] = 10.5 gives x_ucl = 11.33. Your inputs: x = 10.2, 9.8, 10.5, 10.1....*
-
-![Mean + 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/individuals-moving-range-chart-live-2)
-
-*Mean + 2.66 MR-bar as x[6] runs from 2.575 to 18.03, every other input as you entered it (29 solutions). Marked: your x[6] = 10.3 gives x_ucl = 11.33. Your inputs: x = 10.2, 9.8, 10.5, 10.1....*
+*Individuals chart (top) of x = 10.2, 9.8, 10.5, 10.1, 9.7, 10.3, 10.0 with the returned centre 10.0857 and limits 8.84438 – 11.327; moving-range chart (bottom) of the absolute differences of successive values (derived) with the returned mean moving range 0.466667 and limits 0 – 1.5246.*
 
 ```python
 statistics_ai999x.solve('individuals_moving_range_chart', x='10.2, 9.8, 10.5, 10.1, 9.7, 10.3, 10.0')
@@ -5847,15 +5287,7 @@ $$
 
 ![A p chart: the fraction defective of each sample of n = 100 (defectives 4, 6, 3, 5, 7, 2, 5, divided by n) with the returned centre p̄ = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/p-chart-control-chart)
 
-*A p chart: the fraction defective of each sample of n = 100 (defectives 4, 6, 3, 5, 7, 2, 5, divided by n) with the returned centre p̄ = 0.04571 and limits UCL = 0.1084, LCL = 0 (σ = 0.02089). Your inputs: defectives = 4, 6, 3, 5, 7, 2, 5, n = 100.*
-
-![Upper control limit as defectives[4] runs from 1 to 13, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/p-chart-live-1)
-
-*Upper control limit as defectives[4] runs from 1 to 13, every other input as you entered it (13 solutions). Marked: your defectives[4] = 7 gives ucl = 0.1084. Your inputs: defectives = 4, 6, 3, 5, 7, 2, 5, n = 100.*
-
-![Upper control limit as defectives[0] runs from 0 to 8, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/p-chart-live-2)
-
-*Upper control limit as defectives[0] runs from 0 to 8, every other input as you entered it (9 solutions). Marked: your defectives[0] = 4 gives ucl = 0.1084. Your inputs: defectives = 4, 6, 3, 5, 7, 2, 5, n = 100.*
+*A p chart: the fraction defective of each sample of n = 100 (defectives 4, 6, 3, 5, 7, 2, 5, divided by n) with the returned centre p̄ = 0.0457143 and limits UCL = 0.108374, LCL = 0 (σ = 0.0208865).*
 
 ```python
 statistics_ai999x.solve('p_chart', defectives='4, 6, 3, 5, 7, 2, 5', n=100)
@@ -5902,15 +5334,7 @@ $$
 
 ![A c chart of the defect counts 3, 5, 2, 6, 4, 7, 3, 4 in time order with the returned centre line c̄ = 4](https://www.ai999x.com/?ax_fig=statistics-ai999x/c-chart-control-chart)
 
-*A c chart of the defect counts 3, 5, 2, 6, 4, 7, 3, 4 in time order with the returned centre line c̄ = 4.25 and control limits UCL = 10.43, LCL = 0. Your inputs: counts = 3, 5, 2, 6, 4, 7, 3, 4.*
-
-![Ucl as counts[6] runs from 1 to 13, every other input as you entered it (13 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/c-chart-live-1)
-
-*Ucl as counts[6] runs from 1 to 13, every other input as you entered it (13 solutions). Marked: your counts[6] = 7 gives ucl = 10.43. Your inputs: counts = 3, 5, 2, 6, 4, 7, 3, 4.*
-
-![Ucl as counts[2] runs from 1 to 9, every other input as you entered it (9 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/c-chart-live-2)
-
-*Ucl as counts[2] runs from 1 to 9, every other input as you entered it (9 solutions). Marked: your counts[2] = 5 gives ucl = 10.43. Your inputs: counts = 3, 5, 2, 6, 4, 7, 3, 4.*
+*A c chart of the defect counts 3, 5, 2, 6, 4, 7, 3, 4 in time order with the returned centre line c̄ = 4.25 and control limits UCL = 10.4347, LCL = 0.*
 
 ```python
 statistics_ai999x.solve('c_chart', counts='3, 5, 2, 6, 4, 7, 3, 4')
@@ -5959,17 +5383,9 @@ $$
 - **Assumes:** normal, stable (in-control) process; USL > LSL
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The normal density with μ = 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/process-capability-density)
+![A process with mean 10](https://www.ai999x.com/?ax_fig=statistics-ai999x/process-capability-density)
 
-*The normal density with μ = 10.2, σ = 0.1 (from the model's cumulative probabilities on 101 points, differenced), with the out-of-specification tails beyond LSL = 9.8 and USL = 10.5 shaded. Returned: Cp = 1.167, Cpk = 1, 1382 parts per million out. Your inputs: mu = 10.2, sigma = 0.1, lsl = 9.8, usl = 10.5.*
-
-![Min(Cpu, Cpl) as μ runs from 2](https://www.ai999x.com/?ax_fig=statistics-ai999x/process-capability-live-1)
-
-*Min(Cpu, Cpl) as μ runs from 2.55 to 17.85, every other input as you entered it (41 solutions). Marked: your μ = 10.2 gives cpk = 1. Your inputs: mu = 10.2, sigma = 0.1, lsl = 9.8, usl = 10.5.*
-
-![Min(Cpu, Cpl) as σ runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/process-capability-live-2)
-
-*Min(Cpu, Cpl) as σ runs from 0.025 to 0.175, every other input as you entered it (29 solutions). Marked: your σ = 0.1 gives cpk = 1. Your inputs: mu = 10.2, sigma = 0.1, lsl = 9.8, usl = 10.5.*
+*A process with mean 10.2 and standard deviation 0.1 against the specification limits LSL = 9.8 and USL = 10.5: the density (density from the package's cumulative probabilities on a grid, differenced) with the out-of-specification tails shaded. Returned: Cp = 1.16667, Cpk = 1 (Cpu 1, Cpl 1.33333), 1381.57 parts per million out.*
 
 ```python
 statistics_ai999x.solve('process_capability', mu=10.2, sigma=0.1, lsl=9.8, usl=10.5)
@@ -6017,17 +5433,9 @@ $$
 - **Assumes:** two-parameter Weibull (no location shift); $t  \geq  0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Weibull reliability (top) and hazard rate (bottom) over time for η = 1000 and shapes 1, 2, 4, one run of the model per point: β < 1 failures slow down, β > 1 wear out](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/weibull-reliability-curves.svg)
+![Weibull reliability (top) and hazard rate (bottom) over time for η = 1000 and shape β = 1, 2 (worked example), 4, one package run per point: β < 1 failures slow down, β > 1 wear-out](https://www.ai999x.com/?ax_fig=statistics-ai999x/weibull-reliability-curves)
 
-*Weibull reliability (top) and hazard rate (bottom) over time for η = 1000 and shapes 1, 2, 4, one run of the model per point: β < 1 failures slow down, β > 1 wear out. Marked at t = 500: R = 0.7788, h = 0.001 (MTTF 886.2). Your inputs: beta = 2, eta = 1000, t = 500.*
-
-![Reliability as η runs from 250 to 1750, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/weibull-reliability-live-1)
-
-*Reliability as η runs from 250 to 1750, every other input as you entered it (41 solutions). Marked: your η = 1000 gives reliability = 0.7788. Your inputs: beta = 2, eta = 1000, t = 500.*
-
-![Reliability as t runs from 125 to 875, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/weibull-reliability-live-2)
-
-*Reliability as t runs from 125 to 875, every other input as you entered it (29 solutions). Marked: your t = 500 gives reliability = 0.7788. Your inputs: beta = 2, eta = 1000, t = 500.*
+*Weibull reliability (top) and hazard rate (bottom) over time for η = 1000 and shape β = 1, 2 (worked example), 4, one package run per point: β < 1 failures slow down, β > 1 wear-out. Marked at t = 500: R = 0.778801, h = 0.001 (MTTF 886.227).*
 
 ```python
 statistics_ai999x.solve('weibull_reliability', beta=2, eta=1000, t=500)
@@ -6075,13 +5483,9 @@ $$
 - **Assumes:** constant failure rate (useful-life period); exactly one of rate or MTBF
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Exp(-lambda t) as rate runs from 5e-05 to 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-reliability-live-1)
+![Reliability and unreliability of a component with constant failure rate 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-reliability-curve)
 
-*Exp(-lambda t) as rate runs from 5e-05 to 0.00035, every other input as you entered it (41 solutions). Marked: your rate = 0.0002 gives reliability = 0.8187. Your inputs: t = 1000, rate = 0.0002.*
-
-![Exp(-lambda t) as t runs from 250 to 1750, every other input as you entered it (29 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/exponential-reliability-live-2)
-
-*Exp(-lambda t) as t runs from 250 to 1750, every other input as you entered it (29 solutions). Marked: your t = 1000 gives reliability = 0.8187. Your inputs: t = 1000, rate = 0.0002.*
+*Reliability and unreliability of a component with constant failure rate 0.0002 over time, one package run per point; marked: the mission time t = 1000 with R = 0.818731; dashed: the returned mean time to failure 5000 (where R = e⁻¹).*
 
 ```python
 statistics_ai999x.solve('exponential_reliability', t=1000, rate=0.0002)
@@ -6125,15 +5529,7 @@ $$
 
 ![3 components in series with reliabilities 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/series-system-reliability-diagram)
 
-*3 components in series with reliabilities 0.95, 0.9, 0.98: the system works only if every block works, so its returned reliability 0.8379 is below that of the weakest component. Your inputs: r = 0.95, 0.9, 0.98.*
-
-![System reliability as r[1] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/series-system-reliability-live-1)
-
-*System reliability as r[1] runs from 0.2375 to 0.9856, every other input as you entered it (22 solutions). Marked: your r[1] = 0.95 gives reliability = 0.8379. Your inputs: r = 0.95, 0.9, 0.98.*
-
-![System reliability as r[2] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/series-system-reliability-live-2)
-
-*System reliability as r[2] runs from 0.225 to 0.9964, every other input as you entered it (17 solutions). Marked: your r[2] = 0.9 gives reliability = 0.8379. Your inputs: r = 0.95, 0.9, 0.98.*
+*3 components in series with reliabilities 0.95, 0.9, 0.98: the system works only if every block works, so its returned reliability 0.8379 is below that of the weakest component.*
 
 ```python
 statistics_ai999x.solve('series_system_reliability', r='0.95, 0.9, 0.98')
@@ -6175,17 +5571,9 @@ $$
 - **Assumes:** independent components
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![3 components in parallel with reliabilities 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/parallel-system-reliability-diagram)
+![3 redundant components in parallel with reliabilities 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/parallel-system-reliability-diagram)
 
-*3 components in parallel with reliabilities 0.95, 0.9, 0.98: the system fails only if every block fails, so its returned reliability 0.9999 exceeds that of the best component. Your inputs: r = 0.95, 0.9, 0.98.*
-
-![System reliability as r[3] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/parallel-system-reliability-live-1)
-
-*System reliability as r[3] runs from 0.245 to 0.98, every other input as you entered it (21 solutions). Marked: your r[3] = 0.98 gives reliability = 0.9999. Your inputs: r = 0.95, 0.9, 0.98.*
-
-![System reliability as r[1] runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/parallel-system-reliability-live-2)
-
-*System reliability as r[1] runs from 0.2375 to 0.95, every other input as you entered it (15 solutions). Marked: your r[1] = 0.95 gives reliability = 0.9999. Your inputs: r = 0.95, 0.9, 0.98.*
+*3 redundant components in parallel with reliabilities 0.95, 0.9, 0.98: the system fails only if every block fails, so its returned reliability 0.9999 exceeds that of the best component.*
 
 ```python
 statistics_ai999x.solve('parallel_system_reliability', r='0.95, 0.9, 0.98')
@@ -6229,13 +5617,9 @@ $$
 - **Assumes:** identical, independent components
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![P(at least k of n work) as r runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/k-out-of-n-reliability-live-1)
+![System reliability when at least k of n = 3 identical components must work, against one component's reliability r, for k = 1 … 3 (one package run per point); dashed: a single component](https://www.ai999x.com/?ax_fig=statistics-ai999x/k-out-of-n-reliability-curve)
 
-*P(at least k of n work) as r runs from 0.225 to 0.9675, every other input as you entered it (23 solutions). Marked: your r = 0.9 gives reliability = 0.972. Your inputs: n = 3, k = 2, r = 0.9.*
-
-![P(at least k of n work) as k runs from 1 to 3, every other input as you entered it (3 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/k-out-of-n-reliability-live-2)
-
-*P(at least k of n work) as k runs from 1 to 3, every other input as you entered it (3 solutions). Marked: your k = 2 gives reliability = 0.972. Your inputs: n = 3, k = 2, r = 0.9.*
+*System reliability when at least k of n = 3 identical components must work, against one component's reliability r, for k = 1 … 3 (one package run per point); dashed: a single component. Marked: the worked example k = 2, r = 0.9, R = 0.972.*
 
 ```python
 statistics_ai999x.solve('k_out_of_n_reliability', n=3, k=2, r=0.9)
@@ -6281,17 +5665,13 @@ $$
 - **Assumes:** non-informative censoring; a censoring at an event time counts as still at risk
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![The Kaplan-Meier survival curve returned by the model for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/kaplan-meier-survival)
+![The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0](https://huggingface.co/AI999X/statistics-ai999x/resolve/main/figures/kaplan-meier-survival.svg)
 
-*The Kaplan-Meier survival curve returned by the model for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0.5333. Your inputs: times = 6, 6, 6, 7, 10, 13, 16..., events = 1, 1, 1, 0, 1, 1, 1, 1, 1, t = 12.*
+*The Kaplan–Meier survival curve returned by the package for times 6, 6, 6, 7, 10, 13, 16, 22, 23 with event indicators 1, 1, 1, 0, 1, 1, 1, 1, 1 (0 = censored): it steps down at each event time 6, 10, 13, 16, 22, 23; marked: t = 12, S = 0.533333.*
 
-![Survival as t runs from 3 to 21, every other input as you entered it (41 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/kaplan-meier-live-1)
+![survival (S(t)) against t (time at which to report S(t)) from 1](https://www.ai999x.com/?ax_fig=statistics-ai999x/kaplan-meier-curve)
 
-*Survival as t runs from 3 to 21, every other input as you entered it (41 solutions). Marked: your t = 12 gives survival = 0.5333. Your inputs: times = 6, 6, 6, 7, 10, 13, 16..., events = 1, 1, 1, 0, 1, 1, 1, 1, 1, t = 12.*
-
-![The computed survival_curve plotted against event_times (6 points, from your inputs)](https://www.ai999x.com/?ax_fig=statistics-ai999x/kaplan-meier-live-2)
-
-*The computed survival_curve plotted against event_times (6 points, from your inputs). Your inputs: times = 6, 6, 6, 7, 10, 13, 16..., events = 1, 1, 1, 0, 1, 1, 1, 1, 1, t = 12.*
+*survival (S(t)) against t (time at which to report S(t)) from 1.2 to 120 on a logarithmic axis. Other inputs as in the worked example: times = 6, 6, 6, 7, 10, 13, 16, 22, 23, events = 1, 1, 1, 0, 1, 1, 1, 1, 1. 41 points computed by statistics-ai999x; marked: the worked example, t = 12, survival = 0.533333.*
 
 ```python
 statistics_ai999x.solve('kaplan_meier', times='6, 6, 6, 7, 10, 13, 16, 22, 23', events='1, 1, 1, 0, 1, 1, 1, 1, 1', t=12)
@@ -6339,13 +5719,13 @@ $$
 - **Assumes:** non-informative censoring; proportional hazards gives the test its best power
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3](https://www.ai999x.com/?ax_fig=statistics-ai999x/log-rank-test-null-density)
+![Kaplan–Meier curves returned by the package for group 1 (times 6, 6, 6, 7, 10, 13, 16, events 1, 1, 1, 0, 1, 1, 1) and group 2 (times 1, 1, 2, 2, 3, 4, 4, events 1, 1, 1, 1, 1, 1, 1)](https://www.ai999x.com/?ax_fig=statistics-ai999x/log-rank-test-survival)
 
-*Drawn: the chi-square density with 1 degrees of freedom (the model's own quantiles at 18 cumulative probabilities, differentiated and joined by a monotone cubic); shaded: the upper rejection region above 3.841 for α = 0.05 (critical values from the model) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 13.81, p-value = 0.0002021. Your inputs: times1 = 6, 6, 6, 7, 10, 13, 16, events1 = 1, 1, 1, 0, 1, 1, 1, times2 = 1, 1, 2, 2, 3, 4, 4, events2 = 1, 1, 1, 1, 1, 1, 1.*
+*Kaplan–Meier curves returned by the package for group 1 (times 6, 6, 6, 7, 10, 13, 16, events 1, 1, 1, 0, 1, 1, 1) and group 2 (times 1, 1, 2, 2, 3, 4, 4, events 1, 1, 1, 1, 1, 1, 1). Log-rank test: χ² = 13.8115, p-value 0.000202097; group 1 had 6 events against 10.4222 expected.*
 
-![Kaplan-Meier curves from the model's Kaplan-Meier runs for group 1 (times 6, 6, 6, 7, 10, 13, 16, events 1, 1, 1, 0, 1, 1, 1) and group 2 (times 1, 1, 2, 2, 3, 4, 4, events 1, 1, 1, 1, 1, 1, 1)](https://www.ai999x.com/?ax_fig=statistics-ai999x/log-rank-test-survival)
+![The log-rank test of the two groups of the worked example](https://www.ai999x.com/?ax_fig=statistics-ai999x/log-rank-test-null-density)
 
-*Kaplan-Meier curves from the model's Kaplan-Meier runs for group 1 (times 6, 6, 6, 7, 10, 13, 16, events 1, 1, 1, 0, 1, 1, 1) and group 2 (times 1, 1, 2, 2, 3, 4, 4, events 1, 1, 1, 1, 1, 1, 1). Log-rank test: χ² = 13.81, p-value 0.0002021; group 1 had 6 events against 10.42 expected. Your inputs: times1 = 6, 6, 6, 7, 10, 13, 16, events1 = 1, 1, 1, 0, 1, 1, 1, times2 = 1, 1, 2, 2, 3, 4, 4, events2 = 1, 1, 1, 1, 1, 1, 1.*
+*The log-rank test of the two groups of the worked example. Drawn: the chi-square density with 1 degrees of freedom (density from the package's quantiles at 121 cumulative probabilities, differenced); shaded: the rejection region above 3.84146 for α = 0.05 (critical value from the package) and, paler, the area beyond the statistic that the p-value measures. Marked: χ² = 13.8115, p-value = 0.000202097.*
 
 ```python
 statistics_ai999x.solve('log_rank_test', times1='6, 6, 6, 7, 10, 13, 16', events1='1, 1, 1, 0, 1, 1, 1', times2='1, 1, 2, 2, 3, 4, 4', events2='1, 1, 1, 1, 1, 1, 1')
@@ -6399,13 +5779,9 @@ $$
 - **Assumes:** probabilities between 0 and 1; exactly one statement about the overlap; max(0, P(A) + P(B) - 1) <= P(A and B) <= min(P(A), P(B))
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![P a or b as p_a runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-rules-live-1)
+![p_a_or_b (P(A or B) = P(A) + P(B) - P(A and B)) against p_b (P(B)) from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-rules-curve)
 
-*P a or b as p_a runs from 0.205 to 0.7, every other input as you entered it (34 solutions). Marked: your p_a = 0.4 gives p_a_or_b = 0.7. Your inputs: p_a = 0.4, p_b = 0.5, p_a_and_b = 0.2.*
-
-![P a or b as p_b runs from 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/probability-rules-live-2)
-
-*P a or b as p_b runs from 0.2054 to 0.7946, every other input as you entered it (23 solutions). Marked: your p_b = 0.5 gives p_a_or_b = 0.7. Your inputs: p_a = 0.4, p_b = 0.5, p_a_and_b = 0.2.*
+*p_a_or_b (P(A or B) = P(A) + P(B) - P(A and B)) against p_b (P(B)) from 0.25 to 0.75. One curve for each value of p_a (P(A)): 0.4, 0.2, 0.8. Other inputs as in the worked example: p_a_and_b = 0.2. 31 points per curve computed by statistics-ai999x; marked: the worked example, p_b = 0.5, p_a_or_b = 0.7.*
 
 ```python
 statistics_ai999x.solve('probability_rules', p_a=0.4, p_b=0.5, p_a_and_b=0.2)
@@ -6473,17 +5849,13 @@ $$
 - **Assumes:** counts >= 0; every row and column has a positive total; row and column numbered from 1
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![P row given column as column runs from 1 to 2, every other input as you entered it (2 solutions)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-live-1)
+![marginal probabilities of the rows (row_marginals) at each marginal probabilities of the columns (column_marginals), both returned by statistics-ai999x for the worked example (table = [[30, 20], [10, 40]], row = 1, column = 2): 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-series)
 
-*P row given column as column runs from 1 to 2, every other input as you entered it (2 solutions). Marked: your column = 2 gives p_row_given_column = 0.3333. Your inputs: table = [[30, 20], [10, 40]], row = 1, column = 2.*
+*marginal probabilities of the rows (row_marginals) at each marginal probabilities of the columns (column_marginals), both returned by statistics-ai999x for the worked example (table = [[30, 20], [10, 40]], row = 1, column = 2): 0.4 → 0.5; 0.6 → 0.5.*
 
-![Every entry of row_marginals, column_marginals as computed for your inputs (2 entries, row_marginals first: 0](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-live-2)
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); joint (returned); row_given_column (returned); column_given_row (returned)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-matrix)
 
-*Every entry of row_marginals, column_marginals as computed for your inputs (2 entries, row_marginals first: 0.5, 0.5). Your inputs: table = [[30, 20], [10, 40]], row = 1, column = 2.*
-
-![Each cell is one entry of joint for your inputs (row by row; shade by size and sign)](https://www.ai999x.com/?ax_fig=statistics-ai999x/two-way-table-probabilities-live-3)
-
-*Each cell is one entry of joint for your inputs (row by row; shade by size and sign). Your inputs: table = [[30, 20], [10, 40]], row = 1, column = 2.*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): table (input); joint (returned); row_given_column (returned); column_given_row (returned). Returned with them by statistics-ai999x: total = 100, p_row_and_column = 0.2, p_row = 0.5, p_column = 0.6, p_row_given_column = 0.333333, p_column_given_row = 0.4, p_row_or_column = 0.9. Other inputs: row = 1, column = 2.*
 
 ```python
 statistics_ai999x.solve('two_way_table_probabilities', table='[[30, 20], [10, 40]]', row=1, column=2)
